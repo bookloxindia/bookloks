@@ -1,3 +1,22 @@
+
+(function registerBookLoksPWA(){
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js', { scope: './' }).then(reg => {
+      try { reg.update(); } catch (_) {}
+      reg.addEventListener('updatefound', () => {
+        const worker = reg.installing;
+        if (!worker) return;
+        worker.addEventListener('statechange', () => {
+          if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+            try { reg.waiting?.postMessage({type:'SKIP_WAITING'}); } catch (_) {}
+          }
+        });
+      });
+    }).catch(err => console.warn('BookLoks PWA registration failed:', err));
+  });
+})();
+
 (async function () {
   const app = document.getElementById('app');
   try {
