@@ -12,10 +12,11 @@
     };
     const script = document.createElement('script');
     script.src = 'app.js';
-    script.defer = true;
+    script.onload = () => { window.setTimeout(() => document.getElementById('splashScreen')?.classList.add('hide'), 1250); };
     document.body.appendChild(script);
   } catch (err) {
     console.error(err);
+    document.getElementById('splashScreen')?.classList.add('hide');
     app.innerHTML = '<section style="padding:40px;text-align:center"><h2>BookLoks could not load</h2><p>Please open the app through GitHub Pages / Cloudflare Pages, not as a local file.</p><p style="color:#a00">' + String(err.message || err) + '</p></section>';
   }
 })();

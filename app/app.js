@@ -97,24 +97,28 @@ const SOUND_FILES = {
 let bgMusic = null;
 let audioGestureSeen = false;
 let musicEnabled = localStorage.getItem('bookloks_music') !== 'off';
+let soundEffectsEnabled = localStorage.getItem('bookloks_sfx') !== 'off';
 
 function initSoundSystem() {
   if (bgMusic) return;
   bgMusic = new Audio(SOUND_FILES.background);
   bgMusic.loop = true;
   bgMusic.preload = 'auto';
-  bgMusic.volume = 0.10;
+  bgMusic.volume = 0.22;
 }
 
-function updateMusicButton() {
-  const b = document.getElementById('musicBtn');
-  if (!b) return;
-  b.textContent = musicEnabled ? '🎵' : '🔇';
-  b.title = musicEnabled ? 'Sound on' : 'Sound off';
-  b.setAttribute('aria-label', musicEnabled ? 'Sound on' : 'Sound off');
-  b.classList.toggle('off', !musicEnabled);
+function updateSoundSettingsUI() {
+  const music = document.getElementById('profileMusicBtn');
+  const sfx = document.getElementById('profileSfxBtn');
+  if (music) {
+    music.textContent = musicEnabled ? '🎵 Music: ON' : '🔇 Music: OFF';
+    music.classList.toggle('active', musicEnabled);
+  }
+  if (sfx) {
+    sfx.textContent = soundEffectsEnabled ? '🔊 Sounds: ON' : '🔇 Sounds: OFF';
+    sfx.classList.toggle('active', soundEffectsEnabled);
+  }
 }
-
 function startBackgroundMusic() {
   if (!musicEnabled) return;
   initSoundSystem();
@@ -127,22 +131,24 @@ function toggleMusic() {
   musicEnabled = !musicEnabled;
   localStorage.setItem('bookloks_music', musicEnabled ? 'on' : 'off');
   initSoundSystem();
-  if (musicEnabled) {
-    startBackgroundMusic();
-  } else if (bgMusic) {
-    bgMusic.pause();
-  }
-  updateMusicButton();
+  if (musicEnabled) startBackgroundMusic();
+  else if (bgMusic) bgMusic.pause();
+  updateSoundSettingsUI();
 }
-
+function toggleSoundEffects() {
+  soundEffectsEnabled = !soundEffectsEnabled;
+  localStorage.setItem('bookloks_sfx', soundEffectsEnabled ? 'on' : 'off');
+  updateSoundSettingsUI();
+}
 function playEffect(file, volume, duckMs = 1100) {
+  if (!soundEffectsEnabled) return;
   try {
     if (musicEnabled) startBackgroundMusic();
     const effect = new Audio(SOUND_FILES[file]);
     effect.preload = 'auto';
-    effect.volume = volume;
-    const oldVolume = bgMusic ? bgMusic.volume : 0.10;
-    if (bgMusic && !bgMusic.paused) bgMusic.volume = 0.035;
+    effect.volume = Math.max(0, Math.min(1, volume));
+    const oldVolume = bgMusic ? bgMusic.volume : 0.22;
+    if (bgMusic && !bgMusic.paused) bgMusic.volume = 0.065;
     const restore = () => {
       if (bgMusic && !bgMusic.paused) bgMusic.volume = oldVolume;
       effect.removeEventListener('ended', restore);
@@ -381,7 +387,7 @@ function profileView() {
     <div class="profile-section"><h3>✨ My progress</h3><p>${state.name?`Keep going, ${esc(state.name)}!`:'Choose your name and start your first mission.'} Perfect missions unlock Golden Eggs, avatars and My Home customisation.</p></div>
     <div class="profile-section"><h3>🎨 My colours</h3><p>Sky and Mint are free. More colours unlock as your XP grows. At ${CUSTOM_COLOUR_MIN_XP} XP, you can choose your own colour for any room.</p><div class="theme-mini-row">${Object.entries(THEMES).map(([id,t])=>`<span class="xp-chip ${state.xp>=t.minXP?'on':''}">${t.name} • ${t.minXP===0?'Free':t.minXP+' XP'}</span>`).join('')}</div></div>
     <div class="profile-section"><h3>🧑‍🚀 My avatar</h3><p>${esc(av.name)} selected. More avatars unlock with XP.</p><div class="theme-mini-row">${Object.values(AVATARS).map(a=>`<span class="xp-chip ${state.xp>=a.minXP?'on':''}">${a.emoji} ${a.name} • ${a.minXP===0?'Free':a.minXP+' XP'}</span>`).join('')}</div></div>
-    <div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
+    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Choose how BookLoks sounds while you play.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
     <div class="profile-section"><button class="btn dark" data-action="reset">Reset testing progress</button></div>
   </section>`;
 }
@@ -390,7 +396,7 @@ function profileView() {
 function bind() {
   const musicBtn = document.getElementById('musicBtn');
   if (musicBtn) musicBtn.onclick = (e) => { e.stopPropagation(); toggleMusic(); };
-  updateMusicButton();
+  updateSoundSettingsUI();
   document.getElementById('brandBtn').onclick = goHome;
   document.querySelectorAll('[data-route]').forEach(e => e.onclick = () => go(e.dataset.route));
   document.querySelectorAll('[data-subject]').forEach(e => e.onclick = () => { selectedSubjectId=e.dataset.subject; state.lastSubject=selectedSubjectId; save(); route='books'; render(); });
@@ -433,6 +439,8 @@ function act(a) {
   if (a==='back-chapters') { route='chapters'; render(); return; }
   if (a==='reset-mini') { resetMini(); render(); return; }
   if (a==='shop-check') { mini.done=mini.selected.includes(0)&&mini.selected.includes(1); render(); return; }
+  if (a==='toggle-music') { toggleMusic(); return; }
+  if (a==='toggle-sfx') { toggleSoundEffects(); return; }
   if (a==='edit-name') { openName(); return; }
   if (a==='edit-avatar') { openAvatar(); return; }
   if (a==='rename-home') { openHomeName(); return; }
@@ -660,6 +668,7 @@ function openName(){
 }
 function audioContext(){return window.AudioContext||window.webkitAudioContext?new (window.AudioContext||window.webkitAudioContext)():null}
 function playSuccess(){
+  if(!soundEffectsEnabled)return;
   try{
     const ctx=audioContext(); if(!ctx)return;
     const o=ctx.createOscillator(), g=ctx.createGain();
@@ -673,12 +682,12 @@ function playSuccess(){
   }catch{}
 }
 function playWrong(){
-  playEffect('error', 0.78, 950);
-  window.setTimeout(() => playEffect('disappointed', 0.55, 1500), 90);
+  playEffect('error', 0.92, 950);
+  window.setTimeout(() => playEffect('disappointed', 0.72, 1500), 90);
   vibrateWrong();
 }
-function playApplause(){ playEffect('applause', 0.70, 5600); }
-function playDisappointed(){ playEffect('disappointed', 0.55, 6200); }
+function playApplause(){ playEffect('applause', 0.92, 5600); }
+function playDisappointed(){ playEffect('disappointed', 0.72, 6200); }
 
 if (!window.__bookloksAudioGesture) {
   window.__bookloksAudioGesture = true;
