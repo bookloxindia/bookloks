@@ -10,7 +10,7 @@ const chapterById = Object.fromEntries(curriculum.map(c => [c.chapter_id, c]));
 const key = 'class4world_v4_state';
 const legacyKey = 'class4world_v3_state';
 const DEFAULT_STATE = {
-  name: '', avatar: 'explorer', homeName: 'My Home', homeNameCustom: false, xp: 0, coins: 0, streak: 1,
+  name: '', avatar: 'boy', homeName: 'My Home', homeNameCustom: false, xp: 0, coins: 0, streak: 1,
   completed: [], perfectMissions: 0, goldenEggs: 0, chapterBest: {}, questionHistory: {},
   roomUnlocked: { living: ['living-starter-lamp'], drawing: ['drawing-starter-easel'], play: ['play-starter-ball'], dining: ['dining-starter-plant'] },
   roomItems: [
@@ -61,7 +61,7 @@ const AVATARS = {
 
 const CUSTOM_COLOUR_MIN_XP = 160;
 
-function avatarMeta(){ return AVATARS[state.avatar] || AVATARS.explorer; }
+function avatarMeta(){ return AVATARS[state.avatar] || AVATARS.boy; }
 
 const ROOMS = [
   { id: 'living', icon: '🛋️', name: 'Living Room' },
@@ -79,7 +79,10 @@ const THEMES = {
   space: { name: 'Space', minXP: 120, wall: '#1e2758', floor: '#303c73', accent: '#6f9dff' }
 };
 
-let state = loadState();
+let state = null;
+
+// Initialise persisted player state only after AVATARS and THEMES exist.
+state = loadState();
 let route = 'home';
 let selectedSubjectId = null, selectedBookId = null, selectedChapterId = null, activeChapter = null;
 let stage = 'intro', quiz = [], qIndex = 0, score = 0, selectedOption = null;
@@ -441,7 +444,7 @@ function profileView() {
 function bind() {
   updateSoundSettingsUI();
   document.getElementById('brandBtn').onclick = goHome;
-  document.querySelectorAll('[data-route]').forEach(e => e.onclick = () => go(e.dataset.route));
+  document.querySelectorAll('[data-route]').forEach(e => e.onclick = (ev) => { ev.preventDefault(); go(e.dataset.route); window.scrollTo({ top: 0, behavior: 'smooth' }); });
   document.querySelectorAll('[data-subject]').forEach(e => e.onclick = () => { selectedSubjectId=e.dataset.subject; state.lastSubject=selectedSubjectId; save(); route='books'; render(); });
   document.querySelectorAll('[data-book]').forEach(e => e.onclick = () => { selectedBookId=e.dataset.book; route='chapters'; render(); });
   document.querySelectorAll('[data-chapter]').forEach(e => e.onclick = () => { selectedChapterId=e.dataset.chapter; route='chapter'; render(); });
