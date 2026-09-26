@@ -12,7 +12,13 @@
     };
     const script = document.createElement('script');
     script.src = 'app.js';
-    script.onload = () => { window.setTimeout(() => document.getElementById('splashScreen')?.classList.add('hide'), 3200); };
+    script.onload = () => {
+      try { window.__bookloksReady = true; window.startBackgroundMusic?.(); } catch (_) {}
+      window.setTimeout(() => {
+        document.getElementById('splashScreen')?.classList.add('hide');
+        try { window.startFirstRunOnboarding?.(); } catch (_) {}
+      }, 3200);
+    };
     document.body.appendChild(script);
   } catch (err) {
     console.error(err);

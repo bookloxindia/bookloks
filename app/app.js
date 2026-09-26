@@ -47,8 +47,8 @@ function roomCatalog(room) { return [...(ROOM_CATALOG[room] || [])].sort((a,b)=>
 function roomItemDef(room, id) { return roomCatalog(room).find(x => x.id === id); }
 
 const AVATARS = {
-  explorer: { name: 'Explorer', emoji: '🧑‍🚀', minXP: 0 },
-  artist: { name: 'Artist', emoji: '🧑‍🎨', minXP: 0 },
+  boy: { name: 'Boy', emoji: '👦', minXP: 0 },
+  girl: { name: 'Girl', emoji: '👧', minXP: 0 },
   hero: { name: 'Super Hero', emoji: '🦸', minXP: 40 },
   wizard: { name: 'Wizard', emoji: '🧙', minXP: 100 },
   gamer: { name: 'Gamer', emoji: '🧑‍💻', minXP: 180 },
@@ -88,6 +88,7 @@ let draggedWorldItem = null;
 const chapterCache = {};
 let lastReward = {xp:0, coins:0, egg:0};
 let lastFirstCompletion = false;
+let onboardingStep = 1;
 const SOUND_FILES = {
   background: 'sounds/background.mp3',
   applause: 'sounds/applause.mp3',
@@ -96,11 +97,20 @@ const SOUND_FILES = {
 };
 let bgMusic = null;
 let audioGestureSeen = false;
+const AUDIO_DEFAULTS_VERSION = '4.1';
+const audioDefaultsApplied = localStorage.getItem('bookloks_audio_defaults_version') === AUDIO_DEFAULTS_VERSION;
+if (!audioDefaultsApplied) {
+  localStorage.setItem('bookloks_music', 'on');
+  localStorage.setItem('bookloks_sfx', 'on');
+  localStorage.setItem('bookloks_music_volume', '0.40');
+  localStorage.setItem('bookloks_sfx_volume', '0.90');
+  localStorage.setItem('bookloks_audio_defaults_version', AUDIO_DEFAULTS_VERSION);
+}
 let musicEnabled = localStorage.getItem('bookloks_music') !== 'off';
 let soundEffectsEnabled = localStorage.getItem('bookloks_sfx') !== 'off';
-let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.30');
+let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.40');
 let sfxVolume = Number(localStorage.getItem('bookloks_sfx_volume') ?? '0.90');
-if (!Number.isFinite(musicVolume)) musicVolume = 0.30;
+if (!Number.isFinite(musicVolume)) musicVolume = 0.40;
 if (!Number.isFinite(sfxVolume)) sfxVolume = 0.90;
 musicVolume = Math.max(0, Math.min(1, musicVolume));
 sfxVolume = Math.max(0, Math.min(1, sfxVolume));
@@ -203,7 +213,7 @@ function loadState() {
     const base = cloneDefault();
     if (!current) return base;
     const merged = { ...base, ...current };
-    merged.avatar = AVATARS[current.avatar] ? current.avatar : base.avatar;
+    merged.avatar = AVATARS[current.avatar] ? current.avatar : (AVATARS.boy ? 'boy' : base.avatar);
     merged.customRoomColors = { ...base.customRoomColors, ...(current.customRoomColors || {}) };
     merged.roomUnlocked = { ...base.roomUnlocked, ...(current.roomUnlocked || {}) };
     merged.roomItems = Array.isArray(current.roomItems) && current.roomItems.length ? current.roomItems : base.roomItems;
@@ -253,6 +263,8 @@ function render() {
   document.body.classList.toggle('mission-mode', route === 'mission');
   document.getElementById('backBtn').classList.toggle('hidden', ['home','subjects'].includes(route));
   document.querySelectorAll('.nav-btn').forEach(x => x.classList.toggle('active', x.dataset.route === route));
+  const homeNavLabel = document.querySelector('.nav-btn[data-route=\"world\"] small');
+  if (homeNavLabel) homeNavLabel.textContent = state.homeName && state.homeName !== 'My Home' ? state.homeName : 'My Home';
   if (route === 'home') app.innerHTML = homeView();
   else if (route === 'subjects') app.innerHTML = subjectsView();
   else if (route === 'books') app.innerHTML = booksView();
@@ -416,7 +428,7 @@ function profileView() {
     <div class="profile-section"><h3>✨ My progress</h3><p>${state.name?`Keep going, ${esc(state.name)}!`:'Choose your name and start your first mission.'} Perfect missions unlock Golden Eggs, avatars and My Home customisation.</p></div>
     <div class="profile-section"><h3>🎨 My colours</h3><p>Sky and Mint are free. More colours unlock as your XP grows. At ${CUSTOM_COLOUR_MIN_XP} XP, you can choose your own colour for any room.</p><div class="theme-mini-row">${Object.entries(THEMES).map(([id,t])=>`<span class="xp-chip ${state.xp>=t.minXP?'on':''}">${t.name} • ${t.minXP===0?'Free':t.minXP+' XP'}</span>`).join('')}</div></div>
     <div class="profile-section"><h3>🧑‍🚀 My avatar</h3><p>${esc(av.name)} selected. More avatars unlock with XP.</p><div class="theme-mini-row">${Object.values(AVATARS).map(a=>`<span class="xp-chip ${state.xp>=a.minXP?'on':''}">${a.emoji} ${a.name} • ${a.minXP===0?'Free':a.minXP+' XP'}</span>`).join('')}</div></div>
-    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">30%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="30" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
+    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">40%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="40" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
     <div class="profile-section"><button class="btn dark" data-action="reset">Reset testing progress</button></div>
   </section>`;
 }
@@ -674,6 +686,65 @@ function openThemes(){
   const customBtn=document.getElementById('applyCustomColor');
   if(customBtn) customBtn.onclick=()=>applyCustomColor();
 }
+function onboardingView(){
+  const modal = document.getElementById('modal');
+  if (!modal) return;
+  modal.classList.remove('hidden');
+  if (onboardingStep === 1) {
+    modal.innerHTML = `<div class="modal-card onboarding-card">
+      <div class="onboarding-progress"><span class="active"></span><span></span></div>
+      <div class="modal-kicker">👋 WELCOME TO BOOKLOKS</div>
+      <h2>What's your name?</h2>
+      <p class="muted">Tell us your name. We’ll use it in your missions and rewards.</p>
+      <input id="onboardingName" class="input" maxlength="20" placeholder="Write your name" autocomplete="off">
+      <div class="modal-actions"><button class="btn dark" id="onboardingNameNext">Continue →</button></div>
+    </div>`;
+    const input = document.getElementById('onboardingName');
+    const next = document.getElementById('onboardingNameNext');
+    next.onclick = () => {
+      const name = input.value.trim();
+      if (!name) { input.focus(); toast('Please write your name.'); return; }
+      state.name = name;
+      if (!state.homeName || state.homeName === 'My Home') state.homeName = `${name}'s Home`;
+      save();
+      onboardingStep = 2;
+      onboardingView();
+    };
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') next.click(); });
+    input.focus();
+    return;
+  }
+  modal.innerHTML = `<div class="modal-card onboarding-card">
+    <div class="onboarding-progress"><span class="active"></span><span class="active"></span></div>
+    <div class="modal-kicker">🧑‍🚀 YOUR AVATAR</div>
+    <h2>Select your avatar</h2>
+    <p class="muted">Pick the avatar you want to see across BookLoks. You can change it later.</p>
+    <div class="onboarding-avatar-grid">
+      ${['boy','girl'].map(id => { const a=AVATARS[id]; return `<button class="onboarding-avatar ${state.avatar===id?'selected':''}" data-onboarding-avatar="${id}"><span>${a.emoji}</span><b>${a.name}</b><small>Free</small></button>`; }).join('')}
+    </div>
+    <div class="modal-actions"><button class="btn dark" id="onboardingFinish">Let's Go →</button></div>
+  </div>`;
+  document.querySelectorAll('[data-onboarding-avatar]').forEach(btn => btn.onclick = () => {
+    state.avatar = btn.dataset.onboardingAvatar;
+    save();
+    document.querySelectorAll('[data-onboarding-avatar]').forEach(x => x.classList.toggle('selected', x.dataset.onboardingAvatar === state.avatar));
+  });
+  document.getElementById('onboardingFinish').onclick = () => {
+    if (!['boy','girl'].includes(state.avatar)) state.avatar = 'boy';
+    localStorage.setItem('bookloks_onboarding_done', '1');
+    save();
+    modal.classList.add('hidden');
+    render();
+    startBackgroundMusic();
+  };
+}
+function startFirstRunOnboarding(){
+  if (localStorage.getItem('bookloks_onboarding_done') === '1') return;
+  onboardingStep = 1;
+  window.setTimeout(() => onboardingView(), 180);
+}
+window.startFirstRunOnboarding = startFirstRunOnboarding;
+
 function openHomeName(){
   const m=document.getElementById('modal');m.classList.remove('hidden');
   m.innerHTML=`<div class="modal-card"><div class="modal-kicker">🏠 MY HOME</div><h2>Name your world</h2><p class="muted">Give your home a name you'll recognise.</p><input id="homeNameInput" class="input" maxlength="24" value="${esc(state.homeName)}" placeholder="Abbir's World"><div class="modal-actions"><button class="btn soft" id="closeHomeName">Cancel</button><button class="btn dark" id="saveHomeName">Save</button></div></div>`;
