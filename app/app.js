@@ -91,26 +91,29 @@ let lastFirstCompletion = false;
 let onboardingStep = 1;
 const SOUND_FILES = {
   background: 'sounds/background.mp3',
-  applause: 'sounds/applause.mp3',
-  disappointed: 'sounds/disappointed.mp3',
-  error: 'sounds/error.mp3'
+  quickCheckWrong: 'sounds/quick-check-wrong.mp3',
+  quickCheckRight: 'sounds/quick-check-right.mp3',
+  questionRight: 'sounds/question-right.mp3',
+  questionWrong: 'sounds/question-wrong.mp3',
+  missionSuccess: 'sounds/mission-success.mp3',
+  missionFailed: 'sounds/mission-failed.mp3'
 };
 let bgMusic = null;
 let audioGestureSeen = false;
-const AUDIO_DEFAULTS_VERSION = '4.1';
+const AUDIO_DEFAULTS_VERSION = '4.2';
 const audioDefaultsApplied = localStorage.getItem('bookloks_audio_defaults_version') === AUDIO_DEFAULTS_VERSION;
 if (!audioDefaultsApplied) {
   localStorage.setItem('bookloks_music', 'on');
   localStorage.setItem('bookloks_sfx', 'on');
-  localStorage.setItem('bookloks_music_volume', '0.40');
+  localStorage.setItem('bookloks_music_volume', '0.30');
   localStorage.setItem('bookloks_sfx_volume', '0.90');
   localStorage.setItem('bookloks_audio_defaults_version', AUDIO_DEFAULTS_VERSION);
 }
 let musicEnabled = localStorage.getItem('bookloks_music') !== 'off';
 let soundEffectsEnabled = localStorage.getItem('bookloks_sfx') !== 'off';
-let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.40');
+let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.30');
 let sfxVolume = Number(localStorage.getItem('bookloks_sfx_volume') ?? '0.90');
-if (!Number.isFinite(musicVolume)) musicVolume = 0.40;
+if (!Number.isFinite(musicVolume)) musicVolume = 0.30;
 if (!Number.isFinite(sfxVolume)) sfxVolume = 0.90;
 musicVolume = Math.max(0, Math.min(1, musicVolume));
 sfxVolume = Math.max(0, Math.min(1, sfxVolume));
@@ -428,15 +431,13 @@ function profileView() {
     <div class="profile-section"><h3>✨ My progress</h3><p>${state.name?`Keep going, ${esc(state.name)}!`:'Choose your name and start your first mission.'} Perfect missions unlock Golden Eggs, avatars and My Home customisation.</p></div>
     <div class="profile-section"><h3>🎨 My colours</h3><p>Sky and Mint are free. More colours unlock as your XP grows. At ${CUSTOM_COLOUR_MIN_XP} XP, you can choose your own colour for any room.</p><div class="theme-mini-row">${Object.entries(THEMES).map(([id,t])=>`<span class="xp-chip ${state.xp>=t.minXP?'on':''}">${t.name} • ${t.minXP===0?'Free':t.minXP+' XP'}</span>`).join('')}</div></div>
     <div class="profile-section"><h3>🧑‍🚀 My avatar</h3><p>${esc(av.name)} selected. More avatars unlock with XP.</p><div class="theme-mini-row">${Object.values(AVATARS).map(a=>`<span class="xp-chip ${state.xp>=a.minXP?'on':''}">${a.emoji} ${a.name} • ${a.minXP===0?'Free':a.minXP+' XP'}</span>`).join('')}</div></div>
-    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">40%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="40" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
+    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">30%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="30" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
     <div class="profile-section"><button class="btn dark" data-action="reset">Reset testing progress</button></div>
   </section>`;
 }
 
 
 function bind() {
-  const musicBtn = document.getElementById('musicBtn');
-  if (musicBtn) musicBtn.onclick = (e) => { e.stopPropagation(); toggleMusic(); };
   updateSoundSettingsUI();
   document.getElementById('brandBtn').onclick = goHome;
   document.querySelectorAll('[data-route]').forEach(e => e.onclick = () => go(e.dataset.route));
@@ -448,10 +449,10 @@ function bind() {
       startBackgroundMusic();
       selectedOption=Number(e.dataset.option);
       if (selectedOption===quiz[qIndex].a) {
-        playSuccess();
+        playQuestionRight();
         toast(`✨ Nice, ${playerName()}! Keep going!`);
       } else {
-        playWrong();
+        playQuestionWrong();
         toast(`❌ Not quite. Try the next one!`);
       }
       render();
@@ -493,7 +494,7 @@ function act(a) {
   if (a==='reset') { localStorage.removeItem(key); state=cloneDefault(); render(); toast('Progress reset'); return; }
 }
 function resetMini() { mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 }; }
-function checkCard(index){startBackgroundMusic();if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Brilliant, ${playerName()}! You found all 3 correct ideas.`;playSuccess();toast(`✨ Great start, ${playerName()}! Mission unlocked.`);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to unlock the mission.`;playSuccess();}render();}
+function checkCard(index){startBackgroundMusic();if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playQuickCheckWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Brilliant, ${playerName()}! You found all 3 correct ideas.`;playQuickCheckRight();toast(`✨ Great start, ${playerName()}! Mission unlocked.`);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to unlock the mission.`;playQuickCheckRight();}render();}
 async function loadChapterData(chapterId){
   if(chapterCache[chapterId]) return chapterCache[chapterId];
   const meta = chapterById[chapterId];
@@ -574,17 +575,14 @@ function finishMission() {
     if(delta.egg){
       state.perfectMissions += 1;
       addGoldenEggToHome();
-      confetti();
-    } else if(delta.xp || delta.coins){
-      playSuccess();
     }
   }
-  if(score >= 4) playApplause();
-  else playDisappointed();
   save();
   route='result';
   render();
+  showMissionOutcome(score);
 }
+
 function addGoldenEggToHome() {
   const id=`golden-egg-${Date.now()}`;
   state.roomItems.push({id,room:'play',x:52,y:35,emoji:'🥚',name:'Golden Egg'});
@@ -770,28 +768,12 @@ function openName(){
   document.getElementById('saveName').onclick=()=>{const entered=document.getElementById('nameInput').value.trim(); if(entered) state.name=entered; save();m.classList.add('hidden');render();};
   document.getElementById('nameInput').focus();
 }
-function audioContext(){return window.AudioContext||window.webkitAudioContext?new (window.AudioContext||window.webkitAudioContext)():null}
-function playSuccess(){
-  if(!soundEffectsEnabled)return;
-  try{
-    const ctx=audioContext(); if(!ctx)return;
-    const o=ctx.createOscillator(), g=ctx.createGain();
-    o.type='sine';
-    o.frequency.setValueAtTime(660,ctx.currentTime);
-    o.frequency.exponentialRampToValueAtTime(880,ctx.currentTime+.12);
-    g.gain.setValueAtTime(.001,ctx.currentTime);
-    g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.02);
-    g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.18);
-    o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime+.2);
-  }catch{}
-}
-function playWrong(){
-  playEffect('error', 0.92, 950);
-  window.setTimeout(() => playEffect('disappointed', 0.72, 1500), 90);
-  vibrateWrong();
-}
-function playApplause(){ playEffect('applause', 0.92, 5600); }
-function playDisappointed(){ playEffect('disappointed', 0.72, 6200); }
+function playQuickCheckRight(){ playEffect('quickCheckRight', 1.0, 900); }
+function playQuickCheckWrong(){ playEffect('quickCheckWrong', 1.0, 1200); vibrateWrong(); }
+function playQuestionRight(){ playEffect('questionRight', 1.0, 900); }
+function playQuestionWrong(){ playEffect('questionWrong', 1.0, 1100); vibrateWrong(); }
+function playMissionSuccess(){ playEffect('missionSuccess', 1.0, 5200); }
+function playMissionFailed(){ playEffect('missionFailed', 1.0, 6200); }
 
 if (!window.__bookloksAudioGesture) {
   window.__bookloksAudioGesture = true;
@@ -805,6 +787,24 @@ if (!window.__bookloksAudioGesture) {
   document.addEventListener('touchstart', unlockAudio, {passive:true});
   document.getElementById('splashScreen')?.addEventListener('click', unlockAudio, {passive:true});
 }
+function showMissionOutcome(scoreCount){
+  const old=document.getElementById('missionOutcomeOverlay');
+  if(old) old.remove();
+  const overlay=document.createElement('div');
+  overlay.id='missionOutcomeOverlay';
+  const success=scoreCount>=4;
+  overlay.className=`mission-outcome-overlay ${success?'success':'try-again'}`;
+  if(success){
+    playMissionSuccess();
+    overlay.innerHTML=`<div class="outcome-stars">${Array.from({length:16},(_,i)=>`<span style="--i:${i}">✦</span>`).join('')}</div><div class="outcome-card"><div class="outcome-icon">${scoreCount===5?'🏆':'🌟'}</div><div class="outcome-kicker">${scoreCount===5?'CONGRATULATIONS!':'GREAT JOB!'}</div><h2>${scoreCount===5?'Perfect mission!':'Mission cleared!'}</h2><p>${playerName()}, you scored <b>${scoreCount}/5</b>.</p></div>`;
+  }else{
+    playMissionFailed();
+    overlay.innerHTML=`<div class="outcome-card minimal"><div class="outcome-icon">💪</div><div class="outcome-kicker">KEEP GOING</div><h2>Better luck next time!</h2><p>${playerName()}, you scored <b>${scoreCount}/5</b>. Try again — you can do it.</p></div>`;
+  }
+  document.body.appendChild(overlay);
+  window.setTimeout(()=>{overlay.classList.add('hide');window.setTimeout(()=>overlay.remove(),500);},success?3000:1900);
+}
+
 function confetti(){
   const host=document.createElement('div'); host.className='confetti';
   for(let i=0;i<42;i++){const s=document.createElement('span');s.style.left=Math.random()*100+'%';s.style.animationDelay=(Math.random()*.2)+'s';s.style.transform=`rotate(${Math.random()*360}deg)`;host.appendChild(s)}
