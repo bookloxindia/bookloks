@@ -98,18 +98,28 @@ let bgMusic = null;
 let audioGestureSeen = false;
 let musicEnabled = localStorage.getItem('bookloks_music') !== 'off';
 let soundEffectsEnabled = localStorage.getItem('bookloks_sfx') !== 'off';
+let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.30');
+let sfxVolume = Number(localStorage.getItem('bookloks_sfx_volume') ?? '0.90');
+if (!Number.isFinite(musicVolume)) musicVolume = 0.30;
+if (!Number.isFinite(sfxVolume)) sfxVolume = 0.90;
+musicVolume = Math.max(0, Math.min(1, musicVolume));
+sfxVolume = Math.max(0, Math.min(1, sfxVolume));
 
 function initSoundSystem() {
   if (bgMusic) return;
   bgMusic = new Audio(SOUND_FILES.background);
   bgMusic.loop = true;
   bgMusic.preload = 'auto';
-  bgMusic.volume = 0.22;
+  bgMusic.volume = musicVolume;
 }
 
 function updateSoundSettingsUI() {
   const music = document.getElementById('profileMusicBtn');
   const sfx = document.getElementById('profileSfxBtn');
+  const musicRange = document.getElementById('musicVolumeRange');
+  const sfxRange = document.getElementById('sfxVolumeRange');
+  const musicPct = document.getElementById('musicVolumePct');
+  const sfxPct = document.getElementById('sfxVolumePct');
   if (music) {
     music.textContent = musicEnabled ? '🎵 Music: ON' : '🔇 Music: OFF';
     music.classList.toggle('active', musicEnabled);
@@ -118,21 +128,40 @@ function updateSoundSettingsUI() {
     sfx.textContent = soundEffectsEnabled ? '🔊 Sounds: ON' : '🔇 Sounds: OFF';
     sfx.classList.toggle('active', soundEffectsEnabled);
   }
+  if (musicRange) musicRange.value = String(Math.round(musicVolume * 100));
+  if (sfxRange) sfxRange.value = String(Math.round(sfxVolume * 100));
+  if (musicPct) musicPct.textContent = Math.round(musicVolume * 100) + '%';
+  if (sfxPct) sfxPct.textContent = Math.round(sfxVolume * 100) + '%';
+  if (bgMusic) bgMusic.volume = musicEnabled ? musicVolume : 0;
 }
 function startBackgroundMusic() {
   if (!musicEnabled) return;
   initSoundSystem();
+  bgMusic.volume = musicVolume;
   if (!bgMusic || !bgMusic.paused) return;
+  try { bgMusic.currentTime = bgMusic.currentTime || 0; } catch (_) {}
   const p = bgMusic.play();
   if (p && typeof p.catch === 'function') p.catch(() => {});
 }
 
+
+function setMusicVolume(value) {
+  musicVolume = Math.max(0, Math.min(1, Number(value) || 0));
+  localStorage.setItem('bookloks_music_volume', String(musicVolume));
+  if (bgMusic) bgMusic.volume = musicEnabled ? musicVolume : 0;
+  updateSoundSettingsUI();
+}
+function setSfxVolume(value) {
+  sfxVolume = Math.max(0, Math.min(1, Number(value) || 0));
+  localStorage.setItem('bookloks_sfx_volume', String(sfxVolume));
+  updateSoundSettingsUI();
+}
 function toggleMusic() {
   musicEnabled = !musicEnabled;
   localStorage.setItem('bookloks_music', musicEnabled ? 'on' : 'off');
   initSoundSystem();
   if (musicEnabled) startBackgroundMusic();
-  else if (bgMusic) bgMusic.pause();
+  else if (bgMusic) { bgMusic.pause(); bgMusic.volume = 0; }
   updateSoundSettingsUI();
 }
 function toggleSoundEffects() {
@@ -146,9 +175,9 @@ function playEffect(file, volume, duckMs = 1100) {
     if (musicEnabled) startBackgroundMusic();
     const effect = new Audio(SOUND_FILES[file]);
     effect.preload = 'auto';
-    effect.volume = Math.max(0, Math.min(1, volume));
-    const oldVolume = bgMusic ? bgMusic.volume : 0.22;
-    if (bgMusic && !bgMusic.paused) bgMusic.volume = 0.065;
+    effect.volume = Math.max(0, Math.min(1, volume * sfxVolume));
+    const oldVolume = bgMusic ? bgMusic.volume : musicVolume;
+    if (bgMusic && !bgMusic.paused) bgMusic.volume = Math.min(0.08, musicVolume * 0.25);
     const restore = () => {
       if (bgMusic && !bgMusic.paused) bgMusic.volume = oldVolume;
       effect.removeEventListener('ended', restore);
@@ -387,7 +416,7 @@ function profileView() {
     <div class="profile-section"><h3>✨ My progress</h3><p>${state.name?`Keep going, ${esc(state.name)}!`:'Choose your name and start your first mission.'} Perfect missions unlock Golden Eggs, avatars and My Home customisation.</p></div>
     <div class="profile-section"><h3>🎨 My colours</h3><p>Sky and Mint are free. More colours unlock as your XP grows. At ${CUSTOM_COLOUR_MIN_XP} XP, you can choose your own colour for any room.</p><div class="theme-mini-row">${Object.entries(THEMES).map(([id,t])=>`<span class="xp-chip ${state.xp>=t.minXP?'on':''}">${t.name} • ${t.minXP===0?'Free':t.minXP+' XP'}</span>`).join('')}</div></div>
     <div class="profile-section"><h3>🧑‍🚀 My avatar</h3><p>${esc(av.name)} selected. More avatars unlock with XP.</p><div class="theme-mini-row">${Object.values(AVATARS).map(a=>`<span class="xp-chip ${state.xp>=a.minXP?'on':''}">${a.emoji} ${a.name} • ${a.minXP===0?'Free':a.minXP+' XP'}</span>`).join('')}</div></div>
-    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Choose how BookLoks sounds while you play.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
+    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">30%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="30" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
     <div class="profile-section"><button class="btn dark" data-action="reset">Reset testing progress</button></div>
   </section>`;
 }
@@ -424,6 +453,10 @@ function bind() {
   document.querySelectorAll('[data-room]').forEach(e => e.onclick = () => { state.activeRoom=e.dataset.room; save(); render(); });
   document.querySelectorAll('[data-theme]').forEach(e => e.onclick = () => chooseTheme(e.dataset.theme));
   document.querySelectorAll('[data-action]').forEach(e => e.onclick = () => act(e.dataset.action));
+  const musicRange = document.getElementById('musicVolumeRange');
+  if (musicRange) musicRange.oninput = () => setMusicVolume(Number(musicRange.value) / 100);
+  const sfxRange = document.getElementById('sfxVolumeRange');
+  if (sfxRange) sfxRange.oninput = () => setSfxVolume(Number(sfxRange.value) / 100);
 }
 function act(a) {
   startBackgroundMusic();
@@ -691,12 +724,15 @@ function playDisappointed(){ playEffect('disappointed', 0.72, 6200); }
 
 if (!window.__bookloksAudioGesture) {
   window.__bookloksAudioGesture = true;
-  document.addEventListener('pointerdown', () => {
+  const unlockAudio = () => {
     if (!audioGestureSeen) {
       audioGestureSeen = true;
       startBackgroundMusic();
     }
-  }, {passive:true});
+  };
+  document.addEventListener('pointerdown', unlockAudio, {passive:true});
+  document.addEventListener('touchstart', unlockAudio, {passive:true});
+  document.getElementById('splashScreen')?.addEventListener('click', unlockAudio, {passive:true});
 }
 function confetti(){
   const host=document.createElement('div'); host.className='confetti';

@@ -12,7 +12,7 @@
     };
     const script = document.createElement('script');
     script.src = 'app.js';
-    script.onload = () => { window.setTimeout(() => document.getElementById('splashScreen')?.classList.add('hide'), 1250); };
+    script.onload = () => { window.setTimeout(() => document.getElementById('splashScreen')?.classList.add('hide'), 3200); };
     document.body.appendChild(script);
   } catch (err) {
     console.error(err);
