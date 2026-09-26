@@ -1,0 +1,13 @@
+{
+  "name": "BookLoks — Learn • Play • Build",
+  "short_name": "BookLoks",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6ead7",
+  "theme_color": "#f6ead7",
+  "orientation": "landscape-primary",
+  "icons": [
+    {"src":"./assets/img/app-icon.png","sizes":"1024x1024","type":"image/png","purpose":"any maskable"}
+  ]
+}

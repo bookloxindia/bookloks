@@ -1,7 +1,178 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#F4F6FF"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><title>BookLoks — Learn • Play • Build</title><link rel="icon" type="image/png" href="../assets/logo/bookloks_favicon.png"><link rel="apple-touch-icon" href="../assets/logo/bookloks_apple_180.png"><link rel="stylesheet" href="styles.css?v=7.0"><link rel="manifest" href="manifest.webmanifest?v=7.0"><meta name="application-name" content="BookLoks"><meta name="format-detection" content="telephone=no"></head><body><div id="splashScreen" class="splash-screen" aria-hidden="true"><div class="splash-glow"></div><div class="splash-card splash-animated"><div class="splash-logo"><img src="../assets/logo/bookloks_logo.png" alt="BookLoks"></div><div class="splash-brand">BookLoks</div><div class="splash-tagline">LEARN • PLAY • BUILD</div><div class="splash-loading"><span></span><span></span><span></span></div><p class="splash-note">Building your learning world…</p></div></div><div class="app-shell"><header class="topbar"><button id="backBtn" class="icon-btn hidden">←</button><button id="brandBtn" class="brand"><span class="brand-orb"><img src="../assets/logo/bookloks_logo.png" alt="BookLoks"/></span><span><b>BookLoks</b><small>LEARN • PLAY • BUILD</small></span></button><div class="header-stats"><span class="stat-pill">⭐ <b id="xpValue">0</b><small>XP</small></span><span class="stat-pill">🪙 <b id="coinValue">0</b><small>Coins</small></span><span class="level-pill">LV <b id="levelValue">1</b></span></div></header><main id="app"><section style="padding:40px;text-align:center"><h1 style="margin-bottom:8px">BookLoks</h1><p>Loading your learning world…</p></section></main><nav class="bottom-nav">
-<button class="nav-btn active" data-route="home"><span>🏠</span><small>Home</small></button>
-<button class="nav-btn" data-route="subjects"><span>📚</span><small>Learn</small></button>
-<button class="nav-btn" data-route="map"><span>🗺️</span><small>Map</small></button>
-<button class="nav-btn" data-route="world"><span>🏠</span><small>My Home</small></button>
-<button class="nav-btn" data-route="profile"><span>🎒</span><small>Profile</small></button>
-</nav></div><div id="toast" class="toast"></div><div id="modal" class="modal hidden"></div><script src="loader.js?v=7.0"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5e9d6" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="BookLoks" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/png" href="./assets/img/app-icon.png" />
+  <link rel="apple-touch-icon" href="./assets/img/app-icon.png" />
+  <title>BookLoks — Learn • Play • Build</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="splash" class="overlay splash-overlay" aria-hidden="true">
+    <div class="splash-wrap">
+      <img src="./assets/img/splash-logo.png" class="splash-logo" alt="BookLoks" />
+      <div class="splash-title">BookLoks</div>
+      <div class="splash-tag">LEARN • PLAY • BUILD</div>
+      <div class="splash-dots"><i></i><i></i><i></i></div>
+      <div class="splash-copy">Building your learning world…</div>
+    </div>
+  </div>
+
+  <div id="onboarding" class="overlay hidden" aria-hidden="true">
+    <div class="modal-card onboarding-card">
+      <img src="./assets/img/main-logo.png" class="modal-logo" alt="BookLoks" />
+      <div id="onboardStepName" class="onboard-step">
+        <div class="eyebrow">WELCOME TO BOOKLOKS</div>
+        <h1>What’s your name?</h1>
+        <p class="muted">We’ll use your name throughout your learning world.</p>
+        <input id="nameInput" class="text-input" maxlength="24" placeholder="Write your name" autocomplete="off" />
+        <button id="nameNext" class="primary-btn">Continue →</button>
+      </div>
+      <div id="onboardStepAvatar" class="onboard-step hidden">
+        <div class="eyebrow">ONE LAST STEP</div>
+        <h1>Select your avatar</h1>
+        <p class="muted">Pick the character you want to travel with.</p>
+        <div class="avatar-grid">
+          <button class="avatar-choice" data-avatar="boy" aria-label="Boy avatar">
+            <img src="./assets/img/boy-full.png" alt="Boy avatar" />
+            <span>Boy</span>
+          </button>
+          <button class="avatar-choice" data-avatar="girl" aria-label="Girl avatar">
+            <img src="./assets/img/girl-full.png" alt="Girl avatar" />
+            <span>Girl</span>
+          </button>
+        </div>
+        <button id="avatarFinish" class="primary-btn" disabled>Enter BookLoks →</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="welcomeBack" class="overlay hidden" aria-hidden="true">
+    <div class="modal-card welcome-card">
+      <img id="welcomeAvatar" src="./assets/img/boy-bust.png" class="welcome-avatar" alt="" />
+      <div class="eyebrow">WELCOME BACK</div>
+      <h1 id="welcomeName">Hi!</h1>
+      <p>Ready for a new adventure?</p>
+      <div class="welcome-buttons">
+        <button id="welcomeContinue" class="primary-btn">Let’s Play →</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="app" class="app-shell hidden-app">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <img src="./assets/img/header-logo.png" class="header-logo" alt="BookLoks" />
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="notifyBtn" aria-label="Notifications"><img src="./assets/img/notification.png" alt="" /></button>
+        <button class="icon-btn" id="settingsBtn" aria-label="Settings"><img src="./assets/img/settings.png" alt="" /></button>
+      </div>
+    </header>
+
+    <main id="mainContent" class="main-content">
+      <section class="player-card card">
+        <div class="avatar-mini-wrap">
+          <img id="playerMiniAvatar" src="./assets/img/boy-profile.png" class="avatar-mini" alt="Avatar" />
+        </div>
+        <div class="player-main">
+          <div class="player-greeting">
+            <div>
+              <h2>Hi <span id="playerName">Gaurav</span>!</h2>
+              <p>Ready for a new adventure?</p>
+            </div>
+            <div class="level-pill"><img src="./assets/img/level.png" alt="" /><span>LV <b id="levelValue">3</b></span></div>
+          </div>
+          <div class="progress-row">
+            <div class="xp-block">
+              <div class="xp-text"><b id="xpCurrent">320</b> / <span id="xpTarget">500</span> XP</div>
+              <div class="xp-track"><div id="xpFill" class="xp-fill"></div></div>
+            </div>
+            <div class="coin-block"><img src="./assets/img/coin.png" alt="" /><b id="coinValue">85</b><span>Coins</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-stage">
+        <div class="hero-room-glow"></div>
+        <div class="hero-props">
+          <img src="./assets/img/props.png" alt="Learning props" />
+        </div>
+        <div class="hero-copy-sign">LEARN<br>PLAY<br>BUILD</div>
+        <img id="heroCharacter" src="./assets/img/boy-full.png" class="hero-character" alt="Player" />
+        <img src="./assets/img/robot.png" class="hero-robot" alt="Learning robot" />
+        <div class="hero-floor-glow"></div>
+      </section>
+
+      <section class="action-grid">
+        <button class="action-card action-green" data-action="continue">
+          <img src="./assets/img/continue.png" alt="" />
+          <span>Continue<br>My Mission</span>
+          <b>→</b>
+        </button>
+        <button class="action-card action-blue" data-action="map">
+          <img src="./assets/img/map.png" alt="" />
+          <span>Explore<br>Map</span>
+          <b>→</b>
+        </button>
+        <button class="action-card action-orange" data-action="rewards">
+          <img src="./assets/img/rewards.png" alt="" />
+          <span>My<br>Rewards</span>
+          <b>→</b>
+        </button>
+      </section>
+
+      <section id="routePanel" class="route-panel hidden">
+        <div class="route-icon">✨</div>
+        <div>
+          <strong id="routeTitle">Coming Soon</strong>
+          <p id="routeText">This part of BookLoks will be built in the next phase.</p>
+        </div>
+        <button id="routeClose" class="small-btn">Close</button>
+      </section>
+
+      <section id="profilePanel" class="profile-panel hidden">
+        <div class="panel-head"><h2>Profile</h2><button id="profileClose" class="small-btn">Close</button></div>
+        <div class="profile-layout">
+          <div class="profile-avatar-card">
+            <img id="profileAvatar" src="./assets/img/boy-bust.png" alt="" />
+            <div class="profile-name-display" id="profileNameDisplay">Gaurav</div>
+          </div>
+          <div class="settings-card">
+            <label>Name<input id="profileNameInput" class="text-input" maxlength="24" /></label>
+            <div class="settings-row"><span>Music</span><button id="musicToggle" class="toggle active">ON</button></div>
+            <label>Music Volume<input id="musicVolume" type="range" min="0" max="100" value="5" /></label>
+            <div class="settings-row"><span>Sounds</span><button id="soundToggle" class="toggle active">ON</button></div>
+            <label>Sound Volume<input id="soundVolume" type="range" min="0" max="100" value="90" /></label>
+            <button id="saveProfile" class="primary-btn">Save Changes</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="infoPanel" class="route-panel hidden">
+        <div class="route-icon">ℹ️</div>
+        <div><strong id="infoTitle">Notice</strong><p id="infoText"></p></div>
+        <button id="infoClose" class="small-btn">Close</button>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-nav="home"><img src="./assets/img/nav-home.png" alt="" /><span>Home</span></button>
+      <button class="nav-btn" data-nav="learn"><img src="./assets/img/nav-learn.png" alt="" /><span>Learn</span></button>
+      <button class="nav-btn" data-nav="myhome"><img src="./assets/img/nav-myhome.png" alt="" /><span>My Home</span></button>
+      <button class="nav-btn" data-nav="profile"><img id="navProfileIcon" src="./assets/img/boy-profile.png" alt="" /><span>Profile</span></button>
+    </nav>
+  </div>
+
+  <audio id="backgroundMusic" src="./assets/audio/background.mp3" loop preload="auto"></audio>
+  <audio id="uiError" src="./assets/audio/error.mp3" preload="auto"></audio>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
