@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch090",
+  "book_id": "english-grammar",
+  "book": "Go Grammar – Class 4",
+  "publisher": "Future Kids Publications",
+  "role": "English Grammar",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 7,
+  "chapter": "Articles",
+  "unit": "",
+  "concepts": [
+    "a",
+    "an",
+    "the",
+    "specific/unspecified nouns"
+  ],
+  "learning_objectives": [
+    "choose the correct article",
+    "explain simple article choices"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Articles\"?",
+      "o": [
+        "a",
+        "mixing unrelated pictures",
+        "measuring temperature",
+        "drawing maps"
+      ],
+      "a": 0,
+      "e": "A is central to this grammar skill.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "a",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "Which practice helps most with language learning?",
+      "o": [
+        "Read, notice patterns and practise",
+        "Skip examples",
+        "Guess every answer",
+        "Avoid feedback"
+      ],
+      "a": 0,
+      "e": "Active practice and feedback improve language skills.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "an",
+      "learning_objective": "explain simple article choices"
+    },
+    {
+      "q": "Choose the best description of the skill:",
+      "o": [
+        "Use the rule in a meaningful sentence",
+        "Memorise colours",
+        "Measure a room",
+        "Sort rocks"
+      ],
+      "a": 0,
+      "e": "Grammar is most useful when applied in real sentences.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "the",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "What should you do when unsure about a grammar answer?",
+      "o": [
+        "Check the sentence meaning and rule",
+        "Pick randomly",
+        "Leave the sentence incomplete",
+        "Change every word"
+      ],
+      "a": 0,
+      "e": "Use meaning plus the grammar rule.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "specific/unspecified nouns",
+      "learning_objective": "explain simple article choices"
+    },
+    {
+      "q": "Which is a useful outcome of grammar practice?",
+      "o": [
+        "Clearer communication",
+        "Fewer ideas",
+        "Less vocabulary",
+        "More confusion"
+      ],
+      "a": 0,
+      "e": "Grammar supports clearer communication.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "a",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "Which idea is most closely connected to “Articles”?",
+      "o": [
+        "specific/unspecified nouns",
+        "the",
+        "an",
+        "a"
+      ],
+      "a": 3,
+      "e": "a is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "a",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "You are on a mission about “Articles”. What should you do first?",
+      "o": [
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 0,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "an",
+      "learning_objective": "explain simple article choices"
+    },
+    {
+      "q": "Which action best shows understanding of the?",
+      "o": [
+        "Guess without checking",
+        "Use the in a relevant real-life situation.",
+        "Change the topic",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using the in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "the",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Articles”?",
+      "o": [
+        "ignoring feedback",
+        "reading",
+        "rushing",
+        "random guessing"
+      ],
+      "a": 1,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "specific/unspecified nouns",
+      "learning_objective": "explain simple article choices"
+    },
+    {
+      "q": "Which example would make “Articles” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "a",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "If you make a mistake while practising “Articles”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "an",
+      "learning_objective": "explain simple article choices"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Articles”?",
+      "o": [
+        "an",
+        "the",
+        "a",
+        "specific/unspecified nouns"
+      ],
+      "a": 1,
+      "e": "the belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "the",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "Which goal fits “Articles”?",
+      "o": [
+        "Change to an unrelated topic",
+        "Avoid all practice",
+        "Practise explain simple article choices",
+        "Guess every answer"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: explain simple article choices.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "specific/unspecified nouns",
+      "learning_objective": "explain simple article choices"
+    },
+    {
+      "q": "What is a good strategy for a Articles challenge?",
+      "o": [
+        "Tap without reading",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time"
+      ],
+      "a": 2,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "a",
+      "learning_objective": "choose the correct article"
+    },
+    {
+      "q": "How can you recognise a good answer in “Articles”?",
+      "o": [
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "an",
+      "learning_objective": "explain simple article choices"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english-grammar/ch07.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

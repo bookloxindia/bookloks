@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch097",
+  "book_id": "english-grammar",
+  "book": "Go Grammar – Class 4",
+  "publisher": "Future Kids Publications",
+  "role": "English Grammar",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 14,
+  "chapter": "Reading Comprehension",
+  "unit": "",
+  "concepts": [
+    "main idea",
+    "detail",
+    "inference",
+    "sequence"
+  ],
+  "learning_objectives": [
+    "find evidence in a passage",
+    "answer from context"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Reading Comprehension\"?",
+      "o": [
+        "main idea",
+        "mixing unrelated pictures",
+        "measuring temperature",
+        "drawing maps"
+      ],
+      "a": 0,
+      "e": "Main idea is central to this grammar skill.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "main idea",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "Which practice helps most with language learning?",
+      "o": [
+        "Read, notice patterns and practise",
+        "Skip examples",
+        "Guess every answer",
+        "Avoid feedback"
+      ],
+      "a": 0,
+      "e": "Active practice and feedback improve language skills.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "detail",
+      "learning_objective": "answer from context"
+    },
+    {
+      "q": "Choose the best description of the skill:",
+      "o": [
+        "Use the rule in a meaningful sentence",
+        "Memorise colours",
+        "Measure a room",
+        "Sort rocks"
+      ],
+      "a": 0,
+      "e": "Grammar is most useful when applied in real sentences.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "inference",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "What should you do when unsure about a grammar answer?",
+      "o": [
+        "Check the sentence meaning and rule",
+        "Pick randomly",
+        "Leave the sentence incomplete",
+        "Change every word"
+      ],
+      "a": 0,
+      "e": "Use meaning plus the grammar rule.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "sequence",
+      "learning_objective": "answer from context"
+    },
+    {
+      "q": "Which is a useful outcome of grammar practice?",
+      "o": [
+        "Clearer communication",
+        "Fewer ideas",
+        "Less vocabulary",
+        "More confusion"
+      ],
+      "a": 0,
+      "e": "Grammar supports clearer communication.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "main idea",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "Which idea is most closely connected to “Reading Comprehension”?",
+      "o": [
+        "sequence",
+        "inference",
+        "main idea",
+        "detail"
+      ],
+      "a": 2,
+      "e": "main idea is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "main idea",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "You are on a mission about “Reading Comprehension”. What should you do first?",
+      "o": [
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option",
+        "Tap random answers"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "detail",
+      "learning_objective": "answer from context"
+    },
+    {
+      "q": "Which action best shows understanding of inference?",
+      "o": [
+        "Ignore the idea completely",
+        "Use inference in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using inference in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "inference",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Reading Comprehension”?",
+      "o": [
+        "rushing",
+        "random guessing",
+        "ignoring feedback",
+        "reading"
+      ],
+      "a": 3,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "answer from context"
+    },
+    {
+      "q": "Which example would make “Reading Comprehension” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "main idea",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "If you make a mistake while practising “Reading Comprehension”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Quit immediately",
+        "Repeat the same guess",
+        "Skip similar questions"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "detail",
+      "learning_objective": "answer from context"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Reading Comprehension”?",
+      "o": [
+        "inference",
+        "main idea",
+        "detail",
+        "sequence"
+      ],
+      "a": 0,
+      "e": "inference belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "inference",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "Which goal fits “Reading Comprehension”?",
+      "o": [
+        "Guess every answer",
+        "Practise answer from context",
+        "Change to an unrelated topic",
+        "Avoid all practice"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: answer from context.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "answer from context"
+    },
+    {
+      "q": "What is a good strategy for a Reading Comprehension challenge?",
+      "o": [
+        "Tap without reading",
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "main idea",
+      "learning_objective": "find evidence in a passage"
+    },
+    {
+      "q": "How can you recognise a good answer in “Reading Comprehension”?",
+      "o": [
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The most colourful option",
+        "The longest sentence"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "detail",
+      "learning_objective": "answer from context"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english-grammar/ch14.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

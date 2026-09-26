@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch049",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 8,
+  "chapter": "Materials and Solutions",
+  "unit": "",
+  "concepts": [
+    "soluble and insoluble substances",
+    "solute and solvent",
+    "solutions",
+    "separation methods"
+  ],
+  "learning_objectives": [
+    "classify substances by solubility",
+    "choose a separation method",
+    "describe simple mixtures"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "A substance that dissolves in water is called:",
+      "o": [
+        "soluble",
+        "opaque",
+        "magnetic",
+        "rough"
+      ],
+      "a": 0,
+      "e": "Soluble substances dissolve in a solvent.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "soluble and insoluble substances",
+      "learning_objective": "classify substances by solubility"
+    },
+    {
+      "q": "In salt water, salt is the:",
+      "o": [
+        "solute",
+        "solvent",
+        "filter",
+        "solid air"
+      ],
+      "a": 0,
+      "e": "Salt is the solute; water is the solvent.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "solute and solvent",
+      "learning_objective": "choose a separation method"
+    },
+    {
+      "q": "Which method can separate sand from water?",
+      "o": [
+        "filtration",
+        "painting",
+        "freezing air",
+        "folding"
+      ],
+      "a": 0,
+      "e": "A filter can trap insoluble sand.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "solutions",
+      "learning_objective": "describe simple mixtures"
+    },
+    {
+      "q": "Evaporation can help recover:",
+      "o": [
+        "a dissolved solid from a solution",
+        "a magnet from wood",
+        "air from soil",
+        "a shadow"
+      ],
+      "a": 0,
+      "e": "Evaporation removes the liquid and leaves the dissolved solid.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "separation methods",
+      "learning_objective": "classify substances by solubility"
+    },
+    {
+      "q": "Oil and water form:",
+      "o": [
+        "a mixture with separate layers",
+        "a pure metal",
+        "a gas",
+        "a solid cube"
+      ],
+      "a": 0,
+      "e": "They do not mix uniformly and form layers.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "soluble and insoluble substances",
+      "learning_objective": "choose a separation method"
+    },
+    {
+      "q": "Which idea is most closely connected to “Materials and Solutions”?",
+      "o": [
+        "solutions",
+        "soluble and insoluble substances",
+        "separation methods",
+        "solute and solvent"
+      ],
+      "a": 1,
+      "e": "soluble and insoluble substances is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "soluble and insoluble substances",
+      "learning_objective": "classify substances by solubility"
+    },
+    {
+      "q": "You are on a mission about “Materials and Solutions”. What should you do first?",
+      "o": [
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Choose the longest option"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "solute and solvent",
+      "learning_objective": "choose a separation method"
+    },
+    {
+      "q": "Which action best shows understanding of solutions?",
+      "o": [
+        "Guess without checking",
+        "Ignore the idea completely",
+        "Use solutions in a relevant real-life situation.",
+        "Change the topic"
+      ],
+      "a": 2,
+      "e": "Using solutions in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "solutions",
+      "learning_objective": "describe simple mixtures"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Materials and Solutions”?",
+      "o": [
+        "random guessing",
+        "observation",
+        "rushing",
+        "ignoring feedback"
+      ],
+      "a": 1,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "separation methods",
+      "learning_objective": "classify substances by solubility"
+    },
+    {
+      "q": "Which example would make “Materials and Solutions” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A random number with no context",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "soluble and insoluble substances",
+      "learning_objective": "choose a separation method"
+    },
+    {
+      "q": "If you make a mistake while practising “Materials and Solutions”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Quit immediately",
+        "Skip similar questions",
+        "Repeat the same guess"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "solute and solvent",
+      "learning_objective": "describe simple mixtures"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Materials and Solutions”?",
+      "o": [
+        "soluble and insoluble substances",
+        "solutions",
+        "solute and solvent",
+        "separation methods"
+      ],
+      "a": 1,
+      "e": "solutions belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "solutions",
+      "learning_objective": "classify substances by solubility"
+    },
+    {
+      "q": "Which goal fits “Materials and Solutions”?",
+      "o": [
+        "Guess every answer",
+        "Practise choose a separation method",
+        "Avoid all practice",
+        "Change to an unrelated topic"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: choose a separation method.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "separation methods",
+      "learning_objective": "choose a separation method"
+    },
+    {
+      "q": "What is a good strategy for a Materials and Solutions challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Copy a friend every time",
+        "Tap without reading"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "soluble and insoluble substances",
+      "learning_objective": "describe simple mixtures"
+    },
+    {
+      "q": "How can you recognise a good answer in “Materials and Solutions”?",
+      "o": [
+        "A random option",
+        "The most colourful option",
+        "The choice that matches the chapter concept",
+        "The longest sentence"
+      ],
+      "a": 2,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "solute and solvent",
+      "learning_objective": "classify substances by solubility"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch08.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

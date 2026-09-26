@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch043",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 2,
+  "chapter": "Human Body – The Teeth",
+  "unit": "",
+  "concepts": [
+    "types of teeth",
+    "parts of a tooth",
+    "tooth decay",
+    "oral hygiene"
+  ],
+  "learning_objectives": [
+    "identify tooth types and roles",
+    "explain why brushing matters",
+    "choose healthy dental habits"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which teeth are mainly used for cutting?",
+      "o": [
+        "incisors",
+        "molars",
+        "wisdom teeth only",
+        "canines only"
+      ],
+      "a": 0,
+      "e": "Incisors are used for biting and cutting.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "types of teeth",
+      "learning_objective": "identify tooth types and roles"
+    },
+    {
+      "q": "Why should we brush regularly?",
+      "o": [
+        "To protect teeth and gums",
+        "To change eye colour",
+        "To grow taller",
+        "To improve hearing"
+      ],
+      "a": 0,
+      "e": "Brushing helps prevent plaque and tooth decay.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "parts of a tooth",
+      "learning_objective": "explain why brushing matters"
+    },
+    {
+      "q": "Which food habit helps teeth?",
+      "o": [
+        "frequent sugary snacks",
+        "washing mouth and brushing",
+        "never drinking water",
+        "biting very hard objects"
+      ],
+      "a": 1,
+      "e": "Oral hygiene and sensible food habits protect teeth.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "tooth decay",
+      "learning_objective": "choose healthy dental habits"
+    },
+    {
+      "q": "Molars are useful mainly for:",
+      "o": [
+        "grinding food",
+        "seeing",
+        "hearing",
+        "breathing"
+      ],
+      "a": 0,
+      "e": "Molars help grind food.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "oral hygiene",
+      "learning_objective": "identify tooth types and roles"
+    },
+    {
+      "q": "Tooth decay is more likely when:",
+      "o": [
+        "food debris and bacteria stay on teeth",
+        "we brush well",
+        "we drink clean water",
+        "we visit a dentist"
+      ],
+      "a": 0,
+      "e": "Poor oral hygiene can contribute to tooth decay.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "types of teeth",
+      "learning_objective": "explain why brushing matters"
+    },
+    {
+      "q": "Which idea is most closely connected to “Human Body – The Teeth”?",
+      "o": [
+        "oral hygiene",
+        "tooth decay",
+        "types of teeth",
+        "parts of a tooth"
+      ],
+      "a": 2,
+      "e": "types of teeth is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "types of teeth",
+      "learning_objective": "identify tooth types and roles"
+    },
+    {
+      "q": "You are on a mission about “Human Body – The Teeth”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "parts of a tooth",
+      "learning_objective": "explain why brushing matters"
+    },
+    {
+      "q": "Which action best shows understanding of tooth decay?",
+      "o": [
+        "Change the topic",
+        "Use tooth decay in a relevant real-life situation.",
+        "Guess without checking",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using tooth decay in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "tooth decay",
+      "learning_objective": "choose healthy dental habits"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Human Body – The Teeth”?",
+      "o": [
+        "observation",
+        "rushing",
+        "random guessing",
+        "ignoring feedback"
+      ],
+      "a": 0,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "oral hygiene",
+      "learning_objective": "identify tooth types and roles"
+    },
+    {
+      "q": "Which example would make “Human Body – The Teeth” easier to understand?",
+      "o": [
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context",
+        "An unrelated game"
+      ],
+      "a": 0,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "types of teeth",
+      "learning_objective": "explain why brushing matters"
+    },
+    {
+      "q": "If you make a mistake while practising “Human Body – The Teeth”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "parts of a tooth",
+      "learning_objective": "choose healthy dental habits"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Human Body – The Teeth”?",
+      "o": [
+        "types of teeth",
+        "parts of a tooth",
+        "tooth decay",
+        "oral hygiene"
+      ],
+      "a": 2,
+      "e": "tooth decay belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "tooth decay",
+      "learning_objective": "identify tooth types and roles"
+    },
+    {
+      "q": "Which goal fits “Human Body – The Teeth”?",
+      "o": [
+        "Guess every answer",
+        "Avoid all practice",
+        "Practise explain why brushing matters",
+        "Change to an unrelated topic"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: explain why brushing matters.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "oral hygiene",
+      "learning_objective": "explain why brushing matters"
+    },
+    {
+      "q": "What is a good strategy for a Human Body – The Teeth challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "types of teeth",
+      "learning_objective": "choose healthy dental habits"
+    },
+    {
+      "q": "How can you recognise a good answer in “Human Body – The Teeth”?",
+      "o": [
+        "The most colourful option",
+        "A random option",
+        "The longest sentence",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "parts of a tooth",
+      "learning_objective": "identify tooth types and roles"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch02.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

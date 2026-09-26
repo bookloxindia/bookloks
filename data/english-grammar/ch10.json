@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch093",
+  "book_id": "english-grammar",
+  "book": "Go Grammar – Class 4",
+  "publisher": "Future Kids Publications",
+  "role": "English Grammar",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 10,
+  "chapter": "Prepositions",
+  "unit": "",
+  "concepts": [
+    "position",
+    "time",
+    "place",
+    "movement"
+  ],
+  "learning_objectives": [
+    "choose a preposition",
+    "describe relationships between words"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Prepositions\"?",
+      "o": [
+        "position",
+        "mixing unrelated pictures",
+        "measuring temperature",
+        "drawing maps"
+      ],
+      "a": 0,
+      "e": "Position is central to this grammar skill.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "position",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "Which practice helps most with language learning?",
+      "o": [
+        "Read, notice patterns and practise",
+        "Skip examples",
+        "Guess every answer",
+        "Avoid feedback"
+      ],
+      "a": 0,
+      "e": "Active practice and feedback improve language skills.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "time",
+      "learning_objective": "describe relationships between words"
+    },
+    {
+      "q": "Choose the best description of the skill:",
+      "o": [
+        "Use the rule in a meaningful sentence",
+        "Memorise colours",
+        "Measure a room",
+        "Sort rocks"
+      ],
+      "a": 0,
+      "e": "Grammar is most useful when applied in real sentences.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "place",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "What should you do when unsure about a grammar answer?",
+      "o": [
+        "Check the sentence meaning and rule",
+        "Pick randomly",
+        "Leave the sentence incomplete",
+        "Change every word"
+      ],
+      "a": 0,
+      "e": "Use meaning plus the grammar rule.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "movement",
+      "learning_objective": "describe relationships between words"
+    },
+    {
+      "q": "Which is a useful outcome of grammar practice?",
+      "o": [
+        "Clearer communication",
+        "Fewer ideas",
+        "Less vocabulary",
+        "More confusion"
+      ],
+      "a": 0,
+      "e": "Grammar supports clearer communication.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "position",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "Which idea is most closely connected to “Prepositions”?",
+      "o": [
+        "movement",
+        "time",
+        "place",
+        "position"
+      ],
+      "a": 3,
+      "e": "position is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "position",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "You are on a mission about “Prepositions”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "time",
+      "learning_objective": "describe relationships between words"
+    },
+    {
+      "q": "Which action best shows understanding of place?",
+      "o": [
+        "Change the topic",
+        "Guess without checking",
+        "Use place in a relevant real-life situation.",
+        "Ignore the idea completely"
+      ],
+      "a": 2,
+      "e": "Using place in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "place",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Prepositions”?",
+      "o": [
+        "rushing",
+        "random guessing",
+        "reading",
+        "ignoring feedback"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "movement",
+      "learning_objective": "describe relationships between words"
+    },
+    {
+      "q": "Which example would make “Prepositions” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "position",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "If you make a mistake while practising “Prepositions”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Check the feedback and try again with a new example.",
+        "Quit immediately"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "describe relationships between words"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Prepositions”?",
+      "o": [
+        "position",
+        "time",
+        "movement",
+        "place"
+      ],
+      "a": 3,
+      "e": "place belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "place",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "Which goal fits “Prepositions”?",
+      "o": [
+        "Avoid all practice",
+        "Practise describe relationships between words",
+        "Change to an unrelated topic",
+        "Guess every answer"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: describe relationships between words.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "movement",
+      "learning_objective": "describe relationships between words"
+    },
+    {
+      "q": "What is a good strategy for a Prepositions challenge?",
+      "o": [
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Tap without reading",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "position",
+      "learning_objective": "choose a preposition"
+    },
+    {
+      "q": "How can you recognise a good answer in “Prepositions”?",
+      "o": [
+        "The longest sentence",
+        "The choice that matches the chapter concept",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "time",
+      "learning_objective": "describe relationships between words"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english-grammar/ch10.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

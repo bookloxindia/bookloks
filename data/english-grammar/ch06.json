@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch089",
+  "book_id": "english-grammar",
+  "book": "Go Grammar – Class 4",
+  "publisher": "Future Kids Publications",
+  "role": "English Grammar",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 6,
+  "chapter": "Pronouns",
+  "unit": "",
+  "concepts": [
+    "words used in place of nouns",
+    "person",
+    "number",
+    "reference"
+  ],
+  "learning_objectives": [
+    "replace repeated nouns",
+    "choose the correct pronoun"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Pronouns\"?",
+      "o": [
+        "words used in place of nouns",
+        "mixing unrelated pictures",
+        "measuring temperature",
+        "drawing maps"
+      ],
+      "a": 0,
+      "e": "Words used in place of nouns is central to this grammar skill.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "words used in place of nouns",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "Which practice helps most with language learning?",
+      "o": [
+        "Read, notice patterns and practise",
+        "Skip examples",
+        "Guess every answer",
+        "Avoid feedback"
+      ],
+      "a": 0,
+      "e": "Active practice and feedback improve language skills.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "person",
+      "learning_objective": "choose the correct pronoun"
+    },
+    {
+      "q": "Choose the best description of the skill:",
+      "o": [
+        "Use the rule in a meaningful sentence",
+        "Memorise colours",
+        "Measure a room",
+        "Sort rocks"
+      ],
+      "a": 0,
+      "e": "Grammar is most useful when applied in real sentences.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "number",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "What should you do when unsure about a grammar answer?",
+      "o": [
+        "Check the sentence meaning and rule",
+        "Pick randomly",
+        "Leave the sentence incomplete",
+        "Change every word"
+      ],
+      "a": 0,
+      "e": "Use meaning plus the grammar rule.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "reference",
+      "learning_objective": "choose the correct pronoun"
+    },
+    {
+      "q": "Which is a useful outcome of grammar practice?",
+      "o": [
+        "Clearer communication",
+        "Fewer ideas",
+        "Less vocabulary",
+        "More confusion"
+      ],
+      "a": 0,
+      "e": "Grammar supports clearer communication.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "words used in place of nouns",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "Which idea is most closely connected to “Pronouns”?",
+      "o": [
+        "number",
+        "person",
+        "reference",
+        "words used in place of nouns"
+      ],
+      "a": 3,
+      "e": "words used in place of nouns is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "words used in place of nouns",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "You are on a mission about “Pronouns”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Skip the instructions",
+        "Tap random answers",
+        "Look closely at the task and identify the chapter idea first."
+      ],
+      "a": 3,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "person",
+      "learning_objective": "choose the correct pronoun"
+    },
+    {
+      "q": "Which action best shows understanding of number?",
+      "o": [
+        "Use number in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using number in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "number",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Pronouns”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "reading",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "reference",
+      "learning_objective": "choose the correct pronoun"
+    },
+    {
+      "q": "Which example would make “Pronouns” easier to understand?",
+      "o": [
+        "A random number with no context",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "words used in place of nouns",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "If you make a mistake while practising “Pronouns”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Repeat the same guess",
+        "Quit immediately",
+        "Skip similar questions"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "person",
+      "learning_objective": "choose the correct pronoun"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Pronouns”?",
+      "o": [
+        "reference",
+        "person",
+        "number",
+        "words used in place of nouns"
+      ],
+      "a": 2,
+      "e": "number belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "number",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "Which goal fits “Pronouns”?",
+      "o": [
+        "Change to an unrelated topic",
+        "Practise choose the correct pronoun",
+        "Guess every answer",
+        "Avoid all practice"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: choose the correct pronoun.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "reference",
+      "learning_objective": "choose the correct pronoun"
+    },
+    {
+      "q": "What is a good strategy for a Pronouns challenge?",
+      "o": [
+        "Tap without reading",
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "words used in place of nouns",
+      "learning_objective": "replace repeated nouns"
+    },
+    {
+      "q": "How can you recognise a good answer in “Pronouns”?",
+      "o": [
+        "The most colourful option",
+        "The choice that matches the chapter concept",
+        "A random option",
+        "The longest sentence"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "person",
+      "learning_objective": "choose the correct pronoun"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english-grammar/ch06.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

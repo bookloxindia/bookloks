@@ -1,0 +1,280 @@
+{
+  "chapter_id": "ch137",
+  "book_id": "computer-main",
+  "book": "IT Deep Code – Class 4",
+  "publisher": "Edusoft Educational Publishers",
+  "role": "Coding / AI / Robotics",
+  "subject": "Computer / IT",
+  "subject_id": "computer",
+  "chapter_no": 5,
+  "chapter": "Introduction to MS PowerPoint",
+  "unit": "",
+  "concepts": [
+    "slides",
+    "layouts",
+    "text boxes",
+    "themes",
+    "slide show"
+  ],
+  "learning_objectives": [
+    "create a simple presentation",
+    "organise slides",
+    "apply a suitable theme"
+  ],
+  "skills": [
+    "digital literacy",
+    "logical thinking",
+    "problem solving"
+  ],
+  "game_type": "screen-sim",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Introduction to MS PowerPoint\"?",
+      "o": [
+        "slides",
+        "fraction comparison",
+        "soil types",
+        "poetry rhythm"
+      ],
+      "a": 0,
+      "e": "slides is central to this digital-skills chapter.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "slides",
+      "learning_objective": "create a simple presentation"
+    },
+    {
+      "q": "Which learning approach fits computer skills?",
+      "o": [
+        "Try, observe, correct and try again",
+        "skip practice",
+        "share passwords",
+        "delete work randomly"
+      ],
+      "a": 0,
+      "e": "Hands-on practice and feedback are essential.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "layouts",
+      "learning_objective": "organise slides"
+    },
+    {
+      "q": "Which skill is important when using technology?",
+      "o": [
+        "safe, step-by-step problem solving",
+        "ignoring warnings",
+        "guessing blindly",
+        "sharing personal passwords"
+      ],
+      "a": 0,
+      "e": "Safe and structured problem solving is useful.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "text boxes",
+      "learning_objective": "apply a suitable theme"
+    },
+    {
+      "q": "What should you do before changing an important setting?",
+      "o": [
+        "read the option and check what it does",
+        "click everything",
+        "turn off the screen",
+        "share the password"
+      ],
+      "a": 0,
+      "e": "Understand a setting before changing it.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "themes",
+      "learning_objective": "create a simple presentation"
+    },
+    {
+      "q": "Which habit keeps digital work organised?",
+      "o": [
+        "use clear names and folders",
+        "save everything as New File",
+        "delete duplicates randomly",
+        "never back up"
+      ],
+      "a": 0,
+      "e": "Clear names and folders make files easier to manage.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "slide show",
+      "learning_objective": "organise slides"
+    },
+    {
+      "q": "Which idea is most closely connected to “Introduction to MS PowerPoint”?",
+      "o": [
+        "text boxes",
+        "themes",
+        "slides",
+        "layouts"
+      ],
+      "a": 2,
+      "e": "slides is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "slides",
+      "learning_objective": "create a simple presentation"
+    },
+    {
+      "q": "You are on a mission about “Introduction to MS PowerPoint”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "layouts",
+      "learning_objective": "organise slides"
+    },
+    {
+      "q": "Which action best shows understanding of text boxes?",
+      "o": [
+        "Use text boxes in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using text boxes in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "text boxes",
+      "learning_objective": "apply a suitable theme"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Introduction to MS PowerPoint”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "random guessing",
+        "digital literacy"
+      ],
+      "a": 3,
+      "e": "Digital Literacy supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "themes",
+      "learning_objective": "create a simple presentation"
+    },
+    {
+      "q": "Which example would make “Introduction to MS PowerPoint” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A random number with no context",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea"
+      ],
+      "a": 3,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "slide show",
+      "learning_objective": "organise slides"
+    },
+    {
+      "q": "If you make a mistake while practising “Introduction to MS PowerPoint”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Repeat the same guess",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "slides",
+      "learning_objective": "apply a suitable theme"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Introduction to MS PowerPoint”?",
+      "o": [
+        "layouts",
+        "themes",
+        "slides",
+        "text boxes"
+      ],
+      "a": 0,
+      "e": "layouts belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "layouts",
+      "learning_objective": "create a simple presentation"
+    },
+    {
+      "q": "Which goal fits “Introduction to MS PowerPoint”?",
+      "o": [
+        "Practise organise slides",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Avoid all practice"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: organise slides.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "text boxes",
+      "learning_objective": "organise slides"
+    },
+    {
+      "q": "What is a good strategy for a Introduction to MS PowerPoint challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "themes",
+      "learning_objective": "apply a suitable theme"
+    },
+    {
+      "q": "How can you recognise a good answer in “Introduction to MS PowerPoint”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "slide show",
+      "learning_objective": "create a simple presentation"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/computer/ch05.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "screen-sim"
+  }
+}

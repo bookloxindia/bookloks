@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch079",
+  "book_id": "english-reader",
+  "book": "Communicate in English – Class 4",
+  "publisher": "Ratna Sagar",
+  "role": "Integrated Language Course",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 7,
+  "chapter": "Hickory, Dickory, Dock",
+  "unit": "Animal Adventures",
+  "concepts": [
+    "rhythm",
+    "rhyme",
+    "sequence",
+    "oral language"
+  ],
+  "learning_objectives": [
+    "understand the text theme",
+    "identify useful details",
+    "express a response clearly"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which theme is most closely suggested by the lesson title \"Hickory, Dickory, Dock\"?",
+      "o": [
+        "rhythm",
+        "measuring weight",
+        "computer settings",
+        "map symbols"
+      ],
+      "a": 0,
+      "e": "The title points toward the lesson theme selected for app practice.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "rhythm",
+      "learning_objective": "understand the text theme"
+    },
+    {
+      "q": "A good reader should first:",
+      "o": [
+        "notice the title and predict",
+        "skip the text",
+        "memorise answers",
+        "ignore pictures"
+      ],
+      "a": 0,
+      "e": "Prediction is a useful reading strategy.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "rhyme",
+      "learning_objective": "identify useful details"
+    },
+    {
+      "q": "Which skill helps understand a story or poem?",
+      "o": [
+        "finding key details",
+        "changing the page colour",
+        "measuring length",
+        "sorting files"
+      ],
+      "a": 0,
+      "e": "Key details help build understanding.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "express a response clearly"
+    },
+    {
+      "q": "Which response shows creative reading?",
+      "o": [
+        "connect an idea to your own experience",
+        "copy random words",
+        "ignore the message",
+        "answer without reading"
+      ],
+      "a": 0,
+      "e": "Connecting ideas supports deeper reading.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "oral language",
+      "learning_objective": "understand the text theme"
+    },
+    {
+      "q": "Which habit improves vocabulary?",
+      "o": [
+        "notice and use new words in context",
+        "avoid new words",
+        "memorise unrelated lists only",
+        "skip sentences"
+      ],
+      "a": 0,
+      "e": "Context helps children understand and remember vocabulary.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "rhythm",
+      "learning_objective": "identify useful details"
+    },
+    {
+      "q": "Which idea is most closely connected to “Hickory, Dickory, Dock”?",
+      "o": [
+        "oral language",
+        "sequence",
+        "rhythm",
+        "rhyme"
+      ],
+      "a": 2,
+      "e": "rhythm is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "rhythm",
+      "learning_objective": "understand the text theme"
+    },
+    {
+      "q": "You are on a mission about “Hickory, Dickory, Dock”. What should you do first?",
+      "o": [
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option",
+        "Tap random answers"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "rhyme",
+      "learning_objective": "identify useful details"
+    },
+    {
+      "q": "Which action best shows understanding of sequence?",
+      "o": [
+        "Ignore the idea completely",
+        "Use sequence in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using sequence in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "express a response clearly"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Hickory, Dickory, Dock”?",
+      "o": [
+        "rushing",
+        "random guessing",
+        "ignoring feedback",
+        "reading"
+      ],
+      "a": 3,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "oral language",
+      "learning_objective": "understand the text theme"
+    },
+    {
+      "q": "Which example would make “Hickory, Dickory, Dock” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "rhythm",
+      "learning_objective": "identify useful details"
+    },
+    {
+      "q": "If you make a mistake while practising “Hickory, Dickory, Dock”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Quit immediately",
+        "Repeat the same guess",
+        "Skip similar questions"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "rhyme",
+      "learning_objective": "express a response clearly"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Hickory, Dickory, Dock”?",
+      "o": [
+        "sequence",
+        "rhythm",
+        "rhyme",
+        "oral language"
+      ],
+      "a": 0,
+      "e": "sequence belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "understand the text theme"
+    },
+    {
+      "q": "Which goal fits “Hickory, Dickory, Dock”?",
+      "o": [
+        "Guess every answer",
+        "Practise identify useful details",
+        "Change to an unrelated topic",
+        "Avoid all practice"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: identify useful details.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "oral language",
+      "learning_objective": "identify useful details"
+    },
+    {
+      "q": "What is a good strategy for a Hickory, Dickory, Dock challenge?",
+      "o": [
+        "Tap without reading",
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "rhythm",
+      "learning_objective": "express a response clearly"
+    },
+    {
+      "q": "How can you recognise a good answer in “Hickory, Dickory, Dock”?",
+      "o": [
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The most colourful option",
+        "The longest sentence"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "rhyme",
+      "learning_objective": "understand the text theme"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english/ch07.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

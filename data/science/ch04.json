@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch045",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 4,
+  "chapter": "Adaptations in Animals",
+  "unit": "",
+  "concepts": [
+    "adaptation",
+    "habitats",
+    "body features",
+    "feeding patterns"
+  ],
+  "learning_objectives": [
+    "match animals to habitats",
+    "connect features with survival",
+    "classify common feeding types"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "An adaptation helps an animal:",
+      "o": [
+        "survive in its habitat",
+        "change into a plant",
+        "stop needing food",
+        "become invisible"
+      ],
+      "a": 0,
+      "e": "Adaptations help animals survive in their surroundings.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "adaptation",
+      "learning_objective": "match animals to habitats"
+    },
+    {
+      "q": "Webbed feet are useful for many:",
+      "o": [
+        "aquatic birds",
+        "desert rocks",
+        "trees",
+        "machines"
+      ],
+      "a": 0,
+      "e": "Webbed feet help swimming.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "habitats",
+      "learning_objective": "connect features with survival"
+    },
+    {
+      "q": "A camel is well adapted to:",
+      "o": [
+        "desert conditions",
+        "deep oceans",
+        "polar ice only",
+        "rainforests only"
+      ],
+      "a": 0,
+      "e": "Camels have adaptations for hot, dry regions.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "body features",
+      "learning_objective": "classify common feeding types"
+    },
+    {
+      "q": "Herbivores mainly eat:",
+      "o": [
+        "plants",
+        "meat",
+        "metal",
+        "stones"
+      ],
+      "a": 0,
+      "e": "Herbivores eat plant material.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "feeding patterns",
+      "learning_objective": "match animals to habitats"
+    },
+    {
+      "q": "A thick layer of fat can help some animals in:",
+      "o": [
+        "cold environments",
+        "hot ovens",
+        "dry books",
+        "traffic"
+      ],
+      "a": 0,
+      "e": "Fat can provide insulation in cold conditions.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "adaptation",
+      "learning_objective": "connect features with survival"
+    },
+    {
+      "q": "Which idea is most closely connected to “Adaptations in Animals”?",
+      "o": [
+        "feeding patterns",
+        "body features",
+        "habitats",
+        "adaptation"
+      ],
+      "a": 3,
+      "e": "adaptation is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "adaptation",
+      "learning_objective": "match animals to habitats"
+    },
+    {
+      "q": "You are on a mission about “Adaptations in Animals”. What should you do first?",
+      "o": [
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 0,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "habitats",
+      "learning_objective": "connect features with survival"
+    },
+    {
+      "q": "Which action best shows understanding of body features?",
+      "o": [
+        "Guess without checking",
+        "Use body features in a relevant real-life situation.",
+        "Change the topic",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using body features in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "body features",
+      "learning_objective": "classify common feeding types"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Adaptations in Animals”?",
+      "o": [
+        "ignoring feedback",
+        "observation",
+        "rushing",
+        "random guessing"
+      ],
+      "a": 1,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "feeding patterns",
+      "learning_objective": "match animals to habitats"
+    },
+    {
+      "q": "Which example would make “Adaptations in Animals” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "adaptation",
+      "learning_objective": "connect features with survival"
+    },
+    {
+      "q": "If you make a mistake while practising “Adaptations in Animals”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "habitats",
+      "learning_objective": "classify common feeding types"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Adaptations in Animals”?",
+      "o": [
+        "habitats",
+        "body features",
+        "adaptation",
+        "feeding patterns"
+      ],
+      "a": 1,
+      "e": "body features belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "body features",
+      "learning_objective": "match animals to habitats"
+    },
+    {
+      "q": "Which goal fits “Adaptations in Animals”?",
+      "o": [
+        "Change to an unrelated topic",
+        "Avoid all practice",
+        "Practise connect features with survival",
+        "Guess every answer"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: connect features with survival.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "feeding patterns",
+      "learning_objective": "connect features with survival"
+    },
+    {
+      "q": "What is a good strategy for a Adaptations in Animals challenge?",
+      "o": [
+        "Tap without reading",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time"
+      ],
+      "a": 2,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "adaptation",
+      "learning_objective": "classify common feeding types"
+    },
+    {
+      "q": "How can you recognise a good answer in “Adaptations in Animals”?",
+      "o": [
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "habitats",
+      "learning_objective": "match animals to habitats"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch04.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

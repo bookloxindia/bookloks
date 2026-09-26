@@ -1,0 +1,280 @@
+{
+  "chapter_id": "ch048",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 7,
+  "chapter": "Air",
+  "unit": "",
+  "concepts": [
+    "air as matter",
+    "composition of air",
+    "properties of air",
+    "uses of air",
+    "air pollution"
+  ],
+  "learning_objectives": [
+    "describe everyday evidence of air",
+    "identify important uses",
+    "recognise causes and effects of air pollution"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Air is all around us even though we may not see it. This shows that air:",
+      "o": [
+        "occupies space",
+        "is always blue",
+        "is a solid",
+        "has no effect"
+      ],
+      "a": 0,
+      "e": "Air is matter and occupies space.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "air as matter",
+      "learning_objective": "describe everyday evidence of air"
+    },
+    {
+      "q": "Which gas is needed for breathing?",
+      "o": [
+        "oxygen",
+        "gold",
+        "sand",
+        "steam"
+      ],
+      "a": 0,
+      "e": "Humans need oxygen for respiration.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "composition of air",
+      "learning_objective": "identify important uses"
+    },
+    {
+      "q": "Moving air is called:",
+      "o": [
+        "wind",
+        "soil",
+        "shadow",
+        "friction"
+      ],
+      "a": 0,
+      "e": "Wind is moving air.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "properties of air",
+      "learning_objective": "recognise causes and effects of air pollution"
+    },
+    {
+      "q": "Which can cause air pollution?",
+      "o": [
+        "smoke and harmful gases",
+        "clean trees",
+        "fresh air",
+        "rainwater"
+      ],
+      "a": 0,
+      "e": "Smoke and harmful gases can pollute air.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "uses of air",
+      "learning_objective": "describe everyday evidence of air"
+    },
+    {
+      "q": "Air is useful for:",
+      "o": [
+        "breathing and many daily activities",
+        "making stones",
+        "turning paper into metal",
+        "stopping all sound"
+      ],
+      "a": 0,
+      "e": "Air is important for life and many processes.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "air pollution",
+      "learning_objective": "identify important uses"
+    },
+    {
+      "q": "Which idea is most closely connected to “Air”?",
+      "o": [
+        "uses of air",
+        "composition of air",
+        "properties of air",
+        "air as matter"
+      ],
+      "a": 3,
+      "e": "air as matter is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "air as matter",
+      "learning_objective": "describe everyday evidence of air"
+    },
+    {
+      "q": "You are on a mission about “Air”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "composition of air",
+      "learning_objective": "identify important uses"
+    },
+    {
+      "q": "Which action best shows understanding of properties of air?",
+      "o": [
+        "Change the topic",
+        "Guess without checking",
+        "Use properties of air in a relevant real-life situation.",
+        "Ignore the idea completely"
+      ],
+      "a": 2,
+      "e": "Using properties of air in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "properties of air",
+      "learning_objective": "recognise causes and effects of air pollution"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Air”?",
+      "o": [
+        "rushing",
+        "random guessing",
+        "observation",
+        "ignoring feedback"
+      ],
+      "a": 2,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "uses of air",
+      "learning_objective": "describe everyday evidence of air"
+    },
+    {
+      "q": "Which example would make “Air” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "air pollution",
+      "learning_objective": "identify important uses"
+    },
+    {
+      "q": "If you make a mistake while practising “Air”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Check the feedback and try again with a new example.",
+        "Quit immediately"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "air as matter",
+      "learning_objective": "recognise causes and effects of air pollution"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Air”?",
+      "o": [
+        "air as matter",
+        "properties of air",
+        "uses of air",
+        "composition of air"
+      ],
+      "a": 3,
+      "e": "composition of air belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "composition of air",
+      "learning_objective": "describe everyday evidence of air"
+    },
+    {
+      "q": "Which goal fits “Air”?",
+      "o": [
+        "Avoid all practice",
+        "Practise identify important uses",
+        "Change to an unrelated topic",
+        "Guess every answer"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: identify important uses.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "properties of air",
+      "learning_objective": "identify important uses"
+    },
+    {
+      "q": "What is a good strategy for a Air challenge?",
+      "o": [
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Tap without reading",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "uses of air",
+      "learning_objective": "recognise causes and effects of air pollution"
+    },
+    {
+      "q": "How can you recognise a good answer in “Air”?",
+      "o": [
+        "The longest sentence",
+        "The choice that matches the chapter concept",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "air pollution",
+      "learning_objective": "describe everyday evidence of air"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch07.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

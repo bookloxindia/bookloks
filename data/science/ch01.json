@@ -1,0 +1,280 @@
+{
+  "chapter_id": "ch042",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 1,
+  "chapter": "Food and Health",
+  "unit": "",
+  "concepts": [
+    "nutrients",
+    "balanced diet",
+    "water and roughage",
+    "healthy habits",
+    "food wastage"
+  ],
+  "learning_objectives": [
+    "identify major parts of a balanced diet",
+    "choose healthier food habits",
+    "connect food choices to health"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which is part of a balanced diet?",
+      "o": [
+        "only sweets",
+        "a variety of nutrients",
+        "only water",
+        "only fried food"
+      ],
+      "a": 1,
+      "e": "A balanced diet includes different nutrients.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "nutrients",
+      "learning_objective": "identify major parts of a balanced diet"
+    },
+    {
+      "q": "Why is roughage useful?",
+      "o": [
+        "It helps digestion",
+        "It makes bones magnetic",
+        "It changes colour",
+        "It stops breathing"
+      ],
+      "a": 0,
+      "e": "Roughage supports healthy digestion.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "balanced diet",
+      "learning_objective": "choose healthier food habits"
+    },
+    {
+      "q": "Which is a healthy habit?",
+      "o": [
+        "Skipping water",
+        "Eating a variety of foods",
+        "Never washing hands",
+        "Always wasting food"
+      ],
+      "a": 1,
+      "e": "A varied diet and good habits support health.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "water and roughage",
+      "learning_objective": "connect food choices to health"
+    },
+    {
+      "q": "Which nutrient is commonly linked with body-building and repair?",
+      "o": [
+        "protein",
+        "water only",
+        "air",
+        "fibre only"
+      ],
+      "a": 0,
+      "e": "Proteins help growth and repair.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "healthy habits",
+      "learning_objective": "identify major parts of a balanced diet"
+    },
+    {
+      "q": "A good lunch should usually include:",
+      "o": [
+        "a variety of nutritious foods",
+        "only candy",
+        "only chips",
+        "only one type of food"
+      ],
+      "a": 0,
+      "e": "Variety supports a balanced diet.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "food wastage",
+      "learning_objective": "choose healthier food habits"
+    },
+    {
+      "q": "Which idea is most closely connected to “Food and Health”?",
+      "o": [
+        "water and roughage",
+        "balanced diet",
+        "healthy habits",
+        "nutrients"
+      ],
+      "a": 3,
+      "e": "nutrients is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "nutrients",
+      "learning_objective": "identify major parts of a balanced diet"
+    },
+    {
+      "q": "You are on a mission about “Food and Health”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions",
+        "Choose the longest option"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "balanced diet",
+      "learning_objective": "choose healthier food habits"
+    },
+    {
+      "q": "Which action best shows understanding of water and roughage?",
+      "o": [
+        "Use water and roughage in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking",
+        "Ignore the idea completely"
+      ],
+      "a": 0,
+      "e": "Using water and roughage in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "water and roughage",
+      "learning_objective": "connect food choices to health"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Food and Health”?",
+      "o": [
+        "observation",
+        "rushing",
+        "ignoring feedback",
+        "random guessing"
+      ],
+      "a": 0,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "healthy habits",
+      "learning_objective": "identify major parts of a balanced diet"
+    },
+    {
+      "q": "Which example would make “Food and Health” easier to understand?",
+      "o": [
+        "A random number with no context",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "food wastage",
+      "learning_objective": "choose healthier food habits"
+    },
+    {
+      "q": "If you make a mistake while practising “Food and Health”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions",
+        "Repeat the same guess"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "nutrients",
+      "learning_objective": "connect food choices to health"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Food and Health”?",
+      "o": [
+        "nutrients",
+        "water and roughage",
+        "balanced diet",
+        "healthy habits"
+      ],
+      "a": 2,
+      "e": "balanced diet belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "balanced diet",
+      "learning_objective": "identify major parts of a balanced diet"
+    },
+    {
+      "q": "Which goal fits “Food and Health”?",
+      "o": [
+        "Guess every answer",
+        "Practise choose healthier food habits",
+        "Change to an unrelated topic",
+        "Avoid all practice"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: choose healthier food habits.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "water and roughage",
+      "learning_objective": "choose healthier food habits"
+    },
+    {
+      "q": "What is a good strategy for a Food and Health challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time",
+        "Tap without reading"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "healthy habits",
+      "learning_objective": "connect food choices to health"
+    },
+    {
+      "q": "How can you recognise a good answer in “Food and Health”?",
+      "o": [
+        "A random option",
+        "The most colourful option",
+        "The longest sentence",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "food wastage",
+      "learning_objective": "identify major parts of a balanced diet"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch01.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

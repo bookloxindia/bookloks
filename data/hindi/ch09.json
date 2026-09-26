@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch107",
+  "book_id": "hindi-reader",
+  "book": "प्रथम हिंदी पाठ्यपुस्तक – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Literature",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 9,
+  "chapter": "मेट्रो रेल है बड़ी निराली",
+  "unit": "",
+  "concepts": [
+    "मेट्रो रेल",
+    "यातायात",
+    "शहर",
+    "तकनीक और सुविधा"
+  ],
+  "learning_objectives": [
+    "मुख्य विचार समझना",
+    "महत्वपूर्ण विवरण पहचानना",
+    "अपने शब्दों में प्रतिक्रिया देना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"मेट्रो रेल है बड़ी निराली\" में सबसे प्रमुख विचार कौन-सा है?",
+      "o": [
+        "मेट्रो रेल",
+        "कंप्यूटर सेटिंग्स",
+        "माप की इकाइयाँ",
+        "डेटा तालिका"
+      ],
+      "a": 0,
+      "e": "यह concept-map आधारित प्रारंभिक प्रश्न है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "मेट्रो रेल",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "पाठ/कविता समझने के लिए क्या उपयोगी है?",
+      "o": [
+        "मुख्य विचार पहचानना",
+        "चित्र के रंग गिनना",
+        "बिना पढ़े अनुमान लगाना",
+        "पन्ने फाड़ना"
+      ],
+      "a": 0,
+      "e": "मुख्य विचार समझना reading comprehension का आधार है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "यातायात",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "किससे शब्दावली बढ़ती है?",
+      "o": [
+        "नए शब्दों को संदर्भ में समझने से",
+        "हर शब्द छोड़ देने से",
+        "केवल चित्र देखने से",
+        "सिर्फ शीर्षक याद करने से"
+      ],
+      "a": 0,
+      "e": "संदर्भ से शब्द का अर्थ बेहतर समझ आता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "शहर",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "रचनात्मक उत्तर में क्या जरूरी है?",
+      "o": [
+        "पाठ से जुड़ी सोच और कारण",
+        "बिना कारण अनुमान",
+        "असंबंधित विषय",
+        "केवल एक शब्द"
+      ],
+      "a": 0,
+      "e": "सार्थक उत्तर में पाठ से जुड़ी सोच होनी चाहिए.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "तकनीक और सुविधा",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "अच्छी reading habit क्या है?",
+      "o": [
+        "पढ़कर अपने शब्दों में बताना",
+        "सिर्फ शीर्षक पढ़ना",
+        "हर उत्तर देख लेना",
+        "प्रश्न छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अपनी भाषा में बताना समझ की जाँच करता है.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "मेट्रो रेल",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “मेट्रो रेल है बड़ी निराली”?",
+      "o": [
+        "शहर",
+        "तकनीक और सुविधा",
+        "मेट्रो रेल",
+        "यातायात"
+      ],
+      "a": 2,
+      "e": "मेट्रो रेल is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "मेट्रो रेल",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "You are on a mission about “मेट्रो रेल है बड़ी निराली”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Skip the instructions"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "यातायात",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "Which action best shows understanding of शहर?",
+      "o": [
+        "Ignore the idea completely",
+        "Use शहर in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using शहर in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "शहर",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “मेट्रो रेल है बड़ी निराली”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "reading",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "तकनीक और सुविधा",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "Which example would make “मेट्रो रेल है बड़ी निराली” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "मेट्रो रेल",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “मेट्रो रेल है बड़ी निराली”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "यातायात",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “मेट्रो रेल है बड़ी निराली”?",
+      "o": [
+        "मेट्रो रेल",
+        "शहर",
+        "तकनीक और सुविधा",
+        "यातायात"
+      ],
+      "a": 1,
+      "e": "शहर belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "शहर",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "Which goal fits “मेट्रो रेल है बड़ी निराली”?",
+      "o": [
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Practise महत्वपूर्ण विवरण पहचानना"
+      ],
+      "a": 3,
+      "e": "The chapter is mapped to the objective: महत्वपूर्ण विवरण पहचानना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "तकनीक और सुविधा",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "What is a good strategy for a मेट्रो रेल है बड़ी निराली challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "मेट्रो रेल",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "How can you recognise a good answer in “मेट्रो रेल है बड़ी निराली”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "यातायात",
+      "learning_objective": "मुख्य विचार समझना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi/ch09.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

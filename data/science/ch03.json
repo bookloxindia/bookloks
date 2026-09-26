@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch044",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 3,
+  "chapter": "The Digestive and Excretory Systems",
+  "unit": "",
+  "concepts": [
+    "digestion",
+    "digestive organs",
+    "excretion",
+    "healthy habits"
+  ],
+  "learning_objectives": [
+    "trace the basic path of food",
+    "describe why digestion is needed",
+    "identify the role of excretion"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Where does digestion begin?",
+      "o": [
+        "mouth",
+        "ankle",
+        "skin",
+        "ear"
+      ],
+      "a": 0,
+      "e": "Digestion begins in the mouth.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "digestion",
+      "learning_objective": "trace the basic path of food"
+    },
+    {
+      "q": "The digestive system helps us:",
+      "o": [
+        "break down food and absorb nutrients",
+        "hear sounds",
+        "make shadows",
+        "measure length"
+      ],
+      "a": 0,
+      "e": "Digestion makes nutrients available to the body.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "digestive organs",
+      "learning_objective": "describe why digestion is needed"
+    },
+    {
+      "q": "The excretory system helps remove:",
+      "o": [
+        "wastes",
+        "music",
+        "shadows",
+        "books"
+      ],
+      "a": 0,
+      "e": "Excretion removes wastes from the body.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "excretion",
+      "learning_objective": "identify the role of excretion"
+    },
+    {
+      "q": "Chewing food helps digestion by:",
+      "o": [
+        "breaking food into smaller pieces",
+        "freezing it",
+        "changing it to air",
+        "making it magnetic"
+      ],
+      "a": 0,
+      "e": "Chewing mechanically breaks food down.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "healthy habits",
+      "learning_objective": "trace the basic path of food"
+    },
+    {
+      "q": "Which is a healthy digestive habit?",
+      "o": [
+        "eating mindfully and drinking water",
+        "skipping all meals",
+        "never washing hands",
+        "eating only sweets"
+      ],
+      "a": 0,
+      "e": "Healthy habits support digestion.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "digestion",
+      "learning_objective": "describe why digestion is needed"
+    },
+    {
+      "q": "Which idea is most closely connected to “The Digestive and Excretory Systems”?",
+      "o": [
+        "excretion",
+        "healthy habits",
+        "digestion",
+        "digestive organs"
+      ],
+      "a": 2,
+      "e": "digestion is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "digestion",
+      "learning_objective": "trace the basic path of food"
+    },
+    {
+      "q": "You are on a mission about “The Digestive and Excretory Systems”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Skip the instructions"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "digestive organs",
+      "learning_objective": "describe why digestion is needed"
+    },
+    {
+      "q": "Which action best shows understanding of excretion?",
+      "o": [
+        "Ignore the idea completely",
+        "Use excretion in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using excretion in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "excretion",
+      "learning_objective": "identify the role of excretion"
+    },
+    {
+      "q": "Which skill is especially useful while learning “The Digestive and Excretory Systems”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "observation",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "healthy habits",
+      "learning_objective": "trace the basic path of food"
+    },
+    {
+      "q": "Which example would make “The Digestive and Excretory Systems” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "digestion",
+      "learning_objective": "describe why digestion is needed"
+    },
+    {
+      "q": "If you make a mistake while practising “The Digestive and Excretory Systems”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "digestive organs",
+      "learning_objective": "identify the role of excretion"
+    },
+    {
+      "q": "Which of these belongs to the chapter “The Digestive and Excretory Systems”?",
+      "o": [
+        "digestion",
+        "excretion",
+        "healthy habits",
+        "digestive organs"
+      ],
+      "a": 1,
+      "e": "excretion belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "excretion",
+      "learning_objective": "trace the basic path of food"
+    },
+    {
+      "q": "Which goal fits “The Digestive and Excretory Systems”?",
+      "o": [
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Practise describe why digestion is needed"
+      ],
+      "a": 3,
+      "e": "The chapter is mapped to the objective: describe why digestion is needed.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "healthy habits",
+      "learning_objective": "describe why digestion is needed"
+    },
+    {
+      "q": "What is a good strategy for a The Digestive and Excretory Systems challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "digestion",
+      "learning_objective": "identify the role of excretion"
+    },
+    {
+      "q": "How can you recognise a good answer in “The Digestive and Excretory Systems”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "digestive organs",
+      "learning_objective": "trace the basic path of food"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch03.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

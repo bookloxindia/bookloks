@@ -1,0 +1,281 @@
+{
+  "chapter_id": "ch051",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 10,
+  "chapter": "Measurement",
+  "unit": "",
+  "concepts": [
+    "length",
+    "mass",
+    "capacity",
+    "time",
+    "temperature",
+    "standard units"
+  ],
+  "learning_objectives": [
+    "choose the right measuring tool/unit",
+    "read simple measurements",
+    "estimate before measuring"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which tool measures temperature?",
+      "o": [
+        "thermometer",
+        "ruler",
+        "weighing scale",
+        "measuring cup"
+      ],
+      "a": 0,
+      "e": "A thermometer measures temperature.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "length",
+      "learning_objective": "choose the right measuring tool/unit"
+    },
+    {
+      "q": "Length is commonly measured with a:",
+      "o": [
+        "ruler or measuring tape",
+        "clock",
+        "thermometer",
+        "magnet"
+      ],
+      "a": 0,
+      "e": "Rulers and tapes measure length.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "mass",
+      "learning_objective": "read simple measurements"
+    },
+    {
+      "q": "Capacity of a bottle can be measured in:",
+      "o": [
+        "litres or millilitres",
+        "centimetres only",
+        "kilograms only",
+        "degrees only"
+      ],
+      "a": 0,
+      "e": "Litres and millilitres measure capacity.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "capacity",
+      "learning_objective": "estimate before measuring"
+    },
+    {
+      "q": "Mass is commonly measured with a:",
+      "o": [
+        "weighing scale",
+        "ruler",
+        "clock",
+        "compass"
+      ],
+      "a": 0,
+      "e": "A scale compares or measures mass/weight.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "choose the right measuring tool/unit"
+    },
+    {
+      "q": "Why do we use standard units?",
+      "o": [
+        "So measurements are consistent",
+        "To make objects heavier",
+        "To change colours",
+        "To increase temperature"
+      ],
+      "a": 0,
+      "e": "Standard units give consistent measurements.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "temperature",
+      "learning_objective": "read simple measurements"
+    },
+    {
+      "q": "Which idea is most closely connected to “Measurement”?",
+      "o": [
+        "capacity",
+        "mass",
+        "time",
+        "length"
+      ],
+      "a": 3,
+      "e": "length is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "length",
+      "learning_objective": "choose the right measuring tool/unit"
+    },
+    {
+      "q": "You are on a mission about “Measurement”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions",
+        "Choose the longest option"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "mass",
+      "learning_objective": "read simple measurements"
+    },
+    {
+      "q": "Which action best shows understanding of capacity?",
+      "o": [
+        "Use capacity in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking",
+        "Ignore the idea completely"
+      ],
+      "a": 0,
+      "e": "Using capacity in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "capacity",
+      "learning_objective": "estimate before measuring"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Measurement”?",
+      "o": [
+        "observation",
+        "rushing",
+        "ignoring feedback",
+        "random guessing"
+      ],
+      "a": 0,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "time",
+      "learning_objective": "choose the right measuring tool/unit"
+    },
+    {
+      "q": "Which example would make “Measurement” easier to understand?",
+      "o": [
+        "A random number with no context",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "temperature",
+      "learning_objective": "read simple measurements"
+    },
+    {
+      "q": "If you make a mistake while practising “Measurement”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions",
+        "Repeat the same guess"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "standard units",
+      "learning_objective": "estimate before measuring"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Measurement”?",
+      "o": [
+        "mass",
+        "capacity",
+        "length",
+        "time"
+      ],
+      "a": 2,
+      "e": "length belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "length",
+      "learning_objective": "choose the right measuring tool/unit"
+    },
+    {
+      "q": "Which goal fits “Measurement”?",
+      "o": [
+        "Guess every answer",
+        "Practise read simple measurements",
+        "Change to an unrelated topic",
+        "Avoid all practice"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: read simple measurements.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "mass",
+      "learning_objective": "read simple measurements"
+    },
+    {
+      "q": "What is a good strategy for a Measurement challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time",
+        "Tap without reading"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "capacity",
+      "learning_objective": "estimate before measuring"
+    },
+    {
+      "q": "How can you recognise a good answer in “Measurement”?",
+      "o": [
+        "A random option",
+        "The most colourful option",
+        "The longest sentence",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "time",
+      "learning_objective": "choose the right measuring tool/unit"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch10.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch099",
+  "book_id": "hindi-reader",
+  "book": "प्रथम हिंदी पाठ्यपुस्तक – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Literature",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 1,
+  "chapter": "आया वसंत, आया वसंत",
+  "unit": "",
+  "concepts": [
+    "वसंत ऋतु",
+    "प्रकृति",
+    "कविता की लय",
+    "दृश्य कल्पना"
+  ],
+  "learning_objectives": [
+    "मुख्य विचार समझना",
+    "महत्वपूर्ण विवरण पहचानना",
+    "अपने शब्दों में प्रतिक्रिया देना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"आया वसंत, आया वसंत\" में सबसे प्रमुख विचार कौन-सा है?",
+      "o": [
+        "वसंत ऋतु",
+        "कंप्यूटर सेटिंग्स",
+        "माप की इकाइयाँ",
+        "डेटा तालिका"
+      ],
+      "a": 0,
+      "e": "यह concept-map आधारित प्रारंभिक प्रश्न है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "वसंत ऋतु",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "पाठ/कविता समझने के लिए क्या उपयोगी है?",
+      "o": [
+        "मुख्य विचार पहचानना",
+        "चित्र के रंग गिनना",
+        "बिना पढ़े अनुमान लगाना",
+        "पन्ने फाड़ना"
+      ],
+      "a": 0,
+      "e": "मुख्य विचार समझना reading comprehension का आधार है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "प्रकृति",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "किससे शब्दावली बढ़ती है?",
+      "o": [
+        "नए शब्दों को संदर्भ में समझने से",
+        "हर शब्द छोड़ देने से",
+        "केवल चित्र देखने से",
+        "सिर्फ शीर्षक याद करने से"
+      ],
+      "a": 0,
+      "e": "संदर्भ से शब्द का अर्थ बेहतर समझ आता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "कविता की लय",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "रचनात्मक उत्तर में क्या जरूरी है?",
+      "o": [
+        "पाठ से जुड़ी सोच और कारण",
+        "बिना कारण अनुमान",
+        "असंबंधित विषय",
+        "केवल एक शब्द"
+      ],
+      "a": 0,
+      "e": "सार्थक उत्तर में पाठ से जुड़ी सोच होनी चाहिए.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "दृश्य कल्पना",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "अच्छी reading habit क्या है?",
+      "o": [
+        "पढ़कर अपने शब्दों में बताना",
+        "सिर्फ शीर्षक पढ़ना",
+        "हर उत्तर देख लेना",
+        "प्रश्न छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अपनी भाषा में बताना समझ की जाँच करता है.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "वसंत ऋतु",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “आया वसंत, आया वसंत”?",
+      "o": [
+        "प्रकृति",
+        "वसंत ऋतु",
+        "दृश्य कल्पना",
+        "कविता की लय"
+      ],
+      "a": 1,
+      "e": "वसंत ऋतु is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "वसंत ऋतु",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "You are on a mission about “आया वसंत, आया वसंत”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Choose the longest option",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first."
+      ],
+      "a": 3,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "प्रकृति",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "Which action best shows understanding of कविता की लय?",
+      "o": [
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic",
+        "Use कविता की लय in a relevant real-life situation."
+      ],
+      "a": 3,
+      "e": "Using कविता की लय in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "कविता की लय",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “आया वसंत, आया वसंत”?",
+      "o": [
+        "random guessing",
+        "reading",
+        "rushing",
+        "ignoring feedback"
+      ],
+      "a": 1,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "दृश्य कल्पना",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "Which example would make “आया वसंत, आया वसंत” easier to understand?",
+      "o": [
+        "A random number with no context",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea",
+        "An unrelated game"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "वसंत ऋतु",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “आया वसंत, आया वसंत”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions",
+        "Quit immediately",
+        "Repeat the same guess"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "प्रकृति",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “आया वसंत, आया वसंत”?",
+      "o": [
+        "दृश्य कल्पना",
+        "वसंत ऋतु",
+        "प्रकृति",
+        "कविता की लय"
+      ],
+      "a": 3,
+      "e": "कविता की लय belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "कविता की लय",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "Which goal fits “आया वसंत, आया वसंत”?",
+      "o": [
+        "Avoid all practice",
+        "Practise महत्वपूर्ण विवरण पहचानना",
+        "Guess every answer",
+        "Change to an unrelated topic"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: महत्वपूर्ण विवरण पहचानना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "दृश्य कल्पना",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "What is a good strategy for a आया वसंत, आया वसंत challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time",
+        "Skip the challenge"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "वसंत ऋतु",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "How can you recognise a good answer in “आया वसंत, आया वसंत”?",
+      "o": [
+        "The most colourful option",
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "A random option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "प्रकृति",
+      "learning_objective": "मुख्य विचार समझना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi/ch01.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

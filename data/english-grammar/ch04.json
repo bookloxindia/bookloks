@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch087",
+  "book_id": "english-grammar",
+  "book": "Go Grammar – Class 4",
+  "publisher": "Future Kids Publications",
+  "role": "English Grammar",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 4,
+  "chapter": "Gender",
+  "unit": "",
+  "concepts": [
+    "masculine",
+    "feminine",
+    "common gender",
+    "neuter"
+  ],
+  "learning_objectives": [
+    "identify gender forms",
+    "choose appropriate forms"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Gender\"?",
+      "o": [
+        "masculine",
+        "mixing unrelated pictures",
+        "measuring temperature",
+        "drawing maps"
+      ],
+      "a": 0,
+      "e": "Masculine is central to this grammar skill.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "masculine",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "Which practice helps most with language learning?",
+      "o": [
+        "Read, notice patterns and practise",
+        "Skip examples",
+        "Guess every answer",
+        "Avoid feedback"
+      ],
+      "a": 0,
+      "e": "Active practice and feedback improve language skills.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "feminine",
+      "learning_objective": "choose appropriate forms"
+    },
+    {
+      "q": "Choose the best description of the skill:",
+      "o": [
+        "Use the rule in a meaningful sentence",
+        "Memorise colours",
+        "Measure a room",
+        "Sort rocks"
+      ],
+      "a": 0,
+      "e": "Grammar is most useful when applied in real sentences.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "common gender",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "What should you do when unsure about a grammar answer?",
+      "o": [
+        "Check the sentence meaning and rule",
+        "Pick randomly",
+        "Leave the sentence incomplete",
+        "Change every word"
+      ],
+      "a": 0,
+      "e": "Use meaning plus the grammar rule.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "neuter",
+      "learning_objective": "choose appropriate forms"
+    },
+    {
+      "q": "Which is a useful outcome of grammar practice?",
+      "o": [
+        "Clearer communication",
+        "Fewer ideas",
+        "Less vocabulary",
+        "More confusion"
+      ],
+      "a": 0,
+      "e": "Grammar supports clearer communication.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "masculine",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "Which idea is most closely connected to “Gender”?",
+      "o": [
+        "neuter",
+        "feminine",
+        "masculine",
+        "common gender"
+      ],
+      "a": 2,
+      "e": "masculine is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "masculine",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "You are on a mission about “Gender”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "feminine",
+      "learning_objective": "choose appropriate forms"
+    },
+    {
+      "q": "Which action best shows understanding of common gender?",
+      "o": [
+        "Use common gender in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using common gender in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "common gender",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Gender”?",
+      "o": [
+        "ignoring feedback",
+        "reading",
+        "random guessing",
+        "rushing"
+      ],
+      "a": 1,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "neuter",
+      "learning_objective": "choose appropriate forms"
+    },
+    {
+      "q": "Which example would make “Gender” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "masculine",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "If you make a mistake while practising “Gender”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Repeat the same guess",
+        "Skip similar questions"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "feminine",
+      "learning_objective": "choose appropriate forms"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Gender”?",
+      "o": [
+        "feminine",
+        "neuter",
+        "common gender",
+        "masculine"
+      ],
+      "a": 2,
+      "e": "common gender belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "common gender",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "Which goal fits “Gender”?",
+      "o": [
+        "Practise choose appropriate forms",
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: choose appropriate forms.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "neuter",
+      "learning_objective": "choose appropriate forms"
+    },
+    {
+      "q": "What is a good strategy for a Gender challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time",
+        "Tap without reading",
+        "Skip the challenge"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "masculine",
+      "learning_objective": "identify gender forms"
+    },
+    {
+      "q": "How can you recognise a good answer in “Gender”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "A random option",
+        "The most colourful option",
+        "The longest sentence"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "feminine",
+      "learning_objective": "choose appropriate forms"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english-grammar/ch04.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

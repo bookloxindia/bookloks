@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch047",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 6,
+  "chapter": "Plants in Place",
+  "unit": "",
+  "concepts": [
+    "land plants",
+    "aquatic plants",
+    "non-green plants",
+    "special adaptations"
+  ],
+  "learning_objectives": [
+    "classify plants by habitat",
+    "spot simple adaptations",
+    "compare plant types"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "observe-sort",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which plant is adapted to live in water?",
+      "o": [
+        "water lily",
+        "cactus only",
+        "pine only",
+        "wheat only"
+      ],
+      "a": 0,
+      "e": "Water lilies are aquatic plants.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "land plants",
+      "learning_objective": "classify plants by habitat"
+    },
+    {
+      "q": "A cactus has features that help it:",
+      "o": [
+        "save water in dry places",
+        "swim quickly",
+        "live under ice",
+        "make metal"
+      ],
+      "a": 0,
+      "e": "Cacti are adapted to dry environments.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "aquatic plants",
+      "learning_objective": "spot simple adaptations"
+    },
+    {
+      "q": "Aquatic plants often have:",
+      "o": [
+        "features that help them float or live in water",
+        "only underground stems",
+        "no leaves at all",
+        "metal roots"
+      ],
+      "a": 0,
+      "e": "Aquatic plants have water-related adaptations.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "non-green plants",
+      "learning_objective": "compare plant types"
+    },
+    {
+      "q": "A carnivorous plant gets some nutrients by:",
+      "o": [
+        "trapping small organisms",
+        "eating rocks",
+        "drinking petrol",
+        "absorbing light only"
+      ],
+      "a": 0,
+      "e": "Carnivorous plants can trap small organisms for nutrients.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "special adaptations",
+      "learning_objective": "classify plants by habitat"
+    },
+    {
+      "q": "Plants in different places can differ because:",
+      "o": [
+        "they adapt to their surroundings",
+        "all places are identical",
+        "plants have no needs",
+        "soil never matters"
+      ],
+      "a": 0,
+      "e": "Different habitats favour different adaptations.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "land plants",
+      "learning_objective": "spot simple adaptations"
+    },
+    {
+      "q": "Which idea is most closely connected to “Plants in Place”?",
+      "o": [
+        "non-green plants",
+        "special adaptations",
+        "land plants",
+        "aquatic plants"
+      ],
+      "a": 2,
+      "e": "land plants is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "land plants",
+      "learning_objective": "classify plants by habitat"
+    },
+    {
+      "q": "You are on a mission about “Plants in Place”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "aquatic plants",
+      "learning_objective": "spot simple adaptations"
+    },
+    {
+      "q": "Which action best shows understanding of non-green plants?",
+      "o": [
+        "Use non-green plants in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using non-green plants in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "non-green plants",
+      "learning_objective": "compare plant types"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Plants in Place”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "random guessing",
+        "observation"
+      ],
+      "a": 3,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "special adaptations",
+      "learning_objective": "classify plants by habitat"
+    },
+    {
+      "q": "Which example would make “Plants in Place” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A random number with no context",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea"
+      ],
+      "a": 3,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "land plants",
+      "learning_objective": "spot simple adaptations"
+    },
+    {
+      "q": "If you make a mistake while practising “Plants in Place”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Repeat the same guess",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "aquatic plants",
+      "learning_objective": "compare plant types"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Plants in Place”?",
+      "o": [
+        "non-green plants",
+        "special adaptations",
+        "land plants",
+        "aquatic plants"
+      ],
+      "a": 0,
+      "e": "non-green plants belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "non-green plants",
+      "learning_objective": "classify plants by habitat"
+    },
+    {
+      "q": "Which goal fits “Plants in Place”?",
+      "o": [
+        "Practise spot simple adaptations",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Avoid all practice"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: spot simple adaptations.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "special adaptations",
+      "learning_objective": "spot simple adaptations"
+    },
+    {
+      "q": "What is a good strategy for a Plants in Place challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "land plants",
+      "learning_objective": "compare plant types"
+    },
+    {
+      "q": "How can you recognise a good answer in “Plants in Place”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "aquatic plants",
+      "learning_objective": "classify plants by habitat"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch06.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "observe-sort"
+  }
+}

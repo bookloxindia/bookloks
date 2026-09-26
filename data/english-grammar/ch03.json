@@ -1,0 +1,277 @@
+{
+  "chapter_id": "ch086",
+  "book_id": "english-grammar",
+  "book": "Go Grammar – Class 4",
+  "publisher": "Future Kids Publications",
+  "role": "English Grammar",
+  "subject": "English",
+  "subject_id": "english",
+  "chapter_no": 3,
+  "chapter": "Countable Nouns and Uncountable Nouns",
+  "unit": "",
+  "concepts": [
+    "countable",
+    "uncountable",
+    "quantity words"
+  ],
+  "learning_objectives": [
+    "classify nouns",
+    "choose suitable quantity language"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Countable Nouns and Uncountable Nouns\"?",
+      "o": [
+        "countable",
+        "mixing unrelated pictures",
+        "measuring temperature",
+        "drawing maps"
+      ],
+      "a": 0,
+      "e": "Countable is central to this grammar skill.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "countable",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "Which practice helps most with language learning?",
+      "o": [
+        "Read, notice patterns and practise",
+        "Skip examples",
+        "Guess every answer",
+        "Avoid feedback"
+      ],
+      "a": 0,
+      "e": "Active practice and feedback improve language skills.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "uncountable",
+      "learning_objective": "choose suitable quantity language"
+    },
+    {
+      "q": "Choose the best description of the skill:",
+      "o": [
+        "Use the rule in a meaningful sentence",
+        "Memorise colours",
+        "Measure a room",
+        "Sort rocks"
+      ],
+      "a": 0,
+      "e": "Grammar is most useful when applied in real sentences.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "quantity words",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "What should you do when unsure about a grammar answer?",
+      "o": [
+        "Check the sentence meaning and rule",
+        "Pick randomly",
+        "Leave the sentence incomplete",
+        "Change every word"
+      ],
+      "a": 0,
+      "e": "Use meaning plus the grammar rule.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "countable",
+      "learning_objective": "choose suitable quantity language"
+    },
+    {
+      "q": "Which is a useful outcome of grammar practice?",
+      "o": [
+        "Clearer communication",
+        "Fewer ideas",
+        "Less vocabulary",
+        "More confusion"
+      ],
+      "a": 0,
+      "e": "Grammar supports clearer communication.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "uncountable",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "Which idea is most closely connected to “Countable Nouns and Uncountable Nouns”?",
+      "o": [
+        "countable",
+        "random guessing",
+        "quantity words",
+        "uncountable"
+      ],
+      "a": 0,
+      "e": "countable is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "countable",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "You are on a mission about “Countable Nouns and Uncountable Nouns”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Choose the longest option",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first."
+      ],
+      "a": 3,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "uncountable",
+      "learning_objective": "choose suitable quantity language"
+    },
+    {
+      "q": "Which action best shows understanding of quantity words?",
+      "o": [
+        "Change the topic",
+        "Ignore the idea completely",
+        "Use quantity words in a relevant real-life situation.",
+        "Guess without checking"
+      ],
+      "a": 2,
+      "e": "Using quantity words in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "quantity words",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Countable Nouns and Uncountable Nouns”?",
+      "o": [
+        "random guessing",
+        "reading",
+        "ignoring feedback",
+        "rushing"
+      ],
+      "a": 1,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "countable",
+      "learning_objective": "choose suitable quantity language"
+    },
+    {
+      "q": "Which example would make “Countable Nouns and Uncountable Nouns” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "A real-life example that uses the chapter idea",
+        "An unrelated game",
+        "A random number with no context"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "uncountable",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "If you make a mistake while practising “Countable Nouns and Uncountable Nouns”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Check the feedback and try again with a new example.",
+        "Quit immediately"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "quantity words",
+      "learning_objective": "choose suitable quantity language"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Countable Nouns and Uncountable Nouns”?",
+      "o": [
+        "countable",
+        "quantity words",
+        "uncountable",
+        "unrelated topic"
+      ],
+      "a": 0,
+      "e": "countable belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "countable",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "Which goal fits “Countable Nouns and Uncountable Nouns”?",
+      "o": [
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Practise choose suitable quantity language",
+        "Guess every answer"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: choose suitable quantity language.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "uncountable",
+      "learning_objective": "choose suitable quantity language"
+    },
+    {
+      "q": "What is a good strategy for a Countable Nouns and Uncountable Nouns challenge?",
+      "o": [
+        "Tap without reading",
+        "Skip the challenge",
+        "Copy a friend every time",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "quantity words",
+      "learning_objective": "classify nouns"
+    },
+    {
+      "q": "How can you recognise a good answer in “Countable Nouns and Uncountable Nouns”?",
+      "o": [
+        "The most colourful option",
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The longest sentence"
+      ],
+      "a": 2,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "countable",
+      "learning_objective": "choose suitable quantity language"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/english-grammar/ch03.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

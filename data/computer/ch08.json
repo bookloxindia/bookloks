@@ -1,0 +1,280 @@
+{
+  "chapter_id": "ch140",
+  "book_id": "computer-main",
+  "book": "IT Deep Code – Class 4",
+  "publisher": "Edusoft Educational Publishers",
+  "role": "Coding / AI / Robotics",
+  "subject": "Computer / IT",
+  "subject_id": "computer",
+  "chapter_no": 8,
+  "chapter": "Understanding Scratch – Your Gateway to Coding",
+  "unit": "",
+  "concepts": [
+    "sprites",
+    "blocks",
+    "sequence",
+    "events",
+    "animation"
+  ],
+  "learning_objectives": [
+    "build a short block-code sequence",
+    "predict what code will do",
+    "debug a simple script"
+  ],
+  "skills": [
+    "digital literacy",
+    "logical thinking",
+    "problem solving"
+  ],
+  "game_type": "screen-sim",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Understanding Scratch – Your Gateway to Coding\"?",
+      "o": [
+        "sprites",
+        "fraction comparison",
+        "soil types",
+        "poetry rhythm"
+      ],
+      "a": 0,
+      "e": "sprites is central to this digital-skills chapter.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "sprites",
+      "learning_objective": "build a short block-code sequence"
+    },
+    {
+      "q": "Which learning approach fits computer skills?",
+      "o": [
+        "Try, observe, correct and try again",
+        "skip practice",
+        "share passwords",
+        "delete work randomly"
+      ],
+      "a": 0,
+      "e": "Hands-on practice and feedback are essential.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "blocks",
+      "learning_objective": "predict what code will do"
+    },
+    {
+      "q": "Which skill is important when using technology?",
+      "o": [
+        "safe, step-by-step problem solving",
+        "ignoring warnings",
+        "guessing blindly",
+        "sharing personal passwords"
+      ],
+      "a": 0,
+      "e": "Safe and structured problem solving is useful.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "debug a simple script"
+    },
+    {
+      "q": "What should you do before changing an important setting?",
+      "o": [
+        "read the option and check what it does",
+        "click everything",
+        "turn off the screen",
+        "share the password"
+      ],
+      "a": 0,
+      "e": "Understand a setting before changing it.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "events",
+      "learning_objective": "build a short block-code sequence"
+    },
+    {
+      "q": "Which habit keeps digital work organised?",
+      "o": [
+        "use clear names and folders",
+        "save everything as New File",
+        "delete duplicates randomly",
+        "never back up"
+      ],
+      "a": 0,
+      "e": "Clear names and folders make files easier to manage.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "animation",
+      "learning_objective": "predict what code will do"
+    },
+    {
+      "q": "Which idea is most closely connected to “Understanding Scratch – Your Gateway to Coding”?",
+      "o": [
+        "blocks",
+        "events",
+        "sprites",
+        "sequence"
+      ],
+      "a": 2,
+      "e": "sprites is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "sprites",
+      "learning_objective": "build a short block-code sequence"
+    },
+    {
+      "q": "You are on a mission about “Understanding Scratch – Your Gateway to Coding”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Skip the instructions",
+        "Tap random answers",
+        "Look closely at the task and identify the chapter idea first."
+      ],
+      "a": 3,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "blocks",
+      "learning_objective": "predict what code will do"
+    },
+    {
+      "q": "Which action best shows understanding of sequence?",
+      "o": [
+        "Use sequence in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using sequence in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "debug a simple script"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Understanding Scratch – Your Gateway to Coding”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "random guessing",
+        "digital literacy"
+      ],
+      "a": 3,
+      "e": "Digital Literacy supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "events",
+      "learning_objective": "build a short block-code sequence"
+    },
+    {
+      "q": "Which example would make “Understanding Scratch – Your Gateway to Coding” easier to understand?",
+      "o": [
+        "A random number with no context",
+        "A real-life example that uses the chapter idea",
+        "An unrelated game",
+        "Something from another subject"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "animation",
+      "learning_objective": "predict what code will do"
+    },
+    {
+      "q": "If you make a mistake while practising “Understanding Scratch – Your Gateway to Coding”, what should you do?",
+      "o": [
+        "Skip similar questions",
+        "Repeat the same guess",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "sprites",
+      "learning_objective": "debug a simple script"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Understanding Scratch – Your Gateway to Coding”?",
+      "o": [
+        "events",
+        "sprites",
+        "blocks",
+        "sequence"
+      ],
+      "a": 2,
+      "e": "blocks belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "blocks",
+      "learning_objective": "build a short block-code sequence"
+    },
+    {
+      "q": "Which goal fits “Understanding Scratch – Your Gateway to Coding”?",
+      "o": [
+        "Guess every answer",
+        "Practise predict what code will do",
+        "Avoid all practice",
+        "Change to an unrelated topic"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: predict what code will do.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "sequence",
+      "learning_objective": "predict what code will do"
+    },
+    {
+      "q": "What is a good strategy for a Understanding Scratch – Your Gateway to Coding challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Tap without reading"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "events",
+      "learning_objective": "debug a simple script"
+    },
+    {
+      "q": "How can you recognise a good answer in “Understanding Scratch – Your Gateway to Coding”?",
+      "o": [
+        "The longest sentence",
+        "The most colourful option",
+        "A random option",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "animation",
+      "learning_objective": "build a short block-code sequence"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/computer/ch08.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "screen-sim"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "chapter_id": "ch052",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 11,
+  "chapter": "Push and Pull",
+  "unit": "",
+  "concepts": [
+    "force",
+    "push",
+    "pull",
+    "direction of force",
+    "movement",
+    "gravitational/muscular/magnetic/frictional forces"
+  ],
+  "learning_objectives": [
+    "identify pushes and pulls",
+    "predict how force changes movement",
+    "recognise common types of force"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "push",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which action is a push?",
+      "o": [
+        "moving a box away from you",
+        "bringing a drawer toward you",
+        "pulling a rope toward you",
+        "opening a bag toward you"
+      ],
+      "a": 0,
+      "e": "A push moves an object away from the person applying the force.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "force",
+      "learning_objective": "identify pushes and pulls"
+    },
+    {
+      "q": "Which action is a pull?",
+      "o": [
+        "dragging a suitcase toward you",
+        "pushing a chair away",
+        "pressing a switch inward",
+        "kicking a ball away"
+      ],
+      "a": 0,
+      "e": "A pull brings an object toward the person applying the force.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "push",
+      "learning_objective": "predict how force changes movement"
+    },
+    {
+      "q": "A force can change an object’s:",
+      "o": [
+        "movement or direction",
+        "name only",
+        "colour only",
+        "taste only"
+      ],
+      "a": 0,
+      "e": "Force can start, stop, speed up, slow down or change direction.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "pull",
+      "learning_objective": "recognise common types of force"
+    },
+    {
+      "q": "Which is a contact force caused by our muscles?",
+      "o": [
+        "muscular force",
+        "magnetic force",
+        "gravity only",
+        "light force"
+      ],
+      "a": 0,
+      "e": "Muscles apply muscular force.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "direction of force",
+      "learning_objective": "identify pushes and pulls"
+    },
+    {
+      "q": "Which force can attract iron objects without touching them?",
+      "o": [
+        "magnetic force",
+        "muscular force",
+        "friction only",
+        "sound force"
+      ],
+      "a": 0,
+      "e": "Magnets exert magnetic force at a distance.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "movement",
+      "learning_objective": "predict how force changes movement"
+    },
+    {
+      "q": "Which idea is most closely connected to “Push and Pull”?",
+      "o": [
+        "direction of force",
+        "pull",
+        "force",
+        "push"
+      ],
+      "a": 2,
+      "e": "force is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "force",
+      "learning_objective": "identify pushes and pulls"
+    },
+    {
+      "q": "You are on a mission about “Push and Pull”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "push",
+      "learning_objective": "predict how force changes movement"
+    },
+    {
+      "q": "Which action best shows understanding of pull?",
+      "o": [
+        "Change the topic",
+        "Use pull in a relevant real-life situation.",
+        "Guess without checking",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using pull in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "pull",
+      "learning_objective": "recognise common types of force"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Push and Pull”?",
+      "o": [
+        "observation",
+        "rushing",
+        "random guessing",
+        "ignoring feedback"
+      ],
+      "a": 0,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "direction of force",
+      "learning_objective": "identify pushes and pulls"
+    },
+    {
+      "q": "Which example would make “Push and Pull” easier to understand?",
+      "o": [
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context",
+        "An unrelated game"
+      ],
+      "a": 0,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "movement",
+      "learning_objective": "predict how force changes movement"
+    },
+    {
+      "q": "If you make a mistake while practising “Push and Pull”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "gravitational/muscular/magnetic/frictional forces",
+      "learning_objective": "recognise common types of force"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Push and Pull”?",
+      "o": [
+        "push",
+        "pull",
+        "force",
+        "direction of force"
+      ],
+      "a": 2,
+      "e": "force belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "force",
+      "learning_objective": "identify pushes and pulls"
+    },
+    {
+      "q": "Which goal fits “Push and Pull”?",
+      "o": [
+        "Guess every answer",
+        "Avoid all practice",
+        "Practise predict how force changes movement",
+        "Change to an unrelated topic"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: predict how force changes movement.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "push",
+      "learning_objective": "predict how force changes movement"
+    },
+    {
+      "q": "What is a good strategy for a Push and Pull challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "pull",
+      "learning_objective": "recognise common types of force"
+    },
+    {
+      "q": "How can you recognise a good answer in “Push and Pull”?",
+      "o": [
+        "The most colourful option",
+        "A random option",
+        "The longest sentence",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "direction of force",
+      "learning_objective": "identify pushes and pulls"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch11.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "push"
+  }
+}

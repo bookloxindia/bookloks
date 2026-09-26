@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch112",
+  "book_id": "hindi-reader",
+  "book": "प्रथम हिंदी पाठ्यपुस्तक – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Literature",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 14,
+  "chapter": "अब और प्लास्टिक नहीं!",
+  "unit": "",
+  "concepts": [
+    "प्लास्टिक प्रदूषण",
+    "पर्यावरण",
+    "जिम्मेदारी",
+    "अच्छी आदतें"
+  ],
+  "learning_objectives": [
+    "मुख्य विचार समझना",
+    "महत्वपूर्ण विवरण पहचानना",
+    "अपने शब्दों में प्रतिक्रिया देना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"अब और प्लास्टिक नहीं!\" में सबसे प्रमुख विचार कौन-सा है?",
+      "o": [
+        "प्लास्टिक प्रदूषण",
+        "कंप्यूटर सेटिंग्स",
+        "माप की इकाइयाँ",
+        "डेटा तालिका"
+      ],
+      "a": 0,
+      "e": "यह concept-map आधारित प्रारंभिक प्रश्न है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "प्लास्टिक प्रदूषण",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "पाठ/कविता समझने के लिए क्या उपयोगी है?",
+      "o": [
+        "मुख्य विचार पहचानना",
+        "चित्र के रंग गिनना",
+        "बिना पढ़े अनुमान लगाना",
+        "पन्ने फाड़ना"
+      ],
+      "a": 0,
+      "e": "मुख्य विचार समझना reading comprehension का आधार है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "पर्यावरण",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "किससे शब्दावली बढ़ती है?",
+      "o": [
+        "नए शब्दों को संदर्भ में समझने से",
+        "हर शब्द छोड़ देने से",
+        "केवल चित्र देखने से",
+        "सिर्फ शीर्षक याद करने से"
+      ],
+      "a": 0,
+      "e": "संदर्भ से शब्द का अर्थ बेहतर समझ आता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "जिम्मेदारी",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "रचनात्मक उत्तर में क्या जरूरी है?",
+      "o": [
+        "पाठ से जुड़ी सोच और कारण",
+        "बिना कारण अनुमान",
+        "असंबंधित विषय",
+        "केवल एक शब्द"
+      ],
+      "a": 0,
+      "e": "सार्थक उत्तर में पाठ से जुड़ी सोच होनी चाहिए.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "अच्छी आदतें",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "अच्छी reading habit क्या है?",
+      "o": [
+        "पढ़कर अपने शब्दों में बताना",
+        "सिर्फ शीर्षक पढ़ना",
+        "हर उत्तर देख लेना",
+        "प्रश्न छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अपनी भाषा में बताना समझ की जाँच करता है.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "प्लास्टिक प्रदूषण",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “अब और प्लास्टिक नहीं!”?",
+      "o": [
+        "प्लास्टिक प्रदूषण",
+        "अच्छी आदतें",
+        "पर्यावरण",
+        "जिम्मेदारी"
+      ],
+      "a": 0,
+      "e": "प्लास्टिक प्रदूषण is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "प्लास्टिक प्रदूषण",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "You are on a mission about “अब और प्लास्टिक नहीं!”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "पर्यावरण",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "Which action best shows understanding of जिम्मेदारी?",
+      "o": [
+        "Ignore the idea completely",
+        "Use जिम्मेदारी in a relevant real-life situation.",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 1,
+      "e": "Using जिम्मेदारी in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "जिम्मेदारी",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “अब और प्लास्टिक नहीं!”?",
+      "o": [
+        "ignoring feedback",
+        "random guessing",
+        "rushing",
+        "reading"
+      ],
+      "a": 3,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "अच्छी आदतें",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "Which example would make “अब और प्लास्टिक नहीं!” easier to understand?",
+      "o": [
+        "A real-life example that uses the chapter idea",
+        "An unrelated game",
+        "A random number with no context",
+        "Something from another subject"
+      ],
+      "a": 0,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "प्लास्टिक प्रदूषण",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “अब और प्लास्टिक नहीं!”, what should you do?",
+      "o": [
+        "Skip similar questions",
+        "Check the feedback and try again with a new example.",
+        "Quit immediately",
+        "Repeat the same guess"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "पर्यावरण",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “अब और प्लास्टिक नहीं!”?",
+      "o": [
+        "जिम्मेदारी",
+        "पर्यावरण",
+        "प्लास्टिक प्रदूषण",
+        "अच्छी आदतें"
+      ],
+      "a": 0,
+      "e": "जिम्मेदारी belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "जिम्मेदारी",
+      "learning_objective": "मुख्य विचार समझना"
+    },
+    {
+      "q": "Which goal fits “अब और प्लास्टिक नहीं!”?",
+      "o": [
+        "Practise महत्वपूर्ण विवरण पहचानना",
+        "Avoid all practice",
+        "Guess every answer",
+        "Change to an unrelated topic"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: महत्वपूर्ण विवरण पहचानना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "अच्छी आदतें",
+      "learning_objective": "महत्वपूर्ण विवरण पहचानना"
+    },
+    {
+      "q": "What is a good strategy for a अब और प्लास्टिक नहीं! challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "प्लास्टिक प्रदूषण",
+      "learning_objective": "अपने शब्दों में प्रतिक्रिया देना"
+    },
+    {
+      "q": "How can you recognise a good answer in “अब और प्लास्टिक नहीं!”?",
+      "o": [
+        "A random option",
+        "The longest sentence",
+        "The most colourful option",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "पर्यावरण",
+      "learning_objective": "मुख्य विचार समझना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi/ch14.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

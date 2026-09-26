@@ -1,0 +1,280 @@
+{
+  "chapter_id": "ch139",
+  "book_id": "computer-main",
+  "book": "IT Deep Code – Class 4",
+  "publisher": "Edusoft Educational Publishers",
+  "role": "Coding / AI / Robotics",
+  "subject": "Computer / IT",
+  "subject_id": "computer",
+  "chapter_no": 7,
+  "chapter": "The Internet: Network of Networks",
+  "unit": "",
+  "concepts": [
+    "internet basics",
+    "websites",
+    "search engines",
+    "safe browsing",
+    "cyber safety"
+  ],
+  "learning_objectives": [
+    "describe what the internet is used for",
+    "use search carefully",
+    "recognise basic online safety rules"
+  ],
+  "skills": [
+    "digital literacy",
+    "logical thinking",
+    "problem solving"
+  ],
+  "game_type": "screen-sim",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"The Internet: Network of Networks\"?",
+      "o": [
+        "internet basics",
+        "fraction comparison",
+        "soil types",
+        "poetry rhythm"
+      ],
+      "a": 0,
+      "e": "internet basics is central to this digital-skills chapter.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "internet basics",
+      "learning_objective": "describe what the internet is used for"
+    },
+    {
+      "q": "Which learning approach fits computer skills?",
+      "o": [
+        "Try, observe, correct and try again",
+        "skip practice",
+        "share passwords",
+        "delete work randomly"
+      ],
+      "a": 0,
+      "e": "Hands-on practice and feedback are essential.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "websites",
+      "learning_objective": "use search carefully"
+    },
+    {
+      "q": "Which skill is important when using technology?",
+      "o": [
+        "safe, step-by-step problem solving",
+        "ignoring warnings",
+        "guessing blindly",
+        "sharing personal passwords"
+      ],
+      "a": 0,
+      "e": "Safe and structured problem solving is useful.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "search engines",
+      "learning_objective": "recognise basic online safety rules"
+    },
+    {
+      "q": "What should you do before changing an important setting?",
+      "o": [
+        "read the option and check what it does",
+        "click everything",
+        "turn off the screen",
+        "share the password"
+      ],
+      "a": 0,
+      "e": "Understand a setting before changing it.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "safe browsing",
+      "learning_objective": "describe what the internet is used for"
+    },
+    {
+      "q": "Which habit keeps digital work organised?",
+      "o": [
+        "use clear names and folders",
+        "save everything as New File",
+        "delete duplicates randomly",
+        "never back up"
+      ],
+      "a": 0,
+      "e": "Clear names and folders make files easier to manage.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "cyber safety",
+      "learning_objective": "use search carefully"
+    },
+    {
+      "q": "Which idea is most closely connected to “The Internet: Network of Networks”?",
+      "o": [
+        "search engines",
+        "internet basics",
+        "safe browsing",
+        "websites"
+      ],
+      "a": 1,
+      "e": "internet basics is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "internet basics",
+      "learning_objective": "describe what the internet is used for"
+    },
+    {
+      "q": "You are on a mission about “The Internet: Network of Networks”. What should you do first?",
+      "o": [
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Choose the longest option"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "websites",
+      "learning_objective": "use search carefully"
+    },
+    {
+      "q": "Which action best shows understanding of search engines?",
+      "o": [
+        "Guess without checking",
+        "Ignore the idea completely",
+        "Use search engines in a relevant real-life situation.",
+        "Change the topic"
+      ],
+      "a": 2,
+      "e": "Using search engines in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "search engines",
+      "learning_objective": "recognise basic online safety rules"
+    },
+    {
+      "q": "Which skill is especially useful while learning “The Internet: Network of Networks”?",
+      "o": [
+        "random guessing",
+        "digital literacy",
+        "rushing",
+        "ignoring feedback"
+      ],
+      "a": 1,
+      "e": "Digital Literacy supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "safe browsing",
+      "learning_objective": "describe what the internet is used for"
+    },
+    {
+      "q": "Which example would make “The Internet: Network of Networks” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A random number with no context",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "cyber safety",
+      "learning_objective": "use search carefully"
+    },
+    {
+      "q": "If you make a mistake while practising “The Internet: Network of Networks”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Quit immediately",
+        "Skip similar questions",
+        "Repeat the same guess"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "internet basics",
+      "learning_objective": "recognise basic online safety rules"
+    },
+    {
+      "q": "Which of these belongs to the chapter “The Internet: Network of Networks”?",
+      "o": [
+        "internet basics",
+        "websites",
+        "search engines",
+        "safe browsing"
+      ],
+      "a": 1,
+      "e": "websites belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "websites",
+      "learning_objective": "describe what the internet is used for"
+    },
+    {
+      "q": "Which goal fits “The Internet: Network of Networks”?",
+      "o": [
+        "Guess every answer",
+        "Practise use search carefully",
+        "Avoid all practice",
+        "Change to an unrelated topic"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: use search carefully.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "search engines",
+      "learning_objective": "use search carefully"
+    },
+    {
+      "q": "What is a good strategy for a The Internet: Network of Networks challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Copy a friend every time",
+        "Tap without reading"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "safe browsing",
+      "learning_objective": "recognise basic online safety rules"
+    },
+    {
+      "q": "How can you recognise a good answer in “The Internet: Network of Networks”?",
+      "o": [
+        "A random option",
+        "The most colourful option",
+        "The choice that matches the chapter concept",
+        "The longest sentence"
+      ],
+      "a": 2,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "cyber safety",
+      "learning_objective": "describe what the internet is used for"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/computer/ch07.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "screen-sim"
+  }
+}

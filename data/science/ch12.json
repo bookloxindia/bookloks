@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch053",
+  "book_id": "science-main",
+  "book": "Be Curious Be Wise – A Course in Science – Class 4",
+  "publisher": "S. Chand",
+  "role": "Science Textbook",
+  "subject": "Science",
+  "subject_id": "science",
+  "chapter_no": 12,
+  "chapter": "Friction as a Force",
+  "unit": "",
+  "concepts": [
+    "friction",
+    "uses of friction",
+    "harmful effects",
+    "reducing friction"
+  ],
+  "learning_objectives": [
+    "explain friction in simple terms",
+    "identify helpful uses",
+    "choose ways to reduce friction"
+  ],
+  "skills": [
+    "observation",
+    "classification",
+    "application"
+  ],
+  "game_type": "friction",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Friction is a force that usually:",
+      "o": [
+        "opposes motion between surfaces",
+        "makes objects invisible",
+        "creates rain",
+        "removes gravity"
+      ],
+      "a": 0,
+      "e": "Friction resists motion between surfaces.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "friction",
+      "learning_objective": "explain friction in simple terms"
+    },
+    {
+      "q": "Friction helps us:",
+      "o": [
+        "walk without slipping",
+        "float in air",
+        "see in darkness",
+        "grow plants"
+      ],
+      "a": 0,
+      "e": "Friction between feet and ground helps us walk.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "uses of friction",
+      "learning_objective": "identify helpful uses"
+    },
+    {
+      "q": "Oil can reduce friction in machines by:",
+      "o": [
+        "lubricating surfaces",
+        "making them heavier",
+        "adding magnets",
+        "cooling the sun"
+      ],
+      "a": 0,
+      "e": "Lubricants reduce rubbing between surfaces.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "harmful effects",
+      "learning_objective": "choose ways to reduce friction"
+    },
+    {
+      "q": "Too much friction can:",
+      "o": [
+        "cause wear and heat",
+        "stop all motion forever",
+        "make metal grow",
+        "create food"
+      ],
+      "a": 0,
+      "e": "Friction can cause wear and heat.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "reducing friction",
+      "learning_objective": "explain friction in simple terms"
+    },
+    {
+      "q": "Treads on tyres are useful because they:",
+      "o": [
+        "increase grip with the road",
+        "remove all friction",
+        "make tyres invisible",
+        "reduce tyre size"
+      ],
+      "a": 0,
+      "e": "Treads improve grip by helping friction.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "friction",
+      "learning_objective": "identify helpful uses"
+    },
+    {
+      "q": "Which idea is most closely connected to “Friction as a Force”?",
+      "o": [
+        "harmful effects",
+        "reducing friction",
+        "friction",
+        "uses of friction"
+      ],
+      "a": 2,
+      "e": "friction is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "friction",
+      "learning_objective": "explain friction in simple terms"
+    },
+    {
+      "q": "You are on a mission about “Friction as a Force”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Skip the instructions"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "uses of friction",
+      "learning_objective": "identify helpful uses"
+    },
+    {
+      "q": "Which action best shows understanding of harmful effects?",
+      "o": [
+        "Ignore the idea completely",
+        "Use harmful effects in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using harmful effects in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "harmful effects",
+      "learning_objective": "choose ways to reduce friction"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Friction as a Force”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "observation",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "reducing friction",
+      "learning_objective": "explain friction in simple terms"
+    },
+    {
+      "q": "Which example would make “Friction as a Force” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "friction",
+      "learning_objective": "identify helpful uses"
+    },
+    {
+      "q": "If you make a mistake while practising “Friction as a Force”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "uses of friction",
+      "learning_objective": "choose ways to reduce friction"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Friction as a Force”?",
+      "o": [
+        "friction",
+        "harmful effects",
+        "reducing friction",
+        "uses of friction"
+      ],
+      "a": 1,
+      "e": "harmful effects belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "harmful effects",
+      "learning_objective": "explain friction in simple terms"
+    },
+    {
+      "q": "Which goal fits “Friction as a Force”?",
+      "o": [
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Practise identify helpful uses"
+      ],
+      "a": 3,
+      "e": "The chapter is mapped to the objective: identify helpful uses.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "reducing friction",
+      "learning_objective": "identify helpful uses"
+    },
+    {
+      "q": "What is a good strategy for a Friction as a Force challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "friction",
+      "learning_objective": "choose ways to reduce friction"
+    },
+    {
+      "q": "How can you recognise a good answer in “Friction as a Force”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "uses of friction",
+      "learning_objective": "explain friction in simple terms"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/science/ch12.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "friction"
+  }
+}
