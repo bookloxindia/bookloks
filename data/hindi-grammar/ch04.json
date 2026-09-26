@@ -1,0 +1,277 @@
+{
+  "chapter_id": "ch116",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 4,
+  "chapter": "संज्ञा",
+  "unit": "",
+  "concepts": [
+    "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+    "संज्ञा पहचानना",
+    "प्रयोग"
+  ],
+  "learning_objectives": [
+    "वाक्य में संज्ञा पहचानना",
+    "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"संज्ञा\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "व्यक्ति/स्थान/वस्तु/भाव के नाम इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "संज्ञा पहचानना",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "प्रयोग",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "संज्ञा पहचानना",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “संज्ञा”?",
+      "o": [
+        "प्रयोग",
+        "random guessing",
+        "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+        "संज्ञा पहचानना"
+      ],
+      "a": 2,
+      "e": "व्यक्ति/स्थान/वस्तु/भाव के नाम is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "You are on a mission about “संज्ञा”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Skip the instructions"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "संज्ञा पहचानना",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    },
+    {
+      "q": "Which action best shows understanding of प्रयोग?",
+      "o": [
+        "Ignore the idea completely",
+        "Use प्रयोग in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using प्रयोग in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "प्रयोग",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “संज्ञा”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "reading",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    },
+    {
+      "q": "Which example would make “संज्ञा” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "संज्ञा पहचानना",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “संज्ञा”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "प्रयोग",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “संज्ञा”?",
+      "o": [
+        "संज्ञा पहचानना",
+        "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+        "unrelated topic",
+        "प्रयोग"
+      ],
+      "a": 1,
+      "e": "व्यक्ति/स्थान/वस्तु/भाव के नाम belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "Which goal fits “संज्ञा”?",
+      "o": [
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Practise संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+      ],
+      "a": 3,
+      "e": "The chapter is mapped to the objective: संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "संज्ञा पहचानना",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    },
+    {
+      "q": "What is a good strategy for a संज्ञा challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "प्रयोग",
+      "learning_objective": "वाक्य में संज्ञा पहचानना"
+    },
+    {
+      "q": "How can you recognise a good answer in “संज्ञा”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "व्यक्ति/स्थान/वस्तु/भाव के नाम",
+      "learning_objective": "संज्ञा के प्रकारों का प्रारंभिक अभ्यास करना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch04.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

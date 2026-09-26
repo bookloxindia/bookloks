@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch008",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 8,
+  "chapter": "Weight and Capacity",
+  "unit": "",
+  "concepts": [
+    "mass/weight",
+    "capacity",
+    "standard units",
+    "estimation and comparison"
+  ],
+  "learning_objectives": [
+    "compare quantities",
+    "choose suitable units",
+    "estimate then measure"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which unit is suitable for a bag of rice?",
+      "o": [
+        "milligram",
+        "kilogram",
+        "millilitre",
+        "centimetre"
+      ],
+      "a": 1,
+      "e": "Rice is commonly measured in kilograms.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "mass/weight",
+      "learning_objective": "compare quantities"
+    },
+    {
+      "q": "Which holds more?",
+      "o": [
+        "1 litre",
+        "500 millilitres",
+        "250 millilitres",
+        "100 millilitres"
+      ],
+      "a": 0,
+      "e": "1 litre equals 1000 millilitres.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "capacity",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "Which is heavier?",
+      "o": [
+        "2 kg",
+        "200 g",
+        "900 g",
+        "1 kg"
+      ],
+      "a": 0,
+      "e": "2 kg is heavier.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "standard units",
+      "learning_objective": "estimate then measure"
+    },
+    {
+      "q": "A bottle holds 1 L. How many millilitres is that?",
+      "o": [
+        "10",
+        "100",
+        "500",
+        "1000"
+      ],
+      "a": 3,
+      "e": "1 litre = 1000 millilitres.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "estimation and comparison",
+      "learning_objective": "compare quantities"
+    },
+    {
+      "q": "A watermelon is usually measured by:",
+      "o": [
+        "length",
+        "mass/weight",
+        "time",
+        "temperature"
+      ],
+      "a": 1,
+      "e": "A watermelon is commonly compared by weight.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "mass/weight",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "Which unit is most suitable for the weight of a school bag?",
+      "o": [
+        "metre",
+        "minute",
+        "kilogram",
+        "litre"
+      ],
+      "a": 2,
+      "e": "A school bag is commonly measured in kilograms.",
+      "type": "application",
+      "difficulty": "easy",
+      "concept": "measurement",
+      "learning_objective": "compare quantities"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "mass/weight",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "mass/weight is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "mass/weight",
+      "learning_objective": "compare quantities"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "capacity",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "capacity is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "capacity",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "standard units"
+      ],
+      "a": 3,
+      "e": "standard units is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "standard units",
+      "learning_objective": "estimate then measure"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "random guessing",
+        "estimation and comparison",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "estimation and comparison is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "estimation and comparison",
+      "learning_objective": "compare quantities"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "mass/weight",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "mass/weight is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "mass/weight",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "capacity",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "capacity is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "capacity",
+      "learning_objective": "estimate then measure"
+    },
+    {
+      "q": "Quick Check 7: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "standard units",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "standard units is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "standard units",
+      "learning_objective": "compare quantities"
+    },
+    {
+      "q": "Quick Check 8: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "an unrelated topic",
+        "estimation and comparison",
+        "random guessing",
+        "another subject"
+      ],
+      "a": 1,
+      "e": "estimation and comparison is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "estimation and comparison",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "Quick Check 9: Which idea is part of “Weight and Capacity”?",
+      "o": [
+        "an unrelated topic",
+        "random guessing",
+        "mass/weight",
+        "another subject"
+      ],
+      "a": 2,
+      "e": "mass/weight is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "mass/weight",
+      "learning_objective": "estimate then measure"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch08.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

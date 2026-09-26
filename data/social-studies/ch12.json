@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch065",
+  "book_id": "social-main",
+  "book": "My Big Book of Social Studies – Class 4",
+  "publisher": "Ratna Sagar",
+  "role": "Social Studies",
+  "subject": "Social Studies",
+  "subject_id": "social",
+  "chapter_no": 12,
+  "chapter": "Our Forests",
+  "unit": "Our Resources",
+  "concepts": [
+    "forest ecosystems",
+    "plants and animals",
+    "forest products",
+    "conservation"
+  ],
+  "learning_objectives": [
+    "identify forest benefits",
+    "recognise forest resources",
+    "explain why forests need protection"
+  ],
+  "skills": [
+    "observation",
+    "comparison",
+    "civic thinking"
+  ],
+  "game_type": "map-explore",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Our Forests\"?",
+      "o": [
+        "forest ecosystems",
+        "tooth brushing",
+        "computer formatting",
+        "fractions"
+      ],
+      "a": 0,
+      "e": "forest ecosystems is part of the chapter concept map.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "forest ecosystems",
+      "learning_objective": "identify forest benefits"
+    },
+    {
+      "q": "A strong social-studies learner should:",
+      "o": [
+        "observe places, people and patterns",
+        "memorise without understanding",
+        "ignore maps",
+        "avoid questions"
+      ],
+      "a": 0,
+      "e": "Observation and questions build social understanding.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "plants and animals",
+      "learning_objective": "recognise forest resources"
+    },
+    {
+      "q": "Why are maps useful?",
+      "o": [
+        "They help locate and compare places",
+        "They measure temperature",
+        "They write stories",
+        "They replace all data"
+      ],
+      "a": 0,
+      "e": "Maps help us understand location and space.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "forest products",
+      "learning_objective": "explain why forests need protection"
+    },
+    {
+      "q": "Which approach supports responsible citizenship?",
+      "o": [
+        "understand rules and take part responsibly",
+        "ignore community needs",
+        "waste resources",
+        "avoid cooperation"
+      ],
+      "a": 0,
+      "e": "Responsible action supports community life.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "conservation",
+      "learning_objective": "identify forest benefits"
+    },
+    {
+      "q": "Which skill is useful across this subject?",
+      "o": [
+        "compare evidence and explain a reason",
+        "guess without checking",
+        "skip sources",
+        "copy everything"
+      ],
+      "a": 0,
+      "e": "Comparison and explanation are core learning skills.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "forest ecosystems",
+      "learning_objective": "recognise forest resources"
+    },
+    {
+      "q": "Which idea is most closely connected to “Our Forests”?",
+      "o": [
+        "forest products",
+        "conservation",
+        "forest ecosystems",
+        "plants and animals"
+      ],
+      "a": 2,
+      "e": "forest ecosystems is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "forest ecosystems",
+      "learning_objective": "identify forest benefits"
+    },
+    {
+      "q": "You are on a mission about “Our Forests”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "plants and animals",
+      "learning_objective": "recognise forest resources"
+    },
+    {
+      "q": "Which action best shows understanding of forest products?",
+      "o": [
+        "Use forest products in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using forest products in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "forest products",
+      "learning_objective": "explain why forests need protection"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Our Forests”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "random guessing",
+        "observation"
+      ],
+      "a": 3,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "conservation",
+      "learning_objective": "identify forest benefits"
+    },
+    {
+      "q": "Which example would make “Our Forests” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A random number with no context",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea"
+      ],
+      "a": 3,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "forest ecosystems",
+      "learning_objective": "recognise forest resources"
+    },
+    {
+      "q": "If you make a mistake while practising “Our Forests”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Repeat the same guess",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "plants and animals",
+      "learning_objective": "explain why forests need protection"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Our Forests”?",
+      "o": [
+        "forest products",
+        "conservation",
+        "forest ecosystems",
+        "plants and animals"
+      ],
+      "a": 0,
+      "e": "forest products belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "forest products",
+      "learning_objective": "identify forest benefits"
+    },
+    {
+      "q": "Which goal fits “Our Forests”?",
+      "o": [
+        "Practise recognise forest resources",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Avoid all practice"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: recognise forest resources.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "conservation",
+      "learning_objective": "recognise forest resources"
+    },
+    {
+      "q": "What is a good strategy for a Our Forests challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "forest ecosystems",
+      "learning_objective": "explain why forests need protection"
+    },
+    {
+      "q": "How can you recognise a good answer in “Our Forests”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "plants and animals",
+      "learning_objective": "identify forest benefits"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/social-studies/ch12.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "map-explore"
+  }
+}

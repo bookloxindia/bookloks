@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch031",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 1,
+  "chapter": "Numbers & Their Operations",
+  "unit": "",
+  "concepts": [
+    "Numbers & Their Operations",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "What is the next number: 3, 6, 12, 24, ___?",
+      "o": [
+        "30",
+        "36",
+        "48",
+        "52"
+      ],
+      "a": 2,
+      "e": "Each number is doubled.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Numbers & Their Operations",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which is the greatest?",
+      "o": [
+        "3,450",
+        "3,405",
+        "3,540",
+        "3,504"
+      ],
+      "a": 2,
+      "e": "Compare hundreds and tens carefully.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "A number has 5 thousands, 2 hundreds, 4 tens and 3 ones. It is:",
+      "o": [
+        "5,243",
+        "5,423",
+        "5,324",
+        "5,234"
+      ],
+      "a": 0,
+      "e": "Place values give 5,243.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which pair is a factor pair of 36?",
+      "o": [
+        "4 and 9",
+        "5 and 7",
+        "6 and 7",
+        "3 and 11"
+      ],
+      "a": 0,
+      "e": "4 × 9 = 36.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Numbers & Their Operations",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which statement is true?",
+      "o": [
+        "A number can have more than one factor pair",
+        "Every number has only one factor",
+        "Every odd number is prime",
+        "Every even number is a multiple of 3"
+      ],
+      "a": 0,
+      "e": "Many composite numbers have several factor pairs.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which idea belongs to “Numbers & Their Operations”?",
+      "o": [
+        "Numbers & Their Operations",
+        "poetry",
+        "patterns and reasoning",
+        "multi-step thinking"
+      ],
+      "a": 0,
+      "e": "Numbers & Their Operations is a mapped concept for this chapter.",
+      "type": "concept",
+      "difficulty": "medium",
+      "concept": "Numbers & Their Operations",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "Numbers & Their Operations",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "Numbers & Their Operations is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Numbers & Their Operations",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "patterns and reasoning",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "multi-step thinking"
+      ],
+      "a": 3,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "random guessing",
+        "Numbers & Their Operations",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "Numbers & Their Operations is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Numbers & Their Operations",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "patterns and reasoning",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "multi-step thinking",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Quick Check 7: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "Numbers & Their Operations",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Numbers & Their Operations is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Numbers & Their Operations",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 8: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "an unrelated topic",
+        "patterns and reasoning",
+        "random guessing",
+        "another subject"
+      ],
+      "a": 1,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 9: Which idea is part of “Numbers & Their Operations”?",
+      "o": [
+        "an unrelated topic",
+        "random guessing",
+        "multi-step thinking",
+        "another subject"
+      ],
+      "a": 2,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch01.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}

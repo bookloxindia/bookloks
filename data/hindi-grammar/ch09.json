@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch121",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 9,
+  "chapter": "क्रिया तथा काल",
+  "unit": "",
+  "concepts": [
+    "क्रिया",
+    "वर्तमान",
+    "भूत",
+    "भविष्य"
+  ],
+  "learning_objectives": [
+    "क्रिया पहचानना",
+    "समय के अनुसार वाक्य बदलना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"क्रिया तथा काल\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "क्रिया",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "क्रिया इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "क्रिया",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "वर्तमान",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "भूत",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "भविष्य",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "क्रिया",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “क्रिया तथा काल”?",
+      "o": [
+        "क्रिया",
+        "भविष्य",
+        "वर्तमान",
+        "भूत"
+      ],
+      "a": 0,
+      "e": "क्रिया is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "क्रिया",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "You are on a mission about “क्रिया तथा काल”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "वर्तमान",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    },
+    {
+      "q": "Which action best shows understanding of भूत?",
+      "o": [
+        "Ignore the idea completely",
+        "Use भूत in a relevant real-life situation.",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 1,
+      "e": "Using भूत in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "भूत",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “क्रिया तथा काल”?",
+      "o": [
+        "ignoring feedback",
+        "random guessing",
+        "rushing",
+        "reading"
+      ],
+      "a": 3,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "भविष्य",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    },
+    {
+      "q": "Which example would make “क्रिया तथा काल” easier to understand?",
+      "o": [
+        "A real-life example that uses the chapter idea",
+        "An unrelated game",
+        "A random number with no context",
+        "Something from another subject"
+      ],
+      "a": 0,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "क्रिया",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “क्रिया तथा काल”, what should you do?",
+      "o": [
+        "Skip similar questions",
+        "Check the feedback and try again with a new example.",
+        "Quit immediately",
+        "Repeat the same guess"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "वर्तमान",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “क्रिया तथा काल”?",
+      "o": [
+        "भूत",
+        "वर्तमान",
+        "क्रिया",
+        "भविष्य"
+      ],
+      "a": 0,
+      "e": "भूत belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "भूत",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "Which goal fits “क्रिया तथा काल”?",
+      "o": [
+        "Practise समय के अनुसार वाक्य बदलना",
+        "Avoid all practice",
+        "Guess every answer",
+        "Change to an unrelated topic"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: समय के अनुसार वाक्य बदलना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "भविष्य",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    },
+    {
+      "q": "What is a good strategy for a क्रिया तथा काल challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "क्रिया",
+      "learning_objective": "क्रिया पहचानना"
+    },
+    {
+      "q": "How can you recognise a good answer in “क्रिया तथा काल”?",
+      "o": [
+        "A random option",
+        "The longest sentence",
+        "The most colourful option",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "वर्तमान",
+      "learning_objective": "समय के अनुसार वाक्य बदलना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch09.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

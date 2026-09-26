@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch115",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 3,
+  "chapter": "शब्द-भंडार",
+  "unit": "",
+  "concepts": [
+    "पर्यायवाची",
+    "विलोम",
+    "शब्द-समृद्धि",
+    "प्रयोग"
+  ],
+  "learning_objectives": [
+    "उचित शब्द चुनना",
+    "समान/विपरीत अर्थ वाले शब्द पहचानना",
+    "शब्दावली बढ़ाना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"शब्द-भंडार\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "पर्यायवाची",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "पर्यायवाची इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "पर्यायवाची",
+      "learning_objective": "उचित शब्द चुनना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "विलोम",
+      "learning_objective": "समान/विपरीत अर्थ वाले शब्द पहचानना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "शब्द-समृद्धि",
+      "learning_objective": "शब्दावली बढ़ाना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "प्रयोग",
+      "learning_objective": "उचित शब्द चुनना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "पर्यायवाची",
+      "learning_objective": "समान/विपरीत अर्थ वाले शब्द पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “शब्द-भंडार”?",
+      "o": [
+        "प्रयोग",
+        "शब्द-समृद्धि",
+        "पर्यायवाची",
+        "विलोम"
+      ],
+      "a": 2,
+      "e": "पर्यायवाची is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "पर्यायवाची",
+      "learning_objective": "उचित शब्द चुनना"
+    },
+    {
+      "q": "You are on a mission about “शब्द-भंडार”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "विलोम",
+      "learning_objective": "समान/विपरीत अर्थ वाले शब्द पहचानना"
+    },
+    {
+      "q": "Which action best shows understanding of शब्द-समृद्धि?",
+      "o": [
+        "Change the topic",
+        "Use शब्द-समृद्धि in a relevant real-life situation.",
+        "Guess without checking",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using शब्द-समृद्धि in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "शब्द-समृद्धि",
+      "learning_objective": "शब्दावली बढ़ाना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “शब्द-भंडार”?",
+      "o": [
+        "reading",
+        "rushing",
+        "random guessing",
+        "ignoring feedback"
+      ],
+      "a": 0,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "प्रयोग",
+      "learning_objective": "उचित शब्द चुनना"
+    },
+    {
+      "q": "Which example would make “शब्द-भंडार” easier to understand?",
+      "o": [
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context",
+        "An unrelated game"
+      ],
+      "a": 0,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "पर्यायवाची",
+      "learning_objective": "समान/विपरीत अर्थ वाले शब्द पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “शब्द-भंडार”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "विलोम",
+      "learning_objective": "शब्दावली बढ़ाना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “शब्द-भंडार”?",
+      "o": [
+        "पर्यायवाची",
+        "विलोम",
+        "शब्द-समृद्धि",
+        "प्रयोग"
+      ],
+      "a": 2,
+      "e": "शब्द-समृद्धि belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "शब्द-समृद्धि",
+      "learning_objective": "उचित शब्द चुनना"
+    },
+    {
+      "q": "Which goal fits “शब्द-भंडार”?",
+      "o": [
+        "Guess every answer",
+        "Avoid all practice",
+        "Practise समान/विपरीत अर्थ वाले शब्द पहचानना",
+        "Change to an unrelated topic"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: समान/विपरीत अर्थ वाले शब्द पहचानना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "प्रयोग",
+      "learning_objective": "समान/विपरीत अर्थ वाले शब्द पहचानना"
+    },
+    {
+      "q": "What is a good strategy for a शब्द-भंडार challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "पर्यायवाची",
+      "learning_objective": "शब्दावली बढ़ाना"
+    },
+    {
+      "q": "How can you recognise a good answer in “शब्द-भंडार”?",
+      "o": [
+        "The most colourful option",
+        "A random option",
+        "The longest sentence",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "विलोम",
+      "learning_objective": "उचित शब्द चुनना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch03.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch037",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 7,
+  "chapter": "Money & Unitary Method",
+  "unit": "",
+  "concepts": [
+    "Money & Unitary Method",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which strategy is most useful in \"Money & Unitary Method\"?",
+      "o": [
+        "look for patterns and explain your reasoning",
+        "guess quickly",
+        "ignore units",
+        "copy an earlier answer"
+      ],
+      "a": 0,
+      "e": "Olympiad problems reward reasoning and pattern finding.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Money & Unitary Method",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A good challenge solver should:",
+      "o": [
+        "break a problem into steps",
+        "do everything mentally without checking",
+        "skip diagrams",
+        "avoid estimates"
+      ],
+      "a": 0,
+      "e": "Breaking problems into steps makes complex tasks manageable.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which answer is most trustworthy?",
+      "o": [
+        "one supported by a check",
+        "the first one you see",
+        "a random guess",
+        "an answer copied without working"
+      ],
+      "a": 0,
+      "e": "Checking helps verify reasoning.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What makes a solution strong?",
+      "o": [
+        "a clear method and correct result",
+        "only a final number",
+        "no explanation",
+        "unrelated working"
+      ],
+      "a": 0,
+      "e": "A clear method shows how the answer was reached.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Money & Unitary Method",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "When stuck, a useful move is to:",
+      "o": [
+        "try a simpler related example",
+        "give up immediately",
+        "change the question",
+        "erase the page"
+      ],
+      "a": 0,
+      "e": "A simpler example can reveal the pattern.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "A toy costs ₹15 and a book costs ₹20. What is the total?",
+      "o": [
+        "₹30",
+        "₹35",
+        "₹45",
+        "₹40"
+      ],
+      "a": 1,
+      "e": "₹15 + ₹20 = ₹35.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A toy costs ₹35 and a book costs ₹10. What is the total?",
+      "o": [
+        "₹55",
+        "₹50",
+        "₹40",
+        "₹45"
+      ],
+      "a": 3,
+      "e": "₹35 + ₹10 = ₹45.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "A toy costs ₹15 and a book costs ₹15. What is the total?",
+      "o": [
+        "₹35",
+        "₹40",
+        "₹25",
+        "₹30"
+      ],
+      "a": 3,
+      "e": "₹15 + ₹15 = ₹30.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "A toy costs ₹20 and a book costs ₹15. What is the total?",
+      "o": [
+        "₹45",
+        "₹35",
+        "₹40",
+        "₹30"
+      ],
+      "a": 1,
+      "e": "₹20 + ₹15 = ₹35.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A toy costs ₹30 and a book costs ₹15. What is the total?",
+      "o": [
+        "₹55",
+        "₹50",
+        "₹45",
+        "₹40"
+      ],
+      "a": 2,
+      "e": "₹30 + ₹15 = ₹45.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "A toy costs ₹25 and a book costs ₹25. What is the total?",
+      "o": [
+        "₹55",
+        "₹60",
+        "₹50",
+        "₹45"
+      ],
+      "a": 2,
+      "e": "₹25 + ₹25 = ₹50.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "A toy costs ₹15 and a book costs ₹10. What is the total?",
+      "o": [
+        "₹25",
+        "₹20",
+        "₹35",
+        "₹30"
+      ],
+      "a": 0,
+      "e": "₹15 + ₹10 = ₹25.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A toy costs ₹20 and a book costs ₹20. What is the total?",
+      "o": [
+        "₹50",
+        "₹45",
+        "₹35",
+        "₹40"
+      ],
+      "a": 3,
+      "e": "₹20 + ₹20 = ₹40.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "A toy costs ₹10 and a book costs ₹25. What is the total?",
+      "o": [
+        "₹40",
+        "₹30",
+        "₹35",
+        "₹45"
+      ],
+      "a": 2,
+      "e": "₹10 + ₹25 = ₹35.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "A toy costs ₹30 and a book costs ₹10. What is the total?",
+      "o": [
+        "₹50",
+        "₹35",
+        "₹45",
+        "₹40"
+      ],
+      "a": 3,
+      "e": "₹30 + ₹10 = ₹40.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "identify the problem structure"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch07.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}

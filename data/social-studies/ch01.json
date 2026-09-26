@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch054",
+  "book_id": "social-main",
+  "book": "My Big Book of Social Studies – Class 4",
+  "publisher": "Ratna Sagar",
+  "role": "Social Studies",
+  "subject": "Social Studies",
+  "subject_id": "social",
+  "chapter_no": 1,
+  "chapter": "I Love My India",
+  "unit": "Life in the Region",
+  "concepts": [
+    "India and its identity",
+    "states/regions",
+    "unity in diversity",
+    "national symbols"
+  ],
+  "learning_objectives": [
+    "recognise India as a diverse country",
+    "locate broad regions",
+    "identify examples of shared national identity"
+  ],
+  "skills": [
+    "observation",
+    "comparison",
+    "civic thinking"
+  ],
+  "game_type": "map-explore",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"I Love My India\"?",
+      "o": [
+        "India and its identity",
+        "tooth brushing",
+        "computer formatting",
+        "fractions"
+      ],
+      "a": 0,
+      "e": "India and its identity is part of the chapter concept map.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "India and its identity",
+      "learning_objective": "recognise India as a diverse country"
+    },
+    {
+      "q": "A strong social-studies learner should:",
+      "o": [
+        "observe places, people and patterns",
+        "memorise without understanding",
+        "ignore maps",
+        "avoid questions"
+      ],
+      "a": 0,
+      "e": "Observation and questions build social understanding.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "states/regions",
+      "learning_objective": "locate broad regions"
+    },
+    {
+      "q": "Why are maps useful?",
+      "o": [
+        "They help locate and compare places",
+        "They measure temperature",
+        "They write stories",
+        "They replace all data"
+      ],
+      "a": 0,
+      "e": "Maps help us understand location and space.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "unity in diversity",
+      "learning_objective": "identify examples of shared national identity"
+    },
+    {
+      "q": "Which approach supports responsible citizenship?",
+      "o": [
+        "understand rules and take part responsibly",
+        "ignore community needs",
+        "waste resources",
+        "avoid cooperation"
+      ],
+      "a": 0,
+      "e": "Responsible action supports community life.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "national symbols",
+      "learning_objective": "recognise India as a diverse country"
+    },
+    {
+      "q": "Which skill is useful across this subject?",
+      "o": [
+        "compare evidence and explain a reason",
+        "guess without checking",
+        "skip sources",
+        "copy everything"
+      ],
+      "a": 0,
+      "e": "Comparison and explanation are core learning skills.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "India and its identity",
+      "learning_objective": "locate broad regions"
+    },
+    {
+      "q": "Which idea is most closely connected to “I Love My India”?",
+      "o": [
+        "national symbols",
+        "unity in diversity",
+        "states/regions",
+        "India and its identity"
+      ],
+      "a": 3,
+      "e": "India and its identity is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "India and its identity",
+      "learning_objective": "recognise India as a diverse country"
+    },
+    {
+      "q": "You are on a mission about “I Love My India”. What should you do first?",
+      "o": [
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 0,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "states/regions",
+      "learning_objective": "locate broad regions"
+    },
+    {
+      "q": "Which action best shows understanding of unity in diversity?",
+      "o": [
+        "Guess without checking",
+        "Use unity in diversity in a relevant real-life situation.",
+        "Change the topic",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using unity in diversity in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "unity in diversity",
+      "learning_objective": "identify examples of shared national identity"
+    },
+    {
+      "q": "Which skill is especially useful while learning “I Love My India”?",
+      "o": [
+        "ignoring feedback",
+        "observation",
+        "rushing",
+        "random guessing"
+      ],
+      "a": 1,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "national symbols",
+      "learning_objective": "recognise India as a diverse country"
+    },
+    {
+      "q": "Which example would make “I Love My India” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "India and its identity",
+      "learning_objective": "locate broad regions"
+    },
+    {
+      "q": "If you make a mistake while practising “I Love My India”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "states/regions",
+      "learning_objective": "identify examples of shared national identity"
+    },
+    {
+      "q": "Which of these belongs to the chapter “I Love My India”?",
+      "o": [
+        "states/regions",
+        "unity in diversity",
+        "India and its identity",
+        "national symbols"
+      ],
+      "a": 1,
+      "e": "unity in diversity belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "unity in diversity",
+      "learning_objective": "recognise India as a diverse country"
+    },
+    {
+      "q": "Which goal fits “I Love My India”?",
+      "o": [
+        "Change to an unrelated topic",
+        "Avoid all practice",
+        "Practise locate broad regions",
+        "Guess every answer"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: locate broad regions.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "national symbols",
+      "learning_objective": "locate broad regions"
+    },
+    {
+      "q": "What is a good strategy for a I Love My India challenge?",
+      "o": [
+        "Tap without reading",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time"
+      ],
+      "a": 2,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "India and its identity",
+      "learning_objective": "identify examples of shared national identity"
+    },
+    {
+      "q": "How can you recognise a good answer in “I Love My India”?",
+      "o": [
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "states/regions",
+      "learning_objective": "recognise India as a diverse country"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/social-studies/ch01.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "map-explore"
+  }
+}

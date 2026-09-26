@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch013",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 13,
+  "chapter": "Time",
+  "unit": "",
+  "concepts": [
+    "clock reading",
+    "duration",
+    "calendar",
+    "schedules"
+  ],
+  "learning_objectives": [
+    "read time",
+    "find simple durations",
+    "use calendars and schedules"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "visual-tap",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "How many minutes are in 1 hour?",
+      "o": [
+        "30",
+        "45",
+        "60",
+        "100"
+      ],
+      "a": 2,
+      "e": "One hour has 60 minutes.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "clock reading",
+      "learning_objective": "read time"
+    },
+    {
+      "q": "If school starts at 8:00 and ends at 2:00, the school day lasts:",
+      "o": [
+        "4 hours",
+        "5 hours",
+        "6 hours",
+        "7 hours"
+      ],
+      "a": 2,
+      "e": "2 pm is 6 hours after 8 am.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "duration",
+      "learning_objective": "find simple durations"
+    },
+    {
+      "q": "Which comes after Wednesday?",
+      "o": [
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Sunday"
+      ],
+      "a": 1,
+      "e": "Thursday comes after Wednesday.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "calendar",
+      "learning_objective": "use calendars and schedules"
+    },
+    {
+      "q": "Quarter past 3 is:",
+      "o": [
+        "3:15",
+        "3:30",
+        "3:45",
+        "4:15"
+      ],
+      "a": 0,
+      "e": "Quarter past means 15 minutes after the hour.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "schedules",
+      "learning_objective": "read time"
+    },
+    {
+      "q": "A movie starts at 5:00 and lasts 2 hours. It ends at:",
+      "o": [
+        "6:00",
+        "6:30",
+        "7:00",
+        "7:30"
+      ],
+      "a": 2,
+      "e": "5 pm + 2 hours = 7 pm.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "clock reading",
+      "learning_objective": "find simple durations"
+    },
+    {
+      "q": "Which time shows 10 hours and 30 minutes?",
+      "o": [
+        "10:30",
+        "9:30",
+        "11:30",
+        "10:45"
+      ],
+      "a": 0,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "read time"
+    },
+    {
+      "q": "Which time shows 6 hours and 30 minutes?",
+      "o": [
+        "5:30",
+        "6:30",
+        "7:30",
+        "6:45"
+      ],
+      "a": 1,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "find simple durations"
+    },
+    {
+      "q": "Which time shows 10 hours and 45 minutes?",
+      "o": [
+        "10:45",
+        "11:45",
+        "9:45",
+        "10:00"
+      ],
+      "a": 0,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "read time"
+    },
+    {
+      "q": "Which time shows 7 hours and 15 minutes?",
+      "o": [
+        "7:15",
+        "8:15",
+        "6:15",
+        "7:30"
+      ],
+      "a": 0,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "find simple durations"
+    },
+    {
+      "q": "Which time shows 7 hours and 45 minutes?",
+      "o": [
+        "8:45",
+        "6:45",
+        "7:45",
+        "7:00"
+      ],
+      "a": 2,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "use calendars and schedules"
+    },
+    {
+      "q": "Which time shows 4 hours and 30 minutes?",
+      "o": [
+        "5:30",
+        "4:30",
+        "4:45",
+        "3:30"
+      ],
+      "a": 1,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "read time"
+    },
+    {
+      "q": "Which time shows 5 hours and 30 minutes?",
+      "o": [
+        "6:30",
+        "4:30",
+        "5:45",
+        "5:30"
+      ],
+      "a": 3,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "find simple durations"
+    },
+    {
+      "q": "Which time shows 6 hours and 45 minutes?",
+      "o": [
+        "6:00",
+        "6:45",
+        "5:45",
+        "7:45"
+      ],
+      "a": 1,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "use calendars and schedules"
+    },
+    {
+      "q": "Which time shows 2 hours and 0 minutes?",
+      "o": [
+        "1:00",
+        "2:15",
+        "3:00",
+        "2:00"
+      ],
+      "a": 3,
+      "e": "The hour and minute values match the time shown.",
+      "type": "time",
+      "difficulty": "easy",
+      "concept": "time",
+      "learning_objective": "read time"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Time”?",
+      "o": [
+        "clock reading",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "clock reading is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "clock reading",
+      "learning_objective": "read time"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch13.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "visual-tap"
+  }
+}

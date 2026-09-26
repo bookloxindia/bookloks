@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch038",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 8,
+  "chapter": "Geometry",
+  "unit": "",
+  "concepts": [
+    "Geometry",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which strategy is most useful in \"Geometry\"?",
+      "o": [
+        "look for patterns and explain your reasoning",
+        "guess quickly",
+        "ignore units",
+        "copy an earlier answer"
+      ],
+      "a": 0,
+      "e": "Olympiad problems reward reasoning and pattern finding.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Geometry",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A good challenge solver should:",
+      "o": [
+        "break a problem into steps",
+        "do everything mentally without checking",
+        "skip diagrams",
+        "avoid estimates"
+      ],
+      "a": 0,
+      "e": "Breaking problems into steps makes complex tasks manageable.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which answer is most trustworthy?",
+      "o": [
+        "one supported by a check",
+        "the first one you see",
+        "a random guess",
+        "an answer copied without working"
+      ],
+      "a": 0,
+      "e": "Checking helps verify reasoning.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What makes a solution strong?",
+      "o": [
+        "a clear method and correct result",
+        "only a final number",
+        "no explanation",
+        "unrelated working"
+      ],
+      "a": 0,
+      "e": "A clear method shows how the answer was reached.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Geometry",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "When stuck, a useful move is to:",
+      "o": [
+        "try a simpler related example",
+        "give up immediately",
+        "change the question",
+        "erase the page"
+      ],
+      "a": 0,
+      "e": "A simpler example can reveal the pattern.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which 3D shape has 6 rectangular faces?",
+      "o": [
+        "sphere",
+        "cylinder",
+        "cuboid",
+        "cube"
+      ],
+      "a": 2,
+      "e": "A cuboid has 6 rectangular faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which 3D shape has 2 circular flat faces?",
+      "o": [
+        "cylinder",
+        "cuboid",
+        "sphere",
+        "cube"
+      ],
+      "a": 0,
+      "e": "A cylinder has 2 circular flat faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which 3D shape has no flat faces?",
+      "o": [
+        "cylinder",
+        "cuboid",
+        "cube",
+        "sphere"
+      ],
+      "a": 3,
+      "e": "A sphere has no flat faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which 3D shape has 6 square faces?",
+      "o": [
+        "sphere",
+        "cube",
+        "cuboid",
+        "cylinder"
+      ],
+      "a": 1,
+      "e": "A cube has 6 square faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Geometry”?",
+      "o": [
+        "Geometry",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "Geometry is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Geometry",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Geometry”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "patterns and reasoning",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Geometry”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "multi-step thinking"
+      ],
+      "a": 3,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Geometry”?",
+      "o": [
+        "random guessing",
+        "Geometry",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "Geometry is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Geometry",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Geometry”?",
+      "o": [
+        "patterns and reasoning",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Geometry”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "multi-step thinking",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch08.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}

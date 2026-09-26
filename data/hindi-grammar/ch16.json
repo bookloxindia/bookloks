@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch128",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 16,
+  "chapter": "अनुच्छेद-लेखन",
+  "unit": "",
+  "concepts": [
+    "विषय",
+    "क्रम",
+    "मुख्य विचार",
+    "समापन"
+  ],
+  "learning_objectives": [
+    "विचारों को क्रम देना",
+    "छोटा अनुच्छेद बनाना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"अनुच्छेद-लेखन\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "विषय",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "विषय इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "विषय",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "क्रम",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "मुख्य विचार",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "समापन",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "विषय",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "Which idea is most closely connected to “अनुच्छेद-लेखन”?",
+      "o": [
+        "मुख्य विचार",
+        "समापन",
+        "विषय",
+        "क्रम"
+      ],
+      "a": 2,
+      "e": "विषय is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "विषय",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "You are on a mission about “अनुच्छेद-लेखन”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "क्रम",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    },
+    {
+      "q": "Which action best shows understanding of मुख्य विचार?",
+      "o": [
+        "Use मुख्य विचार in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using मुख्य विचार in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "मुख्य विचार",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “अनुच्छेद-लेखन”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "random guessing",
+        "reading"
+      ],
+      "a": 3,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "समापन",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    },
+    {
+      "q": "Which example would make “अनुच्छेद-लेखन” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A random number with no context",
+        "Something from another subject",
+        "A real-life example that uses the chapter idea"
+      ],
+      "a": 3,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "विषय",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "If you make a mistake while practising “अनुच्छेद-लेखन”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Repeat the same guess",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "क्रम",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “अनुच्छेद-लेखन”?",
+      "o": [
+        "मुख्य विचार",
+        "समापन",
+        "विषय",
+        "क्रम"
+      ],
+      "a": 0,
+      "e": "मुख्य विचार belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "मुख्य विचार",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "Which goal fits “अनुच्छेद-लेखन”?",
+      "o": [
+        "Practise छोटा अनुच्छेद बनाना",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Avoid all practice"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: छोटा अनुच्छेद बनाना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "समापन",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    },
+    {
+      "q": "What is a good strategy for a अनुच्छेद-लेखन challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Skip the challenge",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "विषय",
+      "learning_objective": "विचारों को क्रम देना"
+    },
+    {
+      "q": "How can you recognise a good answer in “अनुच्छेद-लेखन”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "क्रम",
+      "learning_objective": "छोटा अनुच्छेद बनाना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch16.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

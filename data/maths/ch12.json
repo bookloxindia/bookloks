@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch012",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 12,
+  "chapter": "Symmetry",
+  "unit": "",
+  "concepts": [
+    "line symmetry",
+    "mirror image",
+    "symmetrical shapes",
+    "visual matching"
+  ],
+  "learning_objectives": [
+    "identify symmetry",
+    "complete a symmetric figure",
+    "check mirror positions"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "visual-tap",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "A shape with a mirror line has:",
+      "o": [
+        "symmetry",
+        "capacity",
+        "mass",
+        "speed"
+      ],
+      "a": 0,
+      "e": "A line of symmetry divides matching halves.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "line symmetry",
+      "learning_objective": "identify symmetry"
+    },
+    {
+      "q": "Which shape often has many lines of symmetry?",
+      "o": [
+        "circle",
+        "scalene triangle",
+        "irregular blob",
+        "open line"
+      ],
+      "a": 0,
+      "e": "A circle has infinitely many lines of symmetry.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "mirror image",
+      "learning_objective": "complete a symmetric figure"
+    },
+    {
+      "q": "A butterfly is a common example of:",
+      "o": [
+        "symmetry",
+        "division",
+        "capacity",
+        "map scale"
+      ],
+      "a": 0,
+      "e": "Its two sides are visually similar around a central line.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "symmetrical shapes",
+      "learning_objective": "check mirror positions"
+    },
+    {
+      "q": "To complete a mirror image, you should:",
+      "o": [
+        "match equal distances from the line",
+        "randomly move pieces",
+        "change the colour only",
+        "erase one side"
+      ],
+      "a": 0,
+      "e": "Mirror parts stay equally spaced from the symmetry line.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "visual matching",
+      "learning_objective": "identify symmetry"
+    },
+    {
+      "q": "Which shape has 4 lines of symmetry?",
+      "o": [
+        "square",
+        "rectangle",
+        "scalene triangle",
+        "parallelogram"
+      ],
+      "a": 0,
+      "e": "A square has four lines of symmetry.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "line symmetry",
+      "learning_objective": "complete a symmetric figure"
+    },
+    {
+      "q": "Which object can have a line of symmetry?",
+      "o": [
+        "messy shape",
+        "random scribble",
+        "butterfly",
+        "uneven zigzag"
+      ],
+      "a": 2,
+      "e": "A butterfly can be drawn with matching mirror halves.",
+      "type": "visual",
+      "difficulty": "medium",
+      "concept": "symmetry",
+      "learning_objective": "identify symmetry"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Symmetry”?",
+      "o": [
+        "line symmetry",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "line symmetry is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "line symmetry",
+      "learning_objective": "identify symmetry"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Symmetry”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "mirror image",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "mirror image is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "mirror image",
+      "learning_objective": "complete a symmetric figure"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Symmetry”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "symmetrical shapes"
+      ],
+      "a": 3,
+      "e": "symmetrical shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "symmetrical shapes",
+      "learning_objective": "check mirror positions"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Symmetry”?",
+      "o": [
+        "random guessing",
+        "visual matching",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "visual matching is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "visual matching",
+      "learning_objective": "identify symmetry"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Symmetry”?",
+      "o": [
+        "line symmetry",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "line symmetry is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "line symmetry",
+      "learning_objective": "complete a symmetric figure"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Symmetry”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "mirror image",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "mirror image is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "mirror image",
+      "learning_objective": "check mirror positions"
+    },
+    {
+      "q": "Quick Check 7: Which idea is part of “Symmetry”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "symmetrical shapes",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "symmetrical shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "symmetrical shapes",
+      "learning_objective": "identify symmetry"
+    },
+    {
+      "q": "Quick Check 8: Which idea is part of “Symmetry”?",
+      "o": [
+        "an unrelated topic",
+        "visual matching",
+        "random guessing",
+        "another subject"
+      ],
+      "a": 1,
+      "e": "visual matching is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "visual matching",
+      "learning_objective": "complete a symmetric figure"
+    },
+    {
+      "q": "Quick Check 9: Which idea is part of “Symmetry”?",
+      "o": [
+        "an unrelated topic",
+        "random guessing",
+        "line symmetry",
+        "another subject"
+      ],
+      "a": 2,
+      "e": "line symmetry is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "line symmetry",
+      "learning_objective": "check mirror positions"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch12.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "visual-tap"
+  }
+}

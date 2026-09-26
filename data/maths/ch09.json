@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch009",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 9,
+  "chapter": "Basic Geometry and 3D Shapes",
+  "unit": "",
+  "concepts": [
+    "2D shapes",
+    "3D shapes",
+    "faces edges vertices",
+    "properties of shapes"
+  ],
+  "learning_objectives": [
+    "identify shape properties",
+    "sort shapes",
+    "connect flat and solid shapes"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "How many sides does a triangle have?",
+      "o": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "a": 1,
+      "e": "A triangle has three sides.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "2D shapes",
+      "learning_objective": "identify shape properties"
+    },
+    {
+      "q": "Which is a 3D shape?",
+      "o": [
+        "circle",
+        "square",
+        "cube",
+        "triangle"
+      ],
+      "a": 2,
+      "e": "A cube is a solid 3D shape.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "sort shapes"
+    },
+    {
+      "q": "A cube has how many faces?",
+      "o": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "a": 1,
+      "e": "A cube has 6 faces.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "faces edges vertices",
+      "learning_objective": "connect flat and solid shapes"
+    },
+    {
+      "q": "Which shape has no corners?",
+      "o": [
+        "triangle",
+        "square",
+        "circle",
+        "rectangle"
+      ],
+      "a": 2,
+      "e": "A circle has no corners.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "properties of shapes",
+      "learning_objective": "identify shape properties"
+    },
+    {
+      "q": "Which solid can roll easily?",
+      "o": [
+        "cube",
+        "sphere",
+        "cuboid",
+        "pyramid"
+      ],
+      "a": 1,
+      "e": "A sphere has a curved surface and can roll.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "2D shapes",
+      "learning_objective": "sort shapes"
+    },
+    {
+      "q": "Which 3D shape has 6 square faces?",
+      "o": [
+        "cylinder",
+        "sphere",
+        "cuboid",
+        "cube"
+      ],
+      "a": 3,
+      "e": "A cube has 6 square faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "identify shape properties"
+    },
+    {
+      "q": "Which 3D shape has 2 circular flat faces?",
+      "o": [
+        "sphere",
+        "cylinder",
+        "cube",
+        "cuboid"
+      ],
+      "a": 1,
+      "e": "A cylinder has 2 circular flat faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "sort shapes"
+    },
+    {
+      "q": "Which 3D shape has no flat faces?",
+      "o": [
+        "cube",
+        "sphere",
+        "cuboid",
+        "cylinder"
+      ],
+      "a": 1,
+      "e": "A sphere has no flat faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "connect flat and solid shapes"
+    },
+    {
+      "q": "Which 3D shape has 6 rectangular faces?",
+      "o": [
+        "sphere",
+        "cylinder",
+        "cube",
+        "cuboid"
+      ],
+      "a": 3,
+      "e": "A cuboid has 6 rectangular faces.",
+      "type": "geometry",
+      "difficulty": "medium",
+      "concept": "3D shapes",
+      "learning_objective": "sort shapes"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Basic Geometry and 3D Shapes”?",
+      "o": [
+        "2D shapes",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "2D shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "2D shapes",
+      "learning_objective": "identify shape properties"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Basic Geometry and 3D Shapes”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "3D shapes",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "3D shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "3D shapes",
+      "learning_objective": "sort shapes"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Basic Geometry and 3D Shapes”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "faces edges vertices"
+      ],
+      "a": 3,
+      "e": "faces edges vertices is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "faces edges vertices",
+      "learning_objective": "connect flat and solid shapes"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Basic Geometry and 3D Shapes”?",
+      "o": [
+        "random guessing",
+        "properties of shapes",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "properties of shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "properties of shapes",
+      "learning_objective": "identify shape properties"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Basic Geometry and 3D Shapes”?",
+      "o": [
+        "2D shapes",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "2D shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "2D shapes",
+      "learning_objective": "sort shapes"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Basic Geometry and 3D Shapes”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "3D shapes",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "3D shapes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "3D shapes",
+      "learning_objective": "connect flat and solid shapes"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch09.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

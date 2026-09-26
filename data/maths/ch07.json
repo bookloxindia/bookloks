@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch007",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 7,
+  "chapter": "Length, Perimeter and Area",
+  "unit": "",
+  "concepts": [
+    "standard length units",
+    "perimeter",
+    "area as covered space",
+    "measurement in real life"
+  ],
+  "learning_objectives": [
+    "choose suitable units",
+    "calculate simple perimeter",
+    "compare areas of shapes"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "A rectangle has sides 6 cm and 4 cm. Its perimeter is:",
+      "o": [
+        "10 cm",
+        "20 cm",
+        "24 cm",
+        "12 cm"
+      ],
+      "a": 1,
+      "e": "Perimeter = 2 × (6+4) = 20 cm.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "standard length units",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "Which unit is best for the length of a pencil?",
+      "o": [
+        "kilometre",
+        "metre",
+        "centimetre",
+        "litre"
+      ],
+      "a": 2,
+      "e": "A pencil is measured in centimetres.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "perimeter",
+      "learning_objective": "calculate simple perimeter"
+    },
+    {
+      "q": "The area of a 3 × 4 square-unit rectangle is:",
+      "o": [
+        "7",
+        "12",
+        "14",
+        "24"
+      ],
+      "a": 1,
+      "e": "3 rows of 4 cover 12 square units.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "area as covered space",
+      "learning_objective": "compare areas of shapes"
+    },
+    {
+      "q": "Which tells the distance around a shape?",
+      "o": [
+        "Area",
+        "Perimeter",
+        "Volume",
+        "Capacity"
+      ],
+      "a": 1,
+      "e": "Perimeter is the boundary length.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "measurement in real life",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "A 5 m ribbon is cut into 2 m and 3 m pieces. How much ribbon is used?",
+      "o": [
+        "2 m",
+        "3 m",
+        "5 m",
+        "6 m"
+      ],
+      "a": 2,
+      "e": "2 m + 3 m = 5 m.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "standard length units",
+      "learning_objective": "calculate simple perimeter"
+    },
+    {
+      "q": "What is the perimeter of a rectangle 6 cm by 3 cm?",
+      "o": [
+        "28 cm",
+        "16 cm",
+        "18 cm",
+        "20 cm"
+      ],
+      "a": 2,
+      "e": "Perimeter = 2 × (6+3) = 18 cm.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "What is the area of a rectangle 4 cm by 7 cm?",
+      "o": [
+        "38 cm²",
+        "26 cm²",
+        "28 cm²",
+        "30 cm²"
+      ],
+      "a": 2,
+      "e": "Area = 4 × 7 = 28 cm².",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "area",
+      "learning_objective": "calculate simple perimeter"
+    },
+    {
+      "q": "What is the perimeter of a rectangle 4 cm by 8 cm?",
+      "o": [
+        "34 cm",
+        "26 cm",
+        "22 cm",
+        "24 cm"
+      ],
+      "a": 3,
+      "e": "Perimeter = 2 × (4+8) = 24 cm.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter",
+      "learning_objective": "compare areas of shapes"
+    },
+    {
+      "q": "What is the area of a rectangle 5 cm by 2 cm?",
+      "o": [
+        "12 cm²",
+        "10 cm²",
+        "20 cm²",
+        "8 cm²"
+      ],
+      "a": 1,
+      "e": "Area = 5 × 2 = 10 cm².",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "area",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "What is the perimeter of a rectangle 4 cm by 4 cm?",
+      "o": [
+        "16 cm",
+        "26 cm",
+        "18 cm",
+        "14 cm"
+      ],
+      "a": 0,
+      "e": "Perimeter = 2 × (4+4) = 16 cm.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter",
+      "learning_objective": "calculate simple perimeter"
+    },
+    {
+      "q": "What is the area of a rectangle 6 cm by 7 cm?",
+      "o": [
+        "40 cm²",
+        "52 cm²",
+        "42 cm²",
+        "44 cm²"
+      ],
+      "a": 2,
+      "e": "Area = 6 × 7 = 42 cm².",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "area",
+      "learning_objective": "compare areas of shapes"
+    },
+    {
+      "q": "What is the perimeter of a rectangle 12 cm by 5 cm?",
+      "o": [
+        "36 cm",
+        "34 cm",
+        "44 cm",
+        "32 cm"
+      ],
+      "a": 1,
+      "e": "Perimeter = 2 × (12+5) = 34 cm.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter",
+      "learning_objective": "choose suitable units"
+    },
+    {
+      "q": "What is the area of a rectangle 11 cm by 3 cm?",
+      "o": [
+        "35 cm²",
+        "43 cm²",
+        "33 cm²",
+        "31 cm²"
+      ],
+      "a": 2,
+      "e": "Area = 11 × 3 = 33 cm².",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "area",
+      "learning_objective": "calculate simple perimeter"
+    },
+    {
+      "q": "What is the perimeter of a rectangle 7 cm by 8 cm?",
+      "o": [
+        "32 cm",
+        "40 cm",
+        "28 cm",
+        "30 cm"
+      ],
+      "a": 3,
+      "e": "Perimeter = 2 × (7+8) = 30 cm.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter",
+      "learning_objective": "compare areas of shapes"
+    },
+    {
+      "q": "What is the area of a rectangle 7 cm by 5 cm?",
+      "o": [
+        "45 cm²",
+        "33 cm²",
+        "35 cm²",
+        "37 cm²"
+      ],
+      "a": 2,
+      "e": "Area = 7 × 5 = 35 cm².",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "area",
+      "learning_objective": "choose suitable units"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch07.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

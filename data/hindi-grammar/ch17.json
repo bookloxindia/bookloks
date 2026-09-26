@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch129",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 17,
+  "chapter": "अपठित गद्यांश",
+  "unit": "",
+  "concepts": [
+    "reading comprehension",
+    "मुख्य विचार",
+    "तथ्य पहचानना",
+    "निष्कर्ष"
+  ],
+  "learning_objectives": [
+    "पाठ से जानकारी निकालना",
+    "प्रश्न का उत्तर प्रमाण से देना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"अपठित गद्यांश\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "reading comprehension",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "reading comprehension इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "reading comprehension",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "मुख्य विचार",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "तथ्य पहचानना",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "निष्कर्ष",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "reading comprehension",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "Which idea is most closely connected to “अपठित गद्यांश”?",
+      "o": [
+        "निष्कर्ष",
+        "मुख्य विचार",
+        "तथ्य पहचानना",
+        "reading comprehension"
+      ],
+      "a": 3,
+      "e": "reading comprehension is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "reading comprehension",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "You are on a mission about “अपठित गद्यांश”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "मुख्य विचार",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    },
+    {
+      "q": "Which action best shows understanding of तथ्य पहचानना?",
+      "o": [
+        "Change the topic",
+        "Guess without checking",
+        "Use तथ्य पहचानना in a relevant real-life situation.",
+        "Ignore the idea completely"
+      ],
+      "a": 2,
+      "e": "Using तथ्य पहचानना in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "तथ्य पहचानना",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “अपठित गद्यांश”?",
+      "o": [
+        "rushing",
+        "random guessing",
+        "reading",
+        "ignoring feedback"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "निष्कर्ष",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    },
+    {
+      "q": "Which example would make “अपठित गद्यांश” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "reading comprehension",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "If you make a mistake while practising “अपठित गद्यांश”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Check the feedback and try again with a new example.",
+        "Quit immediately"
+      ],
+      "a": 2,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "मुख्य विचार",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “अपठित गद्यांश”?",
+      "o": [
+        "reading comprehension",
+        "मुख्य विचार",
+        "निष्कर्ष",
+        "तथ्य पहचानना"
+      ],
+      "a": 3,
+      "e": "तथ्य पहचानना belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "तथ्य पहचानना",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "Which goal fits “अपठित गद्यांश”?",
+      "o": [
+        "Avoid all practice",
+        "Practise प्रश्न का उत्तर प्रमाण से देना",
+        "Change to an unrelated topic",
+        "Guess every answer"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: प्रश्न का उत्तर प्रमाण से देना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "निष्कर्ष",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    },
+    {
+      "q": "What is a good strategy for a अपठित गद्यांश challenge?",
+      "o": [
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Tap without reading",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "reading comprehension",
+      "learning_objective": "पाठ से जानकारी निकालना"
+    },
+    {
+      "q": "How can you recognise a good answer in “अपठित गद्यांश”?",
+      "o": [
+        "The longest sentence",
+        "The choice that matches the chapter concept",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "मुख्य विचार",
+      "learning_objective": "प्रश्न का उत्तर प्रमाण से देना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch17.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

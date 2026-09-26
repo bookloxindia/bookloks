@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch003",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 3,
+  "chapter": "Multiplication and Division",
+  "unit": "",
+  "concepts": [
+    "multiplication as equal groups",
+    "division as sharing",
+    "facts and strategies",
+    "word problems"
+  ],
+  "learning_objectives": [
+    "model equal groups",
+    "divide objects fairly",
+    "select multiplication or division"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "6 × 7 = ?",
+      "o": [
+        "36",
+        "42",
+        "48",
+        "49"
+      ],
+      "a": 1,
+      "e": "Six groups of seven make 42.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "multiplication as equal groups",
+      "learning_objective": "model equal groups"
+    },
+    {
+      "q": "48 ÷ 6 = ?",
+      "o": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "a": 2,
+      "e": "48 shared into 6 equal groups gives 8.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "division as sharing",
+      "learning_objective": "divide objects fairly"
+    },
+    {
+      "q": "There are 5 rows with 9 chairs each. How many chairs?",
+      "o": [
+        "40",
+        "45",
+        "50",
+        "54"
+      ],
+      "a": 1,
+      "e": "5 × 9 = 45.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "facts and strategies",
+      "learning_objective": "select multiplication or division"
+    },
+    {
+      "q": "36 sweets are shared among 4 children. Each gets:",
+      "o": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "a": 2,
+      "e": "36 ÷ 4 = 9.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "word problems",
+      "learning_objective": "model equal groups"
+    },
+    {
+      "q": "Which is another way to write 4 × 6?",
+      "o": [
+        "6+6+6+6",
+        "4+6",
+        "4+4+4+4+4+4",
+        "6+4"
+      ],
+      "a": 0,
+      "e": "Multiplication can represent equal groups.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "multiplication as equal groups",
+      "learning_objective": "divide objects fairly"
+    },
+    {
+      "q": "What is 8 × 5?",
+      "o": [
+        "50",
+        "39",
+        "40",
+        "41"
+      ],
+      "a": 2,
+      "e": "8 × 5 = 40.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "multiplication",
+      "learning_objective": "model equal groups"
+    },
+    {
+      "q": "What is 64 ÷ 8?",
+      "o": [
+        "9",
+        "8",
+        "7",
+        "10"
+      ],
+      "a": 1,
+      "e": "64 ÷ 8 = 8.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "division",
+      "learning_objective": "divide objects fairly"
+    },
+    {
+      "q": "What is 8 × 7?",
+      "o": [
+        "66",
+        "57",
+        "56",
+        "55"
+      ],
+      "a": 2,
+      "e": "8 × 7 = 56.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "multiplication",
+      "learning_objective": "select multiplication or division"
+    },
+    {
+      "q": "What is 48 ÷ 4?",
+      "o": [
+        "11",
+        "12",
+        "14",
+        "13"
+      ],
+      "a": 1,
+      "e": "48 ÷ 4 = 12.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "division",
+      "learning_objective": "model equal groups"
+    },
+    {
+      "q": "What is 10 × 5?",
+      "o": [
+        "50",
+        "51",
+        "60",
+        "49"
+      ],
+      "a": 0,
+      "e": "10 × 5 = 50.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "multiplication",
+      "learning_objective": "divide objects fairly"
+    },
+    {
+      "q": "What is 90 ÷ 9?",
+      "o": [
+        "10",
+        "11",
+        "9",
+        "12"
+      ],
+      "a": 0,
+      "e": "90 ÷ 9 = 10.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "division",
+      "learning_objective": "select multiplication or division"
+    },
+    {
+      "q": "What is 6 × 6?",
+      "o": [
+        "37",
+        "35",
+        "46",
+        "36"
+      ],
+      "a": 3,
+      "e": "6 × 6 = 36.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "multiplication",
+      "learning_objective": "model equal groups"
+    },
+    {
+      "q": "What is 48 ÷ 6?",
+      "o": [
+        "10",
+        "7",
+        "9",
+        "8"
+      ],
+      "a": 3,
+      "e": "48 ÷ 6 = 8.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "division",
+      "learning_objective": "divide objects fairly"
+    },
+    {
+      "q": "What is 9 × 3?",
+      "o": [
+        "27",
+        "37",
+        "26",
+        "28"
+      ],
+      "a": 0,
+      "e": "9 × 3 = 27.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "multiplication",
+      "learning_objective": "select multiplication or division"
+    },
+    {
+      "q": "What is 108 ÷ 9?",
+      "o": [
+        "11",
+        "14",
+        "12",
+        "13"
+      ],
+      "a": 2,
+      "e": "108 ÷ 9 = 12.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "division",
+      "learning_objective": "model equal groups"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch03.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

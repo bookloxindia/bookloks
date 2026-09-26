@@ -1,0 +1,277 @@
+{
+  "chapter_id": "ch120",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 8,
+  "chapter": "विशेषण",
+  "unit": "",
+  "concepts": [
+    "गुण बताने वाले शब्द",
+    "परिमाण/संख्या",
+    "वाक्य प्रयोग"
+  ],
+  "learning_objectives": [
+    "विशेषण पहचानना",
+    "संज्ञा के साथ सही विशेषण चुनना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"विशेषण\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "गुण बताने वाले शब्द",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "गुण बताने वाले शब्द इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "गुण बताने वाले शब्द",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "परिमाण/संख्या",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "वाक्य प्रयोग",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "गुण बताने वाले शब्द",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "परिमाण/संख्या",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “विशेषण”?",
+      "o": [
+        "random guessing",
+        "परिमाण/संख्या",
+        "गुण बताने वाले शब्द",
+        "वाक्य प्रयोग"
+      ],
+      "a": 2,
+      "e": "गुण बताने वाले शब्द is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "गुण बताने वाले शब्द",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "You are on a mission about “विशेषण”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Look closely at the task and identify the chapter idea first.",
+        "Skip the instructions",
+        "Choose the longest option"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "परिमाण/संख्या",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    },
+    {
+      "q": "Which action best shows understanding of वाक्य प्रयोग?",
+      "o": [
+        "Use वाक्य प्रयोग in a relevant real-life situation.",
+        "Guess without checking",
+        "Ignore the idea completely",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using वाक्य प्रयोग in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "वाक्य प्रयोग",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “विशेषण”?",
+      "o": [
+        "ignoring feedback",
+        "random guessing",
+        "reading",
+        "rushing"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "गुण बताने वाले शब्द",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    },
+    {
+      "q": "Which example would make “विशेषण” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context",
+        "Something from another subject"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "परिमाण/संख्या",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “विशेषण”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Skip similar questions",
+        "Repeat the same guess"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "वाक्य प्रयोग",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “विशेषण”?",
+      "o": [
+        "वाक्य प्रयोग",
+        "unrelated topic",
+        "गुण बताने वाले शब्द",
+        "परिमाण/संख्या"
+      ],
+      "a": 2,
+      "e": "गुण बताने वाले शब्द belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "गुण बताने वाले शब्द",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "Which goal fits “विशेषण”?",
+      "o": [
+        "Guess every answer",
+        "Practise संज्ञा के साथ सही विशेषण चुनना",
+        "Avoid all practice",
+        "Change to an unrelated topic"
+      ],
+      "a": 1,
+      "e": "The chapter is mapped to the objective: संज्ञा के साथ सही विशेषण चुनना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "परिमाण/संख्या",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    },
+    {
+      "q": "What is a good strategy for a विशेषण challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time",
+        "Tap without reading",
+        "Skip the challenge"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "वाक्य प्रयोग",
+      "learning_objective": "विशेषण पहचानना"
+    },
+    {
+      "q": "How can you recognise a good answer in “विशेषण”?",
+      "o": [
+        "A random option",
+        "The most colourful option",
+        "The choice that matches the chapter concept",
+        "The longest sentence"
+      ],
+      "a": 2,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "गुण बताने वाले शब्द",
+      "learning_objective": "संज्ञा के साथ सही विशेषण चुनना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch08.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

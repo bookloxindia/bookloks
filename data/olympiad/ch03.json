@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch033",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 3,
+  "chapter": "Addition & Subtraction",
+  "unit": "",
+  "concepts": [
+    "Addition & Subtraction",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which strategy is most useful in \"Addition & Subtraction\"?",
+      "o": [
+        "look for patterns and explain your reasoning",
+        "guess quickly",
+        "ignore units",
+        "copy an earlier answer"
+      ],
+      "a": 0,
+      "e": "Olympiad problems reward reasoning and pattern finding.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Addition & Subtraction",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A good challenge solver should:",
+      "o": [
+        "break a problem into steps",
+        "do everything mentally without checking",
+        "skip diagrams",
+        "avoid estimates"
+      ],
+      "a": 0,
+      "e": "Breaking problems into steps makes complex tasks manageable.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which answer is most trustworthy?",
+      "o": [
+        "one supported by a check",
+        "the first one you see",
+        "a random guess",
+        "an answer copied without working"
+      ],
+      "a": 0,
+      "e": "Checking helps verify reasoning.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What makes a solution strong?",
+      "o": [
+        "a clear method and correct result",
+        "only a final number",
+        "no explanation",
+        "unrelated working"
+      ],
+      "a": 0,
+      "e": "A clear method shows how the answer was reached.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Addition & Subtraction",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "When stuck, a useful move is to:",
+      "o": [
+        "try a simpler related example",
+        "give up immediately",
+        "change the question",
+        "erase the page"
+      ],
+      "a": 0,
+      "e": "A simpler example can reveal the pattern.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is 199 + 95?",
+      "o": [
+        "284",
+        "304",
+        "394",
+        "294"
+      ],
+      "a": 3,
+      "e": "199+95=294.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "What is 486 + 459?",
+      "o": [
+        "945",
+        "935",
+        "1045",
+        "955"
+      ],
+      "a": 0,
+      "e": "486+459=945.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is 842 + 95?",
+      "o": [
+        "927",
+        "937",
+        "1037",
+        "947"
+      ],
+      "a": 1,
+      "e": "842+95=937.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What is 708 + 304?",
+      "o": [
+        "1022",
+        "1012",
+        "1002",
+        "1112"
+      ],
+      "a": 1,
+      "e": "708+304=1012.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "What is 512 + 331?",
+      "o": [
+        "833",
+        "843",
+        "943",
+        "853"
+      ],
+      "a": 1,
+      "e": "512+331=843.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is 207 + 433?",
+      "o": [
+        "630",
+        "640",
+        "650",
+        "740"
+      ],
+      "a": 1,
+      "e": "207+433=640.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What is 689 + 294?",
+      "o": [
+        "973",
+        "1083",
+        "993",
+        "983"
+      ],
+      "a": 3,
+      "e": "689+294=983.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "What is 492 + 323?",
+      "o": [
+        "805",
+        "815",
+        "915",
+        "825"
+      ],
+      "a": 1,
+      "e": "492+323=815.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is 791 + 232?",
+      "o": [
+        "1033",
+        "1013",
+        "1023",
+        "1123"
+      ],
+      "a": 2,
+      "e": "791+232=1023.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What is 882 + 349?",
+      "o": [
+        "1231",
+        "1221",
+        "1331",
+        "1241"
+      ],
+      "a": 0,
+      "e": "882+349=1231.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition and subtraction",
+      "learning_objective": "identify the problem structure"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch03.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}

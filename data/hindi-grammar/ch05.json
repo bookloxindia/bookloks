@@ -1,0 +1,277 @@
+{
+  "chapter_id": "ch117",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 5,
+  "chapter": "लिंग",
+  "unit": "",
+  "concepts": [
+    "पुल्लिंग",
+    "स्त्रीलिंग",
+    "लिंग परिवर्तन"
+  ],
+  "learning_objectives": [
+    "लिंग पहचानना",
+    "उचित लिंग-रूप लिखना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"लिंग\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "पुल्लिंग",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "पुल्लिंग इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "पुल्लिंग",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "स्त्रीलिंग",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "लिंग परिवर्तन",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "पुल्लिंग",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "स्त्रीलिंग",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "Which idea is most closely connected to “लिंग”?",
+      "o": [
+        "random guessing",
+        "लिंग परिवर्तन",
+        "स्त्रीलिंग",
+        "पुल्लिंग"
+      ],
+      "a": 3,
+      "e": "पुल्लिंग is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "पुल्लिंग",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "You are on a mission about “लिंग”. What should you do first?",
+      "o": [
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option",
+        "Skip the instructions",
+        "Tap random answers"
+      ],
+      "a": 0,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "स्त्रीलिंग",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    },
+    {
+      "q": "Which action best shows understanding of लिंग परिवर्तन?",
+      "o": [
+        "Guess without checking",
+        "Use लिंग परिवर्तन in a relevant real-life situation.",
+        "Change the topic",
+        "Ignore the idea completely"
+      ],
+      "a": 1,
+      "e": "Using लिंग परिवर्तन in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "लिंग परिवर्तन",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “लिंग”?",
+      "o": [
+        "ignoring feedback",
+        "reading",
+        "rushing",
+        "random guessing"
+      ],
+      "a": 1,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "पुल्लिंग",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    },
+    {
+      "q": "Which example would make “लिंग” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "स्त्रीलिंग",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "If you make a mistake while practising “लिंग”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "लिंग परिवर्तन",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “लिंग”?",
+      "o": [
+        "लिंग परिवर्तन",
+        "पुल्लिंग",
+        "स्त्रीलिंग",
+        "unrelated topic"
+      ],
+      "a": 1,
+      "e": "पुल्लिंग belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "पुल्लिंग",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "Which goal fits “लिंग”?",
+      "o": [
+        "Change to an unrelated topic",
+        "Avoid all practice",
+        "Practise उचित लिंग-रूप लिखना",
+        "Guess every answer"
+      ],
+      "a": 2,
+      "e": "The chapter is mapped to the objective: उचित लिंग-रूप लिखना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "स्त्रीलिंग",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    },
+    {
+      "q": "What is a good strategy for a लिंग challenge?",
+      "o": [
+        "Tap without reading",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time"
+      ],
+      "a": 2,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "लिंग परिवर्तन",
+      "learning_objective": "लिंग पहचानना"
+    },
+    {
+      "q": "How can you recognise a good answer in “लिंग”?",
+      "o": [
+        "A random option",
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option"
+      ],
+      "a": 1,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "पुल्लिंग",
+      "learning_objective": "उचित लिंग-रूप लिखना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch05.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

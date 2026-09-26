@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "required_fields": [
+    "schema_version",
+    "status",
+    "chapter_id",
+    "book_id",
+    "subject",
+    "chapter_no",
+    "chapter",
+    "concepts",
+    "learning_objectives",
+    "skills",
+    "learning",
+    "mission",
+    "questions",
+    "question_count"
+  ],
+  "learning_fields": [
+    "chapter_summary",
+    "simple_explanation",
+    "visual_learning_scene",
+    "quick_check_question",
+    "quick_check_correct_options",
+    "quick_check_wrong_options",
+    "hint",
+    "mission_context"
+  ],
+  "mission_fields": [
+    "title",
+    "story",
+    "instruction",
+    "game_type"
+  ],
+  "question_format": {
+    "q": "string",
+    "o": "array of 4 strings",
+    "a": "0-based integer",
+    "e": "explanation",
+    "type": "question type",
+    "difficulty": "easy|medium|hard",
+    "concept": "concept tag",
+    "learning_objective": "learning objective"
+  }
+}

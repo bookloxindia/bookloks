@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch064",
+  "book_id": "social-main",
+  "book": "My Big Book of Social Studies – Class 4",
+  "publisher": "Ratna Sagar",
+  "role": "Social Studies",
+  "subject": "Social Studies",
+  "subject_id": "social",
+  "chapter_no": 11,
+  "chapter": "Our Natural Resources",
+  "unit": "Our Resources",
+  "concepts": [
+    "renewable resources",
+    "non-renewable resources",
+    "conservation",
+    "sustainable use"
+  ],
+  "learning_objectives": [
+    "classify common resources",
+    "explain why conservation matters",
+    "make careful resource choices"
+  ],
+  "skills": [
+    "observation",
+    "comparison",
+    "civic thinking"
+  ],
+  "game_type": "map-explore",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"Our Natural Resources\"?",
+      "o": [
+        "renewable resources",
+        "tooth brushing",
+        "computer formatting",
+        "fractions"
+      ],
+      "a": 0,
+      "e": "renewable resources is part of the chapter concept map.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "renewable resources",
+      "learning_objective": "classify common resources"
+    },
+    {
+      "q": "A strong social-studies learner should:",
+      "o": [
+        "observe places, people and patterns",
+        "memorise without understanding",
+        "ignore maps",
+        "avoid questions"
+      ],
+      "a": 0,
+      "e": "Observation and questions build social understanding.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "non-renewable resources",
+      "learning_objective": "explain why conservation matters"
+    },
+    {
+      "q": "Why are maps useful?",
+      "o": [
+        "They help locate and compare places",
+        "They measure temperature",
+        "They write stories",
+        "They replace all data"
+      ],
+      "a": 0,
+      "e": "Maps help us understand location and space.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "conservation",
+      "learning_objective": "make careful resource choices"
+    },
+    {
+      "q": "Which approach supports responsible citizenship?",
+      "o": [
+        "understand rules and take part responsibly",
+        "ignore community needs",
+        "waste resources",
+        "avoid cooperation"
+      ],
+      "a": 0,
+      "e": "Responsible action supports community life.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "sustainable use",
+      "learning_objective": "classify common resources"
+    },
+    {
+      "q": "Which skill is useful across this subject?",
+      "o": [
+        "compare evidence and explain a reason",
+        "guess without checking",
+        "skip sources",
+        "copy everything"
+      ],
+      "a": 0,
+      "e": "Comparison and explanation are core learning skills.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "renewable resources",
+      "learning_objective": "explain why conservation matters"
+    },
+    {
+      "q": "Which idea is most closely connected to “Our Natural Resources”?",
+      "o": [
+        "conservation",
+        "renewable resources",
+        "sustainable use",
+        "non-renewable resources"
+      ],
+      "a": 1,
+      "e": "renewable resources is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "renewable resources",
+      "learning_objective": "classify common resources"
+    },
+    {
+      "q": "You are on a mission about “Our Natural Resources”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Skip the instructions",
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first."
+      ],
+      "a": 3,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "non-renewable resources",
+      "learning_objective": "explain why conservation matters"
+    },
+    {
+      "q": "Which action best shows understanding of conservation?",
+      "o": [
+        "Guess without checking",
+        "Ignore the idea completely",
+        "Use conservation in a relevant real-life situation.",
+        "Change the topic"
+      ],
+      "a": 2,
+      "e": "Using conservation in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "conservation",
+      "learning_objective": "make careful resource choices"
+    },
+    {
+      "q": "Which skill is especially useful while learning “Our Natural Resources”?",
+      "o": [
+        "ignoring feedback",
+        "random guessing",
+        "observation",
+        "rushing"
+      ],
+      "a": 2,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "sustainable use",
+      "learning_objective": "classify common resources"
+    },
+    {
+      "q": "Which example would make “Our Natural Resources” easier to understand?",
+      "o": [
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "Something from another subject",
+        "A random number with no context"
+      ],
+      "a": 1,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "renewable resources",
+      "learning_objective": "explain why conservation matters"
+    },
+    {
+      "q": "If you make a mistake while practising “Our Natural Resources”, what should you do?",
+      "o": [
+        "Check the feedback and try again with a new example.",
+        "Repeat the same guess",
+        "Quit immediately",
+        "Skip similar questions"
+      ],
+      "a": 0,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "non-renewable resources",
+      "learning_objective": "make careful resource choices"
+    },
+    {
+      "q": "Which of these belongs to the chapter “Our Natural Resources”?",
+      "o": [
+        "renewable resources",
+        "sustainable use",
+        "conservation",
+        "non-renewable resources"
+      ],
+      "a": 2,
+      "e": "conservation belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "conservation",
+      "learning_objective": "classify common resources"
+    },
+    {
+      "q": "Which goal fits “Our Natural Resources”?",
+      "o": [
+        "Practise explain why conservation matters",
+        "Change to an unrelated topic",
+        "Avoid all practice",
+        "Guess every answer"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: explain why conservation matters.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "sustainable use",
+      "learning_objective": "explain why conservation matters"
+    },
+    {
+      "q": "What is a good strategy for a Our Natural Resources challenge?",
+      "o": [
+        "Tap without reading",
+        "Copy a friend every time",
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer."
+      ],
+      "a": 3,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "renewable resources",
+      "learning_objective": "make careful resource choices"
+    },
+    {
+      "q": "How can you recognise a good answer in “Our Natural Resources”?",
+      "o": [
+        "The longest sentence",
+        "A random option",
+        "The most colourful option",
+        "The choice that matches the chapter concept"
+      ],
+      "a": 3,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "non-renewable resources",
+      "learning_objective": "classify common resources"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/social-studies/ch11.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "map-explore"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch006",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 6,
+  "chapter": "Decimals",
+  "unit": "",
+  "concepts": [
+    "decimal notation",
+    "tenths and hundredths",
+    "place value with decimals",
+    "money connections"
+  ],
+  "learning_objectives": [
+    "read simple decimals",
+    "compare decimal values",
+    "connect decimals to everyday money/measurement"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which is greater?",
+      "o": [
+        "0.4",
+        "0.7",
+        "0.04",
+        "0.17"
+      ],
+      "a": 1,
+      "e": "0.7 is greater than the others.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "decimal notation",
+      "learning_objective": "read simple decimals"
+    },
+    {
+      "q": "₹5 and 50 paise can be written as:",
+      "o": [
+        "₹5.05",
+        "₹5.50",
+        "₹5.15",
+        "₹50.5"
+      ],
+      "a": 1,
+      "e": "50 paise equals 0.50 rupee.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "tenths and hundredths",
+      "learning_objective": "compare decimal values"
+    },
+    {
+      "q": "Which decimal means 6 tenths?",
+      "o": [
+        "0.06",
+        "0.6",
+        "6.0",
+        "0.006"
+      ],
+      "a": 1,
+      "e": "Six tenths is 0.6.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "place value with decimals",
+      "learning_objective": "connect decimals to everyday money/measurement"
+    },
+    {
+      "q": "Which is smallest?",
+      "o": [
+        "0.8",
+        "0.18",
+        "0.81",
+        "0.108"
+      ],
+      "a": 3,
+      "e": "0.108 is smaller than 0.18.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "money connections",
+      "learning_objective": "read simple decimals"
+    },
+    {
+      "q": "0.5 is the same as:",
+      "o": [
+        "1/5",
+        "5/10",
+        "5/100",
+        "10/5"
+      ],
+      "a": 1,
+      "e": "0.5 equals 5/10.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "decimal notation",
+      "learning_objective": "compare decimal values"
+    },
+    {
+      "q": "Which decimal has 2 ones, 1 tenths and 6 hundredths?",
+      "o": [
+        "3.16",
+        "2.61",
+        "2.26",
+        "2.16"
+      ],
+      "a": 3,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "read simple decimals"
+    },
+    {
+      "q": "Which decimal has 2 ones, 9 tenths and 7 hundredths?",
+      "o": [
+        "2.97",
+        "3.97",
+        "2.107",
+        "2.79"
+      ],
+      "a": 0,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "compare decimal values"
+    },
+    {
+      "q": "Which decimal has 7 ones, 8 tenths and 1 hundredths?",
+      "o": [
+        "8.81",
+        "7.81",
+        "7.91",
+        "7.18"
+      ],
+      "a": 1,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "connect decimals to everyday money/measurement"
+    },
+    {
+      "q": "Which decimal has 8 ones, 6 tenths and 8 hundredths?",
+      "o": [
+        "8.86",
+        "8.68",
+        "9.68",
+        "8.78"
+      ],
+      "a": 1,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "read simple decimals"
+    },
+    {
+      "q": "Which decimal has 6 ones, 9 tenths and 3 hundredths?",
+      "o": [
+        "7.93",
+        "6.93",
+        "6.103",
+        "6.39"
+      ],
+      "a": 1,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "compare decimal values"
+    },
+    {
+      "q": "Which decimal has 8 ones, 5 tenths and 1 hundredths?",
+      "o": [
+        "9.51",
+        "8.51",
+        "8.15",
+        "8.61"
+      ],
+      "a": 1,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "connect decimals to everyday money/measurement"
+    },
+    {
+      "q": "Which decimal has 5 ones, 0 tenths and 5 hundredths?",
+      "o": [
+        "6.05",
+        "5.15",
+        "5.50",
+        "5.05"
+      ],
+      "a": 3,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "read simple decimals"
+    },
+    {
+      "q": "Which decimal has 7 ones, 2 tenths and 2 hundredths?",
+      "o": [
+        "7.32",
+        "7.22",
+        "Another choice 3",
+        "8.22"
+      ],
+      "a": 1,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "compare decimal values"
+    },
+    {
+      "q": "Which decimal has 8 ones, 6 tenths and 4 hundredths?",
+      "o": [
+        "8.46",
+        "9.64",
+        "8.64",
+        "8.74"
+      ],
+      "a": 2,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "connect decimals to everyday money/measurement"
+    },
+    {
+      "q": "Which decimal has 5 ones, 6 tenths and 7 hundredths?",
+      "o": [
+        "5.67",
+        "6.67",
+        "5.77",
+        "5.76"
+      ],
+      "a": 0,
+      "e": "Place value tells us which digit belongs in each position.",
+      "type": "decimal",
+      "difficulty": "medium",
+      "concept": "decimals",
+      "learning_objective": "read simple decimals"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch06.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

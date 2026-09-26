@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch001",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 1,
+  "chapter": "Numbers",
+  "unit": "",
+  "concepts": [
+    "place value",
+    "reading and writing numbers",
+    "comparison and ordering",
+    "number patterns"
+  ],
+  "learning_objectives": [
+    "read, write and compare numbers",
+    "spot patterns in numbers",
+    "use numbers in everyday situations"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which number is greater: 4,305 or 4,350?",
+      "o": [
+        "4,305",
+        "4,350",
+        "Both are equal",
+        "Cannot tell"
+      ],
+      "a": 1,
+      "e": "4,350 is greater because the tens digit is larger.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "place value",
+      "learning_objective": "read, write and compare numbers"
+    },
+    {
+      "q": "What is the value of 7 in 3,742?",
+      "o": [
+        "7",
+        "70",
+        "700",
+        "7,000"
+      ],
+      "a": 2,
+      "e": "The 7 is in the hundreds place.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "reading and writing numbers",
+      "learning_objective": "spot patterns in numbers"
+    },
+    {
+      "q": "Which number comes just after 5,999?",
+      "o": [
+        "5,998",
+        "6,000",
+        "6,009",
+        "5,909"
+      ],
+      "a": 1,
+      "e": "After 5,999 comes 6,000.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "comparison and ordering",
+      "learning_objective": "use numbers in everyday situations"
+    },
+    {
+      "q": "Which is the smallest number?",
+      "o": [
+        "2,405",
+        "2,450",
+        "2,540",
+        "2,054"
+      ],
+      "a": 3,
+      "e": "2,054 is the smallest.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "number patterns",
+      "learning_objective": "read, write and compare numbers"
+    },
+    {
+      "q": "Which order is greatest to smallest?",
+      "o": [
+        "3,210, 3,201, 3,120",
+        "3,120, 3,201, 3,210",
+        "3,201, 3,210, 3,120",
+        "3,210, 3,120, 3,201"
+      ],
+      "a": 0,
+      "e": "Compare digits from left to right.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "place value",
+      "learning_objective": "spot patterns in numbers"
+    },
+    {
+      "q": "Which number is greater: 6218 or 886?",
+      "o": [
+        "886",
+        "6217",
+        "6218",
+        "6219"
+      ],
+      "a": 2,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "place value",
+      "learning_objective": "read, write and compare numbers"
+    },
+    {
+      "q": "Which number is greater: 4001 or 316?",
+      "o": [
+        "316",
+        "4001",
+        "4002",
+        "4000"
+      ],
+      "a": 1,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "reading and writing numbers",
+      "learning_objective": "spot patterns in numbers"
+    },
+    {
+      "q": "Which number is greater: 4974 or 566?",
+      "o": [
+        "4974",
+        "4975",
+        "566",
+        "4973"
+      ],
+      "a": 0,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "comparison and ordering",
+      "learning_objective": "use numbers in everyday situations"
+    },
+    {
+      "q": "Which number is greater: 6947 or 191?",
+      "o": [
+        "6946",
+        "6947",
+        "6948",
+        "191"
+      ],
+      "a": 1,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "number patterns",
+      "learning_objective": "read, write and compare numbers"
+    },
+    {
+      "q": "Which number is greater: 4087 or 530?",
+      "o": [
+        "4088",
+        "530",
+        "4087",
+        "4086"
+      ],
+      "a": 2,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "place value",
+      "learning_objective": "spot patterns in numbers"
+    },
+    {
+      "q": "Which number is greater: 1162 or 550?",
+      "o": [
+        "1162",
+        "550",
+        "1163",
+        "1161"
+      ],
+      "a": 0,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "reading and writing numbers",
+      "learning_objective": "use numbers in everyday situations"
+    },
+    {
+      "q": "Which number is greater: 6246 or 811?",
+      "o": [
+        "811",
+        "6245",
+        "6247",
+        "6246"
+      ],
+      "a": 3,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "comparison and ordering",
+      "learning_objective": "read, write and compare numbers"
+    },
+    {
+      "q": "Which number is greater: 3759 or 467?",
+      "o": [
+        "3760",
+        "467",
+        "3758",
+        "3759"
+      ],
+      "a": 3,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "number patterns",
+      "learning_objective": "spot patterns in numbers"
+    },
+    {
+      "q": "Which number is greater: 2728 or 118?",
+      "o": [
+        "2729",
+        "2727",
+        "118",
+        "2728"
+      ],
+      "a": 3,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "place value",
+      "learning_objective": "use numbers in everyday situations"
+    },
+    {
+      "q": "Which number is greater: 8339 or 196?",
+      "o": [
+        "8339",
+        "8338",
+        "196",
+        "8340"
+      ],
+      "a": 0,
+      "e": "The greater number is the one with the larger value.",
+      "type": "numbers",
+      "difficulty": "easy",
+      "concept": "reading and writing numbers",
+      "learning_objective": "read, write and compare numbers"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch01.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

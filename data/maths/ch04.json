@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch004",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 4,
+  "chapter": "Multiples and Factors",
+  "unit": "",
+  "concepts": [
+    "multiples",
+    "factors",
+    "divisibility ideas",
+    "number relationships"
+  ],
+  "learning_objectives": [
+    "find factors and multiples",
+    "spot common patterns",
+    "use factor knowledge in puzzles"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which is a factor of 24?",
+      "o": [
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "a": 1,
+      "e": "6 divides 24 exactly.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "multiples",
+      "learning_objective": "find factors and multiples"
+    },
+    {
+      "q": "Which number is a multiple of 5?",
+      "o": [
+        "23",
+        "25",
+        "27",
+        "31"
+      ],
+      "a": 1,
+      "e": "Multiples of 5 end in 0 or 5.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "spot common patterns"
+    },
+    {
+      "q": "Which pair are both factors of 18?",
+      "o": [
+        "2 and 9",
+        "4 and 9",
+        "5 and 6",
+        "7 and 3"
+      ],
+      "a": 0,
+      "e": "2 × 9 = 18 and both are factors.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "divisibility ideas",
+      "learning_objective": "use factor knowledge in puzzles"
+    },
+    {
+      "q": "What is the first positive multiple of 8?",
+      "o": [
+        "0",
+        "1",
+        "8",
+        "16"
+      ],
+      "a": 2,
+      "e": "8 is the first positive multiple.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "number relationships",
+      "learning_objective": "find factors and multiples"
+    },
+    {
+      "q": "Which number is NOT a factor of 12?",
+      "o": [
+        "1",
+        "2",
+        "3",
+        "5"
+      ],
+      "a": 3,
+      "e": "5 does not divide 12 exactly.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "multiples",
+      "learning_objective": "spot common patterns"
+    },
+    {
+      "q": "Which number is a factor of 49?",
+      "o": [
+        "7",
+        "10",
+        "8",
+        "9"
+      ],
+      "a": 0,
+      "e": "7 divides 49 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "find factors and multiples"
+    },
+    {
+      "q": "Which number is a factor of 42?",
+      "o": [
+        "9",
+        "6",
+        "7",
+        "8"
+      ],
+      "a": 1,
+      "e": "6 divides 42 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "spot common patterns"
+    },
+    {
+      "q": "Which number is a factor of 54?",
+      "o": [
+        "7",
+        "9",
+        "6",
+        "8"
+      ],
+      "a": 2,
+      "e": "6 divides 54 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "use factor knowledge in puzzles"
+    },
+    {
+      "q": "Which number is a factor of 40?",
+      "o": [
+        "8",
+        "9",
+        "11",
+        "10"
+      ],
+      "a": 0,
+      "e": "8 divides 40 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "find factors and multiples"
+    },
+    {
+      "q": "Which number is a factor of 72?",
+      "o": [
+        "8",
+        "9",
+        "11",
+        "10"
+      ],
+      "a": 0,
+      "e": "8 divides 72 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "spot common patterns"
+    },
+    {
+      "q": "Which number is a factor of 30?",
+      "o": [
+        "6",
+        "8",
+        "5",
+        "7"
+      ],
+      "a": 2,
+      "e": "5 divides 30 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "use factor knowledge in puzzles"
+    },
+    {
+      "q": "Which number is a factor of 36?",
+      "o": [
+        "7",
+        "6",
+        "8",
+        "9"
+      ],
+      "a": 1,
+      "e": "6 divides 36 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "find factors and multiples"
+    },
+    {
+      "q": "Which number is a factor of 70?",
+      "o": [
+        "8",
+        "10",
+        "9",
+        "7"
+      ],
+      "a": 3,
+      "e": "7 divides 70 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "spot common patterns"
+    },
+    {
+      "q": "Which number is a factor of 27?",
+      "o": [
+        "11",
+        "9",
+        "12",
+        "10"
+      ],
+      "a": 1,
+      "e": "9 divides 27 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "use factor knowledge in puzzles"
+    },
+    {
+      "q": "Which number is a factor of 20?",
+      "o": [
+        "13",
+        "12",
+        "11",
+        "10"
+      ],
+      "a": 3,
+      "e": "10 divides 20 exactly.",
+      "type": "factors",
+      "difficulty": "medium",
+      "concept": "factors",
+      "learning_objective": "find factors and multiples"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch04.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

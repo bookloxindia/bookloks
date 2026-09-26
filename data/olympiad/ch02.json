@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch032",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 2,
+  "chapter": "Number Sense & Numeration",
+  "unit": "",
+  "concepts": [
+    "Number Sense & Numeration",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "What is the next number: 3, 6, 12, 24, ___?",
+      "o": [
+        "30",
+        "36",
+        "48",
+        "52"
+      ],
+      "a": 2,
+      "e": "Each number is doubled.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Number Sense & Numeration",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which is the greatest?",
+      "o": [
+        "3,450",
+        "3,405",
+        "3,540",
+        "3,504"
+      ],
+      "a": 2,
+      "e": "Compare hundreds and tens carefully.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "A number has 5 thousands, 2 hundreds, 4 tens and 3 ones. It is:",
+      "o": [
+        "5,243",
+        "5,423",
+        "5,324",
+        "5,234"
+      ],
+      "a": 0,
+      "e": "Place values give 5,243.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which pair is a factor pair of 36?",
+      "o": [
+        "4 and 9",
+        "5 and 7",
+        "6 and 7",
+        "3 and 11"
+      ],
+      "a": 0,
+      "e": "4 × 9 = 36.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Number Sense & Numeration",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which statement is true?",
+      "o": [
+        "A number can have more than one factor pair",
+        "Every number has only one factor",
+        "Every odd number is prime",
+        "Every even number is a multiple of 3"
+      ],
+      "a": 0,
+      "e": "Many composite numbers have several factor pairs.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which is the place value of the first digit in 5658?",
+      "o": [
+        "56",
+        "8",
+        "5000",
+        "565"
+      ],
+      "a": 2,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which is the place value of the first digit in 3348?",
+      "o": [
+        "8",
+        "3000",
+        "33",
+        "334"
+      ],
+      "a": 1,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which is the place value of the first digit in 2038?",
+      "o": [
+        "20",
+        "8",
+        "2000",
+        "203"
+      ],
+      "a": 2,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which is the place value of the first digit in 5442?",
+      "o": [
+        "5000",
+        "2",
+        "544",
+        "54"
+      ],
+      "a": 0,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which is the place value of the first digit in 3277?",
+      "o": [
+        "7",
+        "32",
+        "327",
+        "3000"
+      ],
+      "a": 3,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which is the place value of the first digit in 4200?",
+      "o": [
+        "42",
+        "0",
+        "420",
+        "4000"
+      ],
+      "a": 3,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which is the place value of the first digit in 8689?",
+      "o": [
+        "8000",
+        "86",
+        "9",
+        "868"
+      ],
+      "a": 0,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which is the place value of the first digit in 2156?",
+      "o": [
+        "21",
+        "2000",
+        "6",
+        "215"
+      ],
+      "a": 1,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which is the place value of the first digit in 4474?",
+      "o": [
+        "4000",
+        "4",
+        "447",
+        "44"
+      ],
+      "a": 0,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which is the place value of the first digit in 9730?",
+      "o": [
+        "973",
+        "97",
+        "0",
+        "9000"
+      ],
+      "a": 3,
+      "e": "The first digit is in the thousands place.",
+      "type": "numbers",
+      "difficulty": "medium",
+      "concept": "number sense",
+      "learning_objective": "identify the problem structure"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch02.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}

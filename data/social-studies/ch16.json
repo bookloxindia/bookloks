@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch069",
+  "book_id": "social-main",
+  "book": "My Big Book of Social Studies – Class 4",
+  "publisher": "Ratna Sagar",
+  "role": "Social Studies",
+  "subject": "Social Studies",
+  "subject_id": "social",
+  "chapter_no": 16,
+  "chapter": "The Age of Exploration",
+  "unit": "Past & Present",
+  "concepts": [
+    "exploration",
+    "routes and maps",
+    "trade",
+    "encounters and change"
+  ],
+  "learning_objectives": [
+    "explain why people explored",
+    "read simple routes",
+    "identify impacts of contact"
+  ],
+  "skills": [
+    "observation",
+    "comparison",
+    "civic thinking"
+  ],
+  "game_type": "map-explore",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which idea is central to \"The Age of Exploration\"?",
+      "o": [
+        "exploration",
+        "tooth brushing",
+        "computer formatting",
+        "fractions"
+      ],
+      "a": 0,
+      "e": "exploration is part of the chapter concept map.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "exploration",
+      "learning_objective": "explain why people explored"
+    },
+    {
+      "q": "A strong social-studies learner should:",
+      "o": [
+        "observe places, people and patterns",
+        "memorise without understanding",
+        "ignore maps",
+        "avoid questions"
+      ],
+      "a": 0,
+      "e": "Observation and questions build social understanding.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "routes and maps",
+      "learning_objective": "read simple routes"
+    },
+    {
+      "q": "Why are maps useful?",
+      "o": [
+        "They help locate and compare places",
+        "They measure temperature",
+        "They write stories",
+        "They replace all data"
+      ],
+      "a": 0,
+      "e": "Maps help us understand location and space.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "trade",
+      "learning_objective": "identify impacts of contact"
+    },
+    {
+      "q": "Which approach supports responsible citizenship?",
+      "o": [
+        "understand rules and take part responsibly",
+        "ignore community needs",
+        "waste resources",
+        "avoid cooperation"
+      ],
+      "a": 0,
+      "e": "Responsible action supports community life.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "encounters and change",
+      "learning_objective": "explain why people explored"
+    },
+    {
+      "q": "Which skill is useful across this subject?",
+      "o": [
+        "compare evidence and explain a reason",
+        "guess without checking",
+        "skip sources",
+        "copy everything"
+      ],
+      "a": 0,
+      "e": "Comparison and explanation are core learning skills.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "exploration",
+      "learning_objective": "read simple routes"
+    },
+    {
+      "q": "Which idea is most closely connected to “The Age of Exploration”?",
+      "o": [
+        "encounters and change",
+        "routes and maps",
+        "exploration",
+        "trade"
+      ],
+      "a": 2,
+      "e": "exploration is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "exploration",
+      "learning_objective": "explain why people explored"
+    },
+    {
+      "q": "You are on a mission about “The Age of Exploration”. What should you do first?",
+      "o": [
+        "Tap random answers",
+        "Skip the instructions",
+        "Look closely at the task and identify the chapter idea first.",
+        "Choose the longest option"
+      ],
+      "a": 2,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "routes and maps",
+      "learning_objective": "read simple routes"
+    },
+    {
+      "q": "Which action best shows understanding of trade?",
+      "o": [
+        "Use trade in a relevant real-life situation.",
+        "Ignore the idea completely",
+        "Guess without checking",
+        "Change the topic"
+      ],
+      "a": 0,
+      "e": "Using trade in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "trade",
+      "learning_objective": "identify impacts of contact"
+    },
+    {
+      "q": "Which skill is especially useful while learning “The Age of Exploration”?",
+      "o": [
+        "ignoring feedback",
+        "observation",
+        "random guessing",
+        "rushing"
+      ],
+      "a": 1,
+      "e": "Observation supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "encounters and change",
+      "learning_objective": "explain why people explored"
+    },
+    {
+      "q": "Which example would make “The Age of Exploration” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "exploration",
+      "learning_objective": "read simple routes"
+    },
+    {
+      "q": "If you make a mistake while practising “The Age of Exploration”, what should you do?",
+      "o": [
+        "Quit immediately",
+        "Check the feedback and try again with a new example.",
+        "Repeat the same guess",
+        "Skip similar questions"
+      ],
+      "a": 1,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "routes and maps",
+      "learning_objective": "identify impacts of contact"
+    },
+    {
+      "q": "Which of these belongs to the chapter “The Age of Exploration”?",
+      "o": [
+        "routes and maps",
+        "encounters and change",
+        "trade",
+        "exploration"
+      ],
+      "a": 2,
+      "e": "trade belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "trade",
+      "learning_objective": "explain why people explored"
+    },
+    {
+      "q": "Which goal fits “The Age of Exploration”?",
+      "o": [
+        "Practise read simple routes",
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer"
+      ],
+      "a": 0,
+      "e": "The chapter is mapped to the objective: read simple routes.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "encounters and change",
+      "learning_objective": "read simple routes"
+    },
+    {
+      "q": "What is a good strategy for a The Age of Exploration challenge?",
+      "o": [
+        "Observe, think, and then choose the best answer.",
+        "Copy a friend every time",
+        "Tap without reading",
+        "Skip the challenge"
+      ],
+      "a": 0,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "exploration",
+      "learning_objective": "identify impacts of contact"
+    },
+    {
+      "q": "How can you recognise a good answer in “The Age of Exploration”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "A random option",
+        "The most colourful option",
+        "The longest sentence"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "routes and maps",
+      "learning_objective": "explain why people explored"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/social-studies/ch16.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "map-explore"
+  }
+}

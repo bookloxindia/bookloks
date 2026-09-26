@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch002",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 2,
+  "chapter": "Addition and Subtraction",
+  "unit": "",
+  "concepts": [
+    "addition",
+    "subtraction",
+    "regrouping",
+    "word problems"
+  ],
+  "learning_objectives": [
+    "add and subtract accurately",
+    "choose the correct operation",
+    "solve real-life number problems"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "number-lab",
+  "difficulty": 1,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "What is 2,758 + 1,240?",
+      "o": [
+        "3,898",
+        "3,998",
+        "4,008",
+        "4,098"
+      ],
+      "a": 1,
+      "e": "2,758 + 1,240 = 3,998.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "addition",
+      "learning_objective": "add and subtract accurately"
+    },
+    {
+      "q": "What is 5,000 − 2,675?",
+      "o": [
+        "2,225",
+        "2,325",
+        "2,425",
+        "2,525"
+      ],
+      "a": 1,
+      "e": "5,000 − 2,675 = 2,325.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "subtraction",
+      "learning_objective": "choose the correct operation"
+    },
+    {
+      "q": "A shop sells 125 pencils in the morning and 98 in the afternoon. How many altogether?",
+      "o": [
+        "213",
+        "223",
+        "233",
+        "243"
+      ],
+      "a": 1,
+      "e": "125 + 98 = 223.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "regrouping",
+      "learning_objective": "solve real-life number problems"
+    },
+    {
+      "q": "Which operation finds how many are left?",
+      "o": [
+        "Addition",
+        "Subtraction",
+        "Multiplication",
+        "Division"
+      ],
+      "a": 1,
+      "e": "Subtraction finds the remaining amount.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "word problems",
+      "learning_objective": "add and subtract accurately"
+    },
+    {
+      "q": "If 450 stickers are shared and 125 are used, how many remain?",
+      "o": [
+        "315",
+        "325",
+        "335",
+        "345"
+      ],
+      "a": 1,
+      "e": "450 − 125 = 325.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "addition",
+      "learning_objective": "choose the correct operation"
+    },
+    {
+      "q": "What is 539 + 277?",
+      "o": [
+        "816",
+        "826",
+        "806",
+        "916"
+      ],
+      "a": 0,
+      "e": "539 + 277 = 816.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "add and subtract accurately"
+    },
+    {
+      "q": "What is 558 + 170?",
+      "o": [
+        "728",
+        "738",
+        "718",
+        "828"
+      ],
+      "a": 0,
+      "e": "558 + 170 = 728.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "choose the correct operation"
+    },
+    {
+      "q": "What is 883 + 220?",
+      "o": [
+        "1113",
+        "1103",
+        "1203",
+        "1093"
+      ],
+      "a": 1,
+      "e": "883 + 220 = 1103.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "solve real-life number problems"
+    },
+    {
+      "q": "What is 697 + 156?",
+      "o": [
+        "843",
+        "853",
+        "863",
+        "953"
+      ],
+      "a": 1,
+      "e": "697 + 156 = 853.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "add and subtract accurately"
+    },
+    {
+      "q": "What is 759 + 166?",
+      "o": [
+        "925",
+        "1025",
+        "915",
+        "935"
+      ],
+      "a": 0,
+      "e": "759 + 166 = 925.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "choose the correct operation"
+    },
+    {
+      "q": "What is 460 + 287?",
+      "o": [
+        "757",
+        "737",
+        "747",
+        "847"
+      ],
+      "a": 2,
+      "e": "460 + 287 = 747.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "solve real-life number problems"
+    },
+    {
+      "q": "What is 654 + 27?",
+      "o": [
+        "691",
+        "671",
+        "681",
+        "781"
+      ],
+      "a": 2,
+      "e": "654 + 27 = 681.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "add and subtract accurately"
+    },
+    {
+      "q": "What is 571 + 187?",
+      "o": [
+        "758",
+        "858",
+        "748",
+        "768"
+      ],
+      "a": 0,
+      "e": "571 + 187 = 758.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "choose the correct operation"
+    },
+    {
+      "q": "What is 128 + 401?",
+      "o": [
+        "519",
+        "629",
+        "539",
+        "529"
+      ],
+      "a": 3,
+      "e": "128 + 401 = 529.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "solve real-life number problems"
+    },
+    {
+      "q": "What is 254 + 262?",
+      "o": [
+        "616",
+        "516",
+        "526",
+        "506"
+      ],
+      "a": 1,
+      "e": "254 + 262 = 516.",
+      "type": "calculation",
+      "difficulty": "medium",
+      "concept": "addition",
+      "learning_objective": "add and subtract accurately"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch02.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "number-lab"
+  }
+}

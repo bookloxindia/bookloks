@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch125",
+  "book_id": "hindi-grammar",
+  "book": "प्रथम हिंदी व्याकरण – कक्षा 4 – Ver. 2",
+  "publisher": "Language House",
+  "role": "Hindi Grammar",
+  "subject": "Hindi",
+  "subject_id": "hindi",
+  "chapter_no": 13,
+  "chapter": "विराम-चिह्न",
+  "unit": "",
+  "concepts": [
+    "पूर्णविराम",
+    "प्रश्नवाचक",
+    "अल्पविराम",
+    "उद्धरण"
+  ],
+  "learning_objectives": [
+    "विराम-चिह्न सही जगह लगाना",
+    "चिह्न के प्रयोग की पहचान करना"
+  ],
+  "skills": [
+    "reading",
+    "language use",
+    "communication"
+  ],
+  "game_type": "word-play",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "\"विराम-चिह्न\" में मुख्य ध्यान किस पर है?",
+      "o": [
+        "पूर्णविराम",
+        "गणितीय मापन",
+        "कंप्यूटर नेटवर्क",
+        "मानचित्र दिशा"
+      ],
+      "a": 0,
+      "e": "पूर्णविराम इस अध्याय का मुख्य अभ्यास है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "पूर्णविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "भाषा सीखने के लिए सबसे अच्छा तरीका क्या है?",
+      "o": [
+        "पढ़ना, समझना और अभ्यास करना",
+        "केवल रटना",
+        "बिना पढ़े उत्तर देना",
+        "उदाहरण छोड़ देना"
+      ],
+      "a": 0,
+      "e": "अर्थ समझकर अभ्यास करना भाषा सीखने में मदद करता है.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "प्रश्नवाचक",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    },
+    {
+      "q": "सही उत्तर चुनते समय सबसे पहले क्या देखना चाहिए?",
+      "o": [
+        "वाक्य/संदर्भ का अर्थ",
+        "केवल शब्द का रंग",
+        "पेज का नंबर",
+        "चित्र का आकार"
+      ],
+      "a": 0,
+      "e": "संदर्भ और अर्थ सही उत्तर चुनने में मदद करते हैं.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "अल्पविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "व्याकरण का उपयोग क्यों करते हैं?",
+      "o": [
+        "साफ और सही भाषा के लिए",
+        "चित्र बड़ा करने के लिए",
+        "गणित करने के लिए",
+        "समय देखने के लिए"
+      ],
+      "a": 0,
+      "e": "व्याकरण भाषा को स्पष्ट और सही बनाता है.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "उद्धरण",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    },
+    {
+      "q": "अच्छी भाषा-अभ्यास आदत क्या है?",
+      "o": [
+        "नए शब्दों को वाक्यों में प्रयोग करना",
+        "नए शब्दों से बचना",
+        "हर शब्द को मिटा देना",
+        "सिर्फ उत्तर याद करना"
+      ],
+      "a": 0,
+      "e": "प्रयोग से शब्द और नियम बेहतर समझ आते हैं.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "पूर्णविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "Which idea is most closely connected to “विराम-चिह्न”?",
+      "o": [
+        "अल्पविराम",
+        "उद्धरण",
+        "पूर्णविराम",
+        "प्रश्नवाचक"
+      ],
+      "a": 2,
+      "e": "पूर्णविराम is one of the mapped ideas for this chapter.",
+      "type": "concept",
+      "difficulty": "easy",
+      "concept": "पूर्णविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "You are on a mission about “विराम-चिह्न”. What should you do first?",
+      "o": [
+        "Choose the longest option",
+        "Look closely at the task and identify the chapter idea first.",
+        "Tap random answers",
+        "Skip the instructions"
+      ],
+      "a": 1,
+      "e": "Understanding the task before answering helps you solve it well.",
+      "type": "mission",
+      "difficulty": "medium",
+      "concept": "प्रश्नवाचक",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    },
+    {
+      "q": "Which action best shows understanding of अल्पविराम?",
+      "o": [
+        "Ignore the idea completely",
+        "Use अल्पविराम in a relevant real-life situation.",
+        "Change the topic",
+        "Guess without checking"
+      ],
+      "a": 1,
+      "e": "Using अल्पविराम in a relevant situation shows understanding.",
+      "type": "application",
+      "difficulty": "medium",
+      "concept": "अल्पविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "Which skill is especially useful while learning “विराम-चिह्न”?",
+      "o": [
+        "rushing",
+        "ignoring feedback",
+        "reading",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Reading supports learning in this chapter.",
+      "type": "skills",
+      "difficulty": "medium",
+      "concept": "उद्धरण",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    },
+    {
+      "q": "Which example would make “विराम-चिह्न” easier to understand?",
+      "o": [
+        "Something from another subject",
+        "An unrelated game",
+        "A real-life example that uses the chapter idea",
+        "A random number with no context"
+      ],
+      "a": 2,
+      "e": "A relevant real-life example connects learning with experience.",
+      "type": "scenario",
+      "difficulty": "hard",
+      "concept": "पूर्णविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "If you make a mistake while practising “विराम-चिह्न”, what should you do?",
+      "o": [
+        "Repeat the same guess",
+        "Skip similar questions",
+        "Quit immediately",
+        "Check the feedback and try again with a new example."
+      ],
+      "a": 3,
+      "e": "Feedback and another attempt help you learn from mistakes.",
+      "type": "retry",
+      "difficulty": "easy",
+      "concept": "प्रश्नवाचक",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    },
+    {
+      "q": "Which of these belongs to the chapter “विराम-चिह्न”?",
+      "o": [
+        "पूर्णविराम",
+        "अल्पविराम",
+        "उद्धरण",
+        "प्रश्नवाचक"
+      ],
+      "a": 1,
+      "e": "अल्पविराम belongs to the mapped concept set for this chapter.",
+      "type": "classification",
+      "difficulty": "medium",
+      "concept": "अल्पविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "Which goal fits “विराम-चिह्न”?",
+      "o": [
+        "Avoid all practice",
+        "Change to an unrelated topic",
+        "Guess every answer",
+        "Practise चिह्न के प्रयोग की पहचान करना"
+      ],
+      "a": 3,
+      "e": "The chapter is mapped to the objective: चिह्न के प्रयोग की पहचान करना.",
+      "type": "learning-goal",
+      "difficulty": "medium",
+      "concept": "उद्धरण",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    },
+    {
+      "q": "What is a good strategy for a विराम-चिह्न challenge?",
+      "o": [
+        "Skip the challenge",
+        "Observe, think, and then choose the best answer.",
+        "Tap without reading",
+        "Copy a friend every time"
+      ],
+      "a": 1,
+      "e": "Careful observation and reasoning make answers more reliable.",
+      "type": "strategy",
+      "difficulty": "medium",
+      "concept": "पूर्णविराम",
+      "learning_objective": "विराम-चिह्न सही जगह लगाना"
+    },
+    {
+      "q": "How can you recognise a good answer in “विराम-चिह्न”?",
+      "o": [
+        "The choice that matches the chapter concept",
+        "The longest sentence",
+        "The most colourful option",
+        "A random option"
+      ],
+      "a": 0,
+      "e": "A good answer should match the concept being tested.",
+      "type": "reasoning",
+      "difficulty": "hard",
+      "concept": "प्रश्नवाचक",
+      "learning_objective": "चिह्न के प्रयोग की पहचान करना"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/hindi-grammar/ch13.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "word-play"
+  }
+}

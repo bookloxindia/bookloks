@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "status": "planned",
+  "chapter_id": "olympiad-future-02",
+  "book_id": "maths-olympiad",
+  "track_id": "olympiad",
+  "subject": "Olympiad Challenge",
+  "chapter_no": 13,
+  "chapter": "Future Chapter 02",
+  "data_path": "data/olympiad/future02.json",
+  "source_note": "Reserved slot. Do not treat as curriculum content until a validated chapter is added.",
+  "concepts": [],
+  "learning_objectives": [],
+  "skills": [],
+  "game_type": "",
+  "difficulty": 1,
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": ""
+  },
+  "questions": [],
+  "question_count": 0
+}

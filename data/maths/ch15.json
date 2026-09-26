@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch015",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 15,
+  "chapter": "Data Handling",
+  "unit": "",
+  "concepts": [
+    "collecting data",
+    "tables",
+    "pictographs/charts",
+    "comparison"
+  ],
+  "learning_objectives": [
+    "read tables and charts",
+    "compare data",
+    "answer simple data questions"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "visual-tap",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "A pictograph uses pictures to show:",
+      "o": [
+        "data",
+        "weather only",
+        "stories",
+        "directions"
+      ],
+      "a": 0,
+      "e": "A pictograph represents data with symbols or pictures.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "collecting data",
+      "learning_objective": "read tables and charts"
+    },
+    {
+      "q": "If 1 star = 2 books, 4 stars mean:",
+      "o": [
+        "4 books",
+        "6 books",
+        "8 books",
+        "10 books"
+      ],
+      "a": 2,
+      "e": "4 × 2 = 8.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "tables",
+      "learning_objective": "compare data"
+    },
+    {
+      "q": "Which is useful for comparing counts?",
+      "o": [
+        "table or chart",
+        "ruler only",
+        "clock only",
+        "thermometer"
+      ],
+      "a": 0,
+      "e": "Tables and charts help compare data.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "pictographs/charts",
+      "learning_objective": "answer simple data questions"
+    },
+    {
+      "q": "A survey records favourite fruits. This is:",
+      "o": [
+        "data collection",
+        "map reading",
+        "measurement of weight",
+        "grammar"
+      ],
+      "a": 0,
+      "e": "A survey collects data.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "comparison",
+      "learning_objective": "read tables and charts"
+    },
+    {
+      "q": "If 7 children choose mango and 5 choose apple, mango has:",
+      "o": [
+        "2 fewer",
+        "2 more",
+        "5 more",
+        "7 more"
+      ],
+      "a": 1,
+      "e": "7 is 2 more than 5.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "collecting data",
+      "learning_objective": "compare data"
+    },
+    {
+      "q": "A chart shows 3 apples and 3 bananas. How many fruits are there altogether?",
+      "o": [
+        "5",
+        "8",
+        "0",
+        "6"
+      ],
+      "a": 3,
+      "e": "3 + 3 = 6.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "read tables and charts"
+    },
+    {
+      "q": "A chart shows 8 apples and 3 bananas. How many fruits are there altogether?",
+      "o": [
+        "11",
+        "10",
+        "5",
+        "13"
+      ],
+      "a": 0,
+      "e": "8 + 3 = 11.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "compare data"
+    },
+    {
+      "q": "A chart shows 9 apples and 8 bananas. How many fruits are there altogether?",
+      "o": [
+        "16",
+        "17",
+        "1",
+        "19"
+      ],
+      "a": 1,
+      "e": "9 + 8 = 17.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "answer simple data questions"
+    },
+    {
+      "q": "A chart shows 3 apples and 9 bananas. How many fruits are there altogether?",
+      "o": [
+        "14",
+        "12",
+        "11",
+        "6"
+      ],
+      "a": 1,
+      "e": "3 + 9 = 12.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "read tables and charts"
+    },
+    {
+      "q": "A chart shows 8 apples and 7 bananas. How many fruits are there altogether?",
+      "o": [
+        "14",
+        "15",
+        "1",
+        "17"
+      ],
+      "a": 1,
+      "e": "8 + 7 = 15.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "compare data"
+    },
+    {
+      "q": "A chart shows 5 apples and 9 bananas. How many fruits are there altogether?",
+      "o": [
+        "13",
+        "14",
+        "16",
+        "4"
+      ],
+      "a": 1,
+      "e": "5 + 9 = 14.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "answer simple data questions"
+    },
+    {
+      "q": "A chart shows 7 apples and 3 bananas. How many fruits are there altogether?",
+      "o": [
+        "9",
+        "4",
+        "12",
+        "10"
+      ],
+      "a": 3,
+      "e": "7 + 3 = 10.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "read tables and charts"
+    },
+    {
+      "q": "A chart shows 6 apples and 2 bananas. How many fruits are there altogether?",
+      "o": [
+        "7",
+        "8",
+        "4",
+        "10"
+      ],
+      "a": 1,
+      "e": "6 + 2 = 8.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "compare data"
+    },
+    {
+      "q": "A chart shows 7 apples and 8 bananas. How many fruits are there altogether?",
+      "o": [
+        "17",
+        "14",
+        "15",
+        "1"
+      ],
+      "a": 2,
+      "e": "7 + 8 = 15.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "answer simple data questions"
+    },
+    {
+      "q": "A chart shows 4 apples and 4 bananas. How many fruits are there altogether?",
+      "o": [
+        "8",
+        "7",
+        "0",
+        "10"
+      ],
+      "a": 0,
+      "e": "4 + 4 = 8.",
+      "type": "data",
+      "difficulty": "medium",
+      "concept": "data handling",
+      "learning_objective": "read tables and charts"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch15.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "visual-tap"
+  }
+}

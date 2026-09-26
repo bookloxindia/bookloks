@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch041",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 11,
+  "chapter": "Perimeter & Area",
+  "unit": "",
+  "concepts": [
+    "Perimeter & Area",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which strategy is most useful in \"Perimeter & Area\"?",
+      "o": [
+        "look for patterns and explain your reasoning",
+        "guess quickly",
+        "ignore units",
+        "copy an earlier answer"
+      ],
+      "a": 0,
+      "e": "Olympiad problems reward reasoning and pattern finding.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Perimeter & Area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "A good challenge solver should:",
+      "o": [
+        "break a problem into steps",
+        "do everything mentally without checking",
+        "skip diagrams",
+        "avoid estimates"
+      ],
+      "a": 0,
+      "e": "Breaking problems into steps makes complex tasks manageable.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which answer is most trustworthy?",
+      "o": [
+        "one supported by a check",
+        "the first one you see",
+        "a random guess",
+        "an answer copied without working"
+      ],
+      "a": 0,
+      "e": "Checking helps verify reasoning.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What makes a solution strong?",
+      "o": [
+        "a clear method and correct result",
+        "only a final number",
+        "no explanation",
+        "unrelated working"
+      ],
+      "a": 0,
+      "e": "A clear method shows how the answer was reached.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Perimeter & Area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "When stuck, a useful move is to:",
+      "o": [
+        "try a simpler related example",
+        "give up immediately",
+        "change the question",
+        "erase the page"
+      ],
+      "a": 0,
+      "e": "A simpler example can reveal the pattern.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is the perimeter of a 7 by 3 rectangle?",
+      "o": [
+        "22",
+        "21",
+        "20",
+        "18"
+      ],
+      "a": 2,
+      "e": "Perimeter = 2 × (7+3) = 20.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "What is the perimeter of a 4 by 7 rectangle?",
+      "o": [
+        "28",
+        "22",
+        "24",
+        "20"
+      ],
+      "a": 1,
+      "e": "Perimeter = 2 × (4+7) = 22.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is the perimeter of a 6 by 5 rectangle?",
+      "o": [
+        "22",
+        "30",
+        "20",
+        "24"
+      ],
+      "a": 0,
+      "e": "Perimeter = 2 × (6+5) = 22.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "What is the perimeter of a 4 by 3 rectangle?",
+      "o": [
+        "Another choice 3",
+        "16",
+        "12",
+        "14"
+      ],
+      "a": 3,
+      "e": "Perimeter = 2 × (4+3) = 14.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "What is the perimeter of a 7 by 7 rectangle?",
+      "o": [
+        "30",
+        "49",
+        "26",
+        "28"
+      ],
+      "a": 3,
+      "e": "Perimeter = 2 × (7+7) = 28.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What is the perimeter of a 4 by 2 rectangle?",
+      "o": [
+        "12",
+        "14",
+        "8",
+        "10"
+      ],
+      "a": 0,
+      "e": "Perimeter = 2 × (4+2) = 12.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "What is the perimeter of a 5 by 4 rectangle?",
+      "o": [
+        "18",
+        "Another choice 3",
+        "16",
+        "20"
+      ],
+      "a": 0,
+      "e": "Perimeter = 2 × (5+4) = 18.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "What is the perimeter of a 9 by 6 rectangle?",
+      "o": [
+        "28",
+        "32",
+        "54",
+        "30"
+      ],
+      "a": 3,
+      "e": "Perimeter = 2 × (9+6) = 30.",
+      "type": "measurement",
+      "difficulty": "hard",
+      "concept": "perimeter and area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Perimeter & Area”?",
+      "o": [
+        "Perimeter & Area",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "Perimeter & Area is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Perimeter & Area",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Perimeter & Area”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "patterns and reasoning",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch11.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}

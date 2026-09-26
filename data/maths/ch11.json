@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch011",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 11,
+  "chapter": "Patterns",
+  "unit": "",
+  "concepts": [
+    "repeating patterns",
+    "growing patterns",
+    "rules",
+    "prediction"
+  ],
+  "learning_objectives": [
+    "continue patterns",
+    "describe a rule",
+    "predict the next step"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "visual-tap",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "What comes next: 2, 4, 6, 8, ___?",
+      "o": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "a": 1,
+      "e": "The pattern adds 2 each time.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "repeating patterns",
+      "learning_objective": "continue patterns"
+    },
+    {
+      "q": "Which is a repeating pattern?",
+      "o": [
+        "ABABAB",
+        "12345",
+        "2468",
+        "13579"
+      ],
+      "a": 0,
+      "e": "AB repeats regularly.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "growing patterns",
+      "learning_objective": "describe a rule"
+    },
+    {
+      "q": "A growing pattern adds 3 each time: 4, 7, 10, ___.",
+      "o": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "a": 2,
+      "e": "10 + 3 = 13.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "rules",
+      "learning_objective": "predict the next step"
+    },
+    {
+      "q": "What is the rule in 5, 10, 15, 20?",
+      "o": [
+        "add 2",
+        "add 5",
+        "subtract 5",
+        "double"
+      ],
+      "a": 1,
+      "e": "Each term increases by 5.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "prediction",
+      "learning_objective": "continue patterns"
+    },
+    {
+      "q": "Which item completes a shape pattern?",
+      "o": [
+        "the next repeating shape",
+        "a random shape",
+        "any colour",
+        "no shape"
+      ],
+      "a": 0,
+      "e": "Use the pattern rule to predict the next item.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "repeating patterns",
+      "learning_objective": "describe a rule"
+    },
+    {
+      "q": "What comes next? 15, 25, 35, 45, ?",
+      "o": [
+        "55",
+        "65",
+        "54",
+        "57"
+      ],
+      "a": 0,
+      "e": "The pattern increases by 10.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "continue patterns"
+    },
+    {
+      "q": "What comes next? 11, 21, 31, 41, ?",
+      "o": [
+        "51",
+        "61",
+        "50",
+        "53"
+      ],
+      "a": 0,
+      "e": "The pattern increases by 10.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "describe a rule"
+    },
+    {
+      "q": "What comes next? 20, 25, 30, 35, ?",
+      "o": [
+        "45",
+        "40",
+        "42",
+        "39"
+      ],
+      "a": 1,
+      "e": "The pattern increases by 5.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "predict the next step"
+    },
+    {
+      "q": "What comes next? 11, 16, 21, 26, ?",
+      "o": [
+        "30",
+        "31",
+        "36",
+        "33"
+      ],
+      "a": 1,
+      "e": "The pattern increases by 5.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "continue patterns"
+    },
+    {
+      "q": "What comes next? 18, 20, 22, 24, ?",
+      "o": [
+        "26",
+        "Another choice 3",
+        "25",
+        "28"
+      ],
+      "a": 0,
+      "e": "The pattern increases by 2.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "describe a rule"
+    },
+    {
+      "q": "What comes next? 16, 21, 26, 31, ?",
+      "o": [
+        "41",
+        "35",
+        "36",
+        "38"
+      ],
+      "a": 2,
+      "e": "The pattern increases by 5.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "predict the next step"
+    },
+    {
+      "q": "What comes next? 2, 5, 8, 11, ?",
+      "o": [
+        "17",
+        "13",
+        "14",
+        "16"
+      ],
+      "a": 2,
+      "e": "The pattern increases by 3.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "continue patterns"
+    },
+    {
+      "q": "What comes next? 17, 22, 27, 32, ?",
+      "o": [
+        "37",
+        "39",
+        "36",
+        "42"
+      ],
+      "a": 0,
+      "e": "The pattern increases by 5.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "describe a rule"
+    },
+    {
+      "q": "What comes next? 18, 23, 28, 33, ?",
+      "o": [
+        "37",
+        "40",
+        "43",
+        "38"
+      ],
+      "a": 3,
+      "e": "The pattern increases by 5.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "predict the next step"
+    },
+    {
+      "q": "What comes next? 9, 14, 19, 24, ?",
+      "o": [
+        "31",
+        "29",
+        "34",
+        "28"
+      ],
+      "a": 1,
+      "e": "The pattern increases by 5.",
+      "type": "pattern",
+      "difficulty": "medium",
+      "concept": "patterns",
+      "learning_objective": "continue patterns"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch11.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "visual-tap"
+  }
+}

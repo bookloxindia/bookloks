@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch010",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 10,
+  "chapter": "Maps and Views",
+  "unit": "",
+  "concepts": [
+    "map symbols",
+    "directions",
+    "simple scale/views",
+    "top and side views"
+  ],
+  "learning_objectives": [
+    "read simple maps",
+    "use directional language",
+    "interpret different views"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "visual-tap",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "A map symbol helps us to:",
+      "o": [
+        "decorate a map",
+        "show a place or feature",
+        "change the weather",
+        "measure weight"
+      ],
+      "a": 1,
+      "e": "Symbols represent real places or features.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "map symbols",
+      "learning_objective": "read simple maps"
+    },
+    {
+      "q": "Which direction is opposite to east?",
+      "o": [
+        "north",
+        "south",
+        "west",
+        "up"
+      ],
+      "a": 2,
+      "e": "West is opposite to east.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "directions",
+      "learning_objective": "use directional language"
+    },
+    {
+      "q": "A top view shows an object:",
+      "o": [
+        "from above",
+        "from below",
+        "from inside",
+        "from far away"
+      ],
+      "a": 0,
+      "e": "A top view is seen from above.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "simple scale/views",
+      "learning_objective": "interpret different views"
+    },
+    {
+      "q": "A map is useful for finding:",
+      "o": [
+        "routes and places",
+        "body temperature",
+        "food nutrients",
+        "sound volume"
+      ],
+      "a": 0,
+      "e": "Maps show locations and routes.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "top and side views",
+      "learning_objective": "read simple maps"
+    },
+    {
+      "q": "If a park is east of school, school is ___ of the park.",
+      "o": [
+        "east",
+        "west",
+        "north",
+        "south"
+      ],
+      "a": 1,
+      "e": "West is the opposite direction of east.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "map symbols",
+      "learning_objective": "use directional language"
+    },
+    {
+      "q": "Which tool helps you show where places are?",
+      "o": [
+        "Clock",
+        "Calendar",
+        "Map",
+        "Thermometer"
+      ],
+      "a": 2,
+      "e": "A map shows locations and relationships between places.",
+      "type": "application",
+      "difficulty": "easy",
+      "concept": "maps and views",
+      "learning_objective": "read simple maps"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Maps and Views”?",
+      "o": [
+        "map symbols",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "map symbols is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "map symbols",
+      "learning_objective": "read simple maps"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Maps and Views”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "directions",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "directions is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "directions",
+      "learning_objective": "use directional language"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Maps and Views”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "simple scale/views"
+      ],
+      "a": 3,
+      "e": "simple scale/views is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "simple scale/views",
+      "learning_objective": "interpret different views"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Maps and Views”?",
+      "o": [
+        "random guessing",
+        "top and side views",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "top and side views is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "top and side views",
+      "learning_objective": "read simple maps"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Maps and Views”?",
+      "o": [
+        "map symbols",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "map symbols is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "map symbols",
+      "learning_objective": "use directional language"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Maps and Views”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "directions",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "directions is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "directions",
+      "learning_objective": "interpret different views"
+    },
+    {
+      "q": "Quick Check 7: Which idea is part of “Maps and Views”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "simple scale/views",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "simple scale/views is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "simple scale/views",
+      "learning_objective": "read simple maps"
+    },
+    {
+      "q": "Quick Check 8: Which idea is part of “Maps and Views”?",
+      "o": [
+        "an unrelated topic",
+        "top and side views",
+        "random guessing",
+        "another subject"
+      ],
+      "a": 1,
+      "e": "top and side views is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "top and side views",
+      "learning_objective": "use directional language"
+    },
+    {
+      "q": "Quick Check 9: Which idea is part of “Maps and Views”?",
+      "o": [
+        "an unrelated topic",
+        "random guessing",
+        "map symbols",
+        "another subject"
+      ],
+      "a": 2,
+      "e": "map symbols is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "map symbols",
+      "learning_objective": "interpret different views"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch10.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "visual-tap"
+  }
+}

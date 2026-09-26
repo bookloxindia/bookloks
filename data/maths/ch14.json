@@ -1,0 +1,279 @@
+{
+  "chapter_id": "ch014",
+  "book_id": "maths-main",
+  "book": "Mathematics – Class 4",
+  "publisher": "Aasoka / MBD Group",
+  "role": "Main Textbook",
+  "subject": "Mathematics",
+  "subject_id": "maths",
+  "chapter_no": 14,
+  "chapter": "Money",
+  "unit": "",
+  "concepts": [
+    "rupees and paise",
+    "prices",
+    "total cost",
+    "change"
+  ],
+  "learning_objectives": [
+    "calculate totals",
+    "find change",
+    "make sensible money choices"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "shop",
+  "difficulty": 3,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "₹20 + ₹35 = ?",
+      "o": [
+        "₹45",
+        "₹55",
+        "₹65",
+        "₹75"
+      ],
+      "a": 1,
+      "e": "20 + 35 = 55.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "rupees and paise",
+      "learning_objective": "calculate totals"
+    },
+    {
+      "q": "You pay ₹100 for an item costing ₹68. Change is:",
+      "o": [
+        "₹22",
+        "₹28",
+        "₹32",
+        "₹38"
+      ],
+      "a": 2,
+      "e": "100 − 68 = 32.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "prices",
+      "learning_objective": "find change"
+    },
+    {
+      "q": "Which is the best unit for a shop price?",
+      "o": [
+        "rupees/paise",
+        "kilometres",
+        "litres",
+        "degrees"
+      ],
+      "a": 0,
+      "e": "Prices are expressed in money units.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "total cost",
+      "learning_objective": "make sensible money choices"
+    },
+    {
+      "q": "Three pencils cost ₹7 each. Total cost is:",
+      "o": [
+        "₹14",
+        "₹21",
+        "₹24",
+        "₹28"
+      ],
+      "a": 1,
+      "e": "3 × 7 = 21.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "change",
+      "learning_objective": "calculate totals"
+    },
+    {
+      "q": "Which choice shows saving money?",
+      "o": [
+        "spend everything",
+        "keep some money for later",
+        "buy duplicates",
+        "ignore price"
+      ],
+      "a": 1,
+      "e": "Saving means keeping some money for future needs.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "rupees and paise",
+      "learning_objective": "find change"
+    },
+    {
+      "q": "A toy costs ₹20 and a book costs ₹15. What is the total?",
+      "o": [
+        "₹40",
+        "₹45",
+        "₹35",
+        "₹30"
+      ],
+      "a": 2,
+      "e": "₹20 + ₹15 = ₹35.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "calculate totals"
+    },
+    {
+      "q": "A toy costs ₹35 and a book costs ₹10. What is the total?",
+      "o": [
+        "₹55",
+        "₹45",
+        "₹50",
+        "₹40"
+      ],
+      "a": 1,
+      "e": "₹35 + ₹10 = ₹45.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "find change"
+    },
+    {
+      "q": "A toy costs ₹35 and a book costs ₹20. What is the total?",
+      "o": [
+        "₹60",
+        "₹65",
+        "₹55",
+        "₹50"
+      ],
+      "a": 2,
+      "e": "₹35 + ₹20 = ₹55.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "make sensible money choices"
+    },
+    {
+      "q": "A toy costs ₹15 and a book costs ₹30. What is the total?",
+      "o": [
+        "₹45",
+        "₹55",
+        "₹40",
+        "₹50"
+      ],
+      "a": 0,
+      "e": "₹15 + ₹30 = ₹45.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "calculate totals"
+    },
+    {
+      "q": "A toy costs ₹15 and a book costs ₹25. What is the total?",
+      "o": [
+        "₹50",
+        "₹45",
+        "₹35",
+        "₹40"
+      ],
+      "a": 3,
+      "e": "₹15 + ₹25 = ₹40.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "find change"
+    },
+    {
+      "q": "A toy costs ₹10 and a book costs ₹15. What is the total?",
+      "o": [
+        "₹30",
+        "₹35",
+        "₹20",
+        "₹25"
+      ],
+      "a": 3,
+      "e": "₹10 + ₹15 = ₹25.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "make sensible money choices"
+    },
+    {
+      "q": "A toy costs ₹30 and a book costs ₹20. What is the total?",
+      "o": [
+        "₹50",
+        "₹55",
+        "₹60",
+        "₹45"
+      ],
+      "a": 0,
+      "e": "₹30 + ₹20 = ₹50.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "calculate totals"
+    },
+    {
+      "q": "A toy costs ₹10 and a book costs ₹10. What is the total?",
+      "o": [
+        "₹20",
+        "₹30",
+        "₹15",
+        "₹25"
+      ],
+      "a": 0,
+      "e": "₹10 + ₹10 = ₹20.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "make sensible money choices"
+    },
+    {
+      "q": "A toy costs ₹15 and a book costs ₹15. What is the total?",
+      "o": [
+        "₹25",
+        "₹35",
+        "₹40",
+        "₹30"
+      ],
+      "a": 3,
+      "e": "₹15 + ₹15 = ₹30.",
+      "type": "money",
+      "difficulty": "medium",
+      "concept": "money",
+      "learning_objective": "calculate totals"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Money”?",
+      "o": [
+        "rupees and paise",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "rupees and paise is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "rupees and paise",
+      "learning_objective": "calculate totals"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/maths/ch14.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "shop"
+  }
+}

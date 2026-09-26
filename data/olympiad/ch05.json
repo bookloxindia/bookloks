@@ -1,0 +1,278 @@
+{
+  "chapter_id": "ch035",
+  "book_id": "maths-olympiad",
+  "book": "Mathematics – Class 4 / Olympiad",
+  "publisher": "Humming Bird Education Limited",
+  "role": "Olympiad / Challenge",
+  "subject": "Olympiad Challenge",
+  "subject_id": "olympiad",
+  "chapter_no": 5,
+  "chapter": "Parts & Wholes",
+  "unit": "",
+  "concepts": [
+    "Parts & Wholes",
+    "patterns and reasoning",
+    "multi-step thinking"
+  ],
+  "learning_objectives": [
+    "identify the problem structure",
+    "choose a strategy",
+    "check the result"
+  ],
+  "skills": [
+    "reasoning",
+    "calculation",
+    "problem solving"
+  ],
+  "game_type": "puzzle-lab",
+  "difficulty": 2,
+  "source_status": "Source chapter title + book framing; concept layer is app-level curriculum intelligence inferred from the source title, not a verbatim textbook reproduction.",
+  "questions": [
+    {
+      "q": "Which is greater?",
+      "o": [
+        "3/8",
+        "5/8",
+        "Both equal",
+        "Cannot compare"
+      ],
+      "a": 1,
+      "e": "Same denominator: 5 parts is more than 3.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Parts & Wholes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Half of 18 is:",
+      "o": [
+        "6",
+        "8",
+        "9",
+        "12"
+      ],
+      "a": 2,
+      "e": "18 ÷ 2 = 9.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which fraction equals 2/4?",
+      "o": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "3/4"
+      ],
+      "a": 0,
+      "e": "2/4 simplifies to 1/2.",
+      "type": "starter",
+      "difficulty": "medium",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "A ribbon is split into 10 equal parts; 7 are used. Fraction used?",
+      "o": [
+        "3/10",
+        "7/10",
+        "7/3",
+        "10/7"
+      ],
+      "a": 1,
+      "e": "Seven of ten parts were used.",
+      "type": "starter",
+      "difficulty": "easy",
+      "concept": "Parts & Wholes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which is closest to one whole?",
+      "o": [
+        "7/8",
+        "1/4",
+        "1/5",
+        "1/10"
+      ],
+      "a": 0,
+      "e": "7/8 is closest to 1.",
+      "type": "starter",
+      "difficulty": "hard",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Which fraction shows 1 out of 4 equal parts?",
+      "o": [
+        "2/4",
+        "1/5",
+        "1/4",
+        "4/1"
+      ],
+      "a": 2,
+      "e": "1 of 4 equal parts is 1/4.",
+      "type": "fraction",
+      "difficulty": "medium",
+      "concept": "parts and wholes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Which fraction shows 3 out of 4 equal parts?",
+      "o": [
+        "3/4",
+        "4/4",
+        "4/3",
+        "3/5"
+      ],
+      "a": 0,
+      "e": "3 of 4 equal parts is 3/4.",
+      "type": "fraction",
+      "difficulty": "medium",
+      "concept": "parts and wholes",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Which fraction shows 2 out of 4 equal parts?",
+      "o": [
+        "3/4",
+        "4/2",
+        "2/5",
+        "2/4"
+      ],
+      "a": 3,
+      "e": "2 of 4 equal parts is 2/4.",
+      "type": "fraction",
+      "difficulty": "medium",
+      "concept": "parts and wholes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 1: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "Parts & Wholes",
+        "random guessing",
+        "an unrelated topic",
+        "another subject"
+      ],
+      "a": 0,
+      "e": "Parts & Wholes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Parts & Wholes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 2: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "random guessing",
+        "another subject",
+        "patterns and reasoning",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 3: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "random guessing",
+        "multi-step thinking"
+      ],
+      "a": 3,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Quick Check 4: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "random guessing",
+        "Parts & Wholes",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 1,
+      "e": "Parts & Wholes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Parts & Wholes",
+      "learning_objective": "identify the problem structure"
+    },
+    {
+      "q": "Quick Check 5: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "patterns and reasoning",
+        "random guessing",
+        "another subject",
+        "an unrelated topic"
+      ],
+      "a": 0,
+      "e": "patterns and reasoning is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "patterns and reasoning",
+      "learning_objective": "choose a strategy"
+    },
+    {
+      "q": "Quick Check 6: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "another subject",
+        "random guessing",
+        "multi-step thinking",
+        "an unrelated topic"
+      ],
+      "a": 2,
+      "e": "multi-step thinking is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "multi-step thinking",
+      "learning_objective": "check the result"
+    },
+    {
+      "q": "Quick Check 7: Which idea is part of “Parts & Wholes”?",
+      "o": [
+        "an unrelated topic",
+        "another subject",
+        "Parts & Wholes",
+        "random guessing"
+      ],
+      "a": 2,
+      "e": "Parts & Wholes is connected to this chapter.",
+      "type": "quick-check",
+      "difficulty": "easy",
+      "concept": "Parts & Wholes",
+      "learning_objective": "identify the problem structure"
+    }
+  ],
+  "question_count": 15,
+  "schema_version": "1.0",
+  "status": "active",
+  "source_note": "Migrated from BookLoks v3.8 MVP curriculum. Concepts/objectives are MVP app-level curriculum intelligence; validate and enrich before final academic publishing.",
+  "data_path": "data/olympiad/ch05.json",
+  "learning": {
+    "chapter_summary": "",
+    "simple_explanation": "",
+    "visual_learning_scene": "",
+    "quick_check_question": "",
+    "quick_check_correct_options": [],
+    "quick_check_wrong_options": [],
+    "hint": "",
+    "mission_context": ""
+  },
+  "mission": {
+    "title": "",
+    "story": "",
+    "instruction": "",
+    "game_type": "puzzle-lab"
+  }
+}
