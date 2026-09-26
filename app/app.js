@@ -24,47 +24,26 @@ const DEFAULT_STATE = {
   activeRoom: 'living', lastSubject: 'science'
 };
 
-// Each room has its own inventory. The paid item costs intentionally total 7,560 coins,
-// matching the maximum first-completion earning from the 126 unique active chapter records.
+// Each room has its own inventory. Each room has 25 objects and its 24 paid items total 1,890 coins.
+// Four rooms therefore cost 7,560 coins in total, matching the maximum 126-chapter perfect reward pool.
+const ROOM_COSTS = [20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,130,135,155]; // 1,890 coins across 24 paid items
 const ROOM_CATALOG = {
   living: [
-    { id:'living-starter-lamp', cost:0, emoji:'💡', name:'Starter Lamp' },
-    { id:'living-sofa', cost:450, emoji:'🛋️', name:'Cozy Sofa' },
-    { id:'living-tv', cost:350, emoji:'📺', name:'Smart TV' },
-    { id:'living-table', cost:250, emoji:'🪵', name:'Coffee Table' },
-    { id:'living-lamp', cost:180, emoji:'🛋️', name:'Floor Lamp' },
-    { id:'living-plant', cost:200, emoji:'🪴', name:'Living Plant' },
-    { id:'living-bookshelf', cost:460, emoji:'📚', name:'Bookshelf' }
+    ['living-starter-lamp',0,'💡','Starter Lamp'], ['living-cozy-sofa',20,'🛋️','Cozy Sofa'], ['living-armchair',25,'🪑','Armchair'], ['living-coffee-table',30,'🪵','Coffee Table'], ['living-floor-lamp',35,'💡','Floor Lamp'], ['living-plant',40,'🪴','Living Plant'], ['living-rug',45,'🧶','Rug'], ['living-tv',50,'📺','TV'], ['living-tv-unit',55,'🗄️','TV Unit'], ['living-bookshelf',60,'📚','Bookshelf'], ['living-side-table',65,'🪑','Side Table'], ['living-wall-clock',70,'🕒','Wall Clock'], ['living-curtains',75,'🪟','Curtains'], ['living-cushion',80,'🛏️','Cushion'], ['living-photo-frame',85,'🖼️','Photo Frame'], ['living-wall-art',90,'🎨','Wall Art'], ['living-cabinet',95,'🗄️','Cabinet'], ['living-ottoman',100,'🪑','Ottoman'], ['living-coffee-tray',105,'🍵','Tea Tray'], ['living-tall-plant',110,'🌿','Tall Plant'], ['living-ceiling-light',115,'💡','Ceiling Light'], ['living-bean-bag',120,'🪑','Bean Bag'], ['living-speaker',130,'🔊','Speaker'], ['living-floor-cushion',135,'🟣','Floor Cushion'], ['living-aquarium',155,'🐠','Fish Tank']
   ],
   drawing: [
-    { id:'drawing-starter-easel', cost:0, emoji:'🖼️', name:'Starter Easel' },
-    { id:'drawing-sofa', cost:400, emoji:'🛋️', name:'Art Sofa' },
-    { id:'drawing-canvas', cost:250, emoji:'🎨', name:'Canvas Stand' },
-    { id:'drawing-piano', cost:500, emoji:'🎹', name:'Mini Piano' },
-    { id:'drawing-showcase', cost:300, emoji:'🗿', name:'Art Showcase' },
-    { id:'drawing-side-table', cost:180, emoji:'🪑', name:'Side Table' },
-    { id:'drawing-lamp', cost:260, emoji:'💡', name:'Gallery Lamp' }
+    ['drawing-starter-easel',0,'🖼️','Starter Easel'], ['drawing-art-stool',20,'🪑','Art Stool'], ['drawing-canvas',25,'🎨','Canvas'], ['drawing-paint-box',30,'🖍️','Colour Box'], ['drawing-palette',35,'🎨','Paint Palette'], ['drawing-pencil-cup',40,'✏️','Pencil Cup'], ['drawing-art-table',45,'🪵','Art Table'], ['drawing-floor-lamp',50,'💡','Art Lamp'], ['drawing-art-rug',55,'🧶','Art Rug'], ['drawing-storage-box',60,'📦','Art Box'], ['drawing-wall-clock',65,'🕒','Wall Clock'], ['drawing-side-table',70,'🪑','Side Table'], ['drawing-bookshelf',75,'📚','Bookshelf'], ['drawing-plant',80,'🪴','Small Plant'], ['drawing-wall-art',85,'🖼️','Wall Art'], ['drawing-sketch-board',90,'📋','Sketch Board'], ['drawing-storage-cabinet',95,'🗄️','Art Cabinet'], ['drawing-floor-cushion',100,'🟣','Floor Cushion'], ['drawing-craft-basket',105,'🧺','Craft Basket'], ['drawing-frame',110,'🖼️','Picture Frame'], ['drawing-ceiling-light',115,'💡','Ceiling Light'], ['drawing-trophy',120,'🏆','Art Trophy'], ['drawing-sculpture',130,'🗿','Mini Sculpture'], ['drawing-mini-piano',135,'🎹','Mini Piano'], ['drawing-display-shelf',155,'🪵','Display Shelf']
   ],
   play: [
-    { id:'play-starter-ball', cost:0, emoji:'⚽', name:'Starter Ball' },
-    { id:'play-gaming', cost:500, emoji:'🎮', name:'Gaming Corner' },
-    { id:'play-blocks', cost:200, emoji:'🧱', name:'Building Blocks' },
-    { id:'play-ball', cost:180, emoji:'🏀', name:'Basketball' },
-    { id:'play-rocket', cost:350, emoji:'🚀', name:'Rocket Toy' },
-    { id:'play-console', cost:400, emoji:'🕹️', name:'Game Console' },
-    { id:'play-trophy', cost:260, emoji:'🏆', name:'Champion Trophy' }
+    ['play-starter-ball',0,'⚽','Starter Ball'], ['play-blocks',20,'🧱','Building Blocks'], ['play-toy-chest',25,'🧰','Toy Chest'], ['play-soft-rug',30,'🧶','Soft Rug'], ['play-bean-bag',35,'🪑','Bean Bag'], ['play-small-table',40,'🪵','Play Table'], ['play-chair',45,'🪑','Play Chair'], ['play-puzzle-mat',50,'🧩','Puzzle Mat'], ['play-bookshelf',55,'📚','Toy Shelf'], ['play-soft-toys',60,'🧸','Soft Toys'], ['play-basket',65,'🧺','Toy Basket'], ['play-rocket',70,'🚀','Rocket Toy'], ['play-train',75,'🚂','Toy Train'], ['play-board-game',80,'🎲','Board Game'], ['play-rc-car',85,'🚗','RC Car'], ['play-dollhouse',90,'🏠','Doll House'], ['play-art-corner',95,'🎨','Art Corner'], ['play-star-lamp',100,'⭐','Star Lamp'], ['play-wall-clock',105,'🕒','Wall Clock'], ['play-wall-art',110,'🎯','Play Wall Art'], ['play-mini-tent',115,'⛺','Play Tent'], ['play-gaming',120,'🎮','Game Corner'], ['play-trophy',130,'🏆','Trophy'], ['play-music-corner',135,'🎵','Music Corner'], ['play-mini-slide',155,'🛝','Mini Slide']
   ],
   dining: [
-    { id:'dining-starter-plant', cost:0, emoji:'🪴', name:'Starter Plant' },
-    { id:'dining-table', cost:550, emoji:'🍽️', name:'Dining Table' },
-    { id:'dining-chairs', cost:300, emoji:'🪑', name:'Dining Chairs' },
-    { id:'dining-fridge', cost:450, emoji:'🧊', name:'Smart Fridge' },
-    { id:'dining-cabinet', cost:260, emoji:'🗄️', name:'Kitchen Cabinet' },
-    { id:'dining-pendant', cost:180, emoji:'💡', name:'Dining Pendant' },
-    { id:'dining-basket', cost:150, emoji:'🧺', name:'Fruit Basket' }
+    ['dining-starter-plant',0,'🪴','Starter Plant'], ['dining-table',20,'🍽️','Dining Table'], ['dining-chair',25,'🪑','Dining Chair'], ['dining-bench',30,'🪑','Dining Bench'], ['dining-rug',35,'🧶','Dining Rug'], ['dining-fruit-basket',40,'🧺','Fruit Basket'], ['dining-pendant',45,'💡','Pendant Light'], ['dining-sideboard',50,'🗄️','Sideboard'], ['dining-cabinet',55,'🗄️','Crockery Cabinet'], ['dining-water-jug',60,'🫗','Water Jug'], ['dining-plates',65,'🍽️','Dinner Plates'], ['dining-cups',70,'☕','Tea Cups'], ['dining-cutlery',75,'🥄','Cutlery Set'], ['dining-vase',80,'🏺','Flower Vase'], ['dining-centerpiece',85,'🌼','Table Decor'], ['dining-wall-clock',90,'🕒','Wall Clock'], ['dining-mirror',95,'🪞','Wall Mirror'], ['dining-serving-trolley',100,'🛒','Serving Trolley'], ['dining-bar-stool',105,'🪑','Bar Stool'], ['dining-napkin-holder',110,'🧻','Napkin Holder'], ['dining-tea-set',115,'🫖','Tea Set'], ['dining-wall-art',120,'🖼️','Wall Art'], ['dining-plant',130,'🌿','Table Plant'], ['dining-floor-lamp',135,'💡','Floor Lamp'], ['dining-display-shelf',155,'🪵','Display Shelf']
   ]
 };
-function roomCatalog(room) { return ROOM_CATALOG[room] || []; }
+for(const [room,list] of Object.entries(ROOM_CATALOG)) ROOM_CATALOG[room]=list.map(([id,cost,emoji,name])=>({id,cost,emoji,name}));
+
+function roomCatalog(room) { return [...(ROOM_CATALOG[room] || [])].sort((a,b)=>a.cost-b.cost || a.name.localeCompare(b.name)); }
 function roomItemDef(room, id) { return roomCatalog(room).find(x => x.id === id); }
 
 const AVATARS = {
@@ -109,6 +88,78 @@ let draggedWorldItem = null;
 const chapterCache = {};
 let lastReward = {xp:0, coins:0, egg:0};
 let lastFirstCompletion = false;
+const SOUND_FILES = {
+  background: 'sounds/background.mp3',
+  applause: 'sounds/applause.mp3',
+  disappointed: 'sounds/disappointed.mp3',
+  error: 'sounds/error.mp3'
+};
+let bgMusic = null;
+let audioGestureSeen = false;
+let musicEnabled = localStorage.getItem('bookloks_music') !== 'off';
+
+function initSoundSystem() {
+  if (bgMusic) return;
+  bgMusic = new Audio(SOUND_FILES.background);
+  bgMusic.loop = true;
+  bgMusic.preload = 'auto';
+  bgMusic.volume = 0.10;
+}
+
+function updateMusicButton() {
+  const b = document.getElementById('musicBtn');
+  if (!b) return;
+  b.textContent = musicEnabled ? '🎵' : '🔇';
+  b.title = musicEnabled ? 'Sound on' : 'Sound off';
+  b.setAttribute('aria-label', musicEnabled ? 'Sound on' : 'Sound off');
+  b.classList.toggle('off', !musicEnabled);
+}
+
+function startBackgroundMusic() {
+  if (!musicEnabled) return;
+  initSoundSystem();
+  if (!bgMusic || !bgMusic.paused) return;
+  const p = bgMusic.play();
+  if (p && typeof p.catch === 'function') p.catch(() => {});
+}
+
+function toggleMusic() {
+  musicEnabled = !musicEnabled;
+  localStorage.setItem('bookloks_music', musicEnabled ? 'on' : 'off');
+  initSoundSystem();
+  if (musicEnabled) {
+    startBackgroundMusic();
+  } else if (bgMusic) {
+    bgMusic.pause();
+  }
+  updateMusicButton();
+}
+
+function playEffect(file, volume, duckMs = 1100) {
+  try {
+    if (musicEnabled) startBackgroundMusic();
+    const effect = new Audio(SOUND_FILES[file]);
+    effect.preload = 'auto';
+    effect.volume = volume;
+    const oldVolume = bgMusic ? bgMusic.volume : 0.10;
+    if (bgMusic && !bgMusic.paused) bgMusic.volume = 0.035;
+    const restore = () => {
+      if (bgMusic && !bgMusic.paused) bgMusic.volume = oldVolume;
+      effect.removeEventListener('ended', restore);
+    };
+    effect.addEventListener('ended', restore);
+    window.setTimeout(restore, duckMs);
+    const p = effect.play();
+    if (p && typeof p.catch === 'function') p.catch(() => {});
+  } catch (_) {}
+}
+
+function vibrateWrong() {
+  try {
+    if (navigator.vibrate) navigator.vibrate([90, 45, 90]);
+  } catch (_) {}
+}
+
 
 function cloneDefault() { return JSON.parse(JSON.stringify(DEFAULT_STATE)); }
 function loadState() {
@@ -205,7 +256,7 @@ function subjectCards() {
   return `<div class="subject-grid">${subjects.map(s => `<article class="subject-card" data-subject="${s.id}" style="--accent:${s.color}"><div class="icon-bubble">${s.icon}</div><h3>${esc(s.name)}</h3><p>${esc(s.blurb)}</p><div class="card-foot"><span>${books.filter(b => b.subject_id === s.id).reduce((a,b) => a + b.chapter_count, 0)} units</span><b>Open →</b></div></article>`).join('')}</div>`;
 }
 function subjectsView() {
-  return `<section class="section-head"><div><div class="eyebrow">LEARNING MAP</div><h1>Pick a subject</h1><p>Core learning tracks stay separate; workbook content supports practice inside Mathematics.</p></div></section>${subjectCards()}<div class="source-note">Source chapter titles are taken from the uploaded books. Concept maps and starter questions are app-level curriculum intelligence inferred from titles and book framing, not verbatim textbook reproduction.</div>`;
+  return `<section class="section-head"><div><div class="eyebrow">LEARNING MAP</div><h1>Pick a subject</h1><p>Choose a subject and then pick a chapter to learn and play.</p></div></section>${subjectCards()}`;
 }
 function booksView() {
   const s = subjectById[selectedSubjectId];
@@ -225,10 +276,40 @@ function chapterView() {
   <div class="action-bar"><button class="btn soft" data-action="back-chapters">← Chapters</button><button class="btn primary" data-action="play">Play mission →</button></div>`;
 }
 function missionView(){if(stage==='intro')return missionIntro();if(stage==='check')return missionCheck();if(stage==='game')return missionGame();return missionQuiz();}
-function missionIntro(){const c=activeChapter,s=subjectById[c.subject_id],objs=(c.learning_objectives||[]).slice(0,3),concepts=(c.concepts||[]).slice(0,4);return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • DISCOVER</div><h1>What are we learning?</h1><p>Before you play, get a quick picture of <strong>${esc(c.chapter)}</strong>. Then prove what you noticed in a tiny warm-up challenge.</p><div class="stepper"><span class="active">1 DISCOVER</span><span>2 QUICK CHECK</span><span>3 PLAY</span><span>4 CHALLENGE</span></div></div><section class="learn-card"><div class="learn-visual"><div class="learn-orb">${s.icon}</div><div class="learn-pulse"></div><div class="learn-label">${esc(c.chapter)}</div></div><div class="learn-copy"><span class="pill">🧠 Quick Learn</span><h2>${esc(introHeadline(c))}</h2><div class="learn-goals">${objs.map(x=>`<div class="learn-goal"><span>✓</span>${esc(x)}</div>`).join('')}</div><div class="tag-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div></section><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button><button class="btn primary" data-action="start-check">I got it — Quick Check →</button></div></section>`;}
-function introHeadline(c){const f=c.learning_objectives&&c.learning_objectives[0];return f?f.charAt(0).toUpperCase()+f.slice(1)+'.':`Explore the key ideas in ${c.chapter}.`;}
-function missionCheck(){const c=activeChapter,s=subjectById[c.subject_id];if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Show what you understood</h1><p>Pick the <strong>3 ideas</strong> that really belong to <strong>${esc(c.chapter)}</strong>. Three are right and three are decoys.</p><div class="stepper"><span>1 DISCOVER</span><span class="active">2 QUICK CHECK</span><span>3 PLAY</span><span>4 CHALLENGE</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Can you spot the right ideas?</h2><p>Wrong picks do not cost a life. Think again and try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Brilliant, ${playerName()}! You found all 3 correct ideas.`:(mini.checkMessage||`${n} / 3 correct ideas found`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back to learn</button>${mini.checkDone?'<button class="btn primary" data-action="start-game">Start mission →</button>':'<span class="muted">Find all 3 correct cards to continue.</span>'}</div></section></section>`;}
-function quickCheckCards(c){const correct=(c.concepts||[]).slice(0,3).map(x=>({label:x,correct:true}));const current=new Set((c.concepts||[]).map(normalizeConcept));const pool=[];for(const o of curriculum){if(o.chapter_id===c.chapter_id)continue;for(const x of(o.concepts||[])){const n=normalizeConcept(x);if(x&&!current.has(n)&&!pool.some(v=>normalizeConcept(v)===n))pool.push(x);}}const wrong=shuffle(pool).slice(0,3).map(x=>({label:x,correct:false}));while(wrong.length<3){const fb=['Cooking recipes','Weather satellites','Basketball drills','Music practice','Gardening tools'];wrong.push({label:fb[wrong.length],correct:false});}return shuffle([...correct,...wrong]);}
+function chapterSummaryText(c){
+  const direct = c.chapter_summary || c.simple_explanation;
+  if (direct) return direct;
+  const concepts=(c.concepts||[]).slice(0,3);
+  if(!concepts.length) return `Let’s learn ${c.chapter} step by step.`;
+  return `In this chapter, we will learn about ${concepts.join(', ')}.`;
+}
+function chapterSceneText(c){ return c.visual_learning_scene || c.mission_context || ''; }
+function missionIntro(){
+  const c=activeChapter,s=subjectById[c.subject_id],objs=(c.learning_objectives||[]).slice(0,3),concepts=(c.concepts||[]).slice(0,4),summary=chapterSummaryText(c),scene=chapterSceneText(c);
+  return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • DISCOVER</div><h1>Learn first. Then play.</h1><p>Read a short chapter guide. Then try a quick check.</p><div class="stepper"><span class="active">1 LEARN</span><span>2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="learn-card"><div class="learn-visual"><div class="learn-orb">${s.icon}</div><div class="learn-pulse"></div>${scene?`<div class="learn-scene-text">${esc(scene)}</div>`:`<div class="learn-scene-text"><b>${esc(c.chapter)}</b><span>Think about these ideas:</span><div class="scene-chip-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div>`}</div><div class="learn-copy"><span class="pill">📖 Chapter guide</span><h2>${esc(c.chapter)}</h2><p class="learn-summary">${esc(summary)}</p><h3>What you will learn</h3><div class="learn-goals">${objs.map(x=>`<div class="learn-goal"><span>✓</span>${esc(x)}</div>`).join('')}</div>${concepts.length?`<div class="tag-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:''}</div></section><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button><button class="btn primary" data-action="start-check">Got it • Quick Check →</button></div></section>`;
+}
+function introHeadline(c){const f=c.learning_objectives&&c.learning_objectives[0];return f?f.charAt(0).toUpperCase()+f.slice(1)+'.':`Explore ${c.chapter} step by step.`;}
+function missionCheck(){const c=activeChapter,s=subjectById[c.subject_id];if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Quick Check</h1><p>Pick the <strong>3 cards</strong> that belong to <strong>${esc(c.chapter)}</strong>.</p><div class="stepper"><span>1 LEARN</span><span class="active">2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Pick the 3 right cards</h2><p>Not quite? Try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Great job, ${playerName()}! You found all 3.`:(mini.checkMessage||`${n} / 3`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back</button>${mini.checkDone?'<button class="btn primary" data-action="start-game">Start mission →</button>':'<span class="muted">Find 3 right cards.</span>'}</div></section></section>`;}
+function quickCheckCards(c){
+  const q=c.quick_check||{};
+  const presetCorrect = Array.isArray(q.correct_options)?q.correct_options:(Array.isArray(c.quick_check_correct_options)?c.quick_check_correct_options:[]);
+  const presetWrong = Array.isArray(q.wrong_options)?q.wrong_options:(Array.isArray(c.quick_check_wrong_options)?c.quick_check_wrong_options:[]);
+  if(presetCorrect.length>=3 && presetWrong.length>=3){
+    return shuffle([...presetCorrect.slice(0,3).map(x=>({label:x,correct:true})),...presetWrong.slice(0,3).map(x=>({label:x,correct:false}))]);
+  }
+  if(Array.isArray(q.cards) && q.cards.length>=6){
+    const usable=q.cards.filter(x=>x&&x.label).slice(0,6).map(x=>({label:x.label,correct:!!x.correct}));
+    const yes=usable.filter(x=>x.correct),no=usable.filter(x=>!x.correct);
+    if(yes.length>=3&&no.length>=3) return shuffle([...yes.slice(0,3),...no.slice(0,3)]);
+  }
+  const correct=(c.concepts||[]).slice(0,3).map(x=>({label:x,correct:true}));
+  const current=new Set((c.concepts||[]).map(normalizeConcept));
+  const pool=[];
+  for(const o of curriculum){if(o.chapter_id===c.chapter_id)continue;for(const x of(o.concepts||[])){const n=normalizeConcept(x);if(x&&!current.has(n)&&!pool.some(v=>normalizeConcept(v)===n))pool.push(x);}}
+  const wrong=shuffle(pool).slice(0,3).map(x=>({label:x,correct:false}));
+  while(wrong.length<3){const fb=['Read a story','Play a sport','Draw a picture'];wrong.push({label:fb[wrong.length],correct:false});}
+  return shuffle([...correct,...wrong]);
+}
 function normalizeConcept(v){return String(v||'').toLowerCase().replace(/[^a-z0-9\u0900-\u097f]+/g,' ').trim();}
 function missionGame(){const c=activeChapter,s=subjectById[c.subject_id];return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • PLAY</div><h1>${esc(missionTitle(c))}</h1><p>${esc(missionStory(c))}</p><div class="stepper"><span>1 DISCOVER</span><span>2 QUICK CHECK</span><span class="active">3 PLAY</span><span>4 CHALLENGE</span></div></div><section class="visual-game-card"><div class="game-head"><div><span class="pill">🎮 Mini Game</span><h2>${esc(missionInstruction(c))}</h2><p>${requiresMiniGame(c)?'Complete the hands-on task first. Your reward unlocks after the questions.':'Your quick check unlocked the chapter mission. Now jump into the 5-question challenge.'}</p></div><span class="page-badge">3 / 4</span></div>${miniGame(c)}<div class="visual-controls">${requiresMiniGame(c)?`<button class="btn soft" data-action="reset-mini">Reset</button><span class="visual-status ${mini.done?'success':''}">${mini.done?`✅ Nice, ${playerName()}! Task complete!`:'🎯 Finish the mini-game first.'}</span>`:'<span class="visual-status success">✅ Ready! The chapter challenge is unlocked.</span>'}</div><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button>${mini.done?'<button class="btn primary" data-action="start-quiz">Start 5 questions →</button>':'<span class="muted">Finish the mission to continue.</span>'}</div></section></section>`;}
 function requiresMiniGame(c){return ['Push and Pull','Money','Understanding Scratch – Your Gateway to Coding','Maps and Views','Symmetry','Time'].includes(c.chapter);}
@@ -284,7 +365,7 @@ function worldView() {
   const catalog = roomCatalog(room.id);
   const unlocked = state.roomUnlocked[room.id] || [];
   const roomPaidTotal = catalog.reduce((sum,it)=>sum + (it.cost || 0), 0);
-  return `<section class="world-header"><div><div class="world-title-line"><span class="world-avatar">${avatarMeta().emoji}</span><div><div class="eyebrow">MY HOME</div><h1>${esc(state.homeName)}</h1></div></div><p>Each room has its own furniture. Coins unlock that room's objects; XP unlocks colour themes you can use in any room.</p></div><div class="world-meta"><span class="pill">🪙 ${state.coins} coins</span><span class="pill">⭐ ${state.xp} XP</span><span class="pill">🏠 ${roomPaidTotal} coins to complete this room</span></div></section>
+  return `<section class="world-header"><div><div class="world-title-line"><span class="world-avatar">${avatarMeta().emoji}</span><div><div class="eyebrow">MY HOME</div><h1>${esc(state.homeName)}</h1></div></div><p>Build each room your way. Start with a small item, then unlock more as you earn coins.</p></div><div class="world-meta"><span class="pill">🪙 ${state.coins} coins</span><span class="pill">⭐ ${state.xp} XP</span><span class="pill">🏠 ${catalog.length} objects • ${roomPaidTotal} coins total</span></div></section>
   <div class="home-editor"><div class="room-tabs">${ROOMS.map(r => `<button class="room-tab ${room.id===r.id?'active':''}" data-room="${r.id}">${r.icon}<span>${esc(r.name)}</span></button>`).join('')}</div><div class="editor-actions"><button class="btn soft" data-action="rename-home">✏️ Name</button><button class="btn soft" data-action="themes">🎨 Colours</button></div></div>
   <div class="room-wrap"><div class="room" style="--wall:${theme.wall};--floor:${theme.floor};--accent:${theme.accent}"><div class="wall-pattern"></div><div class="window"></div><div class="rug"></div><div class="room-label">${room.icon} ${room.name}</div>${items.map((p,i)=>`<button class="world-item" data-world-item="${esc(p.id)}" data-world-index="${i}" style="left:${p.x}%;top:${p.y}%" aria-label="${esc(p.name||'item')}">${p.emoji}</button>`).join('')}</div><aside class="shop"><div class="shop-head"><div><h3>Build ${esc(room.name)}</h3><small>Only ${esc(room.name)} objects appear here. Drag them anywhere in this room.</small></div><span class="pill">${unlocked.length}/${catalog.length} unlocked</span></div><div class="inventory-grid">${catalog.map(it=>`<div class="item-card"><div class="item-emoji">${it.emoji}</div><div class="item-main"><b>${esc(it.name)}</b><small>${it.cost ? it.cost+' coins' : 'Starter'}</small></div><button class="btn tiny" data-buy="${it.id}" ${unlocked.includes(it.id)?'disabled':''}>${unlocked.includes(it.id)?'Owned':'Unlock'}</button></div>`).join('')}</div></aside></div>`;
 }
@@ -307,12 +388,28 @@ function profileView() {
 
 
 function bind() {
+  const musicBtn = document.getElementById('musicBtn');
+  if (musicBtn) musicBtn.onclick = (e) => { e.stopPropagation(); toggleMusic(); };
+  updateMusicButton();
   document.getElementById('brandBtn').onclick = goHome;
   document.querySelectorAll('[data-route]').forEach(e => e.onclick = () => go(e.dataset.route));
   document.querySelectorAll('[data-subject]').forEach(e => e.onclick = () => { selectedSubjectId=e.dataset.subject; state.lastSubject=selectedSubjectId; save(); route='books'; render(); });
   document.querySelectorAll('[data-book]').forEach(e => e.onclick = () => { selectedBookId=e.dataset.book; route='chapters'; render(); });
   document.querySelectorAll('[data-chapter]').forEach(e => e.onclick = () => { selectedChapterId=e.dataset.chapter; route='chapter'; render(); });
-  document.querySelectorAll('[data-option]').forEach(e => e.onclick = () => { if (selectedOption === null) { selectedOption=Number(e.dataset.option); if (selectedOption===quiz[qIndex].a) { playSuccess(); toast(`✨ Nice, ${playerName()}! Keep going!`); } else { toast(`Keep going, ${playerName()}! You can do the next one!`); } render(); }});
+  document.querySelectorAll('[data-option]').forEach(e => e.onclick = () => {
+    if (selectedOption === null) {
+      startBackgroundMusic();
+      selectedOption=Number(e.dataset.option);
+      if (selectedOption===quiz[qIndex].a) {
+        playSuccess();
+        toast(`✨ Nice, ${playerName()}! Keep going!`);
+      } else {
+        playWrong();
+        toast(`❌ Not quite. Try the next one!`);
+      }
+      render();
+    }
+  });
   document.querySelectorAll('[data-buy]').forEach(e => e.onclick = () => buy(e.dataset.buy));
   document.querySelectorAll('[data-item]').forEach(e => e.onclick = () => selectItem(Number(e.dataset.item)));
   document.querySelectorAll('[data-code]').forEach(e => e.onclick = () => tapCode(Number(e.dataset.code)));
@@ -323,6 +420,7 @@ function bind() {
   document.querySelectorAll('[data-action]').forEach(e => e.onclick = () => act(e.dataset.action));
 }
 function act(a) {
+  startBackgroundMusic();
   if (a==='continue' || a==='start-default') { selectedSubjectId=state.lastSubject||'science'; selectedBookId=subjectBooks(selectedSubjectId)[0].id; selectedChapterId=chaptersForBook(selectedBookId)[0].chapter_id; startMission(); return; }
   if (a==='play') { startMission(); return; }
   if (a==='start-check') { stage='check'; mini.checkCards=[]; mini.checkSelected=[]; mini.checkDone=false; mini.checkMessage=''; mini.wrongCard=-1; render(); return; }
@@ -342,7 +440,7 @@ function act(a) {
   if (a==='reset') { localStorage.removeItem(key); state=cloneDefault(); render(); toast('Progress reset'); return; }
 }
 function resetMini() { mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 }; }
-function checkCard(index){if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Brilliant, ${playerName()}! You found all 3 correct ideas.`;playSuccess();toast(`✨ Great start, ${playerName()}! Mission unlocked.`);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to unlock the mission.`;playSuccess();}render();}
+function checkCard(index){startBackgroundMusic();if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Brilliant, ${playerName()}! You found all 3 correct ideas.`;playSuccess();toast(`✨ Great start, ${playerName()}! Mission unlocked.`);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to unlock the mission.`;playSuccess();}render();}
 async function loadChapterData(chapterId){
   if(chapterCache[chapterId]) return chapterCache[chapterId];
   const meta = chapterById[chapterId];
@@ -423,12 +521,13 @@ function finishMission() {
     if(delta.egg){
       state.perfectMissions += 1;
       addGoldenEggToHome();
-      playApplause();
       confetti();
     } else if(delta.xp || delta.coins){
       playSuccess();
     }
   }
+  if(score >= 4) playApplause();
+  else playDisappointed();
   save();
   route='result';
   render();
@@ -560,18 +659,35 @@ function openName(){
   document.getElementById('nameInput').focus();
 }
 function audioContext(){return window.AudioContext||window.webkitAudioContext?new (window.AudioContext||window.webkitAudioContext)():null}
-function playSuccess(){ try{const ctx=audioContext(); if(!ctx)return; const o=ctx.createOscillator(), g=ctx.createGain(); o.type='sine'; o.frequency.setValueAtTime(660,ctx.currentTime); o.frequency.exponentialRampToValueAtTime(880,ctx.currentTime+.12); g.gain.setValueAtTime(.001,ctx.currentTime); g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.02); g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.18); o.connect(g).connect(ctx.destination); o.start();o.stop(ctx.currentTime+.2);}catch{} }
-function playWrong(){ try{const ctx=audioContext(); if(!ctx)return; const o=ctx.createOscillator(), g=ctx.createGain(); o.type='square'; o.frequency.setValueAtTime(210,ctx.currentTime); o.frequency.exponentialRampToValueAtTime(160,ctx.currentTime+.12); g.gain.setValueAtTime(.001,ctx.currentTime); g.gain.exponentialRampToValueAtTime(.055,ctx.currentTime+.015); g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.16); o.connect(g).connect(ctx.destination); o.start();o.stop(ctx.currentTime+.17);}catch{} }
-function playApplause(){
+function playSuccess(){
   try{
-    const C=window.AudioContext||window.webkitAudioContext; if(!C)return; const ctx=new C();
-    const duration=.8, buffer=ctx.createBuffer(1,ctx.sampleRate*duration,ctx.sampleRate), data=buffer.getChannelData(0);
-    for(let i=0;i<data.length;i++) data[i]=(Math.random()*2-1)*Math.exp(-i/(ctx.sampleRate*.22));
-    for(let n=0;n<12;n++){
-      const src=ctx.createBufferSource(), gain=ctx.createGain(); src.buffer=buffer; gain.gain.value=.07; src.connect(gain).connect(ctx.destination); src.start(ctx.currentTime+n*.055);
-    }
-    const o=ctx.createOscillator(),g=ctx.createGain();o.type='triangle';o.frequency.value=523;g.gain.setValueAtTime(.001,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.08);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.65);o.connect(g).connect(ctx.destination);o.start();o.stop(ctx.currentTime+.7);
+    const ctx=audioContext(); if(!ctx)return;
+    const o=ctx.createOscillator(), g=ctx.createGain();
+    o.type='sine';
+    o.frequency.setValueAtTime(660,ctx.currentTime);
+    o.frequency.exponentialRampToValueAtTime(880,ctx.currentTime+.12);
+    g.gain.setValueAtTime(.001,ctx.currentTime);
+    g.gain.exponentialRampToValueAtTime(.12,ctx.currentTime+.02);
+    g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.18);
+    o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime+.2);
   }catch{}
+}
+function playWrong(){
+  playEffect('error', 0.78, 950);
+  window.setTimeout(() => playEffect('disappointed', 0.55, 1500), 90);
+  vibrateWrong();
+}
+function playApplause(){ playEffect('applause', 0.70, 5600); }
+function playDisappointed(){ playEffect('disappointed', 0.55, 6200); }
+
+if (!window.__bookloksAudioGesture) {
+  window.__bookloksAudioGesture = true;
+  document.addEventListener('pointerdown', () => {
+    if (!audioGestureSeen) {
+      audioGestureSeen = true;
+      startBackgroundMusic();
+    }
+  }, {passive:true});
 }
 function confetti(){
   const host=document.createElement('div'); host.className='confetti';
