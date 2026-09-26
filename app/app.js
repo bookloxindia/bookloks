@@ -103,12 +103,13 @@ const SOUND_FILES = {
 };
 let bgMusic = null;
 let audioGestureSeen = false;
-const AUDIO_DEFAULTS_VERSION = '4.3';
+const AUDIO_DEFAULTS_VERSION = '4.4';
 const audioDefaultsApplied = localStorage.getItem('bookloks_audio_defaults_version') === AUDIO_DEFAULTS_VERSION;
 if (!audioDefaultsApplied) {
+  const mobileDefault = window.innerWidth <= 640;
   localStorage.setItem('bookloks_music', 'on');
   localStorage.setItem('bookloks_sfx', 'on');
-  localStorage.setItem('bookloks_music_volume', '0.20');
+  localStorage.setItem('bookloks_music_volume', mobileDefault ? '0.05' : '0.20');
   localStorage.setItem('bookloks_sfx_volume', '0.90');
   localStorage.setItem('bookloks_audio_defaults_version', AUDIO_DEFAULTS_VERSION);
 }
@@ -150,12 +151,34 @@ function updateSoundSettingsUI() {
   if (sfxPct) sfxPct.textContent = Math.round(sfxVolume * 100) + '%';
   if (bgMusic) bgMusic.volume = musicEnabled ? musicVolume : 0;
 }
-function startBackgroundMusic() {
+function startBackgroundMusic(opts = {}) {
   if (!musicEnabled) return;
   initSoundSystem();
+  if (!bgMusic) return;
   bgMusic.volume = musicVolume;
-  if (!bgMusic || !bgMusic.paused) return;
+  bgMusic.muted = !audioGestureSeen;
   try { bgMusic.currentTime = bgMusic.currentTime || 0; } catch (_) {}
+  if (!bgMusic.paused) {
+    if (audioGestureSeen) bgMusic.muted = false;
+    return;
+  }
+  const p = bgMusic.play();
+  if (p && typeof p.then === 'function') {
+    p.then(() => {
+      if (audioGestureSeen) bgMusic.muted = false;
+    }).catch(() => {
+      // Browser autoplay policy may block audible playback.
+      // We retry automatically on the first pointer/touch/key gesture.
+    });
+  }
+}
+function unlockAndStartMusic() {
+  audioGestureSeen = true;
+  if (!musicEnabled) return;
+  initSoundSystem();
+  if (!bgMusic) return;
+  bgMusic.muted = false;
+  bgMusic.volume = musicVolume;
   const p = bgMusic.play();
   if (p && typeof p.catch === 'function') p.catch(() => {});
 }
@@ -176,7 +199,7 @@ function toggleMusic() {
   musicEnabled = !musicEnabled;
   localStorage.setItem('bookloks_music', musicEnabled ? 'on' : 'off');
   initSoundSystem();
-  if (musicEnabled) startBackgroundMusic();
+  if (musicEnabled) { audioGestureSeen = true; bgMusic.muted = false; startBackgroundMusic(); }
   else if (bgMusic) { bgMusic.pause(); bgMusic.volume = 0; }
   updateSoundSettingsUI();
 }
@@ -797,11 +820,29 @@ function onboardingView(){
   };
 }
 function startFirstRunOnboarding(){
-  if (localStorage.getItem('bookloks_onboarding_done') === '1') return;
+  if (localStorage.getItem('bookloks_onboarding_done') === '1') return false;
   onboardingStep = 1;
   window.setTimeout(() => onboardingView(), 180);
+  return true;
 }
 window.startFirstRunOnboarding = startFirstRunOnboarding;
+
+function showReturningWelcome(){
+  if (localStorage.getItem('bookloks_onboarding_done') !== '1' || !state?.name) return;
+  const old=document.getElementById('welcomeBackOverlay');
+  if(old) old.remove();
+  const overlay=document.createElement('div');
+  overlay.id='welcomeBackOverlay';
+  overlay.className='welcome-back-overlay';
+  const av=avatarMeta();
+  overlay.innerHTML=`<div class="welcome-back-glow"></div><div class="welcome-back-inner"><div class="welcome-back-avatar">${av.emoji}</div><div class="welcome-back-hi">Hi ${esc(state.name)}!</div><div class="welcome-back-title">Welcome back to BookLoks</div><div class="welcome-back-sub">Ready for a new adventure?</div><div class="welcome-back-journey">LET'S PLAY • LEARN • BUILD</div></div>`;
+  document.body.appendChild(overlay);
+  window.setTimeout(()=>{
+    overlay.classList.add('hide');
+    window.setTimeout(()=>overlay.remove(),450);
+  },1900);
+}
+window.showReturningWelcome = showReturningWelcome;
 
 function openHomeName(){
   const m=document.getElementById('modal');m.classList.remove('hidden');
@@ -837,14 +878,10 @@ function playMissionFailed(){ playEffect('missionFailed', 1.0, 6200); }
 
 if (!window.__bookloksAudioGesture) {
   window.__bookloksAudioGesture = true;
-  const unlockAudio = () => {
-    if (!audioGestureSeen) {
-      audioGestureSeen = true;
-      startBackgroundMusic();
-    }
-  };
+  const unlockAudio = () => { unlockAndStartMusic(); };
   document.addEventListener('pointerdown', unlockAudio, {passive:true});
   document.addEventListener('touchstart', unlockAudio, {passive:true});
+  document.addEventListener('keydown', unlockAudio, {passive:true});
   document.getElementById('splashScreen')?.addEventListener('click', unlockAudio, {passive:true});
 }
 function showMissionOutcome(scoreCount){

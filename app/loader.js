@@ -16,7 +16,10 @@
       try { window.__bookloksReady = true; window.startBackgroundMusic?.(); } catch (_) {}
       window.setTimeout(() => {
         document.getElementById('splashScreen')?.classList.add('hide');
-        try { window.startFirstRunOnboarding?.(); } catch (_) {}
+        try {
+          const firstRun = window.startFirstRunOnboarding?.() === true;
+          if (!firstRun) window.showReturningWelcome?.();
+        } catch (_) {}
       }, 2400);
     };
     document.body.appendChild(script);
