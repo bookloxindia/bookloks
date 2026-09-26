@@ -33,13 +33,22 @@
     script.src = 'app.js';
     script.onload = () => {
       try { window.__bookloksReady = true; window.startBackgroundMusic?.(); } catch (_) {}
+      const standalone = window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone === true;
+      const delay = standalone ? 550 : 2400;
       window.setTimeout(() => {
         document.getElementById('splashScreen')?.classList.add('hide');
         try {
-          const firstRun = window.startFirstRunOnboarding?.() === true;
-          if (!firstRun) window.showReturningWelcome?.();
-        } catch (_) {}
-      }, 2400);
+          const onboarded = localStorage.getItem('bookloks_onboarding_done') === '1';
+          const hasName = !!window.bookloksPlayerName?.();
+          if (onboarded && hasName) {
+            window.showReturningWelcome?.();
+          } else {
+            if (onboarded && !hasName) localStorage.removeItem('bookloks_onboarding_done');
+            const firstRun = window.startFirstRunOnboarding?.() === true;
+            if (!firstRun && hasName) window.showReturningWelcome?.();
+          }
+        } catch (err) { console.warn('BookLoks welcome flow:', err); }
+      }, delay);
     };
     document.body.appendChild(script);
   } catch (err) {

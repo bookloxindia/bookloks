@@ -1,4 +1,4 @@
-const CACHE = 'bookloks-pwa-v1';
+const CACHE = 'bookloks-pwa-v2';
 const CORE = [
   './',
   './index.html',

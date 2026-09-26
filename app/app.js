@@ -827,8 +827,11 @@ function startFirstRunOnboarding(){
 }
 window.startFirstRunOnboarding = startFirstRunOnboarding;
 
+function bookloksPlayerName(){ return state?.name || ''; }
+window.bookloksPlayerName = bookloksPlayerName;
+
 function showReturningWelcome(){
-  if (localStorage.getItem('bookloks_onboarding_done') !== '1' || !state?.name) return;
+  if (!state?.name) return;
   const old=document.getElementById('welcomeBackOverlay');
   if(old) old.remove();
   const overlay=document.createElement('div');
@@ -840,7 +843,7 @@ function showReturningWelcome(){
   window.setTimeout(()=>{
     overlay.classList.add('hide');
     window.setTimeout(()=>overlay.remove(),450);
-  },1900);
+  },2300);
 }
 window.showReturningWelcome = showReturningWelcome;
 
