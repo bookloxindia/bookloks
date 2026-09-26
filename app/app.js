@@ -285,13 +285,23 @@ function toast(t, tone = '') {
   clearTimeout(window._toast);
   window._toast = setTimeout(() => e.classList.remove('show'), 1900);
 }
-function go(r) { route = r; render(); }
+function go(r) { route = r; syncOrientationForRoute(r); render(); }
 function goHome() { selectedSubjectId = selectedBookId = selectedChapterId = null; activeChapter = null; go('home'); }
 function subjectBooks(id) { return booksBySubject[id] || []; }
 function chaptersForBook(id) { return curriculum.filter(c => c.book_id === id); }
+function syncOrientationForRoute(r) {
+  const landscape = r === 'map' || r === 'world';
+  document.body.classList.toggle('landscape-route', landscape);
+  if (landscape) {
+    try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock('landscape').catch(()=>{}); } catch (_) {}
+  } else {
+    try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (_) {}
+  }
+}
 function render() {
   document.body.classList.toggle('mission-mode', route === 'mission');
-  document.getElementById('backBtn').classList.toggle('hidden', ['home','subjects'].includes(route));
+  syncOrientationForRoute(route);
+  document.getElementById('backBtn').classList.toggle('hidden', ['home','subjects','map'].includes(route));
   document.querySelectorAll('.nav-btn').forEach(x => x.classList.toggle('active', x.dataset.route === route));
   const homeNavLabel = document.querySelector('.nav-btn[data-route=\"world\"] small');
   if (homeNavLabel) homeNavLabel.textContent = state.homeName && state.homeName !== 'My Home' ? state.homeName : 'My Home';
@@ -301,7 +311,11 @@ function render() {
   else if (route === 'chapters') app.innerHTML = chaptersView();
   else if (route === 'chapter') app.innerHTML = chapterView();
   else if (route === 'mission') app.innerHTML = missionView();
+  else if (route === 'map') app.innerHTML = mapView();
   else if (route === 'world') app.innerHTML = worldView();
+  else if (route === 'collection') app.innerHTML = collectionView();
+  else if (route === 'store') app.innerHTML = storeView();
+  else if (route === 'howto') app.innerHTML = howToPlayView();
   else if (route === 'profile') app.innerHTML = profileView();
   else if (route === 'result') app.innerHTML = resultView();
   bind();
@@ -313,21 +327,77 @@ const app = document.getElementById('app');
 
 function homeView() {
   const avatar = avatarMeta();
-  const s = subjectById[state.lastSubject] || subjectById.science;
-  const b = subjectBooks(s.id)[0];
-  const first = chaptersForBook(b.id)[0];
-  const pct = Math.round(state.completed.length / curriculum.length * 100);
-  return `<section class="hero-grid">
-    <div class="hero-card"><div class="hero-player"><span class="hero-avatar">${avatar.emoji}</span><div class="eyebrow">${playerGreeting()} • CLASS 4</div></div><h1>Learn it. Play it. Build it.</h1>
-      <p>Every chapter becomes a visual mission, a challenge and a reward. Perfect missions can even hatch Golden Eggs.</p>
-      <div class="hero-actions"><button class="btn primary" data-action="continue">Continue mission</button><button class="btn soft" data-route="subjects">Explore subjects</button></div>
+  const total = curriculum.length || 1;
+  const completed = state.completed.length;
+  const pct = Math.min(100, Math.round(completed / total * 100));
+  const nextSubject = subjectById[state.lastSubject] || subjectById.science || subjects[0];
+  const nextBook = nextSubject ? subjectBooks(nextSubject.id)[0] : null;
+  const nextChapter = nextBook ? chaptersForBook(nextBook.id)[0] : null;
+  const avatarHTML = avatar.image ? `<img src="${avatar.image}" alt="${esc(avatar.name)}">` : avatar.emoji;
+  return `<section class="home-hub">
+    <div class="home-welcome-card">
+      <div>
+        <div class="home-eyebrow">YOUR BOOKLOKS WORLD</div>
+        <div class="home-title-row"><div><h1>Hi ${esc(playerName())}!</h1><p>Ready for a new adventure?</p></div><div class="level-badge">👑 LV ${level()}</div></div>
+        <div class="home-progress-line"><div><b>${state.xp} / ${Math.max(250, level()*250)} XP</b><small>Level ${level()} progress</small></div><div class="home-progress"><span style="width:${Math.min(100,(state.xp%250)/2.5)}%"></span></div></div>
+        <div class="home-reward-strip"><span>🪙 ${state.coins} Coins</span><span>🥚 ${state.goldenEggs} Eggs</span><span>🎯 ${completed}/${total} Missions</span></div>
+      </div>
+      <div class="home-character"><div class="character-glow"></div><div class="character-avatar">${avatarHTML}</div><span class="character-spark s1">✦</span><span class="character-spark s2">★</span></div>
     </div>
-    <div class="daily-card"><span class="pill">⚡ Quick mission</span><h3>${esc(s.name)} • ${esc(first.chapter)}</h3><p>${esc(first.learning_objectives[0])}</p><button class="btn soft" data-action="start-default">Start now →</button></div>
-  </section>
-  <section class="section"><div class="section-head"><div><div class="eyebrow">YOUR PROGRESS</div><h2>Keep building</h2></div><span class="pill">${state.completed.length}/${curriculum.length} chapters</span></div>
-    <div class="progress-card"><div><b>${state.xp} XP</b><small>Level ${level()}</small></div><div class="big-progress"><span style="width:${Math.min(100,pct)}%"></span></div><div><b>🥚 ${state.goldenEggs}</b><small>golden eggs</small></div></div>
-  </section>
-  <section class="section"><div class="section-head"><div><div class="eyebrow">CHOOSE A WORLD</div><h2>Subjects</h2></div></div>${subjectCards()}</section>`;
+    <div class="home-continue-card">
+      <div class="continue-scene"><span class="scene-sun">☀️</span><span class="scene-cloud">☁️</span><span class="scene-book">📖</span><span class="scene-star">✦</span></div>
+      <div class="continue-copy"><span class="home-eyebrow" style="color:#dff7e8">CONTINUE YOUR JOURNEY</span><h2>${nextChapter ? esc(nextChapter.chapter) : 'Your next mission'}</h2><p>${nextChapter ? `Keep learning, then play the mission and earn XP + Coins.` : 'Pick any chapter and start your next learning adventure.'}</p><button class="big-primary" data-action="continue"><span>▶</span><strong>Continue Mission</strong></button></div>
+    </div>
+    <div class="home-actions-grid">
+      <button class="home-action-card green" data-route="map"><span class="home-action-icon">🗺️</span><span><b>Explore Map</b><small>Choose a learning world</small></span><strong>›</strong></button>
+      <button class="home-action-card blue" data-route="world"><span class="home-action-icon">🏠</span><span><b>${esc(state.homeName || 'My Home')}</b><small>Build your rooms</small></span><strong>›</strong></button>
+      <button class="home-action-card gold" data-route="collection"><span class="home-action-icon">🏆</span><span><b>My Collection</b><small>Eggs, badges & avatars</small></span><strong>›</strong></button>
+    </div>
+    <button class="home-how-card" data-route="howto"><span class="how-icon">💡</span><span><h3>How to Play</h3><p>Learn • Quick Check • Mission • Quiz • Rewards</p></span><span class="how-arrow">›</span></button>
+    <div class="home-mini-footer"><span>LEARN</span><span>•</span><span>PLAY</span><span>•</span><span>BUILD</span><button class="home-footer-link" data-route="store">Store</button></div>
+  </section>`;
+}
+function mapView(){
+  const progressForSubject = (sid) => { const ids=curriculum.filter(c=>c.subject_id===sid).map(c=>c.chapter_id); return ids.length ? Math.round(ids.filter(id=>state.completed.includes(id)).length/ids.length*100) : 0; };
+  return `<section class="map-page">
+    <div class="map-topbar"><button class="mini-back" data-route="home">←</button><div><div class="home-eyebrow">LEARNING WORLD</div><h1>Explore the Map</h1><p>Choose a world and follow the path to the next mission.</p></div><span class="map-tip">↗ Tip: turn your phone sideways</span></div>
+    <div class="map-board"><div class="map-path map-path-1"></div><div class="map-path map-path-2"></div><div class="map-cloud cloud-a">☁️</div><div class="map-cloud cloud-b">☁️</div>
+      ${subjects.map((s,i)=>{const pct=progressForSubject(s.id);const left=[7,27,49,71,10,33,57,78,44][i%9];const top=[17,10,26,17,53,48,58,51,77][i%9];return `<button class="map-island" data-subject="${s.id}" style="--x:${left}%;--y:${top}%;--accent:${s.color}"><span class="map-island-icon">${s.icon}</span><b>${esc(s.name)}</b><small>${pct}% done</small><span class="map-island-progress"><i style="width:${pct}%"></i></span></button>`}).join('')}
+    </div>
+  </section>`;
+}
+function collectionView(){
+  const badges=[
+    ['🌟','First Mission',state.completed.length>0],['🔥','Learning Streak',state.completed.length>=3],['🏆','Mission Master',state.perfectMissions>=1],['🥚','Golden Egg Hunter',state.goldenEggs>=1]
+  ];
+  return `<section class="collection-page"><div class="collection-top"><button class="mini-back" data-route="home">←</button><div><div class="home-eyebrow">MY COLLECTION</div><h1>Your rewards</h1><p>Everything you unlock while you learn and play.</p></div></div>
+    <div class="collection-stats"><div><b>⭐ ${state.xp}</b><small>XP</small></div><div><b>🪙 ${state.coins}</b><small>Coins</small></div><div><b>🥚 ${state.goldenEggs}</b><small>Golden Eggs</small></div></div>
+    <h3 class="collection-heading">Badges</h3><div class="badge-grid">${badges.map(([ic,n,on])=>`<div class="badge-card ${on?'earned':''}"><span>${ic}</span><b>${n}</b><small>${on?'Earned':'Keep playing'}</small></div>`).join('')}</div>
+    <h3 class="collection-heading">Avatars</h3><div class="avatar-collection">${Object.entries(AVATARS).map(([id,a])=>`<button class="avatar-tile ${state.avatar===id?'selected':''} ${state.xp>=a.minXP?'':'locked'}" data-avatar="${id}"><span>${a.emoji}</span><b>${a.name}</b><small>${a.minXP===0?'Free':a.minXP+' XP'}</small></button>`).join('')}</div>
+  </section>`;
+}
+function storeView(){
+  const featured=roomCatalog(state.activeRoom||'living').slice(1,9);
+  return `<section class="store-page"><div class="collection-top"><button class="mini-back" data-route="home">←</button><div><div class="home-eyebrow">BOOKLOKS STORE</div><h1>Build your world</h1><p>Spend Coins on room items and save your XP for avatar unlocks.</p></div></div>
+    <div class="store-balance">🪙 <b>${state.coins}</b> Coins <button class="btn soft" data-route="world">Open My Home</button></div>
+    <div class="store-grid">${featured.map(it=>`<article class="store-card"><div class="store-art">${it.emoji}</div><b>${esc(it.name)}</b><small>${it.cost} Coins</small><button class="btn tiny" data-buy="${it.id}" ${state.roomUnlocked[state.activeRoom]?.includes(it.id)?'disabled':''}>${state.roomUnlocked[state.activeRoom]?.includes(it.id)?'Owned':'Unlock'}</button></article>`).join('')}</div>
+  </section>`;
+}
+function howToPlayView(){
+  const items=[
+    ['1','📚','Learn','Read a tiny visual guide before the mission.'],
+    ['2','🧩','Quick Check','Pick the 3 cards that match the chapter.'],
+    ['3','🎮','Mission','Play a short activity connected to what you learned.'],
+    ['4','❓','5 Questions','Answer five easy-to-read questions.'],
+    ['5','⭐','Rewards','Earn XP, Coins and Golden Eggs for strong scores.'],
+    ['6','🏠','Build','Use Coins to add objects to your rooms.']
+  ];
+  return `<section class="howto-page"><div class="howto-top"><button class="mini-back" data-route="home">←</button><div><div class="home-eyebrow">BOOKLOKS GUIDE</div><h1>How to Play</h1><p>A simple journey: learn a little, play a little, build a lot.</p></div><span class="howto-book-icon">📘</span></div>
+    <div class="howto-hero"><span>🎮</span><div><h2>Ready? Here is the journey.</h2><p>Every mission follows the same easy path, so children always know what to do next.</p></div></div>
+    <div class="howto-list">${items.map(([n,ic,t,d])=>`<details class="howto-item" ${n==='1'?'open':''}><summary><span class="howto-num">${n}</span><span><b>${ic} ${t}</b><small>${esc(d)}</small></span><em>+</em></summary><div class="howto-body">${esc(d)}<div class="howto-tip">Keep going at your own pace. You can replay a chapter.</div></div></details>`).join('')}</div>
+    <div class="howto-reward-grid"><div><b>⭐ XP</b><small>Levels up your player and unlocks colours and avatars.</small></div><div><b>🪙 Coins</b><small>Build your rooms with furniture and fun objects.</small></div><div><b>🥚 Golden Eggs</b><small>Perfect missions add a collectible to your world.</small></div></div>
+    <div class="howto-bottom"><button class="big-primary" data-route="map">Start Exploring the Map →</button></div>
+  </section>`;
 }
 function subjectCards() {
   return `<div class="subject-grid">${subjects.map(s => `<article class="subject-card" data-subject="${s.id}" style="--accent:${s.color}"><div class="icon-bubble">${s.icon}</div><h3>${esc(s.name)}</h3><p>${esc(s.blurb)}</p><div class="card-foot"><span>${books.filter(b => b.subject_id === s.id).reduce((a,b) => a + b.chapter_count, 0)} units</span><b>Open →</b></div></article>`).join('')}</div>`;
@@ -345,12 +415,20 @@ function chaptersView() {
 }
 function chapterView() {
   const c = chapterById[selectedChapterId], s = subjectById[c.subject_id];
-  return `<section class="chapter-hero" style="--accent:${s.color}"><div class="eyebrow">${s.icon} ${esc(c.subject)} • ${esc(c.role)}</div><h1>${esc(c.chapter)}</h1><p>${esc(c.book)}</p><div class="tag-row"><span>${state.completed.includes(c.chapter_id)?'✅ Completed':'🗺️ Ready to play'}</span><span>Difficulty ${c.difficulty}/3</span><span>${esc(c.game_type)}</span></div></section>
-  <section class="content-grid"><article class="content-card"><div class="card-icon">🧠</div><h3>Concept map</h3><div class="chip-wrap">${c.concepts.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</div></article>
-  <article class="content-card"><div class="card-icon">🎯</div><h3>Learning goals</h3>${c.learning_objectives.map(x=>`<p>• ${esc(x)}</p>`).join('')}</article>
-  <article class="content-card"><div class="card-icon">🧩</div><h3>Skills</h3>${c.skills.map(x=>`<span class="skill-pill">${esc(x)}</span>`).join(' ')}</article>
-  <article class="content-card"><div class="card-icon">🎮</div><h3>Mission format</h3><p>Visual-first mini-game → 5-question challenge → final reward.</p><small class="muted">Question pool: ${c.question_count ?? 0} questions • 5 per attempt • replay-friendly</small></article></section>
-  <div class="action-bar"><button class="btn soft" data-action="back-chapters">← Chapters</button><button class="btn primary" data-action="play">Play mission →</button></div>`;
+  const summary = chapterSummaryText(c);
+  const objs = (c.learning_objectives || []).slice(0,3);
+  const concepts = (c.concepts || []).slice(0,3);
+  return `<section class="chapter-one-page">
+    <div class="chapter-one-top"><button class="mini-back" data-action="back-chapters">←</button><span class="subject-badge">${s.icon} ${esc(c.subject)}</span><span class="chapter-status">${state.completed.includes(c.chapter_id)?'✅ Completed':'🎮 Ready to play'}</span></div>
+    <div class="chapter-visual-banner" style="--subject-accent:${s.color || '#5b43ff'}">
+      <div class="chapter-visual-orb">${s.icon}</div>
+      <div class="chapter-visual-shapes"><span>✦</span><span>✦</span><span>•</span></div>
+      <div class="chapter-banner-copy"><div class="home-eyebrow">CHAPTER ${String(c.chapter_no).padStart(2,'0')} • DISCOVER</div><h1>${esc(c.chapter)}</h1><p>${esc(summary.length>170?summary.slice(0,167)+'…':summary)}</p></div>
+    </div>
+    <div class="chapter-learning-row">${objs.map((x,i)=>`<div class="chapter-learning-card"><span>${['💡','🧠','🎯'][i%3]}</span><b>${esc(x)}</b></div>`).join('')}</div>
+    <div class="chapter-learn-strip"><div class="learn-strip-icon">📖</div><div><b>In this chapter</b><p>${concepts.length?esc(concepts.join(' • ')):'Learn the key idea, then use it in the mission.'}</p></div></div>
+    <div class="chapter-bottom"><div class="chapter-meta"><span>${esc(c.game_type||'Mission')}</span><span>5 questions</span><span>Replay anytime</span></div><button class="big-primary chapter-play-btn" data-action="play"><span>▶</span><strong>Play Mission</strong></button></div>
+  </section>`;
 }
 function missionView(){if(stage==='intro')return missionIntro();if(stage==='check')return missionCheck();if(stage==='game')return missionGame();return missionQuiz();}
 function chapterSummaryText(c){
@@ -363,8 +441,13 @@ function chapterSummaryText(c){
 function chapterSceneText(c){ return c.visual_learning_scene || c.mission_context || ''; }
 function missionIntro(){
   const c=activeChapter,s=subjectById[c.subject_id],objs=(c.learning_objectives||[]).slice(0,3),concepts=(c.concepts||[]).slice(0,4),summary=chapterSummaryText(c),scene=chapterSceneText(c);
-  return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • DISCOVER</div><h1>Learn first. Then play.</h1><p>Read a short chapter guide. Then try a quick check.</p><div class="stepper"><span class="active">1 LEARN</span><span>2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="learn-card"><div class="learn-visual"><div class="learn-orb">${s.icon}</div><div class="learn-pulse"></div>${scene?`<div class="learn-scene-text">${esc(scene)}</div>`:`<div class="learn-scene-text"><b>${esc(c.chapter)}</b><span>Think about these ideas:</span><div class="scene-chip-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div>`}</div><div class="learn-copy"><span class="pill">📖 Chapter guide</span><h2>${esc(c.chapter)}</h2><p class="learn-summary">${esc(summary)}</p><h3>What you will learn</h3><div class="learn-goals">${objs.map(x=>`<div class="learn-goal"><span>✓</span>${esc(x)}</div>`).join('')}</div>${concepts.length?`<div class="tag-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:''}</div></section><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button><button class="btn primary" data-action="start-check">Got it • Quick Check →</button></div></section>`;
+  return `<section class="mission-one-page"><div class="mission-one-top"><button class="mini-back" data-action="exit">←</button><span class="mission-chip-top">${s.icon} ${esc(c.subject)}</span><span class="step-chip mission-one-top step-chip">1 / 4 • Learn</span></div>
+    <section class="mission-story-card"><div class="mission-story-visual"><div class="scene-bubble one">✦</div><div class="scene-bubble two">💡</div><div class="mission-scene-orb">${s.icon}</div><div class="mission-scene-copy">${esc(scene || `Let’s explore ${c.chapter} with a short, fun guide.`)}</div></div><div class="mission-story-text"><span class="pill">📖 Tiny chapter guide</span><h1>${esc(c.chapter)}</h1><p>${esc(summary.length>220?summary.slice(0,217)+'…':summary)}</p><div class="mission-skill-row">${concepts.slice(0,3).map(x=>`<span>${esc(x)}</span>`).join('')}</div></div></section>
+    <div class="mission-steps-mini"><div class="active"><span>1</span><b>Learn</b></div><div><span>2</span><b>Quick Check</b></div><div><span>3</span><b>Mission</b></div><div><span>4</span><b>5 Questions</b></div></div>
+    <div class="mission-one-cta"><div><b>Ready to explore?</b><small>Read a little, then show what you know.</small></div><button class="big-primary" data-action="start-check"><span>▶</span><strong>Quick Check</strong></button></div>
+  </section>`;
 }
+
 function introHeadline(c){const f=c.learning_objectives&&c.learning_objectives[0];return f?f.charAt(0).toUpperCase()+f.slice(1)+'.':`Explore ${c.chapter} step by step.`;}
 function missionCheck(){const c=activeChapter,s=subjectById[c.subject_id];if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Quick Check</h1><p>Pick the <strong>3 cards</strong> that belong to <strong>${esc(c.chapter)}</strong>.</p><div class="stepper"><span>1 LEARN</span><span class="active">2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Pick the 3 right cards</h2><p>Not quite? Try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Great job, ${playerName()}! You found all 3.`:(mini.checkMessage||`${n} / 3`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back</button>${mini.checkDone?'<span class="muted">Read the chapter recap to start the mission.</span>':'<span class="muted">Find 3 right cards.</span>'}</div></section></section>`;}
 function quickCheckCards(c){
@@ -492,6 +575,7 @@ function bind() {
   document.querySelectorAll('[data-map]').forEach(e => e.onclick = () => tapMap(String(e.dataset.map)));
   document.querySelectorAll('[data-room]').forEach(e => e.onclick = () => { state.activeRoom=e.dataset.room; save(); render(); });
   document.querySelectorAll('[data-theme]').forEach(e => e.onclick = () => chooseTheme(e.dataset.theme));
+  document.querySelectorAll('.avatar-tile[data-avatar]').forEach(e => e.onclick = () => chooseAvatar(e.dataset.avatar));
   document.querySelectorAll('[data-action]').forEach(e => e.onclick = () => act(e.dataset.action));
   const musicRange = document.getElementById('musicVolumeRange');
   if (musicRange) musicRange.oninput = () => setMusicVolume(Number(musicRange.value) / 100);
@@ -608,6 +692,7 @@ function prepareQuestion(q){
   return {...q,o:mixed.map(x=>x.text),a:mixed.findIndex(x=>x.correct)};
 }
 function startQuiz() {
+  syncOrientationForRoute('quiz');
   stage='quiz'; qIndex=0; score=0; selectedOption=null;
   const pool=Array.isArray(activeChapter.questions)?activeChapter.questions:[];
   const history=Array.isArray(state.questionHistory[activeChapter.chapter_id])?state.questionHistory[activeChapter.chapter_id]:[];
@@ -890,19 +975,21 @@ if (!window.__bookloksAudioGesture) {
 function showMissionOutcome(scoreCount){
   const old=document.getElementById('missionOutcomeOverlay');
   if(old) old.remove();
-  const overlay=document.createElement('div');
-  overlay.id='missionOutcomeOverlay';
+  const overlay=document.createElement('div'); overlay.id='missionOutcomeOverlay';
   const success=scoreCount>=4;
   overlay.className=`mission-outcome-overlay ${success?'success':'try-again'}`;
   if(success){
     playMissionSuccess();
-    overlay.innerHTML=`<div class="outcome-stars">${Array.from({length:16},(_,i)=>`<span style="--i:${i}">✦</span>`).join('')}</div><div class="outcome-card"><div class="outcome-icon">${scoreCount===5?'🏆':'🌟'}</div><div class="outcome-kicker">${scoreCount===5?'CONGRATULATIONS!':'GREAT JOB!'}</div><h2>${scoreCount===5?'Perfect mission!':'Mission cleared!'}</h2><p>${playerName()}, you scored <b>${scoreCount}/5</b>.</p></div>`;
-  }else{
+    confetti();
+    const title=scoreCount===5?'TREASURE FOUND!':'MISSION CLEARED!';
+    const subtitle=scoreCount===5?`Perfect! ${playerName()} found the Golden Egg.`:`Amazing! ${playerName()} cleared this mission.`;
+    overlay.innerHTML=`<div class="outcome-stars">${Array.from({length:18},(_,i)=>`<span style="--i:${i}">✦</span>`).join('')}</div><div class="outcome-treasure">💰</div><div class="outcome-card treasure-card"><div class="treasure-chest">🧰</div><div class="outcome-kicker">${title}</div><h2>${scoreCount===5?'Amazing work!':'Great job!'}</h2><p>${subtitle}</p><div class="outcome-rewards"><span>⭐ +${lastReward.xp||0} XP</span><span>🪙 +${lastReward.coins||0} Coins</span>${scoreCount===5?'<span>🥚 Golden Egg!</span>':''}</div></div>`;
+  } else {
     playMissionFailed();
-    overlay.innerHTML=`<div class="outcome-card minimal"><div class="outcome-icon">💪</div><div class="outcome-kicker">KEEP GOING</div><h2>Better luck next time!</h2><p>${playerName()}, you scored <b>${scoreCount}/5</b>. Try again — you can do it.</p></div>`;
+    overlay.innerHTML=`<div class="outcome-card minimal"><div class="outcome-icon">💪</div><div class="outcome-kicker">KEEP GOING</div><h2>Better luck next time!</h2><p>${playerName()}, you scored <b>${scoreCount}/5</b>. Try the mission again when you are ready.</p></div>`;
   }
   document.body.appendChild(overlay);
-  window.setTimeout(()=>{overlay.classList.add('hide');window.setTimeout(()=>overlay.remove(),500);},success?3000:1900);
+  window.setTimeout(()=>{overlay.classList.add('hide');window.setTimeout(()=>overlay.remove(),500);},success?3200:1900);
 }
 
 function confetti(){

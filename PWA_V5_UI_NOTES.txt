@@ -1,0 +1,14 @@
+BookLoks UI v6 — Map + Landscape + Treasure Update
+
+What changed:
+- Home renderer now uses the colorful game-hub UI designed for children.
+- Subject cards removed from Home; subjects are accessed through Learn / Map.
+- Added landscape learning Map.
+- Added landscape My Home room.
+- Added My Collection and Store screens.
+- Chapter page is compact and visual.
+- 4/5 and 5/5 mission outcome uses treasure-found style; 1-3/5 stays gentle.
+- Quiz remains portrait; map and My Home request landscape orientation where supported by the device/PWA.
+- Existing chapter JSON/data contract is preserved.
+
+Important: upload the new app folder. Keep the existing data folder.
