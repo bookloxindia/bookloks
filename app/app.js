@@ -1,11 +1,24 @@
-
-const DATA = window.APP_DATA;
-const subjects = DATA.subjects;
-const books = DATA.books.filter(b => b.id !== 'maths-workbook');
-const curriculum = DATA.curriculum.filter(c => c.book_id !== 'maths-workbook');
+const DATA = window.APP_DATA || {};
+const BASE_SUBJECTS = Array.isArray(DATA.subjects) ? DATA.subjects : [];
+const TRACK_DEFS = [
+  ['maths','Mathematics','maths-main','🧮','#5B43FF','Numbers, operations, geometry, measurement and data.'],
+  ['science','Science','science-main','🔬','#12B8E8','Health, living things, materials, light, measurement and forces.'],
+  ['social','Social Studies','social-main','🌍','#19B36B','India, regions, resources, history, culture and civic life.'],
+  ['english','English','english-reader','📖','#FF6B9C','Stories, poems, communication, reading and language.'],
+  ['english-grammar','English Grammar','english-grammar','📝','#FF5D91','Words, sentences, grammar and writing.'],
+  ['hindi','Hindi','hindi-reader','📚','#FF8A48','Hindi stories, poems, reading and writing.'],
+  ['hindi-grammar','Hindi Grammar','hindi-grammar','✍️','#FF7A45','Hindi grammar, writing and language skills.'],
+  ['computer','Computer / IT','computer-main','💻','#F2B600','Digital literacy, coding, internet and AI.'],
+  ['olympiad','Olympiad Challenge','maths-olympiad','🏆','#9D6BFF','Higher-difficulty reasoning and competitive mathematics.']
+].map(([id,name,book_id,icon,color,blurb]) => ({id,name,book_id,icon,color,blurb}));
+const subjects = TRACK_DEFS.map(t => ({...t, ...(Array.isArray(DATA.tracks) ? (DATA.tracks.find(x=>x.id===t.id)||{}) : {})}));
 const subjectById = Object.fromEntries(subjects.map(s => [s.id, s]));
-const booksBySubject = Object.fromEntries(subjects.map(s => [s.id, books.filter(b => b.subject_id === s.id)]));
+const books = Array.isArray(DATA.books) ? DATA.books.filter(b => b.id !== 'maths-workbook') : [];
+const curriculum = Array.isArray(DATA.curriculum) ? DATA.curriculum.filter(c => c.book_id !== 'maths-workbook' && c.status !== 'planned') : [];
 const chapterById = Object.fromEntries(curriculum.map(c => [c.chapter_id, c]));
+const booksBySubject = Object.fromEntries(subjects.map(s => [s.id, books.filter(b => b.id === s.book_id)]));
+const trackForBookId = Object.fromEntries(subjects.map(s => [s.book_id, s]));
+function trackForChapter(c) { return subjectById[c?.track_id] || trackForBookId[c?.book_id] || subjectById[c?.subject_id] || subjects[0]; }
 
 const key = 'class4world_v4_state';
 const legacyKey = 'class4world_v3_state';
@@ -86,7 +99,7 @@ state = loadState();
 let route = 'home';
 let selectedSubjectId = null, selectedBookId = null, selectedChapterId = null, activeChapter = null;
 let stage = 'intro', quiz = [], qIndex = 0, score = 0, selectedOption = null;
-let mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 };
+let mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], genericStep:0, checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 };
 let draggedWorldItem = null;
 const chapterCache = {};
 let lastReward = {xp:0, coins:0, egg:0};
@@ -103,7 +116,7 @@ const SOUND_FILES = {
 };
 let bgMusic = null;
 let audioGestureSeen = false;
-const AUDIO_DEFAULTS_VERSION = '4.4';
+const AUDIO_DEFAULTS_VERSION = '7.0';
 const audioDefaultsApplied = localStorage.getItem('bookloks_audio_defaults_version') === AUDIO_DEFAULTS_VERSION;
 if (!audioDefaultsApplied) {
   const mobileDefault = window.innerWidth <= 640;
@@ -288,7 +301,8 @@ function toast(t, tone = '') {
 function go(r) { route = r; syncOrientationForRoute(r); render(); }
 function goHome() { selectedSubjectId = selectedBookId = selectedChapterId = null; activeChapter = null; go('home'); }
 function subjectBooks(id) { return booksBySubject[id] || []; }
-function chaptersForBook(id) { return curriculum.filter(c => c.book_id === id); }
+function chaptersForBook(id) { return curriculum.filter(c => c.book_id === id && c.status !== 'planned'); }
+function chaptersForTrack(id) { const t=subjectById[id]; return t ? chaptersForBook(t.book_id) : []; }
 function syncOrientationForRoute(r) {
   const landscape = r === 'map' || r === 'world';
   document.body.classList.toggle('landscape-route', landscape);
@@ -332,7 +346,8 @@ function homeView() {
   const pct = Math.min(100, Math.round(completed / total * 100));
   const nextSubject = subjectById[state.lastSubject] || subjectById.science || subjects[0];
   const nextBook = nextSubject ? subjectBooks(nextSubject.id)[0] : null;
-  const nextChapter = nextBook ? chaptersForBook(nextBook.id)[0] : null;
+  const nextList = nextBook ? chaptersForBook(nextBook.id) : [];
+  const nextChapter = nextList.find(c => !state.completed.includes(c.chapter_id)) || nextList[0] || null;
   const avatarHTML = avatar.image ? `<img src="${avatar.image}" alt="${esc(avatar.name)}">` : avatar.emoji;
   return `<section class="home-hub">
     <div class="home-welcome-card">
@@ -358,7 +373,7 @@ function homeView() {
   </section>`;
 }
 function mapView(){
-  const progressForSubject = (sid) => { const ids=curriculum.filter(c=>c.subject_id===sid).map(c=>c.chapter_id); return ids.length ? Math.round(ids.filter(id=>state.completed.includes(id)).length/ids.length*100) : 0; };
+  const progressForSubject = (sid) => { const ids=chaptersForTrack(sid).map(c=>c.chapter_id); return ids.length ? Math.round(ids.filter(id=>state.completed.includes(id)).length/ids.length*100) : 0; };
   return `<section class="map-page">
     <div class="map-topbar"><button class="mini-back" data-route="home">←</button><div><div class="home-eyebrow">LEARNING WORLD</div><h1>Explore the Map</h1><p>Choose a world and follow the path to the next mission.</p></div><span class="map-tip">↗ Tip: turn your phone sideways</span></div>
     <div class="map-board"><div class="map-path map-path-1"></div><div class="map-path map-path-2"></div><div class="map-cloud cloud-a">☁️</div><div class="map-cloud cloud-b">☁️</div>
@@ -400,21 +415,22 @@ function howToPlayView(){
   </section>`;
 }
 function subjectCards() {
-  return `<div class="subject-grid">${subjects.map(s => `<article class="subject-card" data-subject="${s.id}" style="--accent:${s.color}"><div class="icon-bubble">${s.icon}</div><h3>${esc(s.name)}</h3><p>${esc(s.blurb)}</p><div class="card-foot"><span>${books.filter(b => b.subject_id === s.id).reduce((a,b) => a + b.chapter_count, 0)} units</span><b>Open →</b></div></article>`).join('')}</div>`;
+  return `<div class="subject-grid">${subjects.map(s => `<article class="subject-card" data-subject="${s.id}" style="--accent:${s.color}"><div class="icon-bubble">${s.icon}</div><h3>${esc(s.name)}</h3><p>${esc(s.blurb)}</p><div class="card-foot"><span>${chaptersForTrack(s.id).length} chapters</span><b>Open →</b></div></article>`).join('')}</div>`;
 }
 function subjectsView() {
-  return `<section class="section-head"><div><div class="eyebrow">LEARNING MAP</div><h1>Pick a subject</h1><p>Choose a subject and then pick a chapter to learn and play.</p></div></section>${subjectCards()}`;
+  return `<section class="section-head"><div><div class="eyebrow">LEARN</div><h1>Choose a subject</h1><p>Pick a subject, then choose a chapter to learn and play.</p></div></section>${subjectCards()}`;
 }
 function booksView() {
   const s = subjectById[selectedSubjectId];
   return `<section class="section-head"><div><div class="eyebrow">${s.icon} SUBJECT</div><h1>${esc(s.name)}</h1><p>Keep textbook, grammar, workbook and Olympiad tracks separate.</p></div></section><div class="book-grid">${subjectBooks(s.id).map(b => `<article class="book-card" data-book="${b.id}"><div class="book-icon">${s.icon}</div><div><h3>${esc(b.name)}</h3><p>${esc(b.publisher)} • ${esc(b.role)}</p><span class="pill">${b.chapter_count} chapters</span></div><b class="arrow">→</b></article>`).join('')}</div>`;
 }
 function chaptersView() {
-  const b = books.find(x => x.id === selectedBookId), list = chaptersForBook(selectedBookId);
-  return `<section class="section-head"><div><div class="eyebrow">${esc(b.role)}</div><h1>${esc(b.name)}</h1><p>${esc(b.publisher)}</p></div><span class="pill">${list.length} chapters</span></section><div class="chapter-grid">${list.map(c => `<article class="chapter-card ${state.completed.includes(c.chapter_id)?'done':''}" data-chapter="${c.chapter_id}"><div class="chapter-num">${String(c.chapter_no).padStart(2,'0')}</div><div><h3>${esc(c.chapter)}</h3><p>${esc(c.concepts.slice(0,3).join(' • '))}</p><div class="tag-row"><span>${state.completed.includes(c.chapter_id)?'✅ Completed':'🎮 Mission'}</span><span>${esc(c.game_type)}</span></div></div></article>`).join('')}</div>`;
+  const t = subjectById[selectedSubjectId] || trackForBookId[selectedBookId] || subjects[0];
+  const list = chaptersForTrack(t.id);
+  return `<section class="section-head"><div><div class="eyebrow">${t.icon} LEARN</div><h1>${esc(t.name)}</h1><p>${esc(t.blurb || 'Pick a chapter and start learning.')}</p></div><span class="pill">${list.length} chapters</span></section><div class="chapter-grid">${list.map(c => `<article class="chapter-card ${state.completed.includes(c.chapter_id)?'done':''}" data-chapter="${c.chapter_id}"><div class="chapter-num">${String(c.chapter_no).padStart(2,'0')}</div><div><h3>${esc(c.chapter)}</h3><p>${esc((c.concepts||[]).slice(0,3).join(' • '))}</p><div class="tag-row"><span>${state.completed.includes(c.chapter_id)?'✅ Completed':'🎮 Mission'}</span><span>${esc(c.game_type||'Mission')}</span></div></div></article>`).join('')}</div>`;
 }
 function chapterView() {
-  const c = chapterById[selectedChapterId], s = subjectById[c.subject_id];
+  const c = chapterById[selectedChapterId], s = trackForChapter(c);
   const summary = chapterSummaryText(c);
   const objs = (c.learning_objectives || []).slice(0,3);
   const concepts = (c.concepts || []).slice(0,3);
@@ -440,7 +456,7 @@ function chapterSummaryText(c){
 }
 function chapterSceneText(c){ return c.visual_learning_scene || c.mission_context || ''; }
 function missionIntro(){
-  const c=activeChapter,s=subjectById[c.subject_id],objs=(c.learning_objectives||[]).slice(0,3),concepts=(c.concepts||[]).slice(0,4),summary=chapterSummaryText(c),scene=chapterSceneText(c);
+  const c=activeChapter,s=trackForChapter(c),objs=(c.learning_objectives||[]).slice(0,3),concepts=(c.concepts||[]).slice(0,4),summary=chapterSummaryText(c),scene=chapterSceneText(c);
   return `<section class="mission-one-page"><div class="mission-one-top"><button class="mini-back" data-action="exit">←</button><span class="mission-chip-top">${s.icon} ${esc(c.subject)}</span><span class="step-chip mission-one-top step-chip">1 / 4 • Learn</span></div>
     <section class="mission-story-card"><div class="mission-story-visual"><div class="scene-bubble one">✦</div><div class="scene-bubble two">💡</div><div class="mission-scene-orb">${s.icon}</div><div class="mission-scene-copy">${esc(scene || `Let’s explore ${c.chapter} with a short, fun guide.`)}</div></div><div class="mission-story-text"><span class="pill">📖 Tiny chapter guide</span><h1>${esc(c.chapter)}</h1><p>${esc(summary.length>220?summary.slice(0,217)+'…':summary)}</p><div class="mission-skill-row">${concepts.slice(0,3).map(x=>`<span>${esc(x)}</span>`).join('')}</div></div></section>
     <div class="mission-steps-mini"><div class="active"><span>1</span><b>Learn</b></div><div><span>2</span><b>Quick Check</b></div><div><span>3</span><b>Mission</b></div><div><span>4</span><b>5 Questions</b></div></div>
@@ -449,7 +465,7 @@ function missionIntro(){
 }
 
 function introHeadline(c){const f=c.learning_objectives&&c.learning_objectives[0];return f?f.charAt(0).toUpperCase()+f.slice(1)+'.':`Explore ${c.chapter} step by step.`;}
-function missionCheck(){const c=activeChapter,s=subjectById[c.subject_id];if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Quick Check</h1><p>Pick the <strong>3 cards</strong> that belong to <strong>${esc(c.chapter)}</strong>.</p><div class="stepper"><span>1 LEARN</span><span class="active">2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Pick the 3 right cards</h2><p>Not quite? Try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Great job, ${playerName()}! You found all 3.`:(mini.checkMessage||`${n} / 3`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back</button>${mini.checkDone?'<span class="muted">Read the chapter recap to start the mission.</span>':'<span class="muted">Find 3 right cards.</span>'}</div></section></section>`;}
+function missionCheck(){const c=activeChapter,s=trackForChapter(c);if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Quick Check</h1><p>Pick the <strong>3 cards</strong> that belong to <strong>${esc(c.chapter)}</strong>.</p><div class="stepper"><span>1 LEARN</span><span class="active">2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Pick the 3 right cards</h2><p>Not quite? Try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Great job, ${playerName()}! You found all 3.`:(mini.checkMessage||`${n} / 3`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back</button>${mini.checkDone?'<span class="muted">Read the chapter recap to start the mission.</span>':'<span class="muted">Find 3 right cards.</span>'}</div></section></section>`;}
 function quickCheckCards(c){
   const q=c.quick_check||{};
   const presetCorrect = Array.isArray(q.correct_options)?q.correct_options:(Array.isArray(c.quick_check_correct_options)?c.quick_check_correct_options:[]);
@@ -471,11 +487,31 @@ function quickCheckCards(c){
   return shuffle([...correct,...wrong]);
 }
 function normalizeConcept(v){return String(v||'').toLowerCase().replace(/[^a-z0-9\u0900-\u097f]+/g,' ').trim();}
-function missionGame(){const c=activeChapter,s=subjectById[c.subject_id];return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • PLAY</div><h1>${esc(missionTitle(c))}</h1><p>${esc(missionStory(c))}</p><div class="stepper"><span>1 DISCOVER</span><span>2 QUICK CHECK</span><span class="active">3 PLAY</span><span>4 CHALLENGE</span></div></div><section class="visual-game-card"><div class="game-head"><div><span class="pill">🎮 Mini Game</span><h2>${esc(missionInstruction(c))}</h2><p>${requiresMiniGame(c)?'Complete the hands-on task first. Your reward unlocks after the questions.':'Your quick check unlocked the chapter mission. Now jump into the 5-question challenge.'}</p></div><span class="page-badge">3 / 4</span></div>${miniGame(c)}<div class="visual-controls">${requiresMiniGame(c)?`<button class="btn soft" data-action="reset-mini">Reset</button><span class="visual-status ${mini.done?'success':''}">${mini.done?`✅ Nice, ${playerName()}! Task complete!`:'🎯 Finish the mini-game first.'}</span>`:'<span class="visual-status success">✅ Ready! The chapter challenge is unlocked.</span>'}</div><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button>${mini.done?'<button class="btn primary" data-action="start-quiz">Start 5 questions →</button>':'<span class="muted">Finish the mission to continue.</span>'}</div></section></section>`;}
-function requiresMiniGame(c){return ['Push and Pull','Money','Understanding Scratch – Your Gateway to Coding','Maps and Views','Symmetry','Time'].includes(c.chapter);}
+function missionGame(){const c=activeChapter,s=trackForChapter(c);return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • PLAY</div><h1>${esc(missionTitle(c))}</h1><p>${esc(missionStory(c))}</p><div class="stepper"><span>1 DISCOVER</span><span>2 QUICK CHECK</span><span class="active">3 PLAY</span><span>4 CHALLENGE</span></div></div><section class="visual-game-card"><div class="game-head"><div><span class="pill">🎮 Mini Game</span><h2>${esc(missionInstruction(c))}</h2><p>${requiresMiniGame(c)?'Complete the hands-on task first. Your reward unlocks after the questions.':'Your quick check unlocked the chapter mission. Now jump into the 5-question challenge.'}</p></div><span class="page-badge">3 / 4</span></div>${miniGame(c)}<div class="visual-controls">${requiresMiniGame(c)?`<button class="btn soft" data-action="reset-mini">Reset</button><span class="visual-status ${mini.done?'success':''}">${mini.done?`✅ Nice, ${playerName()}! Task complete!`:'🎯 Finish the mini-game first.'}</span>`:'<span class="visual-status success">✅ Ready! The chapter challenge is unlocked.</span>'}</div><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button>${mini.done?'<button class="btn primary" data-action="start-quiz">Start 5 questions →</button>':'<span class="muted">Finish the mission to continue.</span>'}</div></section></section>`;}
+function requiresMiniGame(c){ return true; }
 function missionTitle(c){const m={'Push and Pull':'Toy Factory Rescue','Money':'Toy Shop Cashier','Understanding Scratch – Your Gateway to Coding':'Robot Code Run','The Tree':'Tree Guardian Quest','अब और प्लास्टिक नहीं!':'Plastic-Free Park','Our Forests':'Forest Ranger Mission','Maps and Views':'Map Explorer','Data Handling':'Data Detective','Symmetry':'Mirror Master','Time':'Clock Dash'};return m[c.chapter]||`${c.chapter} Mission`;}
 function missionStory(c){if(c.chapter==='Push and Pull')return'The toy factory is ready for delivery, but a heavy toy crate is stuck. Move it into the delivery zone and feel the push in action.';if(c.chapter==='Money')return'You are the cashier. Build a customer order, total the price, and make the correct change.';if(c.chapter==='Understanding Scratch – Your Gateway to Coding')return'Your robot only moves when the blocks are in the right order. Build the sequence and test it.';if(c.chapter==='Maps and Views')return'Use the map controls to find the right directions and location clues.';if(c.chapter==='Symmetry')return'Become a mirror master by matching shapes that balance on both sides.';if(c.chapter==='Time')return'Set the clock correctly and race the mission timer.';return`Complete a short interactive task connected to ${c.chapter}, then take the chapter challenge.`;}
 function missionInstruction(c){if(c.chapter==='Push and Pull')return'Get the toy crate into the delivery zone!';if(c.chapter==='Money')return'Build a ₹50 order from the shelf.';if(c.chapter==='Understanding Scratch – Your Gateway to Coding')return'Tap the blocks in the right order.';if(c.chapter==='Maps and Views')return'Find three directions on the map.';if(c.chapter==='Symmetry')return'Match the mirrored shapes.';if(c.chapter==='Time')return'Set the clock to the target time.';if(c.subject_id==='computer')return'Complete the interactive screen task.';return`Mission warm-up: ${c.chapter}`;}
+
+function missionConcepts(c){
+  const list=[...(c.concepts||[]),...(c.learning_objectives||[])].map(x=>String(x||'').trim()).filter(Boolean);
+  const unique=[]; const seen=new Set();
+  for(const x of list){const k=x.toLowerCase();if(!seen.has(k)){seen.add(k);unique.push(x);}if(unique.length>=5)break;}
+  while(unique.length<3) unique.push(['Look closely','Think and choose','Use what you learned'][unique.length]);
+  return unique.slice(0,5);
+}
+function genericMission(c){
+  const goals=missionConcepts(c), step=Math.min(2,mini.genericStep||0), target=goals[step]||goals[0];
+  const distractors=shuffle(goals.filter((x,i)=>i!==step).concat(['Try again','Random idea','Not this one'])).slice(0,3);
+  const cards=shuffle([{label:target,correct:true},...distractors.map(label=>({label,correct:false}))]);
+  return `<div class="generic-mission-board">
+    <div class="generic-mission-banner"><span class="generic-mission-icon">🎯</span><div><b>Mission Step ${step+1} of 3</b><small>Find the idea that matches your target.</small></div></div>
+    <div class="generic-target"><span>FIND THIS</span><strong>${esc(target)}</strong></div>
+    <div class="generic-choice-grid">${cards.map((x,i)=>`<button class="generic-choice" data-generic-choice="${x.correct?'1':'0'}"><span>${['🔑','⭐','💎','🧩'][i]}</span><b>${esc(x.label)}</b></button>`).join('')}</div>
+    <div class="generic-mission-note">Pick the idea you learned in the chapter.</div>
+  </div>`;
+}
+
 function miniGame(c) {
   if (c.chapter === 'Push and Pull') return `<div class="mini-scene" id="pushScene"><div class="cloud">☁️</div><div class="sign">TOY FACTORY</div><div class="ground"></div><div class="conveyor"><div class="belt"></div></div><div class="drop-target" id="dropTarget">📦<br>DROP HERE</div><div class="crate" id="dragCrate" style="left:${10+mini.progress*70}%">🧸📦</div><div class="hint-arrow">DRAG →</div><div class="mini-info">Push the crate away from you.</div></div>`;
   if (c.chapter === 'Money') return `<div class="mini-scene" style="background:linear-gradient(#fff2d7,#f1c27c)"><div class="sign">TOY SHOP</div><div class="mini-info">Tap two items to make a ₹50 order.</div><div style="position:absolute;inset:24% 8% auto;display:grid;grid-template-columns:repeat(3,1fr);gap:12px">${[['🧸','₹20'],['🚗','₹30'],['🪀','₹15'],['🎲','₹25'],['🧩','₹35'],['🎈','₹10']].map((x,i)=>`<button class="btn ${mini.selected.includes(i)?'dark':'soft'}" data-item="${i}" style="min-height:70px;font-size:22px">${x[0]}<small style="display:block;font-size:10px">${x[1]}</small></button>`).join('')}</div><div class="action-bar" style="position:absolute;left:16px;right:16px;bottom:18px"><span class="pill">Selected: ${mini.selected.length}</span>${mini.selected.length>=2?'<button class="btn primary" data-action="shop-check">Check order</button>':''}</div></div>`;
@@ -484,8 +520,9 @@ function miniGame(c) {
   if (c.chapter === 'Symmetry') return `<div class="mini-scene" style="background:linear-gradient(#f5f3ff,#e4ddff)"><div class="sign">MIRROR LAB</div><div style="position:absolute;left:12%;right:12%;top:26%;display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:44px;text-align:center"><button class="btn ${mini.selected.includes(0)?'dark':'soft'}" data-item="0">🦋</button><button class="btn ${mini.selected.includes(1)?'dark':'soft'}" data-item="1">🦋</button><button class="btn ${mini.selected.includes(2)?'dark':'soft'}" data-item="2">🔺</button><button class="btn ${mini.selected.includes(3)?'dark':'soft'}" data-item="3">🔻</button></div><div class="mini-info">Tap two matching mirror halves.</div></div>`;
   const emoji = c.subject_id === 'science' ? '🔬' : c.subject_id === 'social' ? '🗺️' : c.subject_id === 'english' ? '🔤' : c.subject_id === 'hindi' ? 'अ' : c.subject_id === 'computer' ? '💻' : c.subject_id === 'olympiad' ? '🏆' : '➗';
   const chips=(c.concepts||[]).slice(0,3);
-  return `<div class="mini-scene concept-scene" style="background:linear-gradient(135deg,#f6f4ff,#dce7ff)"><div class="sign">READY</div><div class="concept-stage"><div class="concept-icon">${emoji}</div><p class="concept-prompt"><strong>${esc(c.chapter)}</strong> is ready. Your next step is the 5-question challenge.</p><div class="mission-chip-grid">${chips.map(x=>`<span class="mission-chip">✓ ${esc(x)}</span>`).join('')}</div><div class="concept-progress">Quick Check complete • Mission unlocked</div></div></div>`;
+  return genericMission(c);
 }
+
 function missionQuiz() {
   const q = quiz[qIndex];
   const pct = Math.round((qIndex / quiz.length) * 100);
@@ -551,7 +588,7 @@ function bind() {
   updateSoundSettingsUI();
   document.getElementById('brandBtn').onclick = goHome;
   document.querySelectorAll('[data-route]').forEach(e => e.onclick = (ev) => { ev.preventDefault(); go(e.dataset.route); window.scrollTo({ top: 0, behavior: 'smooth' }); });
-  document.querySelectorAll('[data-subject]').forEach(e => e.onclick = () => { selectedSubjectId=e.dataset.subject; state.lastSubject=selectedSubjectId; save(); route='books'; render(); });
+  document.querySelectorAll('[data-subject]').forEach(e => e.onclick = () => { selectedSubjectId=e.dataset.subject; selectedBookId=subjectById[selectedSubjectId]?.book_id || null; state.lastSubject=selectedSubjectId; save(); route='chapters'; render(); });
   document.querySelectorAll('[data-book]').forEach(e => e.onclick = () => { selectedBookId=e.dataset.book; route='chapters'; render(); });
   document.querySelectorAll('[data-chapter]').forEach(e => e.onclick = () => { selectedChapterId=e.dataset.chapter; route='chapter'; render(); });
   document.querySelectorAll('[data-option]').forEach(e => e.onclick = () => {
@@ -604,7 +641,7 @@ function act(a) {
   if (a==='themes') { openThemes(); return; }
   if (a==='reset') { localStorage.removeItem(key); state=cloneDefault(); render(); toast('Progress reset'); return; }
 }
-function resetMini() { mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 }; }
+function resetMini() { mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], genericStep:0, checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 }; }
 
 function shortSummaryPages(c){
   const clean = (v) => String(v || '').replace(/\s+/g,' ').trim();
@@ -627,39 +664,59 @@ function shortSummaryPages(c){
   if(!pages.length) pages.push(`This chapter is about ${clean(c.chapter)}. Read the guide, then use what you learn in the mission.`);
   return pages.slice(0,5);
 }
-function showLearnSummaryPopup(){
-  const c=activeChapter;
+function showQuickCheckExplanation(){
+  const c = activeChapter;
   if(!c) return;
   const old=document.getElementById('chapterLearnOverlay');
   if(old) old.remove();
-  const pages=shortSummaryPages(c);
-  window.__bookloksLearnPages=pages;
-  window.__bookloksLearnIndex=0;
+  const selected=(mini.checkSelected||[]).map(i=>mini.checkCards?.[i]?.label).filter(Boolean).slice(0,3);
+  const concepts=(c.concepts||[]).slice(0,3);
+  const summary=chapterSummaryText(c);
+  const explain=c.learning?.quick_check_explanation || c.quick_check_explanation || '';
+  const reasons=(selected.length?selected:concepts).map((x,i)=>`<span class="mini-reason"><b>${i+1}</b>${esc(x)}</span>`).join('');
   const overlay=document.createElement('div');
   overlay.id='chapterLearnOverlay';
-  overlay.className='chapter-learn-overlay';
-  overlay.innerHTML = `<div class="chapter-learn-card"><div class="chapter-learn-top"><span class="pill">📖 ${esc(c.chapter)}</span><span id="learnPageCount" class="page-badge">1 / ${pages.length}</span></div><div class="chapter-learn-icon">🧠</div><div class="chapter-learn-kicker">YOU GOT THE QUICK CHECK RIGHT!</div><h2>Now learn the chapter</h2><p id="learnPageText">${esc(pages[0])}</p><div class="chapter-learn-progress"><span id="learnPageBar" style="width:${100/pages.length}%"></span></div><div class="modal-actions"><button class="btn primary" id="learnNextBtn">Next →</button></div></div>`;
+  overlay.className='chapter-learn-overlay quick-explain-overlay';
+  overlay.innerHTML=`<div class="chapter-learn-card quick-explain-card">
+    <div class="chapter-learn-top"><span class="pill">✅ Great job!</span><span class="page-badge">Quick Check</span></div>
+    <div class="chapter-learn-icon">💡</div>
+    <div class="chapter-learn-kicker">WHY THESE ARE RIGHT</div>
+    <h2>You got the chapter idea.</h2>
+    <p class="quick-explain-text">${esc(explain || summary || `These ideas are connected to ${c.chapter}. Now let’s use them in the mission.`)}</p>
+    <div class="quick-reasons">${reasons}</div>
+    <div class="chapter-learn-progress"><span style="width:100%"></span></div>
+    <div class="modal-actions"><button class="btn primary" id="quickStartMissionBtn">Start Mission →</button></div>
+  </div>`;
   document.body.appendChild(overlay);
-  const next=document.getElementById('learnNextBtn');
-  next.onclick=()=>{
-    const i=(window.__bookloksLearnIndex||0)+1;
-    if(i>=pages.length){
-      overlay.remove();
-      stage='game';
-      if(!requiresMiniGame(activeChapter)) mini.done=true;
-      render();
-      return;
-    }
-    window.__bookloksLearnIndex=i;
-    document.getElementById('learnPageCount').textContent=`${i+1} / ${pages.length}`;
-    document.getElementById('learnPageText').textContent=pages[i];
-    document.getElementById('learnPageBar').style.width=`${((i+1)/pages.length)*100}%`;
-    next.textContent=i===pages.length-1?'Start Mission →':'Next →';
-  };
-  if(pages.length===1) next.textContent='Start Mission →';
+  document.getElementById('quickStartMissionBtn').onclick=()=>{overlay.remove();stage='game';mini.done=false;render();};
 }
 
-function checkCard(index){startBackgroundMusic();if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playQuickCheckWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Great job, ${playerName()}! All 3 are correct.`;playQuickCheckRight();render();window.setTimeout(showLearnSummaryPopup,180);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to go.`;playQuickCheckRight();render();}}
+function checkCard(index){
+  startBackgroundMusic();
+  if(!mini.checkCards.length) mini.checkCards=quickCheckCards(activeChapter);
+  const card=mini.checkCards[index];
+  if(!card || mini.checkDone || mini.checkSelected.includes(index)) return;
+  mini.wrongCard=-1;
+  if(!card.correct){
+    mini.wrongCard=index;
+    mini.checkMessage='❌ Not quite. Try another card.';
+    playQuickCheckWrong();
+    render();
+    setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);
+    return;
+  }
+  mini.checkSelected.push(index);
+  playQuickCheckRight();
+  if(mini.checkSelected.length>=3){
+    mini.checkDone=true;
+    mini.checkMessage=`✅ Great job, ${playerName()}! All 3 are correct.`;
+    render();
+    window.setTimeout(showQuickCheckExplanation,180);
+  } else {
+    mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to go.`;
+    render();
+  }
+}
 async function loadChapterData(chapterId){
   if(chapterCache[chapterId]) return chapterCache[chapterId];
   const meta = chapterById[chapterId];
@@ -674,7 +731,7 @@ async function startMission(){
   const meta = chapterById[selectedChapterId];
   if(!meta){toast('Please choose a chapter first.');return;}
   if(meta.status !== 'active'){toast('This chapter is a future slot and is not active yet.');return;}
-  state.lastSubject=meta.subject_id;
+  state.lastSubject=(meta.track_id || trackForChapter(meta).id || meta.subject_id);
   try {
     activeChapter = await loadChapterData(selectedChapterId);
   } catch (err) {
@@ -762,7 +819,23 @@ function selectItem(i) {
 }
 function tapCode(i) { if (!mini.sequence.includes(i)) mini.sequence.push(i); if (mini.sequence.join(',')==='0,1,2') mini.done=true; render(); }
 function tapMap(v) { if (!mini.tapped.includes(v)) mini.tapped.push(v); if (mini.tapped.length>=3) mini.done=true; render(); }
+function tapGeneric(correct){
+  startBackgroundMusic();
+  if(correct){
+    playQuestionRight();
+    mini.genericStep=(mini.genericStep||0)+1;
+    if(mini.genericStep>=3){mini.done=true;toast(`✅ Mission complete, ${playerName()}!`,'success');}
+    render();
+  } else {
+    playQuestionWrong();
+    toast('Not quite. Try again.','warn');
+  }
+}
+function bindGenericMission(){
+  document.querySelectorAll('[data-generic-choice]').forEach(btn=>{btn.onclick=()=>tapGeneric(btn.dataset.genericChoice==='1');});
+}
 function bindMini() {
+  bindGenericMission();
   const scene=document.getElementById('pushScene'), crate=document.getElementById('dragCrate'), target=document.getElementById('dropTarget');
   if(scene&&crate&&target){
     const move=x=>{
@@ -1002,7 +1075,7 @@ document.getElementById('backBtn').onclick=()=>{
   else if(route==='result') route='chapter';
   else if(route==='mission') route='chapter';
   else if(route==='chapter') route='chapters';
-  else if(route==='chapters') route='books';
+  else if(route==='chapters') route='subjects';
   else if(route==='books') route='subjects';
   else if(route==='subjects') route='home';
   render();

@@ -1,4 +1,4 @@
-const CACHE = 'bookloks-pwa-v6';
+const CACHE = 'bookloks-pwa-v7';
 const CORE = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const CORE = [
   './loader.js',
   './app.js',
   './manifest.webmanifest',
+  '../data/manifest.json',
   '../assets/logo/bookloks_logo.png',
   '../assets/logo/bookloks_icon_192.png',
   '../assets/logo/bookloks_icon_512.png',

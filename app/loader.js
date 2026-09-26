@@ -20,7 +20,7 @@
 (async function () {
   const app = document.getElementById('app');
   try {
-    const response = await fetch('../data/manifest.json', { cache: 'no-store' });
+    const response = await fetch('../data/manifest.json?v=7.0', { cache: 'no-store' });
     if (!response.ok) throw new Error('Manifest load failed: ' + response.status);
     const manifest = await response.json();
     window.APP_DATA = {
