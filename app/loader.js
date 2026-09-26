@@ -17,7 +17,7 @@
       window.setTimeout(() => {
         document.getElementById('splashScreen')?.classList.add('hide');
         try { window.startFirstRunOnboarding?.(); } catch (_) {}
-      }, 3200);
+      }, 2400);
     };
     document.body.appendChild(script);
   } catch (err) {

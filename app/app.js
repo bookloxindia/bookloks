@@ -10,7 +10,7 @@ const chapterById = Object.fromEntries(curriculum.map(c => [c.chapter_id, c]));
 const key = 'class4world_v4_state';
 const legacyKey = 'class4world_v3_state';
 const DEFAULT_STATE = {
-  name: '', avatar: 'explorer', homeName: 'My Home', xp: 0, coins: 0, streak: 1,
+  name: '', avatar: 'explorer', homeName: 'My Home', homeNameCustom: false, xp: 0, coins: 0, streak: 1,
   completed: [], perfectMissions: 0, goldenEggs: 0, chapterBest: {}, questionHistory: {},
   roomUnlocked: { living: ['living-starter-lamp'], drawing: ['drawing-starter-easel'], play: ['play-starter-ball'], dining: ['dining-starter-plant'] },
   roomItems: [
@@ -100,20 +100,20 @@ const SOUND_FILES = {
 };
 let bgMusic = null;
 let audioGestureSeen = false;
-const AUDIO_DEFAULTS_VERSION = '4.2';
+const AUDIO_DEFAULTS_VERSION = '4.3';
 const audioDefaultsApplied = localStorage.getItem('bookloks_audio_defaults_version') === AUDIO_DEFAULTS_VERSION;
 if (!audioDefaultsApplied) {
   localStorage.setItem('bookloks_music', 'on');
   localStorage.setItem('bookloks_sfx', 'on');
-  localStorage.setItem('bookloks_music_volume', '0.30');
+  localStorage.setItem('bookloks_music_volume', '0.20');
   localStorage.setItem('bookloks_sfx_volume', '0.90');
   localStorage.setItem('bookloks_audio_defaults_version', AUDIO_DEFAULTS_VERSION);
 }
 let musicEnabled = localStorage.getItem('bookloks_music') !== 'off';
 let soundEffectsEnabled = localStorage.getItem('bookloks_sfx') !== 'off';
-let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.30');
+let musicVolume = Number(localStorage.getItem('bookloks_music_volume') ?? '0.20');
 let sfxVolume = Number(localStorage.getItem('bookloks_sfx_volume') ?? '0.90');
-if (!Number.isFinite(musicVolume)) musicVolume = 0.30;
+if (!Number.isFinite(musicVolume)) musicVolume = 0.20;
 if (!Number.isFinite(sfxVolume)) sfxVolume = 0.90;
 musicVolume = Math.max(0, Math.min(1, musicVolume));
 sfxVolume = Math.max(0, Math.min(1, sfxVolume));
@@ -217,6 +217,7 @@ function loadState() {
     if (!current) return base;
     const merged = { ...base, ...current };
     merged.avatar = AVATARS[current.avatar] ? current.avatar : (AVATARS.boy ? 'boy' : base.avatar);
+    merged.homeNameCustom = typeof current.homeNameCustom === 'boolean' ? current.homeNameCustom : Boolean(current.homeName && current.homeName !== 'My Home' && current.homeName !== `${current.name || ''}'s Home`);
     merged.customRoomColors = { ...base.customRoomColors, ...(current.customRoomColors || {}) };
     merged.roomUnlocked = { ...base.roomUnlocked, ...(current.roomUnlocked || {}) };
     merged.roomItems = Array.isArray(current.roomItems) && current.roomItems.length ? current.roomItems : base.roomItems;
@@ -339,7 +340,7 @@ function missionIntro(){
   return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • DISCOVER</div><h1>Learn first. Then play.</h1><p>Read a short chapter guide. Then try a quick check.</p><div class="stepper"><span class="active">1 LEARN</span><span>2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="learn-card"><div class="learn-visual"><div class="learn-orb">${s.icon}</div><div class="learn-pulse"></div>${scene?`<div class="learn-scene-text">${esc(scene)}</div>`:`<div class="learn-scene-text"><b>${esc(c.chapter)}</b><span>Think about these ideas:</span><div class="scene-chip-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div>`}</div><div class="learn-copy"><span class="pill">📖 Chapter guide</span><h2>${esc(c.chapter)}</h2><p class="learn-summary">${esc(summary)}</p><h3>What you will learn</h3><div class="learn-goals">${objs.map(x=>`<div class="learn-goal"><span>✓</span>${esc(x)}</div>`).join('')}</div>${concepts.length?`<div class="tag-row">${concepts.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:''}</div></section><div class="action-bar"><button class="btn soft" data-action="exit">Exit</button><button class="btn primary" data-action="start-check">Got it • Quick Check →</button></div></section>`;
 }
 function introHeadline(c){const f=c.learning_objectives&&c.learning_objectives[0];return f?f.charAt(0).toUpperCase()+f.slice(1)+'.':`Explore ${c.chapter} step by step.`;}
-function missionCheck(){const c=activeChapter,s=subjectById[c.subject_id];if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Quick Check</h1><p>Pick the <strong>3 cards</strong> that belong to <strong>${esc(c.chapter)}</strong>.</p><div class="stepper"><span>1 LEARN</span><span class="active">2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Pick the 3 right cards</h2><p>Not quite? Try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Great job, ${playerName()}! You found all 3.`:(mini.checkMessage||`${n} / 3`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back</button>${mini.checkDone?'<button class="btn primary" data-action="start-game">Start mission →</button>':'<span class="muted">Find 3 right cards.</span>'}</div></section></section>`;}
+function missionCheck(){const c=activeChapter,s=subjectById[c.subject_id];if(!mini.checkCards.length)mini.checkCards=quickCheckCards(c);const cards=mini.checkCards,n=mini.checkSelected.length;return `<section class="mission-shell"><div class="mission-hero"><div class="eyebrow">${playerGreeting()} ${s.icon} ${esc(c.subject)} • QUICK CHECK</div><h1>Quick Check</h1><p>Pick the <strong>3 cards</strong> that belong to <strong>${esc(c.chapter)}</strong>.</p><div class="stepper"><span>1 LEARN</span><span class="active">2 CHECK</span><span>3 PLAY</span><span>4 QUIZ</span></div></div><section class="visual-game-card check-card"><div class="game-head"><div><span class="pill">🧩 Quick Check</span><h2>Pick the 3 right cards</h2><p>Not quite? Try another card.</p></div><span class="page-badge">${n} / 3</span></div><div class="check-grid">${cards.map((card,i)=>`<button class="check-card-btn ${mini.checkSelected.includes(i)?'selected':''} ${mini.wrongCard===i?'wrong':''}" data-check-card="${i}" ${mini.checkSelected.includes(i)||mini.checkDone?'disabled':''}><span class="check-icon">${mini.checkSelected.includes(i)?'✓':'?'}</span><b>${esc(card.label)}</b></button>`).join('')}</div><div class="check-status ${mini.checkDone?'success':''} ${mini.wrongCard>=0?'warn':''}">${mini.checkDone?`✅ Great job, ${playerName()}! You found all 3.`:(mini.checkMessage||`${n} / 3`)}</div><div class="action-bar"><button class="btn soft" data-action="back-intro">← Back</button>${mini.checkDone?'<span class="muted">Read the chapter recap to start the mission.</span>':'<span class="muted">Find 3 right cards.</span>'}</div></section></section>`;}
 function quickCheckCards(c){
   const q=c.quick_check||{};
   const presetCorrect = Array.isArray(q.correct_options)?q.correct_options:(Array.isArray(c.quick_check_correct_options)?c.quick_check_correct_options:[]);
@@ -417,7 +418,7 @@ function worldView() {
   const roomPaidTotal = catalog.reduce((sum,it)=>sum + (it.cost || 0), 0);
   return `<section class="world-header"><div><div class="world-title-line"><span class="world-avatar">${avatarMeta().emoji}</span><div><div class="eyebrow">MY HOME</div><h1>${esc(state.homeName)}</h1></div></div><p>Build each room your way. Start with a small item, then unlock more as you earn coins.</p></div><div class="world-meta"><span class="pill">🪙 ${state.coins} coins</span><span class="pill">⭐ ${state.xp} XP</span><span class="pill">🏠 ${catalog.length} objects • ${roomPaidTotal} coins total</span></div></section>
   <div class="home-editor"><div class="room-tabs">${ROOMS.map(r => `<button class="room-tab ${room.id===r.id?'active':''}" data-room="${r.id}">${r.icon}<span>${esc(r.name)}</span></button>`).join('')}</div><div class="editor-actions"><button class="btn soft" data-action="rename-home">✏️ Name</button><button class="btn soft" data-action="themes">🎨 Colours</button></div></div>
-  <div class="room-wrap"><div class="room" style="--wall:${theme.wall};--floor:${theme.floor};--accent:${theme.accent}"><div class="wall-pattern"></div><div class="window"></div><div class="rug"></div><div class="room-label">${room.icon} ${room.name}</div>${items.map((p,i)=>`<button class="world-item" data-world-item="${esc(p.id)}" data-world-index="${i}" style="left:${p.x}%;top:${p.y}%" aria-label="${esc(p.name||'item')}">${p.emoji}</button>`).join('')}</div><aside class="shop"><div class="shop-head"><div><h3>Build ${esc(room.name)}</h3><small>Only ${esc(room.name)} objects appear here. Drag them anywhere in this room.</small></div><span class="pill">${unlocked.length}/${catalog.length} unlocked</span></div><div class="inventory-grid">${catalog.map(it=>`<div class="item-card"><div class="item-emoji">${it.emoji}</div><div class="item-main"><b>${esc(it.name)}</b><small>${it.cost ? it.cost+' coins' : 'Starter'}</small></div><button class="btn tiny" data-buy="${it.id}" ${unlocked.includes(it.id)?'disabled':''}>${unlocked.includes(it.id)?'Owned':'Unlock'}</button></div>`).join('')}</div></aside></div>`;
+  <div class="room-wrap"><div class="room" style="--wall:${theme.wall};--floor:${theme.floor};--accent:${theme.accent}"><div class="room-stage"><div class="wall-pattern"></div><div class="window"></div><div class="rug"></div><div class="room-label">${room.icon} ${room.name}</div>${items.map((p,i)=>`<button class="world-item" data-world-item="${esc(p.id)}" data-world-index="${i}" style="left:${p.x}%;top:${p.y}%" aria-label="${esc(p.name||'item')}">${p.emoji}</button>`).join('')}</div></div><aside class="shop"><div class="shop-head"><div><h3>Build ${esc(room.name)}</h3><small>Only ${esc(room.name)} objects appear here. Drag them anywhere in this room.</small></div><span class="pill">${unlocked.length}/${catalog.length} unlocked</span></div><div class="inventory-grid">${catalog.map(it=>`<div class="item-card"><div class="item-emoji">${it.emoji}</div><div class="item-main"><b>${esc(it.name)}</b><small>${it.cost ? it.cost+' coins' : 'Starter'}</small></div><button class="btn tiny" data-buy="${it.id}" ${unlocked.includes(it.id)?'disabled':''}>${unlocked.includes(it.id)?'Owned':'Unlock'}</button></div>`).join('')}</div></aside></div>`;
 }
 function themeSheet() {
   const unlocked = Object.entries(THEMES).filter(([,t]) => state.xp >= t.minXP);
@@ -431,7 +432,7 @@ function profileView() {
     <div class="profile-section"><h3>✨ My progress</h3><p>${state.name?`Keep going, ${esc(state.name)}!`:'Choose your name and start your first mission.'} Perfect missions unlock Golden Eggs, avatars and My Home customisation.</p></div>
     <div class="profile-section"><h3>🎨 My colours</h3><p>Sky and Mint are free. More colours unlock as your XP grows. At ${CUSTOM_COLOUR_MIN_XP} XP, you can choose your own colour for any room.</p><div class="theme-mini-row">${Object.entries(THEMES).map(([id,t])=>`<span class="xp-chip ${state.xp>=t.minXP?'on':''}">${t.name} • ${t.minXP===0?'Free':t.minXP+' XP'}</span>`).join('')}</div></div>
     <div class="profile-section"><h3>🧑‍🚀 My avatar</h3><p>${esc(av.name)} selected. More avatars unlock with XP.</p><div class="theme-mini-row">${Object.values(AVATARS).map(a=>`<span class="xp-chip ${state.xp>=a.minXP?'on':''}">${a.emoji} ${a.name} • ${a.minXP===0?'Free':a.minXP+' XP'}</span>`).join('')}</div></div>
-    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">30%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="30" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
+    <div class="profile-section sound-settings"><h3>🔊 Sound settings</h3><p>Turn music and sounds on or off, then set the volume you like. Your choices are saved.</p><div class="sound-settings-actions"><button id="profileMusicBtn" class="btn sound-toggle active" data-action="toggle-music">🎵 Music: ON</button><button id="profileSfxBtn" class="btn sound-toggle active" data-action="toggle-sfx">🔊 Sounds: ON</button></div><div class="volume-control"><div class="volume-head"><b>🎵 Music volume</b><span id="musicVolumePct">20%</span></div><input id="musicVolumeRange" class="volume-range" type="range" min="0" max="100" value="20" aria-label="Music volume"></div><div class="volume-control"><div class="volume-head"><b>🔊 Sound volume</b><span id="sfxVolumePct">90%</span></div><input id="sfxVolumeRange" class="volume-range" type="range" min="0" max="100" value="90" aria-label="Sound volume"></div></div><div class="profile-section"><h3>🏆 My achievements</h3><p>${state.completed.length} missions completed • ${state.perfectMissions} perfect missions • ${state.goldenEggs} Golden Eggs</p></div>
     <div class="profile-section"><button class="btn dark" data-action="reset">Reset testing progress</button></div>
   </section>`;
 }
@@ -477,7 +478,7 @@ function act(a) {
   if (a==='play') { startMission(); return; }
   if (a==='start-check') { stage='check'; mini.checkCards=[]; mini.checkSelected=[]; mini.checkDone=false; mini.checkMessage=''; mini.wrongCard=-1; render(); return; }
   if (a==='back-intro') { stage='intro'; mini.checkCards=[]; mini.checkSelected=[]; mini.checkDone=false; mini.checkMessage=''; mini.wrongCard=-1; render(); return; }
-  if (a==='start-game') { stage='game'; if(!requiresMiniGame(activeChapter)) mini.done=true; render(); return; }
+  if (a==='start-game' || a==='start-summary-mission') { stage='game'; if(!requiresMiniGame(activeChapter)) mini.done=true; render(); return; }
   if (a==='start-quiz') { startQuiz(); return; }
   if (a==='replay') { startMission(); return; }
   if (a==='next-q') { const correct=selectedOption===quiz[qIndex].a; if (correct) score++; if (qIndex===quiz.length-1) finishMission(); else { qIndex++; selectedOption=null; render(); } return; }
@@ -494,7 +495,61 @@ function act(a) {
   if (a==='reset') { localStorage.removeItem(key); state=cloneDefault(); render(); toast('Progress reset'); return; }
 }
 function resetMini() { mini = { done:false, progress:0, dragging:false, selected:[], sequence:[], tapped:[], checkCards:[], checkSelected:[], checkDone:false, checkMessage:'', wrongCard:-1 }; }
-function checkCard(index){startBackgroundMusic();if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playQuickCheckWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Brilliant, ${playerName()}! You found all 3 correct ideas.`;playQuickCheckRight();toast(`✨ Great start, ${playerName()}! Mission unlocked.`);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to unlock the mission.`;playQuickCheckRight();}render();}
+
+function shortSummaryPages(c){
+  const clean = (v) => String(v || '').replace(/\s+/g,' ').trim();
+  const source = clean(c.chapter_summary || c.simple_explanation || c.mission_context || c.visual_learning_scene);
+  const pages = [];
+  if(source){
+    const sentences = source.split(/(?<=[.!?।])\s+/).map(clean).filter(Boolean);
+    let buf='';
+    for(const s of sentences){
+      const candidate = buf ? `${buf} ${s}` : s;
+      if(candidate.length > 155 && buf){ pages.push(buf); buf=s; }
+      else buf=candidate;
+    }
+    if(buf) pages.push(buf);
+  }
+  const goals = Array.isArray(c.learning_objectives)?c.learning_objectives.map(clean).filter(Boolean):[];
+  const concepts = Array.isArray(c.concepts)?c.concepts.map(clean).filter(Boolean):[];
+  for(const g of goals.slice(0,2)) pages.push(`Remember: ${g}`);
+  if(!pages.length && concepts.length) pages.push(`In this chapter, we will learn about ${concepts.slice(0,3).join(', ')}.`);
+  if(!pages.length) pages.push(`This chapter is about ${clean(c.chapter)}. Read the guide, then use what you learn in the mission.`);
+  return pages.slice(0,5);
+}
+function showLearnSummaryPopup(){
+  const c=activeChapter;
+  if(!c) return;
+  const old=document.getElementById('chapterLearnOverlay');
+  if(old) old.remove();
+  const pages=shortSummaryPages(c);
+  window.__bookloksLearnPages=pages;
+  window.__bookloksLearnIndex=0;
+  const overlay=document.createElement('div');
+  overlay.id='chapterLearnOverlay';
+  overlay.className='chapter-learn-overlay';
+  overlay.innerHTML = `<div class="chapter-learn-card"><div class="chapter-learn-top"><span class="pill">📖 ${esc(c.chapter)}</span><span id="learnPageCount" class="page-badge">1 / ${pages.length}</span></div><div class="chapter-learn-icon">🧠</div><div class="chapter-learn-kicker">YOU GOT THE QUICK CHECK RIGHT!</div><h2>Now learn the chapter</h2><p id="learnPageText">${esc(pages[0])}</p><div class="chapter-learn-progress"><span id="learnPageBar" style="width:${100/pages.length}%"></span></div><div class="modal-actions"><button class="btn primary" id="learnNextBtn">Next →</button></div></div>`;
+  document.body.appendChild(overlay);
+  const next=document.getElementById('learnNextBtn');
+  next.onclick=()=>{
+    const i=(window.__bookloksLearnIndex||0)+1;
+    if(i>=pages.length){
+      overlay.remove();
+      stage='game';
+      if(!requiresMiniGame(activeChapter)) mini.done=true;
+      render();
+      return;
+    }
+    window.__bookloksLearnIndex=i;
+    document.getElementById('learnPageCount').textContent=`${i+1} / ${pages.length}`;
+    document.getElementById('learnPageText').textContent=pages[i];
+    document.getElementById('learnPageBar').style.width=`${((i+1)/pages.length)*100}%`;
+    next.textContent=i===pages.length-1?'Start Mission →':'Next →';
+  };
+  if(pages.length===1) next.textContent='Start Mission →';
+}
+
+function checkCard(index){startBackgroundMusic();if(!mini.checkCards.length)mini.checkCards=quickCheckCards(activeChapter);const card=mini.checkCards[index];if(!card||mini.checkDone||mini.checkSelected.includes(index))return;mini.wrongCard=-1;if(!card.correct){mini.wrongCard=index;mini.checkMessage=`❌ Not quite, ${playerName()}! Look back at the quick lesson and think again.`;playQuickCheckWrong();render();setTimeout(()=>{mini.wrongCard=-1;mini.checkMessage='';if(route==='mission'&&stage==='check')render();},850);return;}mini.checkSelected.push(index);if(mini.checkSelected.length>=3){mini.checkDone=true;mini.checkMessage=`✅ Great job, ${playerName()}! All 3 are correct.`;playQuickCheckRight();render();window.setTimeout(showLearnSummaryPopup,180);}else{mini.checkMessage=`✅ Correct! ${3-mini.checkSelected.length} more to go.`;playQuickCheckRight();render();}}
 async function loadChapterData(chapterId){
   if(chapterCache[chapterId]) return chapterCache[chapterId];
   const meta = chapterById[chapterId];
@@ -630,7 +685,8 @@ function buy(id) {
 }
 function bindWorldDrag() {
   const roomEl=document.querySelector('.room');
-  if(!roomEl) return;
+  const stageEl=document.querySelector('.room-stage');
+  if(!roomEl || !stageEl) return;
   document.querySelectorAll('[data-world-item]').forEach(el=>{
     el.onpointerdown=e=>{
       e.preventDefault();
@@ -640,9 +696,9 @@ function bindWorldDrag() {
     };
     el.onpointermove=e=>{
       if(!draggedWorldItem) return;
-      const rect=roomEl.getBoundingClientRect();
+      const rect=stageEl.getBoundingClientRect();
       const x=Math.max(8,Math.min(92,((e.clientX-rect.left)/rect.width)*100));
-      const y=Math.max(10,Math.min(86,((e.clientY-rect.top)/rect.height)*100));
+      const y=Math.max(8,Math.min(92,((e.clientY-rect.top)/rect.height)*100));
       el.style.left=x+'%'; el.style.top=y+'%';
     };
     el.onpointerup=()=>finishWorldDrag(el);
@@ -651,9 +707,9 @@ function bindWorldDrag() {
 }
 function finishWorldDrag(el){
   if(!draggedWorldItem) return;
-  const rect=document.querySelector('.room').getBoundingClientRect();
+  const rect=document.querySelector('.room-stage').getBoundingClientRect();
   const x=Math.max(8,Math.min(92,((parseFloat(el.style.left)||50))));
-  const y=Math.max(10,Math.min(86,((parseFloat(el.style.top)||45))));
+  const y=Math.max(8,Math.min(92,((parseFloat(el.style.top)||45))));
   const id=el.dataset.worldItem;
   const room=state.activeRoom;
   const sameRoom=roomItemsFor(room);
@@ -703,7 +759,8 @@ function onboardingView(){
       const name = input.value.trim();
       if (!name) { input.focus(); toast('Please write your name.'); return; }
       state.name = name;
-      if (!state.homeName || state.homeName === 'My Home') state.homeName = `${name}'s Home`;
+      state.homeName = `${name}'s Home`;
+      state.homeNameCustom = false;
       save();
       onboardingStep = 2;
       onboardingView();
@@ -747,7 +804,7 @@ function openHomeName(){
   const m=document.getElementById('modal');m.classList.remove('hidden');
   m.innerHTML=`<div class="modal-card"><div class="modal-kicker">🏠 MY HOME</div><h2>Name your world</h2><p class="muted">Give your home a name you'll recognise.</p><input id="homeNameInput" class="input" maxlength="24" value="${esc(state.homeName)}" placeholder="Abbir's World"><div class="modal-actions"><button class="btn soft" id="closeHomeName">Cancel</button><button class="btn dark" id="saveHomeName">Save</button></div></div>`;
   document.getElementById('closeHomeName').onclick=()=>m.classList.add('hidden');
-  document.getElementById('saveHomeName').onclick=()=>{state.homeName=document.getElementById('homeNameInput').value.trim()||'My Home';save();m.classList.add('hidden');render();};
+  document.getElementById('saveHomeName').onclick=()=>{state.homeName=document.getElementById('homeNameInput').value.trim()||'My Home';state.homeNameCustom=true;save();m.classList.add('hidden');render();};
   document.getElementById('homeNameInput').focus();
 }
 function openAvatar(){
@@ -765,7 +822,7 @@ function openName(){
   const m=document.getElementById('modal');m.classList.remove('hidden');
   m.innerHTML=`<div class="modal-card"><div class="modal-kicker">🧑‍🚀 PLAYER</div><h2>What should we call you?</h2><p class="muted">Use the name you want to see in missions and rewards.</p><input id="nameInput" class="input" maxlength="20" value="" placeholder="Write your name" autocomplete="off"><div class="modal-actions"><button class="btn soft" id="closeName">Cancel</button><button class="btn dark" id="saveName">Save</button></div></div>`;
   document.getElementById('closeName').onclick=()=>m.classList.add('hidden');
-  document.getElementById('saveName').onclick=()=>{const entered=document.getElementById('nameInput').value.trim(); if(entered) state.name=entered; save();m.classList.add('hidden');render();};
+  document.getElementById('saveName').onclick=()=>{const entered=document.getElementById('nameInput').value.trim(); if(entered){const oldName=state.name; state.name=entered; if(!state.homeNameCustom && (!state.homeName || state.homeName==='My Home' || state.homeName===`${oldName || ''}'s Home`)) state.homeName=`${entered}'s Home`;} save();m.classList.add('hidden');render();};
   document.getElementById('nameInput').focus();
 }
 function playQuickCheckRight(){ playEffect('quickCheckRight', 1.0, 900); }
